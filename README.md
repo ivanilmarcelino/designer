@@ -1,10 +1,13 @@
 # Designer
-##Designer for Minigui Extend
+
+## Designer for Minigui Extend
 
 Veja o vídeo em https://www.youtube.com/watch?v=1GPAUNJtgIA&t=25s , aproveite, faça o download e use, é gratis, tenha produtividade em seus projetos.
 Entre para o grupo designerminigui@googlegroups.com para ficar informado e postar dúvidas junto à comunidade
 Colabore para que nosso projeto xbase volte a ser algo tão popular quanto um dia o Clipper foi, o harbour/xharbour não ficou devendo nada para outras linguagens;
-###Pacote completo:
+
+### Pacote completo:
+
 Ao Baixar certifique-se de baixar o conjunto completo, atualmente em 2 volumes:
 Designer_%Ano%Mes%Dia%.ZIP
 Designer_%Ano%Mes%Dia%.Z01
@@ -14,15 +17,17 @@ Dê um duplo clique sobre o Designer_%Ano%Mes%Dia%.EXE resultante e aponte para 
 
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
-#*************************************************************
-##Designer for Minigui Extend
+# *************************************************************
+
+## Designer for Minigui Extend
 
 Watch the video at https://www.youtube.com/watch?v=1GPAUNJtgIA&t=25s, enjoy, download and use, it's free, have productivity in your projects.
 Join the designerminigui@googlegroups.com group to stay informed and post questions with the community
 
 Collaborate for our xbase project to become something as popular as once Clipper was, the harbor / xharbour did not owe anything to other languages;
 
-###Complete package:
+### Complete package:
+
 When downloading make sure to download the complete set, currently in 2 volumes:
 Designer_% Year% Month% Day% .ZIP
 Designer_% Year% Month% Day% .Z01
