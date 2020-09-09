@@ -10,8 +10,9 @@ Colabore para que nosso projeto xbase volte a ser algo tão popular quanto um di
 ### Pacote completo:
 
 Ao Baixar certifique-se de baixar o conjunto completo, atualmente em 2 volumes:
-Designer_%Ano%Mes%Dia%.ZIP
-Designer_%Ano%Mes%Dia%.Z01
+> Designer_%Ano%Mes%Dia%.ZIP
+> Designer_%Ano%Mes%Dia%.Z01
+Ou use este link para baixar usando o recurso ZIP do GitHub [Baixar agora](https://github.com/ivanilmarcelino/designer/archive/master.zip)
 
 Apenas Salve os arquivos no seu equipamento num local temporário, depois descompacte o ZIP, isso resultará num arquivo executável auto extraível, o GIT tem um limite de 25MB, desta forma foi necessário quebrar o arquivo.
 Dê um duplo clique sobre o Designer_%Ano%Mes%Dia%.EXE resultante e aponte para um local apropriado.
@@ -30,8 +31,9 @@ Collaborate for our xbase project to become something as popular as once Clipper
 ### Complete package:
 
 When downloading make sure to download the complete set, currently in 2 volumes:
-Designer_% Year% Month% Day% .ZIP
-Designer_% Year% Month% Day% .Z01
+> Designer_% Year% Month% Day% .ZIP
+> Designer_% Year% Month% Day% .Z01
+Or use this link to download using the GitHub ZIP feature [Download now](https://github.com/ivanilmarcelino/designer/archive/master.zip);
 
 Just save the files on your device in a temporary location, then unzip the ZIP, this will result in a self-extracting executable file, GIT has a limit of 25MB, so it was necessary to break the file.
 
