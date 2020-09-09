@@ -4,7 +4,7 @@
 
 
 Veja o vídeo em [YouTube](https://www.youtube.com/watch?v=1GPAUNJtgIA&t=25s), aproveite, faça o download e use, é gratis, tenha produtividade em seus projetos.
-Entre para o grupo designerminigui@googlegroups.com para ficar informado e postar dúvidas junto à comunidade
+Entre para o grupo [designerminigui@googlegroups.com](https://groups.google.com/g/designerminigui?pli=1) para ficar informado e postar dúvidas junto à comunidade
 Colabore para que nosso projeto xbase volte a ser algo tão popular quanto um dia o Clipper foi, o harbour/xharbour não ficou devendo nada para outras linguagens;
 
 ### Pacote completo:
@@ -27,7 +27,7 @@ Você não precisa de acesso administrativo, descompacte onde quiser, mas evite 
 ## Designer for Minigui Extend
 
 Watch the video at [YouTube](https://www.youtube.com/watch?v=1GPAUNJtgIA&t=25s), enjoy, download and use, it's free, have productivity in your projects.
-Join the designerminigui@googlegroups.com group to stay informed and post questions with the community
+Join the [designerminigui@googlegroups.com](https://groups.google.com/g/designerminigui?pli=1) group to stay informed and post questions with the community
 
 Collaborate for our xbase project to become something as popular as once Clipper was, the harbor / xharbour did not owe anything to other languages;
 
