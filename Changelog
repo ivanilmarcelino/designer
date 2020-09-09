@@ -1,0 +1,8 @@
+/* 
+  * Change, ! Fix, % Optimization, + Addition, - Removal, ; Comment
+   Entries may not always be in chronological/commit order. 
+*/
+   
+### 2020-09-09 12:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+  + Carga Inicial no GitHUB 
+  ; #Define VERSION_PRODUCT "00.99.20.081 RELEASE CANDIDATE (RC) 200907 1108"
