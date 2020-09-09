@@ -11,9 +11,8 @@ Colabore para que nosso projeto xbase volte a ser algo tão popular quanto um di
 
 Ao Baixar certifique-se de baixar o conjunto completo, atualmente em 2 volumes:
 
-> Designer_%Ano%Mes%Dia%.ZIP
-
-> Designer_%Ano%Mes%Dia%.Z01
+- [X] Designer_%Ano%Mes%Dia%.ZIP
+- [X] Designer_%Ano%Mes%Dia%.Z01
 
 Ou use este link para baixar usando o recurso ZIP do GitHub [Baixar agora](https://github.com/ivanilmarcelino/designer/archive/master.zip)
 
@@ -35,9 +34,8 @@ Collaborate for our xbase project to become something as popular as once Clipper
 
 When downloading make sure to download the complete set, currently in 2 volumes:
 
-> Designer_% Year% Month% Day% .ZIP
-
-> Designer_% Year% Month% Day% .Z01
+- [X] Designer_%Ano%Mes%Dia%.ZIP
+- [X] Designer_%Ano%Mes%Dia%.Z011
 
 Or use this link to download using the GitHub ZIP feature [Download now](https://github.com/ivanilmarcelino/designer/archive/master.zip);
 
