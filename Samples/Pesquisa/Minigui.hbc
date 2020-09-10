@@ -1,0 +1,30 @@
+# hmg paths
+
+incpaths=include Form
+libpaths=lib
+incpaths=${hb_curdir}
+
+# hmg resources
+#sources=${hb_curdir} resource.o
+
+# gui mode
+gt=gtgui
+
+# core
+libs=minigui hbprinter miniprint2
+
+# core additional binary 
+libs=adordd calldll tsbrowse hbsqlit3 sqlite3
+
+# Harbour needed contribs
+libs=hbct hbtip hbvpdf
+
+# Harbour additional contribs
+libs=hbmisc hbziparc hbmzip minizip hbwin xhb socket hblang
+
+# system
+libs=msvfw32 vfw32
+
+# Outras libs da Minigui
+#libs=bostaurus debugger hbmysql hbpgsql hbunrar hbxml hmg_hpdf libpq miniprint mysql propgrid propsheet qhtm selector socket tmsagent unrar winreport
+

@@ -6,9 +6,9 @@ PPO/*
 Dados.dbf
 Dados.ntx
 
-*/API/*
-*/Backup/*
-*/obj/*
-*/PPO/*
-*/Pesquisa/Dados.dbf
-*/Pesquisa/Dados.ntx
+API
+Backup
+obj
+PPO
+./Samples/Pesquisa/Dados.dbf
+./Samples/Pesquisa/Dados.ntx

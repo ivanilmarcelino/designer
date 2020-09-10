@@ -1,0 +1,33 @@
+# hmg paths
+
+incpaths=${hb_curdir} .\Form ${HMGRPATH}\include ${HMGRHARBOUR}\Contrib\xhb
+
+libpaths=${HMGRPATH}\lib ${BaseDir}\Tools\Addons
+
+# hmg resources
+sources=${HMGRPATH}\Resources\hmg.o
+
+# gui mode windows
+gt=gtgui
+
+# allow multiple definition (for bcc compatibility)
+{win}ldflags=-Wl,--allow-multiple-definition
+
+# Addons
+libs=addons
+
+# core
+libs=minigui hbprinter miniprint2 propgrid hbxml hbxlsxml tsbrowse
+
+# core additional binary 
+libs=adordd calldll hbsqlit3 sqlite3 libmysql hbmysql
+
+# Harbour needed contribs
+libs=hbct hbtip hbvpdf
+
+# Harbour additional contribs
+libs=hbmisc hbziparc hbmzip minizip hbwin xhb socket
+
+# system
+libs=msvfw32 vfw32
+

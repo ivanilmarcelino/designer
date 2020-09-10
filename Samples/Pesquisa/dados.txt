@@ -1,0 +1,53 @@
+2	Buffet
+3	Decoração
+4	Cerimonial
+5	Fotografia
+6	Filmagem
+7	Iluminação Recepção
+8	Orquestra Recepção
+9	Banda 1
+10	Banda 2
+11	Banda 3
+12	DJ
+13	Som
+14	Palco
+15	VJ
+16	Camarim
+17	Telão
+18	Doce 1
+19	Doce 2
+20	Doce 3
+21	Montagem Mesa Doce
+22	Peças da Mesa de Doce
+23	Movel Mesa Doce
+24	Bolo
+25	Movel Mesa Bolo
+26	Bem Casado
+27	Doce Digestivo 1
+28	Doce Digestivo 2
+29	Doce Digestivo 3
+30	Café
+31	Cadeiras Recepção
+32	Gerador Recepção
+33	Manobrista Seg. Recepção
+34	Ecad
+35	BEBIDAS
+36	Espumante
+37	Wisky
+38	Chopp
+39	Licor
+40	Água de Coco
+41	Energetico
+42	Barman
+43	Estrutura Barman
+44	Somelier
+45	PAPELARIA
+46	Convite
+47	Lembrancinha Padrinhos
+48	Sandálias
+49	Kit Toilet
+50	NOIVA
+51	Vestido
+52	Maquiador
+53	Local: Dia da Noiva
+54	Carro / Motorista

@@ -1,0 +1,62 @@
+[PROJETO]
+Main=Pesquisa.PRG
+TipoProjeto=1
+nomeprojeto=Pesquisa
+database=
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=0000,0000,0000,0000
+internalname=Pesquisa.Exe
+legalcopyright=Copyright 2019
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALPHA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=PORTUGUESE
+setcodepage=PORTUGUESE
+setdate=FRENCH
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=9
+fontboldMenu=FALSE
+Run=
+[FORMULARIOS]
+Frm0001=%PROJETO%\form\Pesquisa.FMG
+
+[MODULOS]
+MOD0001=%PROJETO%\Pesquisa.PRG
+
+[RESOURCES]
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]
