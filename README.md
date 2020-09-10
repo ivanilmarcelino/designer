@@ -21,7 +21,7 @@ Dê um duplo clique sobre o Designer_%Ano%Mes%Dia%.EXE resultante e aponte para 
 
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
-# *************************************************************
+# ***********************************************************
 
 ## Designer for Minigui Extend
 
@@ -46,6 +46,10 @@ Double-click on the resulting Designer_% Ano% Mes% Dia% .EXE and point to an app
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
 
 e-mail: ivanil.marcelino@yahoo.com.br
+
+# Este vídeo demonstra como fazer uma migração para o designer passo a passo;
+[![banner](https://github.com/ivanilmarcelino/designer/blob/master/Image/YouTube.jpg)](https://www.youtube.com/watch?v=diRcnKm2v28)
+# 
 
 ![banner](https://repository-images.githubusercontent.com/236748085/32939000-4280-11ea-963c-07b0dbc66c94)
 
