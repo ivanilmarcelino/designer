@@ -1,5 +1,20 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 
+2020-09-10 18:39 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+   [!] OpenFMG.prg => Designer_OpenFMG_x( )
+	Arquivos de Terceiros sem espaço entre @ e valor (@10,15)
+
+2020-09-10 18:31 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+   [!] Comuns.prg => itoken( )
+	Arquivos de terceiros com ocorrencia de chr(26) e chr(9) em meio aos comandos
+
+2020-09-10 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+   [!] OpenFMG.prg => Designer_OpenFMG_x( )
+       Corrigido carga de MENU no FMG onde é informado apenas POPUP
+        if substr(xLine,1,18)=="DEFINE MENU POPUP " .or. substr(xLine,1,13) == "DEFINE POPUP " .or. substr(xLine,1,6) == "POPUP "
+            ...
+        endif
+           
 2020-09-10 09:29 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
    [!] Designer.prg => Designer_AjustaNovoValorGRID( cProp , cVal )
        Corrigido erro ao tratar as propriedades dos Forms
