@@ -1,0 +1,7 @@
+#Arquivos e pastas a serem excluidos
+API/*
+Backup/*
+obj/*
+PPO/*
+Dados.dbf
+Dados.ntx
