@@ -6,6 +6,14 @@ PPO/*
 Dados.dbf
 Dados.ntx
 
+*.BAT
+*.EXE
+*.HBC
+*.HPB
+*.RC
+log*.TXT
+*.HTM
+
 API
 Backup
 obj

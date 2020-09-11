@@ -1,23 +1,27 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 
+2020-09-11 09:32 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Projeto.prg => Project_CompilaProjeto( nComp )
+        Verificação se a pasta PPO existe, o compilador não cria automaticamente .\PPO\
+
 2020-09-10 18:39 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-   [!] OpenFMG.prg => Designer_OpenFMG_x( )
-	Arquivos de Terceiros sem espaço entre @ e valor (@10,15)
+    [!] OpenFMG.prg => Designer_OpenFMG_x( )
+        Arquivos de Terceiros sem espaço entre @ e valor (@10,15)
 
 2020-09-10 18:31 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-   [!] Comuns.prg => itoken( )
-	Arquivos de terceiros com ocorrencia de chr(26) e chr(9) em meio aos comandos
+    [!] Comuns.prg => itoken( )
+        Arquivos de terceiros com ocorrencia de chr(26) e chr(9) em meio aos comandos
 
 2020-09-10 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-   [!] OpenFMG.prg => Designer_OpenFMG_x( )
-       Corrigido carga de MENU no FMG onde é informado apenas POPUP
+    [!] OpenFMG.prg => Designer_OpenFMG_x( )
+        Corrigido carga de MENU no FMG onde é informado apenas POPUP
         if substr(xLine,1,18)=="DEFINE MENU POPUP " .or. substr(xLine,1,13) == "DEFINE POPUP " .or. substr(xLine,1,6) == "POPUP "
             ...
         endif
            
 2020-09-10 09:29 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-   [!] Designer.prg => Designer_AjustaNovoValorGRID( cProp , cVal )
-       Corrigido erro ao tratar as propriedades dos Forms
+    [!] Designer.prg => Designer_AjustaNovoValorGRID( cProp , cVal )
+        Corrigido erro ao tratar as propriedades dos Forms
             j:= len(aMoveSize)
             if j>0
                ...
@@ -32,5 +36,5 @@
             endif   
    
 2020-09-09 12:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-   [+] Carga Inicial no GitHUB 
-   [;] #Define VERSION_PRODUCT "00.99.20.081 RELEASE CANDIDATE (RC) 200907 1108"
+    [+] Carga Inicial no GitHUB 
+    [;] #Define VERSION_PRODUCT "00.99.20.081 RELEASE CANDIDATE (RC) 200907 1108"

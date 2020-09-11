@@ -9,7 +9,7 @@ if exist %OutPut%.exe @del %OutPut%.exe >>nul
 @Set OLDPATH=%PATH%
 
 REM Path da IDE
-@Set BaseDIR=E:\Prgplus\IDE
+@Set BaseDIR=E:\Prgplus\Youtube\teste\IDE
 
 
 REM Ajuste aqui seus Paths caso queira criar uma nova configuração
@@ -17,10 +17,9 @@ REM Ajuste aqui seus Paths caso queira criar uma nova configuração
 @Set HMGRPATH=%HMGPATH%\minigui
 @Set HMGRHARBOUR=%HMGPATH%\Harbour
 
-@Set HB_COMPILER=mingw
-@Set HMGRCOMP=%HMGPATH%\mingw32
+@Set HB_COMPILER=bcc
+@Set HMGRCOMP=%HMGPATH%\bcc
 @Set PATH=%HMGRHARBOUR%\bin;%HMGRCOMP%\bin
-
 Echo Aguarde... Compilando o projeto...
 
 HBMK2 %proj% 1>%proj%.log 2>&1

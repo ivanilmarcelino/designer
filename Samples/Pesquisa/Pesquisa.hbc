@@ -1,17 +1,14 @@
 # hmg paths
 
-incpaths=${hb_curdir} .\Form ${HMGRPATH}\include ${HMGRHARBOUR}\Contrib\xhb
+incpaths=${hb_curdir} .\Form ${HMGRPATH}\include
 
 libpaths=${HMGRPATH}\lib ${BaseDir}\Tools\Addons
 
 # hmg resources
-sources=${HMGRPATH}\Resources\hmg.o
+sources=${HMGRPATH}\Resources\hmg.Res
 
 # gui mode windows
 gt=gtgui
-
-# allow multiple definition (for bcc compatibility)
-{win}ldflags=-Wl,--allow-multiple-definition
 
 # Addons
 libs=addons
