@@ -13,6 +13,7 @@ Dados.ntx
 *.RC
 log*.TXT
 *.HTM
+.gitignore
 
 API
 Backup
