@@ -14,6 +14,7 @@ Dados.ntx
 log*.TXT
 *.HTM
 .gitignore
+*.log
 
 API
 Backup
