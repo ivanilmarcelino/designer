@@ -1,4 +1,10 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-09-15 15:29 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] Atualização do pacote com Minigui Extend 20.08 update 2 de 10/09/2020
+
+2020-09-11 10:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Configuração
+        Ajustado o Tooltip para Hyperlink
 
 2020-09-11 09:32 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Projeto.prg => Project_CompilaProjeto( nComp )
