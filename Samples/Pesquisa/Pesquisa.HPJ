@@ -19,7 +19,7 @@ specialbuild=
 
 seticonepadrao=None
 setlanguage=PORTUGUESE
-setcodepage=PORTUGUESE
+setcodepage=BRAZIL
 setdate=FRENCH
 setcentury=ON
 setepoch=1960

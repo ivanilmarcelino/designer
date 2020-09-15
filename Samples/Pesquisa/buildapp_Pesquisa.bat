@@ -9,7 +9,7 @@ if exist %OutPut%.exe @del %OutPut%.exe >>nul
 @Set OLDPATH=%PATH%
 
 REM Path da IDE
-@Set BaseDIR=E:\Prgplus\Youtube\teste\IDE
+@Set BaseDIR=E:\Prgplus\Youtube\teste\ide
 
 
 REM Ajuste aqui seus Paths caso queira criar uma nova configuração

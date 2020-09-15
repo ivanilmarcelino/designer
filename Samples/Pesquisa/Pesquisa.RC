@@ -13,7 +13,7 @@
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "081604E4"
+        BLOCK "041604E4"
         BEGIN
             VALUE "Comments", "\0"
             VALUE "CompanyName","Ima Solutions Apoio Tec/Adm em Informática\0"
@@ -24,13 +24,13 @@ BEGIN
             VALUE "OriginalFilename","\0"
             VALUE "PrivateBuild", "\0"
             VALUE "ProductName", "\0"
-            VALUE "ProductVersion", "ALPHA 200911-09:45:59\0"
+            VALUE "ProductVersion", "ALPHA 200915-15:37:44\0"
             VALUE "SpecialBuild","\0"
         END
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x0816, 0x04E4
+        VALUE "Translation", 0x0416, 0x04E4
     END
 END
 
