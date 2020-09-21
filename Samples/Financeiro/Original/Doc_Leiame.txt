@@ -1,0 +1,53 @@
+Sobre		: Este exemplo é uma contribuição ao Projeto Harbour/MiniGUI e pode ser modificado e distribuído livremente.
+Projeto		: Finance Versão 1.0
+Descrição	: Exemplo Simples de um Controle Financeiro
+Login		: Digite USUÁRIO no TextBox Usuário 
+		: Digite SENHA    no TextBox Senha		  
+Importante	: Este sistema foi desenvolvido com intensão de auxiliar usuários
+	 	  que utilizem o Harbour e o MiniGUI.   É um projeto apenas para			
+		  estudo dos comandos.   Não deve ser utilizado comercialmente 
+		  por estar sujeito a apresentar possiveis erros não detectados em
+		  testes feitos pelo autor. 
+
+Estrutura dos diretórios e Fontes
+
+C:\MGFinanc	\BASE	  -> Base de dados				
+		\IMAGES	  -> Imagens Utilizadas na Compilação
+
+	F_MENU.EXE	-> Aplicativo
+	FINANC.INI	-> Arquivo INI
+
+	F_menu.Prg	-> Programa Principal		-> Documentado
+	F_Login.Prg	-> Login no Sistema		-> Documentado
+	F_Acesso.Prg	-> Cadastro de Usuários		-> Documentado
+	F_Clientes.Prg	-> Cadastro de Clientes		-> Documentado
+	F_Fornecedores	-> Cadastro dos Fornecedores	-> Idêntico à F_Clientes.Prg
+	F_CadGen.Prg	-> Função de Cadastros Genérico	-> Documentado
+	F_Funcoes.Prg	-> Funções do Sistema		-> Documentado
+	F_Datas.Prg	-> Funções de Datas		-> Documentado
+	F_Pagar.Prg	-> Contas à Pagar			-> Documentado
+	F_Receber	-> Contas a Receber		-> Idêntico à F_Pagar.Prg
+		
+	F_Menu.RC	-> Arquivo de Resource do Sistema
+	F_Sistema.CH	-> Arquivo CH do Sistema
+
+Humberto Fornazier - Brasil - Maio/2003
+hfornazier@brfree.com.br
+www.geocities.com/harbourminas
+
+Harbour Compiler (MiniGUI Distribution) 2003.05.03 (Flex)
+Copyright 1999-2003, http://www.harbour-project.org/
+
+Harbour MiniGUI R.62a Copyright 2002-2003 Roberto Lopez,
+MINIGUI - Harbour Win32 GUI library - Release 62a - 23/05/2003
+Copyright 2002 Roberto Lopez <roblez@ciudad.com.ar>
+http://www.geocities.com/harbourminigui/
+
+Algumas das telas do sistema foram contruídas com auxilio do
+GUIDES - Release 0.12 for MiniGUI
+Carlos Andres - carlos.andres@navegalia.com
+http://www.geocities.com/harbour_links
+
+Agradecimentos à: Marcos Antonio Gambeta	<marcos_gambeta@hotmail.com>    e
+		Roberto Lopez		<roblez@ciudad.com.ar>
+		pelos testes e sugestões no Sistema.
