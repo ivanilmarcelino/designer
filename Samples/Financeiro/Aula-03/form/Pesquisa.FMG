@@ -1,0 +1,98 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.083 RELEASE CANDIDATE (RC) 200921 1743"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 3)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 23/09/2020-16:10:14 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Financeiro
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Pesquisa}
+
+
+DEFINE WINDOW TEMPLATE AT 184, 314 WIDTH 425 HEIGHT 460  TITLE "" ICON "icone01" MODAL NOSIZE
+
+    DEFINE GRID Grid
+        COL 10
+        HEADERIMAGE {"","",""}
+        HEADERS { "Código" , "Descrição" , "Update" }
+        HEIGHT 329
+        JUSTIFY { 0 , 0 , 0 }
+        ONHEADCLICK ({{||Nil},{||Nil},{||Nil}})
+        ROW 10
+        VALUE 1
+        WIDTH 400
+        WIDTHS { 60 , 333 , 0 }
+    END GRID
+
+    DEFINE LABEL Label_Pesq_Generic
+        COL 11
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 353
+        VALUE "Pesquisa"
+        WIDTH 70
+    END LABEL
+
+    DEFINE TEXTBOX TxtPesquisa
+        COL 85
+        HEIGHT 24
+        MAXLENGTH 40
+        ROW 353
+        TOOLTIP "Digite a Descrição para Pesquisa"
+        UPPERCASE TRUE
+        WIDTH 326
+    END TEXTBOX
+
+    DEFINE BUTTON Novo
+        CAPTION "&Novo"
+        COL 11
+        FLAT TRUE
+        HEIGHT 28
+        ROW 397
+        WIDTH 100
+    END BUTTON
+
+    DEFINE BUTTON Editar
+        CAPTION "&Editar"
+        COL 111
+        FLAT TRUE
+        HEIGHT 28
+        ROW 397
+        WIDTH 100
+    END BUTTON
+
+    DEFINE BUTTON Excluir
+        CAPTION "E&xcluir"
+        COL 211
+        FLAT TRUE
+        HEIGHT 28
+        ROW 397
+        WIDTH 100
+    END BUTTON
+
+    DEFINE BUTTON Sair
+        ACTION (This.Release())
+        CAPTION "&Sair"
+        COL 311
+        FLAT TRUE
+        HEIGHT 28
+        ROW 397
+        WIDTH 100
+    END BUTTON
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

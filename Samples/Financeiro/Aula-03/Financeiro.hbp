@@ -1,0 +1,31 @@
+#Nome do Arquivo de Saida
+-oFinanceiro
+
+#Saida dos arquivos temporários
+-workdir=.\obj
+
+#Compacta o arquivo final
+-strip 
+-fullstatic
+-D__CALLDLL__
+
+#Compilação incremental
+-inc
+
+#Flag de compilação informado em configuração
+-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+
+#Configuração dos Paths
+Financeiro.hbc
+
+#Arquivo de Recurso
+Financeiro.rc
+
+#Lista de Arquivos
+Acesso.Prg
+CliForn.Prg
+Financeiro.PRG
+Funcoes.prg
+Status.Prg
+
+#Lista de Arquivos incluidos como [outros]
