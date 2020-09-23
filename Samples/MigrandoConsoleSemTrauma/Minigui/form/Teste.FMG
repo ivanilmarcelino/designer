@@ -1,0 +1,112 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.083 RELEASE CANDIDATE (RC) 200921 1743"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 3)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 23/09/2020-11:17:26 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Minigui
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Teste}
+*{Modulo:Teste.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 198, 307 WIDTH 408 HEIGHT 239  TITLE "" CHILD
+
+    DEFINE LABEL oLabel1
+        COL 15
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 26
+        VALUE "Rotina:"
+        WIDTH 100
+    END LABEL
+
+    DEFINE TEXTBOX oRotina
+        COL 119
+        HEIGHT 20
+        ROW 26
+        WIDTH 220
+    END TEXTBOX
+
+    DEFINE LABEL oLabel2
+        COL 15
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 51
+        VALUE "Usuário:"
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel3
+        COL 15
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 80
+        VALUE "Senha:"
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel4
+        COL 15
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 109
+        VALUE "Mensagem:"
+        WIDTH 100
+    END LABEL
+
+    DEFINE TEXTBOX oUsuario
+        COL 119
+        HEIGHT 20
+        ROW 51
+        WIDTH 220
+    END TEXTBOX
+
+    DEFINE TEXTBOX oSenha
+        COL 119
+        HEIGHT 20
+        ROW 80
+        WIDTH 220
+    END TEXTBOX
+
+    DEFINE TEXTBOX oMensagem
+        COL 119
+        HEIGHT 20
+        ROW 109
+        WIDTH 220
+    END TEXTBOX
+
+    DEFINE BUTTON oButton1
+        ACTION (Teste_oButton1_Action())
+        CAPTION "&oButton1"
+        COL 155
+        HEIGHT 26
+        ROW 160
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+    DEFINE FRAME oFrame1
+        CAPTION "Parâmetros"
+        COL 41
+        HEIGHT 145
+        ROW 1
+        WIDTH 313
+    END FRAME
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

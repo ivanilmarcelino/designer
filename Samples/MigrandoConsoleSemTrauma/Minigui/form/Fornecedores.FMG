@@ -1,0 +1,799 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.083 RELEASE CANDIDATE (RC) 200921 1743"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 3)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 23/09/2020-13:13:15 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Minigui
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Fornecedores}
+*{Modulo:Fornecedores.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 187, 319 WIDTH 598 HEIGHT 485  TITLE "" MODAL
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "Minigui_edit_close" ADJUST  TOOLTIP "Fechar o Formulário" SEPARATOR  AUTOSIZE 
+        BUTTON oBtnNovo PICTURE "Minigui_edit_new" ADJUST  TOOLTIP "Incluir um novo Registro"
+        BUTTON oBtnEdit PICTURE "Minigui_edit_edit" ADJUST  TOOLTIP "Editar o Registro atual"
+        BUTTON oBtnSave PICTURE "Minigui_edit_ok" ADJUST  TOOLTIP "Salva inclusão/alteração do Registro" SEPARATOR 
+        BUTTON oBtnExclui PICTURE "Minigui_edit_del" ADJUST  TOOLTIP "Exclui o Registro atual" SEPARATOR 
+        BUTTON oBtnPesquisa PICTURE "Minigui_edit_find" ADJUST  TOOLTIP "Realiza uma pesquisa"
+        BUTTON oBtnRelatorio PICTURE "Minigui_edit_print" ADJUST  TOOLTIP "Relatório"
+    END TOOLBAR
+    DEFINE TAB Tab1 AT 50,10 WIDTH 563 HEIGHT 395 VALUE 1 NOTABSTOP 
+        PAGE  [CADFOR] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 364
+                ROW 25
+                WIDTH 551
+            END FRAME
+
+            DEFINE LABEL lbl_Ccli
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Ccli :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Ccli
+                COL 70
+                FIELD "&(cAlias)->CCLI"
+                HEIGHT 18
+                MAXLENGTH 5
+                ROW 35
+                WIDTH 41
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nome
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Nome :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Nome
+                COL 70
+                FIELD "&(cAlias)->NOME"
+                HEIGHT 18
+                MAXLENGTH 60
+                ROW 58
+                WIDTH 481
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Ende
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Ende :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Ende
+                COL 70
+                FIELD "&(cAlias)->ENDE"
+                HEIGHT 18
+                MAXLENGTH 40
+                ROW 81
+                WIDTH 321
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Bair
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 104
+                VALUE "Bair :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Bair
+                COL 70
+                FIELD "&(cAlias)->BAIR"
+                HEIGHT 18
+                MAXLENGTH 15
+                ROW 104
+                WIDTH 121
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cida
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 127
+                VALUE "Cida :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cida
+                COL 70
+                FIELD "&(cAlias)->CIDA"
+                HEIGHT 18
+                MAXLENGTH 20
+                ROW 127
+                WIDTH 161
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Esta
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 150
+                VALUE "Esta :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Esta
+                COL 70
+                FIELD "&(cAlias)->ESTA"
+                HEIGHT 18
+                MAXLENGTH 2
+                ROW 150
+                WIDTH 20
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cep
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 173
+                VALUE "Cep :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cep
+                COL 70
+                FIELD "&(cAlias)->CEP"
+                HEIGHT 18
+                MAXLENGTH 9
+                ROW 173
+                WIDTH 73
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Tele1
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 196
+                VALUE "Tele1 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Tele1
+                COL 70
+                FIELD "&(cAlias)->TELE1"
+                HEIGHT 18
+                MAXLENGTH 15
+                ROW 196
+                WIDTH 121
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Tele2
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 219
+                VALUE "Tele2 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Tele2
+                COL 70
+                FIELD "&(cAlias)->TELE2"
+                HEIGHT 18
+                MAXLENGTH 15
+                ROW 219
+                WIDTH 121
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Insc
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 242
+                VALUE "Insc :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Insc
+                COL 70
+                FIELD "&(cAlias)->INSC"
+                HEIGHT 18
+                MAXLENGTH 15
+                ROW 242
+                WIDTH 121
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cgc
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 265
+                VALUE "Cgc :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cgc
+                COL 70
+                FIELD "&(cAlias)->CGC"
+                HEIGHT 18
+                MAXLENGTH 18
+                ROW 265
+                WIDTH 145
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Resp
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 288
+                VALUE "Resp :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Resp
+                COL 70
+                FIELD "&(cAlias)->RESP"
+                HEIGHT 18
+                MAXLENGTH 25
+                ROW 288
+                WIDTH 201
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Dev
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 311
+                VALUE "Dev :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Dev
+                COL 70
+                FIELD "&(cAlias)->DEV"
+                HEIGHT 18
+                MAXLENGTH 12
+                NUMERIC TRUE
+                ROW 311
+                WIDTH 97
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Categ
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 334
+                VALUE "Categ :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Categ
+                COL 70
+                FIELD "&(cAlias)->CATEG"
+                HEIGHT 18
+                MAXLENGTH 10
+                ROW 334
+                WIDTH 81
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cxpos
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 357
+                VALUE "Cxpos :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cxpos
+                COL 70
+                FIELD "&(cAlias)->CXPOS"
+                HEIGHT 18
+                MAXLENGTH 6
+                ROW 357
+                WIDTH 49
+            END TEXTBOX
+
+        END PAGE 
+
+        PAGE  [CADFOR] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm2
+                COL 5
+                HEIGHT 364
+                ROW 25
+                WIDTH 551
+            END FRAME
+
+            DEFINE LABEL lbl_Telex
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Telex :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Telex
+                COL 70
+                FIELD "&(cAlias)->TELEX"
+                HEIGHT 18
+                MAXLENGTH 15
+                ROW 35
+                WIDTH 121
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Endev
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Endev :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Endev
+                COL 70
+                FIELD "&(cAlias)->ENDEV"
+                HEIGHT 18
+                MAXLENGTH 35
+                ROW 58
+                WIDTH 281
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Bairv
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Bairv :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Bairv
+                COL 70
+                FIELD "&(cAlias)->BAIRV"
+                HEIGHT 18
+                MAXLENGTH 15
+                ROW 81
+                WIDTH 121
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cidav
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 104
+                VALUE "Cidav :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cidav
+                COL 70
+                FIELD "&(cAlias)->CIDAV"
+                HEIGHT 18
+                MAXLENGTH 20
+                ROW 104
+                WIDTH 161
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Estav
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 127
+                VALUE "Estav :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Estav
+                COL 70
+                FIELD "&(cAlias)->ESTAV"
+                HEIGHT 18
+                MAXLENGTH 2
+                ROW 127
+                WIDTH 20
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cepv
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 150
+                VALUE "Cepv :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cepv
+                COL 70
+                FIELD "&(cAlias)->CEPV"
+                HEIGHT 18
+                MAXLENGTH 9
+                ROW 150
+                WIDTH 73
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cxposv
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 173
+                VALUE "Cxposv :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cxposv
+                COL 70
+                FIELD "&(cAlias)->CXPOSV"
+                HEIGHT 18
+                MAXLENGTH 6
+                ROW 173
+                WIDTH 49
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Email
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 196
+                VALUE "Email :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Email
+                COL 70
+                FIELD "&(cAlias)->EMAIL"
+                HEIGHT 18
+                MAXLENGTH 60
+                ROW 196
+                WIDTH 481
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Copia
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 219
+                VALUE "Copia :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Copia
+                COL 70
+                FIELD "&(cAlias)->COPIA"
+                HEIGHT 18
+                MAXLENGTH 1
+                ROW 219
+                WIDTH 20
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Temp1
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 242
+                VALUE "Temp1 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Temp1
+                COL 70
+                FIELD "&(cAlias)->TEMP1"
+                HEIGHT 18
+                MAXLENGTH 10
+                NUMERIC TRUE
+                ROW 242
+                WIDTH 81
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Temp2
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 265
+                VALUE "Temp2 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Temp2
+                COL 70
+                FIELD "&(cAlias)->TEMP2"
+                HEIGHT 18
+                MAXLENGTH 10
+                NUMERIC TRUE
+                ROW 265
+                WIDTH 81
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Temp3
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 288
+                VALUE "Temp3 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Temp3
+                COL 70
+                FIELD "&(cAlias)->TEMP3"
+                HEIGHT 18
+                MAXLENGTH 10
+                NUMERIC TRUE
+                ROW 288
+                WIDTH 81
+            END TEXTBOX
+
+        END PAGE 
+
+        PAGE  [CADFOR] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm3
+                COL 5
+                HEIGHT 364
+                ROW 25
+                WIDTH 551
+            END FRAME
+
+            DEFINE LABEL lbl_Codhip
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Codhip :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Codhip
+                COL 70
+                FIELD "&(cAlias)->CODHIP"
+                HEIGHT 18
+                MAXLENGTH 8
+                NUMERIC TRUE
+                ROW 35
+                WIDTH 65
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Opehip
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Opehip :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Opehip
+                COL 70
+                FIELD "&(cAlias)->OPEHIP"
+                HEIGHT 18
+                MAXLENGTH 1
+                ROW 58
+                WIDTH 20
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Cidacod
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Cidacod :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Cidacod
+                COL 70
+                FIELD "&(cAlias)->CIDACOD"
+                HEIGHT 18
+                MAXLENGTH 8
+                NUMERIC TRUE
+                ROW 81
+                WIDTH 65
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Endenum
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 104
+                VALUE "Endenum :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Endenum
+                COL 70
+                FIELD "&(cAlias)->ENDENUM"
+                HEIGHT 18
+                MAXLENGTH 7
+                ROW 104
+                WIDTH 57
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Endecom
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 127
+                VALUE "Endecom :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Endecom
+                COL 70
+                FIELD "&(cAlias)->ENDECOM"
+                HEIGHT 18
+                MAXLENGTH 40
+                ROW 127
+                WIDTH 321
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Endebai
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 150
+                VALUE "Endebai :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Endebai
+                COL 70
+                FIELD "&(cAlias)->ENDEBAI"
+                HEIGHT 18
+                MAXLENGTH 30
+                ROW 150
+                WIDTH 241
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Ccdma
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 173
+                VALUE "Ccdma :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Ccdma
+                COL 70
+                FIELD "&(cAlias)->CCDMA"
+                HEIGHT 18
+                MAXLENGTH 5
+                ROW 173
+                WIDTH 41
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Ccdf1
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 196
+                VALUE "Ccdf1 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Ccdf1
+                COL 70
+                FIELD "&(cAlias)->CCDF1"
+                HEIGHT 18
+                MAXLENGTH 5
+                ROW 196
+                WIDTH 41
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Ccdf2
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 219
+                VALUE "Ccdf2 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Ccdf2
+                COL 70
+                FIELD "&(cAlias)->CCDF2"
+                HEIGHT 18
+                MAXLENGTH 5
+                ROW 219
+                WIDTH 41
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Flexys
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 242
+                VALUE "Flexys :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Flexys
+                COL 70
+                FIELD "&(cAlias)->FLEXYS"
+                HEIGHT 18
+                MAXLENGTH 5
+                NUMERIC TRUE
+                ROW 242
+                WIDTH 41
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Transf
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 265
+                VALUE "Transf :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Transf
+                COL 70
+                FIELD "&(cAlias)->TRANSF"
+                HEIGHT 18
+                MAXLENGTH 1
+                ROW 265
+                WIDTH 20
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Copia1
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 288
+                VALUE "Copia1 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Copia1
+                COL 70
+                FIELD "&(cAlias)->COPIA1"
+                HEIGHT 18
+                MAXLENGTH 1
+                ROW 288
+                WIDTH 20
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Copia2
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 311
+                VALUE "Copia2 :"
+                WIDTH 52
+            END LABEL
+
+            DEFINE TEXTBOX Copia2
+                COL 70
+                FIELD "&(cAlias)->COPIA2"
+                HEIGHT 18
+                MAXLENGTH 1
+                ROW 311
+                WIDTH 20
+            END TEXTBOX
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
