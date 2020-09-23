@@ -1,0 +1,348 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.083 RELEASE CANDIDATE (RC) 200921 1743"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 3)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 22/09/2020-16:53:38 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Financeiro
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:Financeiro.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 185, 317 WIDTH 650 HEIGHT 480  MINWIDTH 640.00 MINHEIGHT 480.00 TITLE "SISTEMA" ICON "icone01" MAIN ON INIT (Main_Oninit()) ON INTERACTIVECLOSE (Main_Oninteractiveclose()) ON SIZE (Main_Onsize()) ON MAXIMIZE (Main_Onmaximize()) BACKCOLOR { 128 , 128 , 128 } FONT 'Arial' SIZE 10
+
+    DEFINE MAIN MENU
+       DEFINE MENU POPUP "&Sistema" NAME Form_0nMenu1
+          MENUITEM "Contas à &Pagar" NAME Mn_Pagar
+          MENUITEM "Contas à Receber" NAME Mn_Receber
+          SEPARATOR
+          MENUITEM "&Clientes" NAME Mn_Clientes
+          MENUITEM "&Fornecedores" NAME Mn_Fornecedores
+          SEPARATOR
+          DEFINE MENU POPUP "&Tabelas de Apoio" NAME Form_0nMenu2
+             MENUITEM "Contas &Financeiras" NAME Mn_Contas
+             MENUITEM "&Grupos de Contas" NAME Mn_Grupos
+             MENUITEM "&Centros de Custos" NAME Mn_Custos
+          END POPUP
+          SEPARATOR
+          DEFINE MENU POPUP "&Usuários" NAME Form_0nMenu3
+             MENUITEM "Cadastros dos &Usuários" NAME Mn_Usuarios
+             SEPARATOR
+             MENUITEM "&Altera Senha Usuário Atual" NAME Mn_Altera_Senha
+          END POPUP
+          SEPARATOR
+          MENUITEM "&Troca Usuário" NAME Form_0nMenu4
+          SEPARATOR
+          DEFINE MENU POPUP "&Utilitários e Configurações" NAME Form_0nMenu5
+             SEPARATOR
+             MENUITEM "&Altera Senha Usuário Atual" NAME Mn_Altera_Senhax
+          END POPUP
+          SEPARATOR
+          MENUITEM "&Sair" NAME Form_0nMenu6
+       END POPUP
+       DEFINE MENU POPUP "&Help" NAME Form_0nMenu7
+          MENUITEM "&About" NAME Form_0nMenu8
+          MENUITEM "Status Usuário" ACTION (Main_oNMenu_MAIN_Main1_Action()) NAME oNMenu_MAIN_Main1
+       END POPUP
+    END MENU
+
+    DEFINE CONTEXT MENU
+        MENUITEM "Contas à &Pagar" NAME Form_0nMenu9
+        MENUITEM "Contas à &Receber" NAME Form_0nMenu10
+        SEPARATOR
+        MENUITEM "&Clientes" NAME Form_0nMenu11
+        MENUITEM "&Fornecedores" NAME Form_0nMenu12
+        SEPARATOR
+        MENUITEM "Contas &Financeiras" NAME Form_0nMenu13
+        MENUITEM "&Grupos de Contas" NAME Form_0nMenu14
+        MENUITEM "&Centros de Custos" NAME Form_0nMenu15
+        SEPARATOR
+        MENUITEM "Alterar &Usuário Ativo" NAME Form_0nMenu16
+        MENUITEM "Alterar &Senha" NAME Form_0nMenu17
+        SEPARATOR
+        MENUITEM "Sair" NAME Form_0nMenu18
+    END MENU
+
+    DEFINE BUTTON Bt_Clientes
+        COL 5
+        HEIGHT 27
+        PICTURE "clientes"
+        ROW 4
+        TOOLTIP "Cadastro dos Cientes"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Fornecedores
+        COL 45
+        HEIGHT 27
+        PICTURE "forneced"
+        ROW 4
+        TOOLTIP "Cadastro dos Fornecedores"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Pagar
+        COL 85
+        HEIGHT 27
+        PICTURE "Pagar"
+        ROW 4
+        TOOLTIP "Arquivo de Contas à Pagar"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Receber
+        COL 125
+        HEIGHT 27
+        PICTURE "Receber"
+        ROW 4
+        TOOLTIP "Arquivo de Contas à Receber"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Tabelas_Grupos
+        COL 165
+        HEIGHT 27
+        PICTURE "grupos"
+        ROW 4
+        TOOLTIP "Cadastro dos Grupos de Contas"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Tabelas_Contas
+        COL 205
+        HEIGHT 27
+        PICTURE "Tipos"
+        ROW 4
+        TOOLTIP "Cadastro das Contas Financeiras"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Tabelas_Custos
+        COL 245
+        HEIGHT 27
+        PICTURE "custos"
+        ROW 4
+        TOOLTIP "Cadastro dos Centros de Custo"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Acesso
+        COL 510
+        HEIGHT 27
+        PICTURE "acesso"
+        ROW 4
+        TOOLTIP "Trocar Usuário Ativo"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Sair
+        COL 550
+        HEIGHT 27
+        PICTURE "Sair"
+        ROW 4
+        TOOLTIP "Sair do Sistema"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE BUTTON Bt_Help
+        COL 590
+        HEIGHT 27
+        PICTURE "help"
+        ROW 4
+        TOOLTIP "Sobre o Sistema"
+        WIDTH 40
+    END BUTTON
+
+    DEFINE LABEL LB_Harbour
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 210
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 245
+        VALUE "Projeto Harbour:"
+        WIDTH 141
+    END LABEL
+
+    DEFINE HYPERLINK HL_harbour
+        ADDRESS "http://www.harbour-project.org/"
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 360
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        ROW 245
+        TOOLTIP "Site oficial do Projeto Harbour"
+        VALUE "http://www.harbour-project.org"
+        WIDTH 256
+    END HYPERLINK
+
+    DEFINE LABEL LB_MiniGUi
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 210
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 265
+        VALUE "Minigui - Site Oficial:"
+        WIDTH 141
+    END LABEL
+
+    DEFINE HYPERLINK HL_MiniGUI
+        ADDRESS "http://www.geocities.com/harbourminigui"
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 360
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        ROW 265
+        TOOLTIP "Site oficial MiniGUI"
+        VALUE "www.geocites.com/harbourminigui"
+        WIDTH 256
+    END HYPERLINK
+
+    DEFINE LABEL LB_MiniGUIBrasil
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 210
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 285
+        VALUE "Minigui Brasil:"
+        WIDTH 141
+    END LABEL
+
+    DEFINE HYPERLINK HL_MiniGUIBrasil
+        ADDRESS "http://www.geocities.com/harbourminas"
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 360
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        ROW 285
+        TOOLTIP "Página MiniGUI Brasil"
+        VALUE "www.geocites.com/harbourminas"
+        WIDTH 256
+    END HYPERLINK
+
+    DEFINE LABEL LB_Forum1
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 210
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 305
+        VALUE "Fórum Harbour / MiniGUI"
+        WIDTH 141
+    END LABEL
+
+    DEFINE HYPERLINK HL_Forum1
+        ADDRESS "http://groups.yahoo.com/group/harbourminigui/"
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 360
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        ROW 305
+        TOOLTIP "Fórum de discussão Harbour / MiniGUI"
+        VALUE "http://groups.yahoo.com/group/harbourminigui/"
+        WIDTH 256
+    END HYPERLINK
+
+    DEFINE LABEL LB_Forum2
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 210
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 325
+        VALUE "Fórum MiniGUI Brasil"
+        WIDTH 141
+    END LABEL
+
+    DEFINE HYPERLINK HL_Forum2
+        ADDRESS "http://groups.yahoo.com/group/miniguibrasil/"
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 360
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        ROW 325
+        TOOLTIP "Fórum de discussão Harbour / MiniGUI Brasil"
+        VALUE "http://groups.yahoo.com/group/miniguibrasil/"
+        WIDTH 256
+    END HYPERLINK
+
+    DEFINE LABEL LB_Guides1
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 210
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 345
+        VALUE "MiniGUI Visual Designers"
+        WIDTH 141
+    END LABEL
+
+    DEFINE HYPERLINK HL_Guides2
+        ADDRESS "http://www.geocities.com/harbour_links/"
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 360
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HEIGHT 24
+        ROW 345
+        TOOLTIP "MiniGUI Visual Designers"
+        VALUE "http://www.geocities.com/harbour_links/"
+        WIDTH 256
+    END HYPERLINK
+
+    DEFINE LABEL Label_Mensagens
+        BACKCOLOR { 128 , 128 , 128 }
+        COL 10
+        FONTBOLD TRUE
+        FONTCOLOR { 255 , 255 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 8
+        HEIGHT 25
+        ROW 370
+        VALUE "Linha Livre para Mensagens do Sistema"
+        WIDTH 550
+    END LABEL
+
+    DEFINE STATUSBAR FONT "Verdana" SIZE 7
+        STATUSITEM "Base de Dados:" WIDTH 150 
+        STATUSITEM "Status: SERVIDOR" WIDTH 115 
+        STATUSITEM "Usuário:" WIDTH 100 
+        STATUSITEM "Rede: IMA2018" WIDTH 150 
+        CLOCK
+    END STATUSBAR
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
