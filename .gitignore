@@ -10,6 +10,7 @@ Dados.ntx
 *.EXE
 *.HBC
 *.HPB
+*.HBP
 *.RC
 log*.TXT
 *.HTM
