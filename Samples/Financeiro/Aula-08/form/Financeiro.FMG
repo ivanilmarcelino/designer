@@ -7,7 +7,7 @@
     Compilador : MinGW GNU C 10.2 (32-bit)
     ----------------------------------------------------------------------------------------------
     SOBRE ESTE CÓDIGO GERADO:
-    Última alteração : 28/09/2020-19:52:08 Máquina: IMA2018 Usuário:ivani
+    Última alteração : 28/09/2020-21:16:51 Máquina: IMA2018 Usuário:ivani
     Código do formulário ajustado
     ----------------------------------------------------------------------------------------------
     Projeto : Financeiro
@@ -59,7 +59,7 @@ DEFINE WINDOW TEMPLATE AT 185, 317 WIDTH 650 HEIGHT 480  MINWIDTH 640.00 MINHEIG
     END MENU
 
      DEFINE SPLITBOX
-       DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  40, 40 FONT 'Arial' SIZE   7 FLAT 
+       DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  40, 40 FONT 'Arial' SIZE   7 FLAT  MIXEDBUTTONS 
            BUTTON Bt_Clientes PICTURE "clientes" TOOLTIP "Cadastro dos Cientes" ACTION (Pesquisa_CliForn("C"))
            BUTTON Bt_Fornecedores PICTURE "forneced" TOOLTIP "Cadastro dos Fornecedores" ACTION (Pesquisa_CliForn("F"))
            BUTTON Bt_Pagar PICTURE "Pagar" TOOLTIP "Arquivo de Contas à Pagar" ACTION (LoadFrmPesquisapagrec("P"))
@@ -70,7 +70,7 @@ DEFINE WINDOW TEMPLATE AT 185, 317 WIDTH 650 HEIGHT 480  MINWIDTH 640.00 MINHEIG
        END TOOLBAR
        DEFINE TOOLBAREX Toolbar_2 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
        END TOOLBAR
-       DEFINE TOOLBAREX Toolbar_3 BUTTONSIZE  44, 27 FONT 'Arial' SIZE   7 FLAT 
+       DEFINE TOOLBAREX Toolbar_3 BUTTONSIZE  40, 40 FONT 'Arial' SIZE   7 FLAT 
            BUTTON Bt_Acesso PICTURE "acesso" TOOLTIP "Trocar Usuário Ativo" ACTION (LoadFrmAcesso())
            BUTTON Bt_Sair PICTURE "Sair" TOOLTIP "Sair do Sistema" ACTION (ConfirmaSaida())
            BUTTON Bt_Help PICTURE "help" TOOLTIP "Sobre o Sistema"
