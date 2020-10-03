@@ -46,6 +46,11 @@ Double-click on the resulting Designer_% Ano% Mes% Dia% .EXE and point to an app
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
 
 e-mail: ivanil.marcelino@yahoo.com.br
+
+#
+## Pilha e Desempilha, Formulários Child estão te deixando louco ?;
+[![banner](https://github.com/ivanilmarcelino/designer/blob/master/Image/pilha.png)](https://www.youtube.com/watch?v=oSkQ4wDyW2g)
+
 #
 ## Migrando de Console para Gráfico sem traumas;
 [![banner](https://github.com/ivanilmarcelino/designer/blob/master/Image/telaPreta.jpg)](https://www.youtube.com/watch?v=9r-ysSF67us)
