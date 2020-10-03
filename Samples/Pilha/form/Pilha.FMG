@@ -1,0 +1,41 @@
+
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+
+
+DEFINE WINDOW TEMPLATE AT 146, 592 WIDTH 412 HEIGHT 131  TITLE "" MAIN
+
+    DEFINE BUTTON oForm1
+        CAPTION "Form 1"
+        COL 54
+        HEIGHT 26
+        ROW 24
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+    DEFINE BUTTON oForm2
+        CAPTION "Form 2"
+        COL 155
+        HEIGHT 26
+        ROW 24
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+    DEFINE BUTTON oForm3
+        CAPTION "Form 3"
+        COL 256
+        HEIGHT 26
+        ROW 24
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+END WINDOW
+
+
+

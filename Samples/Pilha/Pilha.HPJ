@@ -1,0 +1,64 @@
+[PROJETO]
+Main=Pilha.prg
+TipoProjeto=1
+nomeprojeto=Pilha
+database=
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=00  ,00  ,00  ,00
+internalname=Pilha.Exe
+legalcopyright=Copyright © 2020
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALFA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=PORTUGUESE
+setcodepage=PORTUGUESE
+setdate=french
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=9
+fontboldMenu=FALSE
+Run=
+[FORMULARIOS]
+Frm0001=%PROJETO%\Form\Detalhe.FMG
+Frm0002=%PROJETO%\Form\pesquisa.FMG
+Frm0003=%PROJETO%\form\Pilha.FMG
+
+[MODULOS]
+MOD0001=%PROJETO%\Pilha.PRG
+
+[RESOURCES]
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]

@@ -1,0 +1,54 @@
+
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+
+DEFINE WINDOW TEMPLATE AT 165, 341 WIDTH 406 HEIGHT 196  TITLE "" CHILD noShow
+
+    DEFINE LABEL oLabel1
+        COL 24
+        HEIGHT 20
+        ROW 24
+        VALUE "Cod"
+        VCENTERALIGN TRUE
+        WIDTH 60
+    END LABEL
+
+    DEFINE LABEL oLabel2
+        COL 24
+        HEIGHT 20
+        ROW 56
+        VALUE "Descricao"
+        VCENTERALIGN TRUE
+        WIDTH 60
+    END LABEL
+
+    DEFINE TEXTBOX oCod
+        COL 89
+        HEIGHT 20
+        ROW 23
+        WIDTH 284
+    END TEXTBOX
+
+    DEFINE TEXTBOX odescricao
+        COL 89
+        HEIGHT 20
+        ROW 58
+        WIDTH 284
+    END TEXTBOX
+
+    DEFINE BUTTON oButton1
+        CAPTION "Close"
+        Action ThisWindow.Hide()
+        COL 134
+        HEIGHT 26
+        ROW 101
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+END WINDOW
+
+

@@ -1,0 +1,48 @@
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+
+
+DEFINE WINDOW TEMPLATE AT 164, 341 WIDTH 417 HEIGHT 392  TITLE "" CHILD
+
+    DEFINE GRID oGrid
+        COL 11
+        HEADERS { "Cod","Desc" }
+        HEIGHT 254
+        ONHEADCLICK ({ {||.T.} , {||.T.} })
+        ROW 8
+        SHOWHEADERS TRUE
+        WIDTH 370
+        WIDTHS { 80,200 }
+    END GRID
+
+    DEFINE BUTTON oEdit
+        CAPTION "Edit"
+        COL 91
+        HEIGHT 26
+        ROW 306
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+    DEFINE BUTTON oNew
+        CAPTION "New"
+        COL 192
+        HEIGHT 26
+        ROW 306
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+    DEFINE TEXTBOX oText
+        COL 15
+        HEIGHT 27
+        ROW 269
+        WIDTH 367
+    END TEXTBOX
+
+END WINDOW
+
+
