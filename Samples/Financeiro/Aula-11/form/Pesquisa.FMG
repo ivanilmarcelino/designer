@@ -1,0 +1,102 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.084 RELEASE CANDIDATE (RC) 200924 0918"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 4)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 04/10/2020-16:31:18 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Financeiro
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Pesquisa}
+
+
+DEFINE WINDOW TEMPLATE AT 184, 314 WIDTH 425 HEIGHT 460  TITLE "" CHILD NOSIZE
+
+    DEFINE GRID Grid
+        COL 10
+        HEADERIMAGE {"","",""}
+        HEADERS { "Código" , "Descrição" , "Update" }
+        HEIGHT 329
+        JUSTIFY { 1 , 0 , 0 }
+        ONHEADCLICK ({{||Nil},{||Nil},{||Nil}})
+        ROW 10
+        VALUE 1
+        WIDTH 400
+        WIDTHS { 60 , 333 , 0 }
+    END GRID
+
+    DEFINE LABEL Label_Pesq_Generic
+        COL 11
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 353
+        VALUE "Pesquisa"
+        WIDTH 70
+    END LABEL
+
+    DEFINE TEXTBOX TxtPesquisa
+        COL 85
+        HEIGHT 24
+        MAXLENGTH 40
+        ROW 353
+        TOOLTIP "Digite a Descrição para Pesquisa"
+        UPPERCASE TRUE
+        WIDTH 326
+    END TEXTBOX
+
+    DEFINE BUTTONEX Novo
+        CAPTION "&Novo"
+        COL 5
+        FLAT TRUE
+        HEIGHT 34
+        PICTURE "Minigui_edit_new"
+        ROW 387
+        WIDTH 100
+    END BUTTONEX
+
+    DEFINE BUTTONEX Editar
+        CAPTION "&Editar"
+        COL 104
+        FLAT TRUE
+        HEIGHT 34
+        PICTURE "Minigui_edit_edit"
+        ROW 387
+        WIDTH 100
+    END BUTTONEX
+
+    DEFINE BUTTONEX Excluir
+        CAPTION "E&xcluir"
+        COL 209
+        FLAT TRUE
+        HEIGHT 34
+        PICTURE "Minigui_edit_del"
+        ROW 387
+        WIDTH 100
+    END BUTTONEX
+
+    DEFINE BUTTONEX Sair
+        ACTION (ThisWindow.Release())
+        CAPTION "&Sair"
+        COL 314
+        FLAT TRUE
+        HEIGHT 34
+        PICTURE "Minigui_edit_undo"
+        ROW 387
+        WIDTH 100
+    END BUTTONEX
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

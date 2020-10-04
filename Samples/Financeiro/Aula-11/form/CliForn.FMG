@@ -1,0 +1,412 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.084 RELEASE CANDIDATE (RC) 200924 0918"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 4)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 04/10/2020-16:28:40 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Financeiro
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:FrmCliForn}
+*{Modulo:CliForn.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 159, 360 WIDTH 461 HEIGHT 479  TITLE "" CHILD NOSHOW NOMINIMIZE NOMAXIMIZE NOSIZE ON INIT (FrmCliForn_Oninit(FrmCliForn))
+
+    DEFINE FRAME Dados_01
+        COL 0
+        HEIGHT 191
+        ROW 1
+        WIDTH 451
+    END FRAME
+
+    DEFINE LABEL Lb_Codigo
+        COL 10
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 20
+        VALUE "Código"
+        VCENTERALIGN TRUE
+        WIDTH 76
+    END LABEL
+
+    DEFINE TEXTBOX TxtCodigo
+        COL 90
+        HEIGHT 25
+        ROW 20
+        WIDTH 60
+    END TEXTBOX
+
+    DEFINE CHECKBOX Pessoa_Juridica
+        CAPTION "Jurídica"
+        COL 175
+        HEIGHT 25
+        ROW 20
+        WIDTH 63
+    END CHECKBOX
+
+    DEFINE LABEL Lb_CGC_CPF
+        COL 256
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 20
+        VALUE "CGC/CPF"
+        VCENTERALIGN TRUE
+        WIDTH 60
+    END LABEL
+
+    DEFINE TEXTBOX TxtCGC_CPF
+        COL 320
+        HEIGHT 25
+        MAXLENGTH 20
+        ONENTER (&(FrmCliForn).TxtNOME.SetFocus)
+        ONLOSTFOCUS (CliForn_TxtCGC_CPF_Onlostfocus(FrmCliForn))
+        ROW 20
+        TOOLTIP "Digite o CGC ou CPF"
+        WIDTH 120
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Nome
+        COL 10
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 69
+        VALUE "Nome"
+        VCENTERALIGN TRUE
+        WIDTH 76
+    END LABEL
+
+    DEFINE TEXTBOX TxtNOME
+        COL 90
+        HEIGHT 25
+        MAXLENGTH 100.00
+        ONENTER (Iif( Empty( &(FrmCliForn).TxtNOME.Value ) ,  &(FrmCliForn).TxtNOME.SetFocus , &(FrmCliForn).TxtENDERECO.SetFocus ))
+        ROW 69
+        TOOLTIP "Digite o Nome"
+        UPPERCASE TRUE
+        WIDTH 350
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Endereco
+        COL 10
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 99
+        VALUE "Endereço"
+        VCENTERALIGN TRUE
+        WIDTH 76
+    END LABEL
+
+    DEFINE TEXTBOX TxtENDERECO
+        COL 90
+        HEIGHT 25
+        MAXLENGTH 80.00
+        ONENTER (&(FrmCliForn).TxtBAIRRO.SetFocus)
+        ROW 99
+        TOOLTIP "Digite o Endereço"
+        UPPERCASE TRUE
+        WIDTH 350
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Bairro
+        COL 10
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 129
+        VALUE "Bairro"
+        VCENTERALIGN TRUE
+        WIDTH 76
+    END LABEL
+
+    DEFINE TEXTBOX TxtBAIRRO
+        COL 90
+        HEIGHT 25
+        MAXLENGTH 60.00
+        ONENTER (&(FrmCliForn).TxtCEP.SetFocus)
+        ROW 129
+        TOOLTIP "Digite o Bairro"
+        UPPERCASE TRUE
+        WIDTH 180
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Cep
+        COL 281
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 129
+        VALUE "CEP"
+        VCENTERALIGN TRUE
+        WIDTH 46
+    END LABEL
+
+    DEFINE TEXTBOX TxtCEP
+        COL 330
+        HEIGHT 24
+        INPUTMASK "99.999-999"
+        ROW 129
+        VALUE ' 00.000-000'
+        WIDTH 79
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Cidade
+        COL 10
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 159
+        VALUE "Cidade"
+        VCENTERALIGN TRUE
+        WIDTH 76
+    END LABEL
+
+    DEFINE TEXTBOX TxtCIDADE
+        COL 90
+        HEIGHT 25
+        MAXLENGTH 80.00
+        ONENTER (&(FrmCliForn).TxtESTADO.SetFocus)
+        ROW 159
+        TOOLTIP "Digite a Cidade"
+        UPPERCASE TRUE
+        WIDTH 180
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Estado
+        COL 281
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 159
+        VALUE "Estado"
+        VCENTERALIGN TRUE
+        WIDTH 46
+    END LABEL
+
+    DEFINE COMBOBOX TxtESTADO
+        AUTOCOMPLETE TRUE
+        COL 330
+        DISPLAYEDIT TRUE
+        HEIGHT 300
+        LISTWIDTH 230.00
+        ONENTER (&(FrmCliForn).TxtDDD.SetFocus)
+        ROW 159
+        TOOLTIP "Digite o Estado"
+        UPPERCASE TRUE
+        VALUE 0
+        WIDTH 110
+    END COMBOBOX
+
+    DEFINE FRAME Dados_02
+        CAPTION "Telefones"
+        COL 0
+        HEIGHT 60
+        ROW 196
+        WIDTH 450
+    END FRAME
+
+    DEFINE LABEL Lb_DDD
+        COL 21
+        HEIGHT 25
+        RIGHTALIGN TRUE
+        ROW 216
+        VALUE "DDD"
+        VCENTERALIGN TRUE
+        WIDTH 35
+    END LABEL
+
+    DEFINE TEXTBOX TxtDDD
+        COL 60
+        HEIGHT 25
+        MAXLENGTH 4
+        ONENTER (&(FrmCliForn).TxtFONE1.SetFocus)
+        ROW 216
+        TOOLTIP "Digite o DDD"
+        WIDTH 40
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Fone1
+        COL 148
+        HEIGHT 25
+        ROW 216
+        VALUE "Fone #1"
+        VCENTERALIGN TRUE
+        WIDTH 49
+    END LABEL
+
+    DEFINE TEXTBOX TxtFONE1
+        COL 200
+        HEIGHT 25
+        MAXLENGTH 11
+        ONENTER (&(FrmCliForn).TxtFONE2.SetFocus)
+        ROW 216
+        TOOLTIP "Digite o Telefone #1"
+        WIDTH 88
+    END TEXTBOX
+
+    DEFINE LABEL Lb_Fone2
+        COL 298
+        HEIGHT 25
+        ROW 216
+        VALUE "Fone #2"
+        VCENTERALIGN TRUE
+        WIDTH 49
+    END LABEL
+
+    DEFINE TEXTBOX TxtFONE2
+        COL 350
+        HEIGHT 25
+        MAXLENGTH 11
+        ONENTER (&(FrmCliForn).TxtCONTATOS.SetFocus)
+        ROW 216
+        TOOLTIP "Digite o Telefone #2"
+        WIDTH 88
+    END TEXTBOX
+
+    DEFINE FRAME Dados_03
+        CAPTION "Contatos"
+        COL 0
+        HEIGHT 60
+        ROW 260
+        WIDTH 451
+    END FRAME
+
+    DEFINE TEXTBOX TxtCONTATOS
+        COL 10
+        HEIGHT 25
+        MAXLENGTH 50
+        ONENTER (&(FrmCliForn).Bt_Salvar.SetFocus)
+        ROW 280
+        TOOLTIP "Digite Contatos para este Cliente"
+        UPPERCASE TRUE
+        WIDTH 430
+    END TEXTBOX
+
+    DEFINE FRAME Status_01
+        CAPTION "Status"
+        COL 0
+        HEIGHT 65
+        ROW 321
+        WIDTH 450
+    END FRAME
+
+    DEFINE LABEL Lb_DT_CAD
+        CLIENTEDGE TRUE
+        COL 70.00
+        HEIGHT 37
+        ROW 342
+        WIDTH 85.00
+    END LABEL
+
+    DEFINE LABEL Lb_DT_ALT
+        CLIENTEDGE TRUE
+        COL 238.00
+        HEIGHT 37
+        ROW 342
+        WIDTH 85.00
+    END LABEL
+
+    DEFINE LABEL Lb_USUARIO
+        CLIENTEDGE TRUE
+        COL 378.00
+        HEIGHT 37
+        ROW 342
+        WIDTH 60.00
+    END LABEL
+
+    DEFINE BUTTONEX Salvar
+        ACTION (CliForn_Bt_Salvar_Action(FrmPesquisa,FrmCliForn))
+        CAPTION "&Salvar"
+        COL 10
+        HEIGHT 37
+        PICTURE "Minigui_edit_ok"
+        ROW 389
+        WIDTH 100
+    END BUTTONEX
+
+    DEFINE BUTTONEX Excluir
+        ACTION (CliForn_Bt_Excluir_Action(FrmPesquisa))
+        CAPTION "&Excluir"
+        COL 120
+        HEIGHT 37
+        PICTURE "Minigui_edit_del"
+        ROW 389
+        WIDTH 100
+    END BUTTONEX
+
+    DEFINE BUTTONEX Cancelar
+        ACTION (&(FrmCliForn).Hide)
+        CAPTION "&Cancelar"
+        COL 350
+        HEIGHT 37
+        PICTURE "Minigui_edit_undo"
+        ROW 389
+        WIDTH 100
+    END BUTTONEX
+
+    DEFINE CHECKBOX oCliforn
+        CAPTION "Cliente e Fornecedor simultaneamente?"
+        COL 197
+        HEIGHT 18
+        ROW 47
+        WIDTH 241
+    END CHECKBOX
+
+    DEFINE CHECKBOX Status
+        COL 241
+        HEIGHT 18
+        INVISIBLE TRUE
+        ROW 7
+        WIDTH 80
+    END CHECKBOX
+
+    DEFINE BUTTONEX oBuscaCEP
+        ACTION (FrmCliForn_oBuscaCEP_Action(FrmCliForn))
+        COL 409
+        HEIGHT 24
+        PICTURE "Hp_zoom"
+        ROW 129
+        WIDTH 30
+    END BUTTONEX
+
+    DEFINE LABEL oLabel1
+        COL 5
+        HEIGHT 20
+        ROW 342
+        VALUE "Data Cad:"
+        VCENTERALIGN TRUE
+        WIDTH 60.00
+    END LABEL
+
+    DEFINE LABEL oLabel2
+        COL 160.00
+        HEIGHT 20
+        ROW 342
+        VALUE "Últ.Alteração:"
+        VCENTERALIGN TRUE
+        WIDTH 73.00
+    END LABEL
+
+    DEFINE LABEL oLabel3
+        COL 328.00
+        HEIGHT 20
+        ROW 342
+        VALUE "Usuário:"
+        VCENTERALIGN TRUE
+        WIDTH 45.00
+    END LABEL
+
+    DEFINE STATUSBAR FONT "Arial" SIZE 10
+        STATUSITEM "Manutenção no "+&(FrmCliForn).Title 
+    END STATUSBAR
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
