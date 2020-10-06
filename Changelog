@@ -1,4 +1,63 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-06 19:00 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido atribuição propriedades
+    [!] Corrigido dimensão que incluia controle de rolagem horizontal em propriedades
+    [!] Corrigido menu que mantinha desabilita o run de aplicativos compilados ao iniciar o projeto
+    [;] Sincronização designer com minigui v20.08 Update 5
+    [+] Adicionado a Classe THTMLReport Buitin
+        oClass = HBClass():New( "THtmlRel" )
+        oClass:AddData("Sucess",.F.) //Retorna TRUE se concluido com sucesso
+        oClass:AddData("HeaderReport","Report Html Ima Solutions")
+        oClass:AddData("Rs") //Cursor ou Alias 
+        oClass:AddData("Border",1)
+        oClass:AddData("CharSet","ISO-8859-1")  //Charset Padrao
+        oClass:AddData("BackGround","#b3d1ff")
+        oClass:AddData("Align") //Array de alinhamento {0=Esquerda,1=Centro,2,Direita}
+        oClass:AddData("Header") //Array de cabecalho, Default nomes dos campos
+        oClass:AddData("Picture") // Array de Mascara : {"@E 999.00", ...} será passada como parametro de Transform
+        oClass:AddData("Totaliza") //Array de campos que devem totalizados se numericos
+        oClass:AddData("FontName","Arial")
+        oClass:AddData("FontSize",1)
+        oClass:AddData("Reg",0) //Total de Registros processados no relatorio
+        //Cabecalhos
+        oClass:AddData( "Title","") //Cabeçãlho do Relatorio
+        
+        oClass:AddDAta("Footer") //Rodapé do Relatorio
+        
+        oClass:AddData( "File") //Nome do arquivo a ser gerado
+        oClass:AddData( "Title","Report HTML Ima-Solutions")
+        oClass:AddData( "Handle") //Handle do arquivo Uso interno
+        oClass:AddData( "ZipFile","") //Nome do arquivo ZIP Gerado caso seja acionado o metodo Zip
+        
+        oClass:AddMethod( "New",  @New() )  // define this class objects methods
+        oClass:AddMethod( "Report", @Refresh() ) //Consome os dados  do cursor ou dbf
+        oClass:AddMethod( "Show",@Show()) //Mostra na tela o resultado
+        oClass:AddMethod( "Zip",@doZip()) //Gera um ZIP com Resultado
+        oClass:Create()
+
+ 	Exemplo:
+	    Rs:SQL:="Select .... from..."
+            Rs:OPen()
+
+	    if Rs:Eof()
+        	Return .F.
+	    endif
+
+	    oHtml := THtmlReport():New()
+	    oHtml:Rs   := Rs
+	    oHtml:Title := "<h3>"+PesquisaPagRec.Title+"</h3>"+;
+                   "Período de "+Dtoc(PesquisaPagRec.Dp_Data1.Value)+ " à "+Dtoc(PesquisaPagRec.Dp_Data2.Value)+"</br>"
+    	    oHtml:Picture := {,,,,,"@E 999,999.99",}
+	    oHtml:File := PutFile({{"*.HTML","*.HTML"}},"Nome do Arquivo")
+	    oHtml:Header := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
+	    oHtml:Align  := {2,0,0,0,0,2,0}
+	    oHtml:Totaliza:={,,,,,.T.,}
+	    oHTml:Report()
+	    oHtml:Show()
+	    Return .T.
+
+
+
 2020-09-24 09:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [;] Sincronizado designer com Minigui v20.08 Update 4
 
