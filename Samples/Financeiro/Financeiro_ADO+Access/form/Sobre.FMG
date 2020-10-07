@@ -1,0 +1,88 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.085 RELEASE CANDIDATE (RC) 201006 1901"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 5)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 06/10/2020-19:58:38 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Financeiro
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Sobre}
+*{Modulo:Sobre.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 189, 440 WIDTH 477 HEIGHT 489  TITLE "Sobre "+SISTEMA CHILD NOMINIMIZE NOMAXIMIZE NOSIZE
+
+    DEFINE RICHEDITBOX oSobre
+        COL 22
+        HEIGHT 289
+        READONLY TRUE
+        ROW 22
+        WIDTH 434
+    END RICHEDITBOX
+
+    DEFINE BUTTONEX oButtonEX1
+        ACTION (Sobre.Release)
+        CAPTION "&Fechar"
+        COL 196
+        HEIGHT 26
+        PICTURE "Hp_close"
+        ROW 424
+        WIDTH 96
+    END BUTTONEX
+
+    DEFINE LABEL oVersao
+        CENTERALIGN TRUE
+        CLIENTEDGE TRUE
+        COL 22
+        HEIGHT 20
+        ROW 322
+        VCENTERALIGN TRUE
+        WIDTH 434
+    END LABEL
+
+    DEFINE LABEL oMinigui
+        CENTERALIGN TRUE
+        CLIENTEDGE TRUE
+        COL 22
+        HEIGHT 20
+        ROW 347
+        VCENTERALIGN TRUE
+        WIDTH 434
+    END LABEL
+
+    DEFINE LABEL oHarbour
+        CENTERALIGN TRUE
+        CLIENTEDGE TRUE
+        COL 22
+        HEIGHT 20
+        ROW 372
+        VCENTERALIGN TRUE
+        WIDTH 434
+    END LABEL
+
+    DEFINE LABEL oCompiler
+        CENTERALIGN TRUE
+        CLIENTEDGE TRUE
+        COL 22
+        HEIGHT 20
+        ROW 397
+        VCENTERALIGN TRUE
+        WIDTH 434
+    END LABEL
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

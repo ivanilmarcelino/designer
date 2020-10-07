@@ -7,7 +7,7 @@
     Compilador : MinGW GNU C 10.2 (32-bit)
     ----------------------------------------------------------------------------------------------
     SOBRE ESTE CÓDIGO GERADO:
-    Última alteração : 06/10/2020-20:29:06 Máquina: IMA2018 Usuário:ivani
+    Última alteração : 06/10/2020-20:33:24 Máquina: IMA2018 Usuário:ivani
     Código dos SETS do sistema
     ----------------------------------------------------------------------------------------------
     Projeto : Financeiro

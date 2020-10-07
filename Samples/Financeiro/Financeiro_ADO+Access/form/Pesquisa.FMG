@@ -7,7 +7,7 @@
     Compilador : MinGW GNU C 10.2 (32-bit)
     ----------------------------------------------------------------------------------------------
     SOBRE ESTE CÓDIGO GERADO:
-    Última alteração : 06/10/2020-20:28:48 Máquina: IMA2018 Usuário:ivani
+    Última alteração : 06/10/2020-20:33:15 Máquina: IMA2018 Usuário:ivani
     Código do formulário ajustado
     ----------------------------------------------------------------------------------------------
     Projeto : Financeiro
@@ -20,7 +20,7 @@
 *{Name:Pesquisa}
 
 
-DEFINE WINDOW TEMPLATE AT 184, 314 WIDTH 424 HEIGHT 460  TITLE "" CHILD NOMINIMIZE NOMAXIMIZE NOSIZE
+DEFINE WINDOW TEMPLATE AT 175, 379 WIDTH 486 HEIGHT 457  TITLE "" CHILD NOMINIMIZE NOMAXIMIZE NOSIZE
 
     DEFINE GRID Grid
         COL 10
@@ -30,9 +30,10 @@ DEFINE WINDOW TEMPLATE AT 184, 314 WIDTH 424 HEIGHT 460  TITLE "" CHILD NOMINIMI
         JUSTIFY { 1 , 0 , 0 }
         ONHEADCLICK ({{||Nil},{||Nil},{||Nil}})
         ROW 10
+        SHOWHEADERS TRUE
         VALUE 1
-        WIDTH 400
-        WIDTHS { 60 , 333 , 0 }
+        WIDTH 462
+        WIDTHS { 66 , 374 , 0 }
     END GRID
 
     DEFINE LABEL Label_Pesq_Generic
@@ -51,48 +52,59 @@ DEFINE WINDOW TEMPLATE AT 184, 314 WIDTH 424 HEIGHT 460  TITLE "" CHILD NOMINIMI
         ROW 353
         TOOLTIP "Digite a Descrição para Pesquisa"
         UPPERCASE TRUE
-        WIDTH 326
+        WIDTH 385
     END TEXTBOX
 
     DEFINE BUTTONEX Novo
         CAPTION "&Novo"
         COL 5
         FLAT TRUE
-        HEIGHT 34
+        HEIGHT 38
         PICTURE "Minigui_edit_new"
-        ROW 387
-        WIDTH 100
+        ROW 381
+        WIDTH 90
     END BUTTONEX
 
     DEFINE BUTTONEX Editar
         CAPTION "&Editar"
-        COL 104
+        COL 100
         FLAT TRUE
-        HEIGHT 34
+        HEIGHT 38
         PICTURE "Minigui_edit_edit"
-        ROW 387
-        WIDTH 100
+        ROW 381
+        WIDTH 90
     END BUTTONEX
 
     DEFINE BUTTONEX Excluir
         CAPTION "E&xcluir"
-        COL 209
+        COL 195
         FLAT TRUE
-        HEIGHT 34
+        HEIGHT 38
         PICTURE "Minigui_edit_del"
-        ROW 387
-        WIDTH 100
+        ROW 381
+        WIDTH 90
     END BUTTONEX
 
     DEFINE BUTTONEX Sair
         ACTION (ThisWindow.Release())
         CAPTION "&Sair"
-        COL 314
+        COL 385
         FLAT TRUE
-        HEIGHT 34
+        HEIGHT 38
         PICTURE "Minigui_edit_undo"
-        ROW 387
-        WIDTH 100
+        ROW 381
+        WIDTH 90
+    END BUTTONEX
+
+    DEFINE BUTTONEX oReport
+        ACTION (ThisWindow.Release())
+        CAPTION "Report"
+        COL 290
+        FLAT TRUE
+        HEIGHT 38
+        PICTURE "Hbprint_print"
+        ROW 381
+        WIDTH 90
     END BUTTONEX
 
 END WINDOW

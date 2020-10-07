@@ -1,0 +1,218 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.084 RELEASE CANDIDATE (RC) 200924 0918"
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 4)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 06/10/2020-16:46:55 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Financeiro
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:Financeiro.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 185, 317 WIDTH 650 HEIGHT 480  MINWIDTH 640.00 MINHEIGHT 480.00 TITLE "SISTEMA" MAIN ON INIT (Main_Oninit()) ON RELEASE (Main_Onrelease()) ON INTERACTIVECLOSE (Main_Oninteractiveclose()) ON SIZE (Main_Onsize()) ON MAXIMIZE (Main_Onmaximize()) BACKCOLOR { 128 , 128 , 128 } FONT 'Arial' SIZE 10
+
+    DEFINE MAIN MENU
+       DEFINE MENU POPUP "&Sistema" NAME Form_0nMenu1 FONT "Fnt_P_D_R"
+          MENUITEM "Contas à &Pagar" ACTION (Main_Mn_Pagar_Action()) NAME Mn_Pagar IMAGE "Pagar" FONT "Fnt_P_D_R"
+          MENUITEM "Contas à Receber" ACTION (Main_Mn_Receber_Action()) NAME Mn_Receber IMAGE "Receber" FONT "Fnt_P_D_R"
+          SEPARATOR
+          MENUITEM "&Clientes" ACTION (Pesquisa_CliForn("C")) NAME Mn_Clientes IMAGE "clientes" MESSAGE "Cadastro de Clientes" FONT "Fnt_P_D_R"
+          MENUITEM "&Fornecedores" ACTION (Pesquisa_CliForn("F")) NAME Mn_Fornecedores IMAGE "forneced" MESSAGE "Cadastro de Fornecedores" FONT "Fnt_P_D_R"
+          SEPARATOR
+          DEFINE MENU POPUP "&Tabelas de Apoio" NAME Form_0nMenu2 FONT "Fnt_P_D_R"
+             MENUITEM "Contas &Financeiras" ACTION (CadastroApoio("CONTAS","Cadastro de Contas")) NAME Mn_Contas IMAGE "Receber" MESSAGE "Cadastro de Contas" FONT "Fnt_P_D_R"
+             MENUITEM "&Grupos de Contas" ACTION (CadastroApoio("GRUPOS","Cadastro de Grupos")) NAME Mn_Grupos IMAGE "grupos" MESSAGE "Cadastro de Grupos" FONT "Fnt_P_D_R"
+             MENUITEM "&Centros de Custos" ACTION (CadastroApoio("CUSTO","Cadastro de Custos")) NAME Mn_Custos IMAGE "custos" MESSAGE "Cadastro de Custos" FONT "Fnt_P_D_R"
+          END POPUP
+          SEPARATOR
+          DEFINE MENU POPUP "&Usuários" NAME Form_0nMenu3 FONT "Fnt_P_D_R"
+             MENUITEM "Cadastros dos &Usuários" ACTION (Main_Mn_Usuarios_Action()) NAME Mn_Usuarios IMAGE "IMGUSER" MESSAGE "Cadastro de Usuários" FONT "Fnt_P_D_R"
+             SEPARATOR
+             MENUITEM "&Altera Senha Usuário Atual" ACTION (Main_Mn_Altera_Senha_Action()) NAME Mn_Altera_Senha IMAGE "IMGUSER" MESSAGE "Alteração de senha do usuário ativo" FONT "Fnt_P_D_R"
+          END POPUP
+          SEPARATOR
+          MENUITEM "&Troca Usuário" ACTION (LoadFrmAcesso()) NAME Form_0nMenu4 IMAGE "IMGUSER" MESSAGE "Trocar de Usuário" FONT "oFontsys1"
+          SEPARATOR
+          DEFINE MENU POPUP "&Utilitários e Configurações" NAME Form_0nMenu5 FONT "Fnt_P_D_R"
+             SEPARATOR
+             MENUITEM "Carga Inicial" ACTION (Main_oNMenu_MAIN_Main2_Action()) NAME oNMenu_MAIN_Main2 FONT "Fnt_P_D_R"
+          END POPUP
+          SEPARATOR
+          MENUITEM "&Sair" ACTION ( ConfirmaSaida()) NAME Form_0nMenu6 MESSAGE "Saida do Sistema" FONT "Fnt_P_D_R"
+       END POPUP
+       DEFINE MENU POPUP "&Help" NAME Form_0nMenu7 FONT "Fnt_P_D_R"
+          MENUITEM "&About" ACTION (Main_Form_0nMenu8_Action()) NAME Form_0nMenu8 IMAGE "help" FONT "Fnt_P_D_R"
+          MENUITEM "Status Usuário" ACTION (Main_oNMenu_MAIN_Main1_Action()) NAME oNMenu_MAIN_Main1 FONT "Fnt_P_D_R"
+       END POPUP
+    END MENU
+
+     DEFINE SPLITBOX
+       DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  40, 40 FONT 'Arial' SIZE   7 FLAT 
+           BUTTON Bt_Clientes PICTURE "clientes" TOOLTIP "Cadastro dos Cientes" ACTION (Pesquisa_CliForn("C"))
+           BUTTON Bt_Fornecedores PICTURE "forneced" TOOLTIP "Cadastro dos Fornecedores" ACTION (Pesquisa_CliForn("F"))
+           BUTTON Bt_Pagar PICTURE "Pagar" TOOLTIP "Arquivo de Contas à Pagar" ACTION (LoadFrmPesquisapagrec("P"))
+           BUTTON Bt_Receber PICTURE "Receber" TOOLTIP "Arquivo de Contas à Receber" ACTION ( LoadFrmPesquisapagrec("R"))
+           BUTTON Bt_Tabelas_Grupos PICTURE "grupos" TOOLTIP "Cadastro dos Grupos de Contas" ACTION (CadastroApoio("GRUPOS","Cadastro de Grupos"))
+           BUTTON Bt_Tabelas_Contas PICTURE "Tipos" TOOLTIP "Cadastro das Contas Financeiras" ACTION (CadastroApoio("CONTAS","Cadastro de Contas"))
+           BUTTON Bt_Tabelas_Custos PICTURE "custos" TOOLTIP "Cadastro dos Centros de Custo" ACTION (CadastroApoio("CUSTO","Cadastro de Custos"))
+       END TOOLBAR
+       DEFINE TOOLBAREX Toolbar_2 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
+       END TOOLBAR
+       DEFINE TOOLBAREX Toolbar_3 BUTTONSIZE  44, 27 FONT 'Arial' SIZE   7 FLAT 
+           BUTTON Bt_Acesso PICTURE "acesso" TOOLTIP "Trocar Usuário Ativo" ACTION (LoadFrmAcesso())
+           BUTTON Bt_Sair PICTURE "Sair" TOOLTIP "Sair do Sistema" ACTION (ConfirmaSaida())
+           BUTTON Bt_Help PICTURE "help" TOOLTIP "Sobre o Sistema" ACTION (Main_Bt_Help_Action())
+       END TOOLBAR
+    END SPLITBOX
+    DEFINE CONTEXT MENU
+        MENUITEM "Contas à &Pagar" NAME Form_0nMenu9 FONT "Fnt_P_D_R"
+        MENUITEM "Contas à &Receber" NAME Form_0nMenu10 FONT "Fnt_P_D_R"
+        SEPARATOR
+        MENUITEM "&Clientes" NAME Form_0nMenu11 FONT "Fnt_P_D_R"
+        MENUITEM "&Fornecedores" NAME Form_0nMenu12 FONT "Fnt_P_D_R"
+        SEPARATOR
+        MENUITEM "Contas &Financeiras" NAME Form_0nMenu13 FONT "Fnt_P_D_R"
+        MENUITEM "&Grupos de Contas" NAME Form_0nMenu14 FONT "Fnt_P_D_R"
+        MENUITEM "&Centros de Custos" NAME Form_0nMenu15 FONT "Fnt_P_D_R"
+        SEPARATOR
+        MENUITEM "Alterar &Usuário Ativo" NAME Form_0nMenu16 FONT "Fnt_P_D_R"
+        MENUITEM "Alterar &Senha" NAME Form_0nMenu17 FONT "Fnt_P_D_R"
+        SEPARATOR
+        MENUITEM "Sair" NAME Form_0nMenu18 FONT "Fnt_P_D_R"
+    END MENU
+
+    DEFINE IMAGE oFundo
+        COL 5
+        HEIGHT 80
+        PICTURE "Fundo"
+        ROW 47
+        STRETCH TRUE
+        WIDTH 80
+    END IMAGE
+
+    DEFINE HYPERLINK HL_harbour
+        ADDRESS "https://github.com/harbour"
+        COL 465
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HANDCURSOR TRUE
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 238
+        TRANSPARENT TRUE
+        VALUE "Projeto Harbour"
+        WIDTH 156
+    END HYPERLINK
+
+    DEFINE HYPERLINK HL_MiniGUI
+        ADDRESS "http://hmgextended.com"
+        COL 465
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HANDCURSOR TRUE
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 258
+        TRANSPARENT TRUE
+        VALUE "Minigui Extend"
+        WIDTH 156
+    END HYPERLINK
+
+    DEFINE HYPERLINK HL_MiniGUIBrasil
+        ADDRESS "https://groups.google.com/forum/?oldui=1#!forum/minigui-forum"
+        COL 465
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HANDCURSOR TRUE
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 278
+        TRANSPARENT TRUE
+        VALUE "Minigui Extend Forum"
+        WIDTH 156
+    END HYPERLINK
+
+    DEFINE HYPERLINK HL_Forum1
+        ADDRESS "https://www.hmgforum.com/"
+        COL 465
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HANDCURSOR TRUE
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 298
+        TRANSPARENT TRUE
+        VALUE "Harbour Minigui Forum"
+        WIDTH 156
+    END HYPERLINK
+
+    DEFINE HYPERLINK HL_Forum2
+        ADDRESS "https://www.facebook.com/groups/harbourminigui"
+        COL 465
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HANDCURSOR TRUE
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 318
+        TRANSPARENT TRUE
+        VALUE "Harbour Minigui FaceBook"
+        WIDTH 156
+    END HYPERLINK
+
+    DEFINE HYPERLINK HL_Guides2
+        ADDRESS "https://github.com/ivanilmarcelino/designer"
+        COL 465
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 9
+        HANDCURSOR TRUE
+        HEIGHT 24
+        RIGHTALIGN TRUE
+        ROW 338
+        TRANSPARENT TRUE
+        VALUE "Designer Minigui"
+        WIDTH 156
+    END HYPERLINK
+
+    DEFINE LABEL Label_Mensagens
+        COL 10
+        FONTBOLD TRUE
+        FONTCOLOR { 255 , 255 , 255 }
+        FONTNAME "Arial"
+        FONTSIZE 8
+        HEIGHT 25
+        ROW 370
+        TRANSPARENT TRUE
+        WIDTH 550
+    END LABEL
+
+    DEFINE STATUSBAR FONT "Verdana" SIZE 7
+        STATUSITEM "Base de Dados:" WIDTH 150 
+        STATUSITEM "Status: SERVIDOR" WIDTH 115 
+        STATUSITEM "Usuário:" WIDTH 100 
+        STATUSITEM "Rede: IMA2018" WIDTH 150 
+        CLOCK
+    END STATUSBAR
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

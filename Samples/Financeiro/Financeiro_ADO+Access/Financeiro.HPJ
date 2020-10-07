@@ -2,12 +2,12 @@
 Main=Financeiro.PRG
 TipoProjeto=1
 nomeprojeto=Financeiro
-database=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\Database.mdb;Persist Security Info=False
+database=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\Dados.mdb;Persist Security Info=False
 flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
 comments=
 companyname=Ima Solutions Apoio Tec/Adm em Informática
 filedescription=
-fileversion=00  ,00  ,00  ,00
+fileversion=00  ,00  ,00  ,01
 internalname=Financeiro.Exe
 legalcopyright=Copyright © 2020
 legaltrademarks=
