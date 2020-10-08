@@ -1,4 +1,11 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-07 14:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido processo de carga da Toolbar de legado quando fonte não possui FONT SIZE definida
+    [!] Corrigido processo de carga de legado na propriedade [@...Range 10,50],  deveria abrir para RANGEMIN 10 e RANGEMAX 50
+    [!] Corrigido Translate POE_PARENTESES, agora ignora se o conteudo é um bloco.
+    [+] Incluido as propriedades em ButtonEX
+	ImageWidth; ImageHeight; Horizontal; Handcursor; GradientFill
+    
 2020-10-06 19:00 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido atribuição propriedades
     [!] Corrigido dimensão que incluia controle de rolagem horizontal em propriedades
