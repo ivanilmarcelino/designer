@@ -1,0 +1,22 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.0851 RELEASE CANDIDATE (RC) 201009 1431"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 5)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 09/10/2020-17:54:55 Máquina: IMA2018 Usuário:ivani
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : ChildFacil
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    /*
+    Reservoir space for future connection
+    Espaço reservado para futura conexão
+    */

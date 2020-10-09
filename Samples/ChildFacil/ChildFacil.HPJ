@@ -1,0 +1,66 @@
+[PROJETO]
+Main=ChildFacil.prg
+TipoProjeto=1
+nomeprojeto=ChildFacil
+database=
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=00  ,00  ,00  ,00
+internalname=ChildFacil.Exe
+legalcopyright=Copyright © 2020
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALFA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=PORTUGUESE
+setcodepage=PORTUGUESE
+setdate=french
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=0
+fontboldMenu=FALSE
+Run=
+[FORMULARIOS]
+Frm0001=%PROJETO%\form\ChildFacil.FMG
+Frm0002=%PROJETO%\Form\Form.FMG
+Frm0003=%PROJETO%\Form\Tela.FMG
+
+[MODULOS]
+MOD0001=%PROJETO%\ChildFacil.PRG
+MOD0002=%PROJETO%\Form.Prg
+MOD0003=%PROJETO%\Tela.Prg
+
+[RESOURCES]
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]

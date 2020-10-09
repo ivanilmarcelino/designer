@@ -1,4 +1,20 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-09 16:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido o controle de API, alguns valores estavam se duplicando
+        ==>SUGESTÃO, ELIMINE O CONTEUDO DA PASTA .\API\*.* o sistema vai recria-los.
+
+2020-10-09 10:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Ajustado o processo de criar formulario, agora é possivel escolher criar modulo e entre modal/child
+        Você poderia criar um fomulario generico, sem a necessidade de ter um modulo vinculado
+	Ao escolher modal, basicamente não ha mudança no codigo resultante já que o tipo modal não permite o empilhamento
+	Ao escolher child, o codigo é gerado preparado para o empilhamento, as funções criadas ja passam o parametro nome do formulario.
+    [-] Ao trocar o nome do formulário, o Designer não vai mais renomear as referencias no projeto, a ideia era tornar o processo mais facil, 
+        mas é o tipo de situação que pode trazer problemas de dificil solução se o nome do form for algo trivial; o Designer usara o sinal de [&]
+        no nome do form para identificar se é para criar as funcoes com parametros.
+    [%] Processo de atribuição foi otimizado para reconhecer o máximo de alterações possíveis em tempo de projeto, no entanto, conforme documentação da minigui
+        alguns atributos são Read-Only, são ajustáveis apenas na criação do objeto.
+		
+
 2020-10-07 14:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido processo de carga da Toolbar de legado quando fonte não possui FONT SIZE definida
     [!] Corrigido processo de carga de legado na propriedade [@...Range 10,50],  deveria abrir para RANGEMIN 10 e RANGEMAX 50
