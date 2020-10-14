@@ -1,4 +1,19 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-13 21:12 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [%] A função adjust dos botoes só faz sentido quando todos os botoes da toolbar tem o Flag=TRUE, então esta opção foi colocada em propriedades da toolbar, um unico clik
+        ativa ou desativa todos os botoes da serie.
+    [*] A funcao Group depende de check, então quando clicado em group automaticamente sera marcado check
+    [*] ativado a função break em tempo de designer.
+    [+] adicionado a função Modo de desenvolvimento no menu em Ferramentas, quando ativa o designer se libera dos try/Catch para indicar a linha real do erro, alem de gerar um log 
+        na montagem do form, permitindo uma analise apurada do que ele conseguiu montar.
+    [*] Corrigido os espaçamentos na montagem do menu
+    [*] Corrigido a fonte padrao para MenuDropdown
+
+2020-10-12 21:30 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [+] Incluido a opção de adicionar um combo na Toolbar
+    [!] Problema de carga de Menu dropdown ocasionado na tentativa de compatibilidade com a IDE de Walter, o codigo voltou a ser como antes o menu volta a ficar logo abaixo do botao
+    [!] Problema de exclusão de Objetos na toolbar corrigidos
+
 2020-10-09 16:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido o controle de API, alguns valores estavam se duplicando
         ==>SUGESTÃO, ELIMINE O CONTEUDO DA PASTA .\API\*.* o sistema vai recria-los.
@@ -6,21 +21,21 @@
 2020-10-09 10:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Ajustado o processo de criar formulario, agora é possivel escolher criar modulo e entre modal/child
         Você poderia criar um fomulario generico, sem a necessidade de ter um modulo vinculado
-	Ao escolher modal, basicamente não ha mudança no codigo resultante já que o tipo modal não permite o empilhamento
-	Ao escolher child, o codigo é gerado preparado para o empilhamento, as funções criadas ja passam o parametro nome do formulario.
+    Ao escolher modal, basicamente não ha mudança no codigo resultante já que o tipo modal não permite o empilhamento
+    Ao escolher child, o codigo é gerado preparado para o empilhamento, as funções criadas ja passam o parametro nome do formulario.
     [-] Ao trocar o nome do formulário, o Designer não vai mais renomear as referencias no projeto, a ideia era tornar o processo mais facil, 
         mas é o tipo de situação que pode trazer problemas de dificil solução se o nome do form for algo trivial; o Designer usara o sinal de [&]
         no nome do form para identificar se é para criar as funcoes com parametros.
     [%] Processo de atribuição foi otimizado para reconhecer o máximo de alterações possíveis em tempo de projeto, no entanto, conforme documentação da minigui
         alguns atributos são Read-Only, são ajustáveis apenas na criação do objeto.
-		
+        
 
 2020-10-07 14:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido processo de carga da Toolbar de legado quando fonte não possui FONT SIZE definida
     [!] Corrigido processo de carga de legado na propriedade [@...Range 10,50],  deveria abrir para RANGEMIN 10 e RANGEMAX 50
     [!] Corrigido Translate POE_PARENTESES, agora ignora se o conteudo é um bloco.
     [+] Incluido as propriedades em ButtonEX
-	ImageWidth; ImageHeight; Horizontal; Handcursor; GradientFill
+    ImageWidth; ImageHeight; Horizontal; Handcursor; GradientFill
     
 2020-10-06 19:00 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido atribuição propriedades
@@ -58,26 +73,26 @@
         oClass:AddMethod( "Zip",@doZip()) //Gera um ZIP com Resultado
         oClass:Create()
 
- 	Exemplo:
-	    Rs:SQL:="Select .... from..."
+    Exemplo:
+        Rs:SQL:="Select .... from..."
             Rs:OPen()
 
-	    if Rs:Eof()
-        	Return .F.
-	    endif
+        if Rs:Eof()
+            Return .F.
+        endif
 
-	    oHtml := THtmlReport():New()
-	    oHtml:Rs   := Rs
-	    oHtml:Title := "<h3>"+PesquisaPagRec.Title+"</h3>"+;
+        oHtml := THtmlReport():New()
+        oHtml:Rs   := Rs
+        oHtml:Title := "<h3>"+PesquisaPagRec.Title+"</h3>"+;
                    "Período de "+Dtoc(PesquisaPagRec.Dp_Data1.Value)+ " à "+Dtoc(PesquisaPagRec.Dp_Data2.Value)+"</br>"
-    	    oHtml:Picture := {,,,,,"@E 999,999.99",}
-	    oHtml:File := PutFile({{"*.HTML","*.HTML"}},"Nome do Arquivo")
-	    oHtml:Header := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
-	    oHtml:Align  := {2,0,0,0,0,2,0}
-	    oHtml:Totaliza:={,,,,,.T.,}
-	    oHTml:Report()
-	    oHtml:Show()
-	    Return .T.
+            oHtml:Picture := {,,,,,"@E 999,999.99",}
+        oHtml:File := PutFile({{"*.HTML","*.HTML"}},"Nome do Arquivo")
+        oHtml:Header := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
+        oHtml:Align  := {2,0,0,0,0,2,0}
+        oHtml:Totaliza:={,,,,,.T.,}
+        oHTml:Report()
+        oHtml:Show()
+        Return .T.
 
 
 
