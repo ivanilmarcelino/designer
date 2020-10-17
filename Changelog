@@ -1,4 +1,7 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-14 09:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] ao renomear um objeto, o elemento selecionado ficava nulo, com isso ao clicar sobre as propriedades não havia resposta
+
 2020-10-13 21:12 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [%] A função adjust dos botoes só faz sentido quando todos os botoes da toolbar tem o Flag=TRUE, então esta opção foi colocada em propriedades da toolbar, um unico clik
         ativa ou desativa todos os botoes da serie.
