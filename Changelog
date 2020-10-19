@@ -1,4 +1,7 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-19 20:49 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ao arrastar um objeto em form sem o toolbar estava dando acesso invalido, bug  inserido  ao atualizar a toolbar
+
 2020-10-14 09:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] ao renomear um objeto, o elemento selecionado ficava nulo, com isso ao clicar sobre as propriedades não havia resposta
 
