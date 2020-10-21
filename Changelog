@@ -1,4 +1,9 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-21 20:27 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Quando inserido apenas uma toolbar e pelo menos 1 combo, a Designer não estava envolvendo ambos numa SplitBox gerando um erro de atribuição de listWidth no combo
+    [*] Designer atualizado com a Minigui v20.10 Release distribuida em 21/10/2020
+    [*] Atualização Scite Versão 4.4.5 (http://www.scintilla.org)
+    
 2020-10-19 20:49 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ao arrastar um objeto em form sem o toolbar estava dando acesso invalido, bug  inserido  ao atualizar a toolbar
 
