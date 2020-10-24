@@ -3,6 +3,7 @@
     [%] Melhoria nas seleções de objetos
         Menu de contexto do form de desenho tem agora a opção de seleção de grupo 
         Agora é possivel marcar e desmarcar o objetos
+    [!] Crash na escolha de opcoes de campos no wizard
 
 2020-10-22 20:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ato abrir um projeto vazio e tentar criar um formulario solto, ocorria um erro de estouro de matriz
