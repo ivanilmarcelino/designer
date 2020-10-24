@@ -1,4 +1,14 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-10-24 19:41 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [%] Melhoria nas seleções de objetos
+        Menu de contexto do form de desenho tem agora a opção de seleção de grupo 
+        Agora é possivel marcar e desmarcar o objetos
+
+2020-10-22 20:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ato abrir um projeto vazio e tentar criar um formulario solto, ocorria um erro de estouro de matriz
+    [+] Projeto ainda em fase de testes, ao clicar com o botao direito no form, é possivel selecionar varios objetos select group
+
+
 2020-10-21 20:27 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Quando inserido apenas uma toolbar e pelo menos 1 combo, a Designer não estava envolvendo ambos numa SplitBox gerando um erro de atribuição de listWidth no combo
     [*] Designer atualizado com a Minigui v20.10 Release distribuida em 21/10/2020
