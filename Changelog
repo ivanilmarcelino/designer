@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Toolbar simples no modo Bottom, não estava sendo aberta adequadamente, sendo colocada no topo quando reaberta;
+    Informado por jrsancheze via github
+    
 2020-10-26 20:21 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Seleção de campos no wizard de relatórios estava com um crash
     [+] Incluido opcoes no Wizard (sem relatórios/Excel/Html)
