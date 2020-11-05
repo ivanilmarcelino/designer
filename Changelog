@@ -1,4 +1,19 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-11-05 12:17 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Atualizado com a biblioteca Minigui v2010 Update 2 de 05/11/2020
+        Ajustado o pacote de compilação para incluir a biblioteca Bostaurus
+    [%] Incluído filtro para formularios e modulos
+        Você pode usar o método SQL "va%" começa com; "%va%" termina com ou "%va%" contem;
+    [%] Incluido filtro para Recursos
+        Pesquisa digitável:
+        Você pode usar o método SQL "va%" começa com; "%va%" termina com ou "%va%" contem;
+        Pesquisa Combo:
+        Você pode selecionar o tipo de recurso a ser carregado na lista
+
+2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ao adicionar uma nova pagina no page pelo botao direito do mouse ocorria um estouro de memoria ao salvar, problema incluindo quando foi incluido a opcao de
+    tooltip nas paginas;
+
 2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Toolbar simples no modo Bottom, não estava sendo aberta adequadamente, sendo colocada no topo quando reaberta;
     Informado por jrsancheze via github
