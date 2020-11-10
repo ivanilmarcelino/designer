@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-11-09 21:22 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Melhorado o processo de Pesquisa CRUD
+    [*] Melhorado processo de extração de formulario do PRG 
+
 2020-11-09 08:08 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Atualizado com a biblioteca Minigui v2010 Update 3 de 09/11/2020
     [!] Ajuste na Classe ADO, incompatibilidade com a inclusão de novos recursos
