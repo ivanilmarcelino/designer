@@ -1,4 +1,15 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-12-13 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ajustado a importação de estrutura do dbf para um comando Create Table da tela de comandos sql
+    [!] Ajustado o dispositivo de saida de erro para :OnError para comandos SQL
+    [!] Ajustado o codigo Sql for ADO para captura de error pos comando.
+    [*] Retirado o filtro pre-estabelecido de controles de acordo com o tipo em virtude de SQLite ser texto e nem 
+        sempre queremos tratar tudo como texto no programa, agora você consegue direcionar um texto para controle 
+        date/numeric/etc, tendo cuidado de fazer a devida transformação no codigo gerado posteriormente.
+    [*] Restart direcionado para pasta temporaria, estava sempre criando na pasta atual, nem sempre pasta da IDE
+    [!] Ajustado o comando SQL de Sqlite, desviando corretamente :onError
+    
+    
 2020-12-12 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Atualizado com a Biblioteca Minigui v2012.0 de 09/12/2020
     [;] Incluido (Suporte SQL) ainda experimental, versão anterior ficara congelada
