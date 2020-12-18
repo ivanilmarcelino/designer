@@ -1,0 +1,38 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.120 RELEASE CANDIDATE (RC) 201213 1910"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.12.0 (32-bit)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2011030937)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 17/12/2020-20:35:42 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : TestSQL
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:TestSQL.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 201, 327 WIDTH 671 HEIGHT 549  TITLE "" MAIN
+
+    DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  65, 65 FONT 'Arial' SIZE   7 FLAT 
+        BUTTON Toolbar_1Button1 CAPTION "DBF" PICTURE "dbf" ACTION (Main_Toolbar_1Button1_Action())
+        BUTTON Toolbar_1Button2 CAPTION "SQlite" PICTURE "sqlite" ACTION (Main_Toolbar_1Button2_Action())
+        BUTTON Toolbar_1Button3 CAPTION "Mysql" PICTURE "mysql" ACTION (Main_Toolbar_1Button3_Action())
+        BUTTON Toolbar_1Button4 CAPTION "Access" PICTURE "access" ACTION (Main_Toolbar_1Button4_Action())
+    END TOOLBAR
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

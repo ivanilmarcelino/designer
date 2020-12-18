@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2020-12-16 18:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ajustado a criação do arquivo de cabecalho dos SETS na definição do projeto
+    [!] compatibilidade MoveNext.MovePrevious,MoveLast com Mysql
+    
 2020-12-13 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ajustado a importação de estrutura do dbf para um comando Create Table da tela de comandos sql
     [!] Ajustado o dispositivo de saida de erro para :OnError para comandos SQL

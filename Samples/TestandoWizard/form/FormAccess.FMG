@@ -1,0 +1,134 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.20.120 RELEASE CANDIDATE (RC) 201213 1910"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 20.12.0 (32-bit)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2011030937)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 17/12/2020-19:02:00 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : TestSQL
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:FormAccess}
+*{Modulo:FormAccess.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 251, 322 WIDTH 540 HEIGHT 257  TITLE "" MODAL ON INIT (FormAccess_OnInit(oQuery))
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "Minigui_edit_close" ADJUST  TOOLTIP "Fechar o Formulário" ACTION (FormAccess_ToolbarAction(1,Nil,oQuery)) SEPARATOR  AUTOSIZE 
+        BUTTON oBtnNovo PICTURE "Minigui_edit_new" ADJUST  TOOLTIP "Incluir um novo Registro" ACTION (FormAccess_ToolbarAction(2,Nil,oQuery))
+        BUTTON oBtnEdit PICTURE "Minigui_edit_edit" ADJUST  TOOLTIP "Editar o Registro atual" ACTION (FormAccess_ToolbarAction(3,Nil,oQuery))
+        BUTTON oBtnSave PICTURE "Minigui_edit_ok" ADJUST  TOOLTIP "Salva inclusão/alteração do Registro" ACTION (FormAccess_ToolbarAction(4,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnExclui PICTURE "Minigui_edit_del" ADJUST  TOOLTIP "Exclui o Registro atual" ACTION (FormAccess_ToolbarAction(5,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnPesquisa PICTURE "Minigui_edit_find" ADJUST  TOOLTIP "Realiza uma pesquisa" ACTION (FormAccess_ToolbarAction(6,Nil,oQuery))
+        BUTTON oBtnRelatorio PICTURE "Minigui_edit_print" ADJUST  TOOLTIP "Relatório" ACTION (FormAccess_ToolbarAction(7,Nil,oQuery))
+    END TOOLBAR
+
+    DEFINE TAB Tab1 AT 50,10 WIDTH 505 HEIGHT 167 VALUE 1 NOTABSTOP 
+        PAGE  [dado] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 136
+                ROW 25
+                WIDTH 493
+            END FRAME
+
+            DEFINE LABEL lbl_Codigo
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Codigo :"
+                WIDTH 74
+            END LABEL
+
+            DEFINE TEXTBOX Codigo
+                BACKCOLOR { 255 , 255 , 128 }
+                COL 92
+                FONTBOLD TRUE
+                HEIGHT 18
+                MAXLENGTH 4
+                NUMERIC TRUE
+                ONENTER (FormAccess_Codigo_OnEnter(oQuery))
+                ROW 35
+                WIDTH 33
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nome
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Nome :"
+                WIDTH 74
+            END LABEL
+
+            DEFINE TEXTBOX Nome
+                COL 92
+                HEIGHT 18
+                MAXLENGTH 50
+                ROW 58
+                WIDTH 401
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nascimento
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Nascimento :"
+                WIDTH 74
+            END LABEL
+
+            DEFINE DATEPICKER Nascimento
+                COL 92
+                HEIGHT 20
+                ROW 81
+                WIDTH 105
+            END DATEPICKER
+
+            DEFINE CHECKBOX Ativo
+                CAPTION "Ativo ?"
+                COL 92
+                HEIGHT 18
+                ROW 106
+                WIDTH 49
+            END CHECKBOX
+
+            DEFINE LABEL lbl_Obs
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 129
+                VALUE "Obs :"
+                WIDTH 74
+            END LABEL
+
+            DEFINE TEXTBOX Obs
+                COL 92
+                HEIGHT 18
+                MAXLENGTH 50
+                ONENTER (FormAccess_Obs_OnEnter())
+                ROW 129
+                WIDTH 401
+            END TEXTBOX
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

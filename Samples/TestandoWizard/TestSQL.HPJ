@@ -1,0 +1,74 @@
+[PROJETO]
+Main=TestSQL.PRG
+TipoProjeto=1
+nomeprojeto=TestSQL
+database=SQLITE;E:\Prgplus\Youtube\teste\sql\Database.SQlite
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=00  ,00  ,00  ,00  
+internalname=TestSQL.Exe
+legalcopyright=Copyright © 2020
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALPHA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=PORTUGUESE
+setcodepage=PORTUGUESE
+setdate=FRENCH
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=9
+fontboldMenu=FALSE
+Run=
+[FORMULARIOS]
+Frm0001=%PROJETO%\Form\FormAccess.FMG
+Frm0002=%PROJETO%\Form\FormDBF.FMG
+Frm0003=%PROJETO%\Form\formMysql.FMG
+Frm0004=%PROJETO%\Form\formSqlite.FMG
+Frm0005=%PROJETO%\form\TestSQL.FMG
+
+[MODULOS]
+MOD0001=%PROJETO%\FormAccess.PRG
+MOD0002=%PROJETO%\FormDBF.PRG
+MOD0003=%PROJETO%\formMysql.PRG
+MOD0004=%PROJETO%\formSqlite.PRG
+MOD0005=%PROJETO%\TestSQL.PRG
+
+[RESOURCES]
+RES0001=access;%PROJETO%\res\access.png
+RES0006=dbf;%PROJETO%\res\dbf.png
+RES0063=mysql;%PROJETO%\res\mysql.png
+RES0064=sqlite;%PROJETO%\res\sqlite.png
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]
