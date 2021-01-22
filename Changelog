@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-01-22 18:46 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Sincronização com Minigui v21.01 de 20/01/2021
+    
 2020-12-16 18:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ajustado a criação do arquivo de cabecalho dos SETS na definição do projeto
     [!] compatibilidade MoveNext.MovePrevious,MoveLast com Mysql
