@@ -1,0 +1,25 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.21.108 RELEASE CANDIDATE (RC) 210210 1150"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.01.0 (32-bit)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2101261627)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 11/02/2021-17:54:22 Máquina: IMA2018 Usuário:ivani
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : Agenda
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    Memvar Connection
+    Private Connection //Variáveis globais de conexão
+    Connection := TadoConnection():New() //Cria o objeto ADO
+    Connection:ConnectString := 'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\agenda.mdb;Persist Security Info=False' //String de Conexão
+    if !Connection:Open() //Abre o banco de dados
+        Return .F.
+    Endif

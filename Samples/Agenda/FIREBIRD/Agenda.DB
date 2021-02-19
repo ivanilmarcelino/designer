@@ -1,0 +1,25 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.21.108 RELEASE CANDIDATE (RC) 210211 1254"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.01.0 (32-bit)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2101261627)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 16/02/2021-20:46:40 Máquina: IMA2018 Usuário:ivani
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : Agenda
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    Memvar oFbServer
+    Private oFbServer//Variáveis globais de conexão
+    oFbServer:=TFBServerIma():New(':E:\Prgplus\Git\Agenda\FIREBIRD\AGENDA.FDB','SYSDBA','',1) //Cria o objeto MySQL
+    if oFbServer:Neterr() //verifica se ouve erro na abertura do banco
+        MsgStop('Erro ao conectar banco de dados Mysql' + oFbServer:Error())
+        Return .F.
+    Endif

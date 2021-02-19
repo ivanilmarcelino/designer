@@ -1,0 +1,322 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.21.108 RELEASE CANDIDATE (RC) 210219 1100"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.01.0 (64-bit)  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2101261627)
+    Compilador : MinGW GNU C 9.2.1 (64-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 19/02/2021-11:45:31 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Agenda
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:Agenda.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 246, 333 WIDTH 552 HEIGHT 485  TITLE "Agenda Pessoal" ICON ".\images\agenda.ico" MAIN ON INIT (Main_Oninit()) ON SIZE (9) FONT "Calibri" SIZE 9
+
+    DEFINE TAB Tab1 AT 4,4 WIDTH 522 HEIGHT 432 VALUE 1 FLAT  NOTABSTOP 
+        PAGE  [Agenda] IMAGE ".\res\IMGUSER.bmp" TOOLTIP ""
+            DEFINE GRID oListaAlfa
+                COL 5
+                FONTCOLOR { 0 , 0 , 0 }
+                FONTNAME "Arial"
+                FONTSIZE 8
+                HEADERS { "A" , "B" , "C" , "D" , "E" , "F" , "G" , "H" , "I" , "J" , "K" , "L" , "M" , "N" , "O" , "P" , "Q" , "R" , "S" , "T" , "U" , "V" , "X" , "W" , "Y" , "Z" }
+                HEIGHT 20
+                JUSTIFY { 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 }
+                ONHEADCLICK {{||Pesquisa_Agenda("A")},{||Pesquisa_Agenda("B")},{||Pesquisa_Agenda("C")},{||Pesquisa_Agenda("D")},{||Pesquisa_Agenda("E")},{||Pesquisa_Agenda("F")},{||Pesquisa_Agenda("G")},{||Pesquisa_Agenda("H")},{||Pesquisa_Agenda("I")},{||Pesquisa_Agenda("J")},{||Pesquisa_Agenda("K")},{||Pesquisa_Agenda("L")},{||Pesquisa_Agenda("M")},{||Pesquisa_Agenda("N")},{||Pesquisa_Agenda("O")},{||Pesquisa_Agenda("P")},{||Pesquisa_Agenda("Q")},{||Pesquisa_Agenda("R")},{||Pesquisa_Agenda("S")},{||Pesquisa_Agenda("T")},{||Pesquisa_Agenda("U")},{||Pesquisa_Agenda("V")},{||Pesquisa_Agenda("X")},{||Pesquisa_Agenda("W")},{||Pesquisa_Agenda("Y")},{||Pesquisa_Agenda("Z")}}
+                ROW 211
+                SHOWHEADERS TRUE
+                VALUE 0
+                WIDTH 509
+                WIDTHS { 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 25 , 18 , 25 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 18 , 25 , 18 }
+            END GRID
+
+            DEFINE GRID oListaAgenda
+                COL 5
+                HEADERS { "codigo" , "Nome" }
+                HEIGHT 160
+                JUSTIFY { 0 , 0 }
+                ONCHANGE (AtualizaCrid())
+                ONHEADCLICK {{||Nil},{||Nil}}
+                ROW 234
+                SHOWHEADERS TRUE
+                VALUE 0
+                WIDTH 509
+                WIDTHS { 4 , 459 }
+            END GRID
+
+            DEFINE FRAME Frame1
+                COL 4
+                HEIGHT 183
+                ROW 23
+                WIDTH 509
+            END FRAME
+
+            DEFINE IMAGE oFoto
+                COL 10
+                HEIGHT 127
+                ROW 37
+                STRETCH TRUE
+                WIDTH 110
+            END IMAGE
+
+            DEFINE LABEL Label1
+                COL 128
+                HEIGHT 20
+                RIGHTALIGN TRUE
+                ROW 38
+                VALUE "Código:"
+                WIDTH 56
+            END LABEL
+
+            DEFINE LABEL Label2
+                COL 128
+                FONTSIZE 9
+                HEIGHT 20
+                RIGHTALIGN TRUE
+                ROW 66
+                VALUE "Nome:"
+                WIDTH 56
+            END LABEL
+
+            DEFINE LABEL Label3
+                COL 128
+                FONTSIZE 9
+                HEIGHT 20
+                RIGHTALIGN TRUE
+                ROW 89
+                VALUE "Endereço:"
+                WIDTH 56
+            END LABEL
+
+            DEFINE LABEL Label4
+                COL 128
+                FONTSIZE 9
+                HEIGHT 20
+                RIGHTALIGN TRUE
+                ROW 112
+                VALUE "Bairro:"
+                WIDTH 56
+            END LABEL
+
+            DEFINE LABEL Label5
+                COL 128
+                FONTSIZE 9
+                HEIGHT 20
+                RIGHTALIGN TRUE
+                ROW 135
+                VALUE "Cidade:"
+                WIDTH 56
+            END LABEL
+
+            DEFINE LABEL Label6
+                COL 128
+                FONTCOLOR { 0 , 0 , 0 }
+                FONTNAME "Arial"
+                FONTSIZE 9
+                HEIGHT 20
+                RIGHTALIGN TRUE
+                ROW 159
+                VALUE "Fones:"
+                WIDTH 56
+            END LABEL
+
+            DEFINE LABEL Label7
+                COL 11
+                HEIGHT 15
+                ROW 187
+                VALUE "Email:"
+                WIDTH 36
+            END LABEL
+
+            DEFINE TEXTBOX oCodigo
+                BACKCOLOR { 255 , 255 , 0 }
+                COL 187
+                FONTBOLD TRUE
+                HEIGHT 20
+                ROW 38
+                WIDTH 60
+            END TEXTBOX
+
+            DEFINE TEXTBOX oNome
+                COL 187
+                HEIGHT 20
+                ROW 66
+                UPPERCASE TRUE
+                WIDTH 314
+            END TEXTBOX
+
+            DEFINE TEXTBOX oEndereco
+                COL 187
+                HEIGHT 20
+                ROW 89
+                UPPERCASE TRUE
+                WIDTH 314
+            END TEXTBOX
+
+            DEFINE TEXTBOX oBairro
+                COL 187
+                HEIGHT 20
+                ROW 112
+                UPPERCASE TRUE
+                WIDTH 248
+            END TEXTBOX
+
+            DEFINE TEXTBOX oFone1
+                COL 187
+                HEIGHT 20
+                ROW 159
+                WIDTH 100
+            END TEXTBOX
+
+            DEFINE TEXTBOX oFone2
+                COL 399
+                HEIGHT 20
+                ROW 159
+                WIDTH 100
+            END TEXTBOX
+
+            DEFINE HYPERLINK oEmailto
+                ADDRESS "@"
+                COL 423
+                FONTCOLOR { 0 , 0 , 255 }
+                HEIGHT 20
+                ROW 184
+                VALUE "Email to:"
+                WIDTH 54
+            END HYPERLINK
+
+            DEFINE FRAME Frame2
+                COL 7
+                HEIGHT 136
+                ROW 27
+                WIDTH 118
+            END FRAME
+
+            DEFINE COMBOBOX oCidade
+                COL 187
+                DISPLAYEDIT TRUE
+                HEIGHT 300
+                ONLISTDISPLAY (Main_oCidade_Onlistdisplay())
+                ROW 135
+                VALUE 0
+                WIDTH 314
+            END COMBOBOX
+
+            DEFINE BUTTONEX oNovo
+                ACTION (NovoContato())
+                CAPTION "&Incluir"
+                COL 53
+                HEIGHT 26
+                PICTURE ".\res\IMGNEW.bmp"
+                ROW 401
+                WIDTH 96
+            END BUTTONEX
+
+            DEFINE BUTTONEX oEdit
+                ACTION (AlteraContato())
+                CAPTION "&Alterar"
+                COL 151
+                HEIGHT 26
+                PICTURE ".\res\IMGEDIT.bmp"
+                ROW 401
+                WIDTH 96
+            END BUTTONEX
+
+            DEFINE BUTTONEX oDelete
+                ACTION (ExcluiContato())
+                CAPTION "&Excluir"
+                COL 349
+                HEIGHT 26
+                PICTURE ".\res\IMGDEL.bmp"
+                ROW 401
+                WIDTH 96
+            END BUTTONEX
+
+            DEFINE LABEL oStatus
+                CENTERALIGN TRUE
+                CLIENTEDGE TRUE
+                COL 92
+                HEIGHT 17
+                ROW 1
+                WIDTH 380
+            END LABEL
+
+            DEFINE BUTTON oLoadFoto
+                ACTION (LoadFoto())
+                CAPTION "..."
+                COL 9
+                FONTBOLD TRUE
+                FONTCOLOR { 0 , 0 , 0 }
+                FONTNAME "Arial"
+                FONTSIZE 8
+                HEIGHT 17
+                ROW 164
+                WIDTH 31
+            END BUTTON
+
+            DEFINE TEXTBOX oEmail
+                COL 51
+                HEIGHT 20
+                LOWERCASE TRUE
+                ROW 183
+                WIDTH 359
+            END TEXTBOX
+
+            DEFINE BUTTONEX oSave
+                ACTION (SalvaContato())
+                CAPTION "&Salvar"
+                COL 249
+                HEIGHT 26
+                PICTURE ".\res\IMGSAVE.bmp"
+                ROW 401
+                WIDTH 96
+            END BUTTONEX
+
+            DEFINE LABEL oLabel1
+                COL 439
+                HEIGHT 20
+                ROW 112
+                VALUE "UF:"
+                VCENTERALIGN TRUE
+                WIDTH 21
+            END LABEL
+
+            DEFINE COMBOBOX oUF
+                COL 463
+                HEIGHT 300
+                LISTWIDTH 230.00
+                ROW 112
+                VALUE 0
+                WIDTH 38
+            END COMBOBOX
+
+            DEFINE BUTTONEX oPictureButton1
+                ACTION (Main_oPictureButton1_Action())
+                COL 481
+                HEIGHT 26
+                PICTURE ".\res\DOC.BMP"
+                ROW 401
+                WIDTH 30
+            END BUTTONEX
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
