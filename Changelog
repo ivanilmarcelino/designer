@@ -1,5 +1,12 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
-[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-02-19 20:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] a Inclusão de arquivos de outros projetos agora serão sinalizados com (*) e o tooltip informara o endereco do arquivo
+    [*] Agora é possivel informar no projeto para não carregar os recursos da Minigui (res), percebi alguns conflitos
+    [+] Suporte de acesso ao Firebird; ao fazer a conexao o designer irá desempacotar os arquivos na pasta do projeto para uma conexao 
+        autonoma (embarcada) sem interferir no servidor real; não precisa ter um servidor do Firebird rodando
+    [+] Inclusão samples\agenda {AdoDb,MySQL,Firebird,SQlite)
+        Os projetos possuem as funcionalidades de acesso e CRUD, é uma boa opção para o aprendizado.
+    
 2021-01-22 18:46 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Sincronização com Minigui v21.01 de 20/01/2021
     
