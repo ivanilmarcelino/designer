@@ -1,4 +1,13 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-02-23 15:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    Versão: [00,99,21,109 ]
+    [*] Ajuste na função RelativePath
+    
+2021-02-22 19:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    Versão: [00,99,21,109 ]
+    [+] Incluido o localizador de função/procedimento ou methodo no projeto 
+        Na medida que o projeto cresce, é comum esquecer em qual modulo esta a função.
+    
 2021-02-19 20:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] a Inclusão de arquivos de outros projetos agora serão sinalizados com (*) e o tooltip informara o endereco do arquivo
     [*] Agora é possivel informar no projeto para não carregar os recursos da Minigui (res), percebi alguns conflitos
