@@ -1,4 +1,11 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-02-27 19:56 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    Versão: [00,99,23,000 ]
+    [*] Ajuste na conexão com firebird para permitir a configuração remota
+	vale lembrar que se for usar um servidor, lembre-se retirar o arquivo firebird.conf da pasta da IDE e tambem do projeto, caso contrario
+	esta configuração terá prioridade e provavelmente não ira conectar por conta da configuração deste arquivo estar setada para o modo embarcado.
+    [!] correção na abertura projetos automaticamente, ocorria problemas com os arquivos com endereco relativo.
+
 2021-02-23 15:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     Versão: [00,99,21,109 ]
     [*] Ajuste na função RelativePath
