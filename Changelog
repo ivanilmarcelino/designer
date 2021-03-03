@@ -1,9 +1,16 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-03-03 10:24 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] atualizado a libmysql.dll, nova compilação
+        Será necessário substituir a libmysql.dll no projeto que forem recompilados com esta versão do Designer para obter compatibilidade
+    [+] incluido no pacote o aplicativo GrepWin [https://github.com/stefankueng/grepWin], trata-se de um buscador avançado que uso muito 
+    no dia a dia, você pode configurá-lo para várias linguagens, inclusive o português(BR) bastando acessar as configurações no aplicativo e 
+    estas ficarão salvas mesmo que atualize o Designer.
+    
 2021-02-27 19:56 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     Versão: [00,99,23,000 ]
     [*] Ajuste na conexão com firebird para permitir a configuração remota
-	vale lembrar que se for usar um servidor, lembre-se retirar o arquivo firebird.conf da pasta da IDE e tambem do projeto, caso contrario
-	esta configuração terá prioridade e provavelmente não ira conectar por conta da configuração deste arquivo estar setada para o modo embarcado.
+    vale lembrar que se for usar um servidor, lembre-se retirar o arquivo firebird.conf da pasta da IDE e tambem do projeto, caso contrario
+    esta configuração terá prioridade e provavelmente não ira conectar por conta da configuração deste arquivo estar setada para o modo embarcado.
     [!] correção na abertura projetos automaticamente, ocorria problemas com os arquivos com endereco relativo.
 
 2021-02-23 15:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
