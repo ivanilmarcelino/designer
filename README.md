@@ -9,15 +9,15 @@ Colabore para que nosso projeto xbase volte a ser algo tão popular quanto um di
 
 ### Pacote completo:
 
-Ao Baixar certifique-se de baixar o conjunto completo, atualmente em 2 volumes:
+Caso queira baixar apenas o Designer, sem baixar o Samples, clique sobre o arquivo conforme modelo abaixo:
 
 - [X] Designer_%Ano%Mes%Dia%.ZIP
-- [X] Designer_%Ano%Mes%Dia%.Z01
 
-Ou use este link para baixar usando o recurso ZIP do GitHub [Baixar agora](https://github.com/ivanilmarcelino/designer/archive/master.zip)
+Você será direcionado para uma nova pagina, procure pelo botão download, desta forma forma voce terá acesso apenas ao pacote completo do Designer;
 
-Apenas Salve os arquivos no seu equipamento num local temporário, depois descompacte o ZIP, isso resultará num arquivo executável auto extraível, o GIT tem um limite de 25MB, desta forma foi necessário quebrar o arquivo.
-Dê um duplo clique sobre o Designer_%Ano%Mes%Dia%.EXE resultante e aponte para um local apropriado.
+Ou use este link para baixar usando o recurso ZIP do GitHub [Baixar agora](https://github.com/ivanilmarcelino/designer/archive/master.zip) para ter acesso a um clone do repositório;
+
+O zip contem um binário auto extraível, após baixar, extraia, e então execute o auto-extraível, siga as instruções;
 
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
@@ -32,20 +32,21 @@ Collaborate for our xbase project to become something as popular as once Clipper
 
 ### Complete package:
 
-When downloading make sure to download the complete set, currently in 2 volumes:
+If you want to download only the Designer, without downloading Samples, click on the file according to the model below:
 
-- [X] Designer_%Ano%Mes%Dia%.ZIP
-- [X] Designer_%Ano%Mes%Dia%.Z011
+- [X] Designer_% Year% Month% Day% .ZIP
 
-Or use this link to download using the GitHub ZIP feature [Download now](https://github.com/ivanilmarcelino/designer/archive/master.zip);
+You will be directed to a new page, look for the download button, this way you will only have access to the complete Designer package;
 
-Just save the files on your device in a temporary location, then unzip the ZIP, this will result in a self-extracting executable file, GIT has a limit of 25MB, so it was necessary to break the file.
+Or use this link to download using the GitHub ZIP feature [Download now] (https://github.com/ivanilmarcelino/designer/archive/master.zip) to access a clone of the repository;
 
-Double-click on the resulting Designer_% Ano% Mes% Dia% .EXE and point to an appropriate location.
+The zip contains a self-extracting binary, after downloading, extract, and then run the self-extracting, follow the instructions; 
+
 
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
 
 e-mail: ivanil.marcelino@yahoo.com.br
+
 #
 ## Dicas e truques e muito mais;
 [![banner](https://github.com/ivanilmarcelino/designer/blob/master/Image/dicasetruques.jpg)](https://www.youtube.com/playlist?list=PLK0WK4h0-ohQAFMtcMgKgLI9ZFvLtzaJH)
