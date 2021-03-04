@@ -1,0 +1,66 @@
+[PROJETO]
+Main=Agenda.PRG
+TipoProjeto=1
+nomeprojeto=Agenda
+database=POSTGRESQL;localhost;agenda;postgres;123;5432;public
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=00  ,00  ,00  ,00  
+internalname=Agenda.Exe
+legalcopyright=Copyright © 2021
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALPHA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=BRAZIL
+setcodepage=BRAZIL
+setdate=FRENCH
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=9
+fontboldMenu=FALSE
+Run=
+NaoIncluiResourceHmg=FALSE
+[FORMULARIOS]
+Frm0001=%PROJETO%\form\Agenda.FMG
+
+[MODULOS]
+MOD0001=..\..\Lib2021\Biblioteca\64\tpostgreIma.prg
+MOD0002=%PROJETO%\Agenda.PRG
+MOD0003=%PROJETO%\CargaInicial.prg
+
+[RESOURCES]
+RES0001=vazio;%PROJETO%\res\vazio.png
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]

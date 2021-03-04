@@ -1,0 +1,25 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "00.99.21.110 RELEASE CANDIDATE (RC) 210303 2131"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.02 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2101261627)
+    Compilador : MinGW GNU C 10.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 04/03/2021-14:00:08 Máquina: IMA2018 Usuário:ivani
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : Agenda
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    Memvar oPgServer
+    Private oPgServer//Variáveis globais de conexão
+    oPgServer:=TPQServerIma():New('localhost','agenda','postgres','123',5432,'public') //Cria o objeto MySQL
+    if oPgServer:Neterr() //verifica se ouve erro na abertura do banco
+        MsgStop('Erro ao conectar banco de dados Mysql' + oPgServer:Error())
+        Return .F.
+    Endif

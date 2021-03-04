@@ -1,4 +1,11 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-03-04 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido Bug no Wizard, erro de acesso ao adicionar o objeto ao Grid
+    [+] Adicionado suporte ao PostGreSQL
+        Classes MySQL+Firebird+PostGreSQL e Sqlite foram modificados para padronização de codigo, as classes receberem o complemento de Ima 
+        desta forma não se chocam com as originais, ficando o usuario livre para escolher usar as Libs embarcadas na IDE ou a Lib do Contrib Harbour;
+    [*] Adicionado samples\agenda\PostgreSQL
+
 2021-03-03 10:24 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] atualizado a libmysql.dll, nova compilação
         Será necessário substituir a libmysql.dll no projeto que forem recompilados com esta versão do Designer para obter compatibilidade
