@@ -49,9 +49,9 @@ e-mail: ivanil.marcelino@yahoo.com.br
 
 #
 ## Acessando bancos de dados nativamente ou pelo AdoDB
-[PostgreSQL](https://youtu.be/OZU4y8LVIaY)
-[Firebird](https://youtu.be/jklB76B65Ds)
-[DBF/SQlite/MySQL/Access/SQLServer](https://youtu.be/Q_1T-krg5kc)
+- [X] [PostgreSQL](https://youtu.be/OZU4y8LVIaY)
+- [X] [Firebird](https://youtu.be/jklB76B65Ds)
+- [X] [DBF/SQlite/MySQL/Access/SQLServer](https://youtu.be/Q_1T-krg5kc)
 
 
 #
