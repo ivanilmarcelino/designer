@@ -38,7 +38,7 @@ If you want to download only the Designer, without downloading Samples, click on
 
 You will be directed to a new page, look for the download button, this way you will only have access to the complete Designer package;
 
-Or use this link to download using the GitHub ZIP feature [Download now] (https://github.com/ivanilmarcelino/designer/archive/master.zip) to access a clone of the repository;
+Or use this link to download using the GitHub ZIP feature [Download now](https://github.com/ivanilmarcelino/designer/archive/master.zip) to access a clone of the repository;
 
 The zip contains a self-extracting binary, after downloading, extract, and then run the self-extracting, follow the instructions; 
 
@@ -46,6 +46,13 @@ The zip contains a self-extracting binary, after downloading, extract, and then 
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
 
 e-mail: ivanil.marcelino@yahoo.com.br
+
+#
+## Acessando bancos de dados nativamente ou pelo AdoDB
+[PostgreSQL](https://youtu.be/OZU4y8LVIaY)
+[Firebird](https://youtu.be/jklB76B65Ds)
+[DBF/SQlite/MySQL/Access/SQLServer](https://youtu.be/Q_1T-krg5kc)
+
 
 #
 ## Dicas e truques e muito mais;
