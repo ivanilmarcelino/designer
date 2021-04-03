@@ -1,4 +1,11 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-04-03 15:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido Bug em FileVersion - RC
+    [*] Sincronizado PostGreSQL github core com ajustes de 31/03/2021
+        Atualizado o pacote de DLL da versão postgresql-10.16-1 de 02/2021
+    [*] Sincronizado com a Minigui 20.03 de 31/03/2021
+    [+] Ajuste de imagens nos ButtonEX ImageWidth/ImageHeight
+    
 2021-03-04 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido Bug no Wizard, erro de acesso ao adicionar o objeto ao Grid
     [+] Adicionado suporte ao PostGreSQL
