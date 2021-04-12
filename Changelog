@@ -1,4 +1,10 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-04-12 14:47 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Sincronizado com a Minigui 20.03.1
+    [*] Atualização Tradução para o Italiano por Pierpaolo Martinello (pier.martinello@alice.it)
+    [*] Suporte Tipo Booleano no Firebird
+    [*] Atualização Scite, Scintilla Release 5.0.1
+
 2021-04-03 15:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido Bug em FileVersion - RC
     [*] Sincronizado PostGreSQL github core com ajustes de 31/03/2021
