@@ -1,6 +1,12 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-04-14 15:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] VERSION_PRODUCT "0.99.23.25"
+    [*] Sincronizado com a Minigui 21.03.2 de 12/04/2021
+    [*] Ajuste tradução addons PesquisaCRUD
+
 2021-04-12 14:47 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [*] Sincronizado com a Minigui 20.03.1
+    [;] VERSION_PRODUCT "0.99.23.24"
+    [*] Sincronizado com a Minigui 21.03.1
     [*] Atualização Tradução para o Italiano por Pierpaolo Martinello (pier.martinello@alice.it)
     [*] Suporte Tipo Booleano no Firebird
     [*] Atualização Scite, Scintilla Release 5.0.1
@@ -9,7 +15,7 @@
     [!] Corrigido Bug em FileVersion - RC
     [*] Sincronizado PostGreSQL github core com ajustes de 31/03/2021
         Atualizado o pacote de DLL da versão postgresql-10.16-1 de 02/2021
-    [*] Sincronizado com a Minigui 20.03 de 31/03/2021
+    [*] Sincronizado com a Minigui 21.03 de 31/03/2021
     [+] Ajuste de imagens nos ButtonEX ImageWidth/ImageHeight
     
 2021-03-04 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
