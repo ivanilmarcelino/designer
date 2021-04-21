@@ -1,4 +1,17 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Classe Ado - Update SQLServer Fixed
+    [*] Reposionamento correto em PesquisaCRUD
+        .MinWidth=330
+        .MaxWidth=(Application.Width)
+
+2021-04-15 16:24 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [%] Ajust appBuild_%aplication%.bat para se posicionar no RAIS permitido a chamada de outras pastas
+
+2021-04-14 17:56 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] VERSION_PRODUCT "0.99.23.25"
+    [!] PesquisaCRUD com MySQL {change ::cQuery to ::SQL => ::Server:SQL}
+
 2021-04-14 15:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [;] VERSION_PRODUCT "0.99.23.25"
     [*] Sincronizado com a Minigui 21.03.2 de 12/04/2021
