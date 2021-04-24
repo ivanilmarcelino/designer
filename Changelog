@@ -1,5 +1,13 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] Ajustes reportados por Pierpaolo Martinello (pier.martinello@alice.it)
+        [!] Corrigido Designer_Finaliza() quando acionado pelo menu Main
+        [*] Função Confirma() de AddOns estava com Confirmation em ingles quando fornecido um titulo vazio, mantido o vazio
+        [*] PesquisaCRUD redimencionamento corrigido.
+
+    [!] Wizard=>Edição de registro, codigo redundante ao habilitar itens editaveis.
+    
+2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Classe Ado - Update SQLServer Fixed
     [*] Reposionamento correto em PesquisaCRUD
         .MinWidth=330
