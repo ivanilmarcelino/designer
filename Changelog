@@ -1,4 +1,10 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-04-30 10:25 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    ; #Define VERSION_PRODUCT "0.99.23.28"
+    [*] Atualização Tradução para o Italiano por [Pierpaolo Martinello](pier.martinello@alice.it)
+    [*] [Update Scite 5.02](https://www.scintilla.org/SciTEDownload.html)
+    [*] [Sincronizado Minigui 20.03.3 de 29/04/2021](http://hmgextended.com/files/CONTRIB/hmg-21.03-setup.exe)
+
 2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [;] Ajustes reportados por Pierpaolo Martinello (pier.martinello@alice.it)
         [!] Corrigido Designer_Finaliza() quando acionado pelo menu Main
