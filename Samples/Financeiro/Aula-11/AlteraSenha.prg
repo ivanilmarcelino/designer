@@ -47,10 +47,9 @@ Static Function AlteraSenha_Bt_Confirma_Action( )
         Return Nil
     endif
     
-    if cn:Execute("Update acesso set senha='"+Encripta(AlteraSenha.NewPassword.value)+"' where id="+hb_ntos(hAcesso["coduser"])+";")
-        if cn:nReg<=0
-            MsgSTop("Não foi possivel trocar a senha !",SISTEMA)
-        endif
+    cn:Execute("Update acesso set senha='"+Encripta(AlteraSenha.NewPassword.value)+"' where id="+hb_ntos(hAcesso["coduser"])+";")
+    if cn:nReg<=0
+        MsgSTop("Não foi possivel trocar a senha !",SISTEMA)
     endif
     AlteraSEnha.Release()
     Return .T.
