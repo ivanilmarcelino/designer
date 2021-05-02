@@ -1,4 +1,7 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-05-02 17:54 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [!]	Correção :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
+
 2021-04-30 10:25 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     ; #Define VERSION_PRODUCT "0.99.23.28"
     [*] Atualização Tradução para o Italiano por [Pierpaolo Martinello](pier.martinello@alice.it)
