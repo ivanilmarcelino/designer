@@ -8,6 +8,8 @@
             Endif
             //Pode ter estar sob um filtro, vamos recuperar o indice real
             n := FrmProjeto.oModulo.Cargo[n]
+            
+        FrmProjeto_oBtnModExtract_Action() - Ajuste para corrigir codigo do usuario quando terminado com ; mantendo linhas em branco.
     
 2021-05-02 17:54 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!]	Correção :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
