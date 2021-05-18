@@ -1,4 +1,14 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-05-18 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [!] Modulo Endenta.prg
+        FrmProjeto_oBtnModStruct_Action( ) - Endentamento => problemas quando o grid do modulo estava sob um filtro
+        FrmProjeto_oBtnModExtract_Action() - Extração de form => problemas quando o grid do modulo estava sob um filtro
+            if (n:=FrmProjeto.oModulo.Value) = 0
+                Return .F.
+            Endif
+            //Pode ter estar sob um filtro, vamos recuperar o indice real
+            n := FrmProjeto.oModulo.Cargo[n]
+    
 2021-05-02 17:54 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!]	Correção :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
 
