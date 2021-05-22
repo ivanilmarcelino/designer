@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-05-21 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [+] incluido lingua espanhola
+	Caso sejam corrigidos algo na tradução me envie o arquivo  de volta para ser incluido na proxima distribuição.
+
 2021-05-18 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] Modulo Endenta.prg
         FrmProjeto_oBtnModStruct_Action( ) - Endentamento => problemas quando o grid do modulo estava sob um filtro
