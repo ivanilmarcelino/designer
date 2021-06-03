@@ -1,0 +1,200 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "0.99.23.30 RELEASE CANDIDATE (RC) 210601 1053"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.05.0 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.1 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 03/06/2021-15:35:49 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : TestAdoSQL
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:TestAdoSQL.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 206, 175 WIDTH 1102 HEIGHT 526  TITLE "" MAIN
+
+    DEFINE GRID oGrid1
+        COL 26
+        HEADERS { "Cod" , "Nome" , "Update" }
+        HEIGHT 174
+        JUSTIFY { 0 , 0 , 0 }
+        ONDBLCLICK (LoadFrmFrmMunicip(1))
+        ONHEADCLICK {{||.T.},{||Nil},{||Nil}}
+        ROW 51
+        SHOWHEADERS TRUE
+        VALUE 0
+        WIDTH 434
+        WIDTHS { 60 , 352 , 0 }
+    END GRID
+
+    DEFINE GRID oGrid2
+        COL 26
+        HEADERS { "Cod" , "Nome" , "update" }
+        HEIGHT 174
+        JUSTIFY { 0 , 0 , 0 }
+        ONDBLCLICK (LoadFrmFrmMunicip(2))
+        ONHEADCLICK {{||.T.},{||Nil},{||Nil}}
+        ROW 270
+        SHOWHEADERS TRUE
+        VALUE 0
+        WIDTH 434
+        WIDTHS { 60 , 352 , 0 }
+    END GRID
+
+    DEFINE GRID oGrid3
+        COL 470
+        HEADERS { "Cod" , "Nome" , "update" }
+        HEIGHT 174
+        JUSTIFY { 0 , 0 , 0 }
+        ONDBLCLICK (LoadFrmFrmMunicip(3))
+        ONHEADCLICK {{||.T.},{||Nil},{||Nil}}
+        ROW 51
+        SHOWHEADERS TRUE
+        VALUE 0
+        WIDTH 434
+        WIDTHS { 60 , 352 , 0 }
+    END GRID
+
+    DEFINE GRID oGrid4
+        COL 470
+        HEADERS { "Cod" , "Nome" , "update" }
+        HEIGHT 174
+        JUSTIFY { 0 , 0 , 0 }
+        ONDBLCLICK (LoadFrmFrmMunicip(4))
+        ONHEADCLICK {{||.T.},{||Nil},{||Nil}}
+        ROW 270
+        SHOWHEADERS TRUE
+        VALUE 0
+        WIDTH 434
+        WIDTHS { 60 , 352 , 0 }
+    END GRID
+
+    DEFINE LABEL oLabel1
+        COL 470
+        HEIGHT 20
+        ROW 29
+        VALUE "Client 3"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel2
+        COL 26
+        HEIGHT 20
+        ROW 29
+        VALUE "Client 1"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel3
+        COL 26
+        HEIGHT 20
+        ROW 247
+        VALUE "Client 2"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel4
+        COL 470
+        HEIGHT 20
+        ROW 247
+        VALUE "Client 4"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE BTNTEXTBOX oFilter1
+        ACTION (Main_oFilter_Action(1))
+        COL 224
+        HEIGHT 20
+        ONENTER (Main_oFilter_Action( 1 ),this.setfocus())
+        PLACEHOLDER "Digite algo e pressione <ENTER>"
+        ROW 228
+        WIDTH 236
+    END BTNTEXTBOX
+
+    DEFINE BTNTEXTBOX oFilter3
+        ACTION (Main_oFilter_Action(3))
+        COL 668
+        HEIGHT 20
+        ONENTER (Main_oFilter_Action( 3 ),this.setfocus())
+        PLACEHOLDER "Digite algo e pressione <ENTER>"
+        ROW 227
+        WIDTH 236
+    END BTNTEXTBOX
+
+    DEFINE BTNTEXTBOX oFilter2
+        ACTION (Main_oFilter_Action(2))
+        COL 224
+        HEIGHT 20
+        ONENTER (Main_oFilter_Action( 2 ),this.setfocus())
+        PLACEHOLDER "Digite algo e pressione <ENTER>"
+        ROW 448
+        WIDTH 236
+    END BTNTEXTBOX
+
+    DEFINE BTNTEXTBOX oFilter4
+        ACTION (Main_oFilter_Action(4))
+        COL 668
+        HEIGHT 20
+        ONENTER (Main_oFilter_Action( 4 ),this.setfocus())
+        PLACEHOLDER "Digite algo e pressione <ENTER>"
+        ROW 448
+        WIDTH 236
+    END BTNTEXTBOX
+
+    DEFINE GRID oResult
+        COL 914
+        HEADERS { "reg" , "qtde" }
+        HEIGHT 415
+        JUSTIFY { 0 , 1 }
+        ONHEADCLICK {{||.T.},{||Nil}}
+        ROW 51
+        SHOWHEADERS TRUE
+        VALUE 0
+        WIDTH 149
+        WIDTHS { 42 , 81 }
+    END GRID
+
+    DEFINE LABEL oMostra
+        COL 914
+        HEIGHT 20
+        ROW 29
+        VALUE "Result"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE FRAME oFrame1
+        CAPTION "simulador"
+        COL 16
+        HEIGHT 470
+        ROW 8
+        WIDTH 1059
+    END FRAME
+
+    DEFINE TIMER oTimer1
+        ACTION (Main_oTimer1_Action())
+        COL 1032
+        INTERVAL 500
+        ROW 21
+    END TIMER
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

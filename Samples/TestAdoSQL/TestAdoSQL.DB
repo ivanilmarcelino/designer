@@ -1,0 +1,25 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "0.99.23.30 RELEASE CANDIDATE (RC) 210601 1053"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.05.0 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.1 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 03/06/2021-15:45:39 Máquina: IMA2018 Usuário:ivani
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : TestAdoSQL
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    Memvar Connection
+    Private Connection //Variáveis globais de conexão
+    Connection := TadoConnection():New() //Cria o objeto ADO
+    Connection:ConnectString := 'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=.\Database.mdb;Persist Security Info=False' //String de Conexão
+    if !Connection:Open() //Abre o banco de dados
+        Return .F.
+    Endif

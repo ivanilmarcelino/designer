@@ -1,0 +1,117 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    #Define VERSION_PRODUCT "0.99.23.30 RELEASE CANDIDATE (RC) 210601 1053"
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 21.05.0 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.1 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 03/06/2021-15:37:26 Máquina: IMA2018 Usuário:ivani
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : TestAdoSQL
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:FrmMunicip}
+*{Modulo:FrmMunicip.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 199, 312 WIDTH 367 HEIGHT 244  TITLE "" CHILD ON INIT (FrmMunicip_OnInit(oQuery,FrmMunicip))
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "Minigui_edit_close" ADJUST  TOOLTIP "Fechar o Formulário" ACTION (FrmMunicip_ToolbarAction(1,Nil,oQuery,FrmMunicip)) SEPARATOR  AUTOSIZE 
+        BUTTON oBtnNovo PICTURE "Minigui_edit_new" ADJUST  TOOLTIP "Incluir um novo Registro" ACTION (FrmMunicip_ToolbarAction(2,Nil,oQuery,FrmMunicip))
+        BUTTON oBtnEdit PICTURE "Minigui_edit_edit" ADJUST  TOOLTIP "Editar o Registro atual" ACTION (FrmMunicip_ToolbarAction(3,Nil,oQuery,FrmMunicip))
+        BUTTON oBtnSave PICTURE "Minigui_edit_ok" ADJUST  TOOLTIP "Salva inclusão/alteração do Registro" ACTION (FrmMunicip_ToolbarAction(4,Nil,oQuery,FrmMunicip)) SEPARATOR 
+        BUTTON oBtnExclui PICTURE "Minigui_edit_del" ADJUST  TOOLTIP "Exclui o Registro atual" ACTION (FrmMunicip_ToolbarAction(5,Nil,oQuery,FrmMunicip)) SEPARATOR 
+        BUTTON oBtnPesquisa PICTURE "Minigui_edit_find" ADJUST  TOOLTIP "Realiza uma pesquisa" ACTION (FrmMunicip_ToolbarAction(6,Nil,oQuery,FrmMunicip))
+        BUTTON oBtnRelatorio PICTURE "Minigui_edit_print" ADJUST  TOOLTIP "Relatório" ACTION (FrmMunicip_ToolbarAction(7,Nil,oQuery,FrmMunicip))
+    END TOOLBAR
+
+    DEFINE TAB Tab1 AT 50,10 WIDTH 331 HEIGHT 146 VALUE 1 NOTABSTOP 
+        PAGE  [Municip] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 115
+                ROW 25
+                WIDTH 319
+            END FRAME
+
+            DEFINE LABEL lbl_Cod
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Cod :"
+                WIDTH 60
+            END LABEL
+
+            DEFINE TEXTBOX Cod
+                BACKCOLOR { 255 , 255 , 128 }
+                COL 78
+                FONTBOLD TRUE
+                HEIGHT 18
+                MAXLENGTH 12
+                NUMERIC TRUE
+                ONENTER (FrmMunicip_Cod_OnEnter(oQuery,FrmMunicip))
+                ROW 35
+                WIDTH 97
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nome
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Nome :"
+                WIDTH 60
+            END LABEL
+
+            DEFINE TEXTBOX Nome
+                COL 78
+                HEIGHT 18
+                MAXLENGTH 30
+                ROW 58
+                WIDTH 241
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Uf
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Uf :"
+                WIDTH 60
+            END LABEL
+
+            DEFINE COMBOBOX Uf
+                COL 78
+                HEIGHT 300
+                ROW 81
+                VALUE 0
+                WIDTH 241
+            END COMBOBOX
+
+            DEFINE LABEL Dtupdate
+                COL 78
+                HEIGHT 20
+                INVISIBLE TRUE
+                ROW 106
+                WIDTH 240
+            END LABEL
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
