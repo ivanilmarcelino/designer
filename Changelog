@@ -1,6 +1,12 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
-[*] Atualizado com minigui 20.05 Update 2 de 09/06/2021
+    [!] Ajuste classe MySQL tipo BIT
+        Atenção:
+        BIT = Logico
+        BOOL é um alias para Tinyint ou seja = Numerico
+    
+2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] Atualizado com minigui 20.05 Update 2 de 09/06/2021
 
 2021-06-02 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] Cargo de oBtnEdit ajustado para TRUE em caso de edição.
