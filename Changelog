@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-06-16 23:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [!] AddOns - Classe MySQL error
+    [*] atualizado com minigui 20.05 Update 3 de 16/06/2021
+
 2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] Ajuste classe MySQL tipo BIT
         Atenção:
