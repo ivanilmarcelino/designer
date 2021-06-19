@@ -4,7 +4,7 @@
         Nomes dos cabeçalhos iniciados com a primeira letra em maiuscula
         Quando alterado o tipo de controle de numerico para Check, automaticamente definido o valor para falso em limpar controles
         Adicionado inteligência aos botões de Novo e Edição, agora é possivel abortar o processo sem ter que chamar o filtro ou fechar o form
-        Nota: Estas melhorias foram sugeridas pelo amigo 
+        Nota: Estas melhorias foram sugeridas pelo amigo Pierpaolo
 
 2021-06-16 23:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] AddOns - Classe MySQL error
