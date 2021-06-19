@@ -1,25 +1,32 @@
-[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+Ôªø[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-06-19 15:38 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] Melhorias no Wizard
+        Nomes dos cabe√ßalhos iniciados com a primeira letra em maiuscula
+        Quando alterado o tipo de controle de numerico para Check, automaticamente definido o valor para falso em limpar controles
+        Adicionado intelig√™ncia aos bot√µes de Novo e Edi√ß√£o, agora √© possivel abortar o processo sem ter que chamar o filtro ou fechar o form
+        Nota: Estas melhorias foram sugeridas pelo amigo 
+
 2021-06-16 23:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] AddOns - Classe MySQL error
     [*] atualizado com minigui 20.05 Update 3 de 16/06/2021
 
 2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] Ajuste classe MySQL tipo BIT
-        AtenÁ„o:
-        BIT = Logico
-        BOOL È um alias para Tinyint ou seja = Numerico
+        Aten√ß√£o:
+        BIT = L√≥gico
+        BOOL √© um alias para Tinyint ou seja = Num√©rico
     
 2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] Atualizado com minigui 20.05 Update 2 de 09/06/2021
 
 2021-06-02 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
-    [!] Cargo de oBtnEdit ajustado para TRUE em caso de ediÁ„o.
+    [!] Cargo de oBtnEdit ajustado para TRUE em caso de edi√ß√£o.
     
         Case nParam = 3 //Editar Registro atual
             &(FrmMunicip).oBtnNovo.Cargo               := FALSE
             &(FrmMunicip).oBtnSave.Enabled             := TRUE
             &(FrmMunicip).oBtnEdit.Enabled             := FALSE
-            &(FrmMunicip).oBtnEdit.Cargo               := TRUE //Permite identificar se o registro atual est· em ediÁ„o 
+            &(FrmMunicip).oBtnEdit.Cargo               := TRUE //Permite identificar se o registro atual est√° em edi√ß√£o 
             &(FrmMunicip).oBtnExclui.Enabled           := FALSE    
 
 2021-06-01 18:06 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
@@ -27,12 +34,12 @@
 
 2021-05-21 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [+] incluido lingua espanhola
-	Caso sejam corrigidos algo na traduÁ„o me envie o arquivo  de volta para ser incluido na proxima distribuiÁ„o.
+	Caso sejam corrigidos algo na tradu√ß√£o me envie o arquivo  de volta para ser incluido na proxima distribui√ß√£o.
 
 2021-05-18 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] Modulo Endenta.prg
         FrmProjeto_oBtnModStruct_Action( ) - Endentamento => problemas quando o grid do modulo estava sob um filtro
-        FrmProjeto_oBtnModExtract_Action() - ExtraÁ„o de form => problemas quando o grid do modulo estava sob um filtro
+        FrmProjeto_oBtnModExtract_Action() - Extra√ß√£o de form => problemas quando o grid do modulo estava sob um filtro
             if (n:=FrmProjeto.oModulo.Value) = 0
                 Return .F.
             Endif
@@ -42,21 +49,21 @@
         FrmProjeto_oBtnModExtract_Action() - Ajuste para corrigir codigo do usuario quando terminado com ; mantendo linhas em branco.
     
 2021-05-02 17:54 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
-    [!]	CorreÁ„o :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
+    [!]	Corre√ß√£o :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
 
 2021-04-30 10:25 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     ; #Define VERSION_PRODUCT "0.99.23.28"
-    [*] AtualizaÁ„o TraduÁ„o para o Italiano por [Pierpaolo Martinello](pier.martinello@alice.it)
+    [*] Atualiza√ß√£o Tradu√ß√£o para o Italiano por [Pierpaolo Martinello](pier.martinello@alice.it)
     [*] [Update Scite 5.02](https://www.scintilla.org/SciTEDownload.html)
     [*] [Sincronizado Minigui 20.03.3 de 29/04/2021](http://hmgextended.com/files/CONTRIB/hmg-21.03-setup.exe)
 
 2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [;] Ajustes reportados por Pierpaolo Martinello (pier.martinello@alice.it)
         [!] Corrigido Designer_Finaliza() quando acionado pelo menu Main
-        [*] FunÁ„o Confirma() de AddOns estava com Confirmation em ingles quando fornecido um titulo vazio, mantido o vazio
+        [*] Fun√ß√£o Confirma() de AddOns estava com Confirmation em ingles quando fornecido um titulo vazio, mantido o vazio
         [*] PesquisaCRUD redimencionamento corrigido.
 
-    [!] Wizard=>EdiÁ„o de registro, codigo redundante ao habilitar itens editaveis.
+    [!] Wizard=>Edi√ß√£o de registro, codigo redundante ao habilitar itens editaveis.
     
 2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Classe Ado - Update SQLServer Fixed
@@ -74,81 +81,81 @@
 2021-04-14 15:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [;] VERSION_PRODUCT "0.99.23.25"
     [*] Sincronizado com a Minigui 21.03.2 de 12/04/2021
-    [*] Ajuste traduÁ„o addons PesquisaCRUD
+    [*] Ajuste tradu√ß√£o addons PesquisaCRUD
 
 2021-04-12 14:47 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [;] VERSION_PRODUCT "0.99.23.24"
     [*] Sincronizado com a Minigui 21.03.1
-    [*] AtualizaÁ„o TraduÁ„o para o Italiano por Pierpaolo Martinello (pier.martinello@alice.it)
+    [*] Atualiza√ß√£o Tradu√ß√£o para o Italiano por Pierpaolo Martinello (pier.martinello@alice.it)
     [*] Suporte Tipo Booleano no Firebird
-    [*] AtualizaÁ„o Scite, Scintilla Release 5.0.1
+    [*] Atualiza√ß√£o Scite, Scintilla Release 5.0.1
 
 2021-04-03 15:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido Bug em FileVersion - RC
     [*] Sincronizado PostGreSQL github core com ajustes de 31/03/2021
-        Atualizado o pacote de DLL da vers„o postgresql-10.16-1 de 02/2021
+        Atualizado o pacote de DLL da vers√£o postgresql-10.16-1 de 02/2021
     [*] Sincronizado com a Minigui 21.03 de 31/03/2021
     [+] Ajuste de imagens nos ButtonEX ImageWidth/ImageHeight
     
 2021-03-04 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido Bug no Wizard, erro de acesso ao adicionar o objeto ao Grid
     [+] Adicionado suporte ao PostGreSQL
-        Classes MySQL+Firebird+PostGreSQL e Sqlite foram modificados para padronizaÁ„o de codigo, as classes receberem o complemento de Ima 
-        desta forma n„o se chocam com as originais, ficando o usuario livre para escolher usar as Libs embarcadas na IDE ou a Lib do Contrib Harbour;
+        Classes MySQL+Firebird+PostGreSQL e Sqlite foram modificados para padroniza√ß√£o de codigo, as classes receberem o complemento de Ima 
+        desta forma n√£o se chocam com as originais, ficando o usuario livre para escolher usar as Libs embarcadas na IDE ou a Lib do Contrib Harbour;
     [*] Adicionado samples\agenda\PostgreSQL
 
 2021-03-03 10:24 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [*] atualizado a libmysql.dll, nova compilaÁ„o
-        Ser· necess·rio substituir a libmysql.dll no projeto que forem recompilados com esta vers„o do Designer para obter compatibilidade
-    [+] incluido no pacote o aplicativo GrepWin [https://github.com/stefankueng/grepWin], trata-se de um buscador avanÁado que uso muito 
-    no dia a dia, vocÍ pode configur·-lo para v·rias linguagens, inclusive o portuguÍs(BR) bastando acessar as configuraÁıes no aplicativo e 
-    estas ficar„o salvas mesmo que atualize o Designer.
+    [*] atualizado a libmysql.dll, nova compila√ß√£o
+        Ser√° necess√°rio substituir a libmysql.dll no projeto que forem recompilados com esta vers√£o do Designer para obter compatibilidade
+    [+] incluido no pacote o aplicativo GrepWin [https://github.com/stefankueng/grepWin], trata-se de um buscador avan√ßado que uso muito 
+    no dia a dia, voc√™ pode configur√°-lo para v√°rias linguagens, inclusive o portugu√™s(BR) bastando acessar as configura√ß√µes no aplicativo e 
+    estas ficar√£o salvas mesmo que atualize o Designer.
     
 2021-02-27 19:56 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    Vers„o: [00,99,23,000 ]
-    [*] Ajuste na conex„o com firebird para permitir a configuraÁ„o remota
+    Vers√£o: [00,99,23,000 ]
+    [*] Ajuste na conex√£o com firebird para permitir a configura√ß√£o remota
     vale lembrar que se for usar um servidor, lembre-se retirar o arquivo firebird.conf da pasta da IDE e tambem do projeto, caso contrario
-    esta configuraÁ„o ter· prioridade e provavelmente n„o ira conectar por conta da configuraÁ„o deste arquivo estar setada para o modo embarcado.
-    [!] correÁ„o na abertura projetos automaticamente, ocorria problemas com os arquivos com endereco relativo.
+    esta configura√ß√£o ter√° prioridade e provavelmente n√£o ira conectar por conta da configura√ß√£o deste arquivo estar setada para o modo embarcado.
+    [!] corre√ß√£o na abertura projetos automaticamente, ocorria problemas com os arquivos com endereco relativo.
 
 2021-02-23 15:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    Vers„o: [00,99,21,109 ]
-    [*] Ajuste na funÁ„o RelativePath
+    Vers√£o: [00,99,21,109 ]
+    [*] Ajuste na fun√ß√£o RelativePath
     
 2021-02-22 19:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    Vers„o: [00,99,21,109 ]
-    [+] Incluido o localizador de funÁ„o/procedimento ou methodo no projeto 
-        Na medida que o projeto cresce, È comum esquecer em qual modulo esta a funÁ„o.
+    Vers√£o: [00,99,21,109 ]
+    [+] Incluido o localizador de fun√ß√£o/procedimento ou methodo no projeto 
+        Na medida que o projeto cresce, √© comum esquecer em qual modulo esta a fun√ß√£o.
     
 2021-02-19 20:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [*] a Inclus„o de arquivos de outros projetos agora ser„o sinalizados com (*) e o tooltip informara o endereco do arquivo
-    [*] Agora È possivel informar no projeto para n„o carregar os recursos da Minigui (res), percebi alguns conflitos
-    [+] Suporte de acesso ao Firebird; ao fazer a conexao o designer ir· desempacotar os arquivos na pasta do projeto para uma conexao 
-        autonoma (embarcada) sem interferir no servidor real; n„o precisa ter um servidor do Firebird rodando
-    [+] Inclus„o samples\agenda {AdoDb,MySQL,Firebird,SQlite)
-        Os projetos possuem as funcionalidades de acesso e CRUD, È uma boa opÁ„o para o aprendizado.
+    [*] a Inclus√£o de arquivos de outros projetos agora ser√£o sinalizados com (*) e o tooltip informara o endereco do arquivo
+    [*] Agora √© possivel informar no projeto para n√£o carregar os recursos da Minigui (res), percebi alguns conflitos
+    [+] Suporte de acesso ao Firebird; ao fazer a conexao o designer ir√° desempacotar os arquivos na pasta do projeto para uma conexao 
+        autonoma (embarcada) sem interferir no servidor real; n√£o precisa ter um servidor do Firebird rodando
+    [+] Inclus√£o samples\agenda {AdoDb,MySQL,Firebird,SQlite)
+        Os projetos possuem as funcionalidades de acesso e CRUD, √© uma boa op√ß√£o para o aprendizado.
     
 2021-01-22 18:46 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] SincronizaÁ„o com Minigui v21.01 de 20/01/2021
+    [!] Sincroniza√ß√£o com Minigui v21.01 de 20/01/2021
     
 2020-12-16 18:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] Ajustado a criaÁ„o do arquivo de cabecalho dos SETS na definiÁ„o do projeto
+    [!] Ajustado a cria√ß√£o do arquivo de cabecalho dos SETS na defini√ß√£o do projeto
     [!] compatibilidade MoveNext.MovePrevious,MoveLast com Mysql
     
 2020-12-13 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] Ajustado a importaÁ„o de estrutura do dbf para um comando Create Table da tela de comandos sql
+    [!] Ajustado a importa√ß√£o de estrutura do dbf para um comando Create Table da tela de comandos sql
     [!] Ajustado o dispositivo de saida de erro para :OnError para comandos SQL
     [!] Ajustado o codigo Sql for ADO para captura de error pos comando.
     [*] Retirado o filtro pre-estabelecido de controles de acordo com o tipo em virtude de SQLite ser texto e nem 
-        sempre queremos tratar tudo como texto no programa, agora vocÍ consegue direcionar um texto para controle 
-        date/numeric/etc, tendo cuidado de fazer a devida transformaÁ„o no codigo gerado posteriormente.
+        sempre queremos tratar tudo como texto no programa, agora voc√™ consegue direcionar um texto para controle 
+        date/numeric/etc, tendo cuidado de fazer a devida transforma√ß√£o no codigo gerado posteriormente.
     [*] Restart direcionado para pasta temporaria, estava sempre criando na pasta atual, nem sempre pasta da IDE
     [!] Ajustado o comando SQL de Sqlite, desviando corretamente :onError
     
     
 2020-12-12 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Atualizado com a Biblioteca Minigui v2012.0 de 09/12/2020
-    [;] Incluido (Suporte SQL) ainda experimental, vers„o anterior ficara congelada
+    [;] Incluido (Suporte SQL) ainda experimental, vers√£o anterior ficara congelada
     [+] Wizard agora cria um codigo unico para trabalhar com SQL (SQLite nativo,Mysql nativo,Access\SQlSErver via ADO)
     
 2020-11-12 10:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
@@ -158,102 +165,102 @@
 
 2020-11-09 21:22 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Melhorado o processo de Pesquisa CRUD
-    [*] Melhorado processo de extraÁ„o de formulario do PRG 
+    [*] Melhorado processo de extra√ß√£o de formulario do PRG 
 
 2020-11-09 08:08 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Atualizado com a biblioteca Minigui v2010 Update 3 de 09/11/2020
-    [!] Ajuste na Classe ADO, incompatibilidade com a inclus„o de novos recursos
+    [!] Ajuste na Classe ADO, incompatibilidade com a inclus√£o de novos recursos
     [*] Ajustado o Wizard para (ACCESS/SQL SERVER) Traz apenas Tabelas ou Views sem as tabelas Internas;
 
 
 2020-11-05 12:17 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [*] Atualizado com a biblioteca Minigui v2010 Update 2 de 05/11/2020
-        Ajustado o pacote de compilaÁ„o para incluir a biblioteca Bostaurus
-    [%] IncluÌdo filtro para formularios e modulos
-        VocÍ pode usar o mÈtodo SQL "va%" comeÁa com; "%va%" termina com ou "%va%" contem;
+        Ajustado o pacote de compila√ß√£o para incluir a biblioteca Bostaurus
+    [%] Inclu√≠do filtro para formularios e modulos
+        Voc√™ pode usar o m√©todo SQL "va%" come√ßa com; "%va%" termina com ou "%va%" contem;
     [%] Incluido filtro para Recursos
-        Pesquisa digit·vel:
-        VocÍ pode usar o mÈtodo SQL "va%" comeÁa com; "%va%" termina com ou "%va%" contem;
+        Pesquisa digit√°vel:
+        Voc√™ pode usar o m√©todo SQL "va%" come√ßa com; "%va%" termina com ou "%va%" contem;
         Pesquisa Combo:
-        VocÍ pode selecionar o tipo de recurso a ser carregado na lista
+        Voc√™ pode selecionar o tipo de recurso a ser carregado na lista
 
 2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ao adicionar uma nova pagina no page pelo botao direito do mouse ocorria um estouro de memoria ao salvar, problema incluindo quando foi incluido a opcao de
     tooltip nas paginas;
 
 2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] Toolbar simples no modo Bottom, n„o estava sendo aberta adequadamente, sendo colocada no topo quando reaberta;
+    [!] Toolbar simples no modo Bottom, n√£o estava sendo aberta adequadamente, sendo colocada no topo quando reaberta;
     Informado por jrsancheze via github
     
 2020-10-26 20:21 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] SeleÁ„o de campos no wizard de relatÛrios estava com um crash
-    [+] Incluido opcoes no Wizard (sem relatÛrios/Excel/Html)
+    [!] Sele√ß√£o de campos no wizard de relat√≥rios estava com um crash
+    [+] Incluido opcoes no Wizard (sem relat√≥rios/Excel/Html)
 
 2020-10-24 19:41 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [%] Melhoria nas seleÁıes de objetos
-        Menu de contexto do form de desenho tem agora a opÁ„o de seleÁ„o de grupo 
-        Agora È possivel marcar e desmarcar o objetos
+    [%] Melhoria nas sele√ß√µes de objetos
+        Menu de contexto do form de desenho tem agora a op√ß√£o de sele√ß√£o de grupo 
+        Agora √© possivel marcar e desmarcar o objetos
     [!] Crash na escolha de opcoes de campos no wizard
 
 2020-10-22 20:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ato abrir um projeto vazio e tentar criar um formulario solto, ocorria um erro de estouro de matriz
-    [+] Projeto ainda em fase de testes, ao clicar com o botao direito no form, È possivel selecionar varios objetos select group
+    [+] Projeto ainda em fase de testes, ao clicar com o botao direito no form, √© possivel selecionar varios objetos select group
 
 
 2020-10-21 20:27 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] Quando inserido apenas uma toolbar e pelo menos 1 combo, a Designer n„o estava envolvendo ambos numa SplitBox gerando um erro de atribuiÁ„o de listWidth no combo
+    [!] Quando inserido apenas uma toolbar e pelo menos 1 combo, a Designer n√£o estava envolvendo ambos numa SplitBox gerando um erro de atribui√ß√£o de listWidth no combo
     [*] Designer atualizado com a Minigui v20.10 Release distribuida em 21/10/2020
-    [*] AtualizaÁ„o Scite Vers„o 4.4.5 (http://www.scintilla.org)
+    [*] Atualiza√ß√£o Scite Vers√£o 4.4.5 (http://www.scintilla.org)
     
 2020-10-19 20:49 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Ao arrastar um objeto em form sem o toolbar estava dando acesso invalido, bug  inserido  ao atualizar a toolbar
 
 2020-10-14 09:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] ao renomear um objeto, o elemento selecionado ficava nulo, com isso ao clicar sobre as propriedades n„o havia resposta
+    [!] ao renomear um objeto, o elemento selecionado ficava nulo, com isso ao clicar sobre as propriedades n√£o havia resposta
 
 2020-10-13 21:12 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [%] A funÁ„o adjust dos botoes sÛ faz sentido quando todos os botoes da toolbar tem o Flag=TRUE, ent„o esta opÁ„o foi colocada em propriedades da toolbar, um unico clik
+    [%] A fun√ß√£o adjust dos botoes s√≥ faz sentido quando todos os botoes da toolbar tem o Flag=TRUE, ent√£o esta op√ß√£o foi colocada em propriedades da toolbar, um unico clik
         ativa ou desativa todos os botoes da serie.
-    [*] A funcao Group depende de check, ent„o quando clicado em group automaticamente sera marcado check
-    [*] ativado a funÁ„o break em tempo de designer.
-    [+] adicionado a funÁ„o Modo de desenvolvimento no menu em Ferramentas, quando ativa o designer se libera dos try/Catch para indicar a linha real do erro, alem de gerar um log 
+    [*] A funcao Group depende de check, ent√£o quando clicado em group automaticamente sera marcado check
+    [*] ativado a fun√ß√£o break em tempo de designer.
+    [+] adicionado a fun√ß√£o Modo de desenvolvimento no menu em Ferramentas, quando ativa o designer se libera dos try/Catch para indicar a linha real do erro, alem de gerar um log 
         na montagem do form, permitindo uma analise apurada do que ele conseguiu montar.
-    [*] Corrigido os espaÁamentos na montagem do menu
+    [*] Corrigido os espa√ßamentos na montagem do menu
     [*] Corrigido a fonte padrao para MenuDropdown
 
 2020-10-12 21:30 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [+] Incluido a opÁ„o de adicionar um combo na Toolbar
+    [+] Incluido a op√ß√£o de adicionar um combo na Toolbar
     [!] Problema de carga de Menu dropdown ocasionado na tentativa de compatibilidade com a IDE de Walter, o codigo voltou a ser como antes o menu volta a ficar logo abaixo do botao
-    [!] Problema de exclus„o de Objetos na toolbar corrigidos
+    [!] Problema de exclus√£o de Objetos na toolbar corrigidos
 
 2020-10-09 16:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Corrigido o controle de API, alguns valores estavam se duplicando
-        ==>SUGEST√O, ELIMINE O CONTEUDO DA PASTA .\API\*.* o sistema vai recria-los.
+        ==>SUGEST√ÉO, ELIMINE O CONTEUDO DA PASTA .\API\*.* o sistema vai recria-los.
 
 2020-10-09 10:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [*] Ajustado o processo de criar formulario, agora È possivel escolher criar modulo e entre modal/child
-        VocÍ poderia criar um fomulario generico, sem a necessidade de ter um modulo vinculado
-    Ao escolher modal, basicamente n„o ha mudanÁa no codigo resultante j· que o tipo modal n„o permite o empilhamento
-    Ao escolher child, o codigo È gerado preparado para o empilhamento, as funÁıes criadas ja passam o parametro nome do formulario.
-    [-] Ao trocar o nome do formul·rio, o Designer n„o vai mais renomear as referencias no projeto, a ideia era tornar o processo mais facil, 
-        mas È o tipo de situaÁ„o que pode trazer problemas de dificil soluÁ„o se o nome do form for algo trivial; o Designer usara o sinal de [&]
-        no nome do form para identificar se È para criar as funcoes com parametros.
-    [%] Processo de atribuiÁ„o foi otimizado para reconhecer o m·ximo de alteraÁıes possÌveis em tempo de projeto, no entanto, conforme documentaÁ„o da minigui
-        alguns atributos s„o Read-Only, s„o ajust·veis apenas na criaÁ„o do objeto.
+    [*] Ajustado o processo de criar formulario, agora √© possivel escolher criar modulo e entre modal/child
+        Voc√™ poderia criar um fomulario generico, sem a necessidade de ter um modulo vinculado
+    Ao escolher modal, basicamente n√£o ha mudan√ßa no codigo resultante j√° que o tipo modal n√£o permite o empilhamento
+    Ao escolher child, o codigo √© gerado preparado para o empilhamento, as fun√ß√µes criadas ja passam o parametro nome do formulario.
+    [-] Ao trocar o nome do formul√°rio, o Designer n√£o vai mais renomear as referencias no projeto, a ideia era tornar o processo mais facil, 
+        mas √© o tipo de situa√ß√£o que pode trazer problemas de dificil solu√ß√£o se o nome do form for algo trivial; o Designer usara o sinal de [&]
+        no nome do form para identificar se √© para criar as funcoes com parametros.
+    [%] Processo de atribui√ß√£o foi otimizado para reconhecer o m√°ximo de altera√ß√µes poss√≠veis em tempo de projeto, no entanto, conforme documenta√ß√£o da minigui
+        alguns atributos s√£o Read-Only, s√£o ajust√°veis apenas na cria√ß√£o do objeto.
         
 
 2020-10-07 14:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] Corrigido processo de carga da Toolbar de legado quando fonte n„o possui FONT SIZE definida
+    [!] Corrigido processo de carga da Toolbar de legado quando fonte n√£o possui FONT SIZE definida
     [!] Corrigido processo de carga de legado na propriedade [@...Range 10,50],  deveria abrir para RANGEMIN 10 e RANGEMAX 50
-    [!] Corrigido Translate POE_PARENTESES, agora ignora se o conteudo È um bloco.
+    [!] Corrigido Translate POE_PARENTESES, agora ignora se o conteudo √© um bloco.
     [+] Incluido as propriedades em ButtonEX
     ImageWidth; ImageHeight; Horizontal; Handcursor; GradientFill
     
 2020-10-06 19:00 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] Corrigido atribuiÁ„o propriedades
-    [!] Corrigido dimens„o que incluia controle de rolagem horizontal em propriedades
+    [!] Corrigido atribui√ß√£o propriedades
+    [!] Corrigido dimens√£o que incluia controle de rolagem horizontal em propriedades
     [!] Corrigido menu que mantinha desabilita o run de aplicativos compilados ao iniciar o projeto
-    [;] SincronizaÁ„o designer com minigui v20.08 Update 5
+    [;] Sincroniza√ß√£o designer com minigui v20.08 Update 5
     [+] Adicionado a Classe THTMLReport Buitin
         oClass = HBClass():New( "THtmlRel" )
         oClass:AddData("Sucess",.F.) //Retorna TRUE se concluido com sucesso
@@ -264,15 +271,15 @@
         oClass:AddData("BackGround","#b3d1ff")
         oClass:AddData("Align") //Array de alinhamento {0=Esquerda,1=Centro,2,Direita}
         oClass:AddData("Header") //Array de cabecalho, Default nomes dos campos
-        oClass:AddData("Picture") // Array de Mascara : {"@E 999.00", ...} ser· passada como parametro de Transform
+        oClass:AddData("Picture") // Array de Mascara : {"@E 999.00", ...} ser√° passada como parametro de Transform
         oClass:AddData("Totaliza") //Array de campos que devem totalizados se numericos
         oClass:AddData("FontName","Arial")
         oClass:AddData("FontSize",1)
         oClass:AddData("Reg",0) //Total de Registros processados no relatorio
         //Cabecalhos
-        oClass:AddData( "Title","") //CabeÁ„lho do Relatorio
+        oClass:AddData( "Title","") //Cabe√ß√£lho do Relatorio
         
-        oClass:AddDAta("Footer") //RodapÈ do Relatorio
+        oClass:AddDAta("Footer") //Rodap√© do Relatorio
         
         oClass:AddData( "File") //Nome do arquivo a ser gerado
         oClass:AddData( "Title","Report HTML Ima-Solutions")
@@ -296,7 +303,7 @@
         oHtml := THtmlReport():New()
         oHtml:Rs   := Rs
         oHtml:Title := "<h3>"+PesquisaPagRec.Title+"</h3>"+;
-                   "PerÌodo de "+Dtoc(PesquisaPagRec.Dp_Data1.Value)+ " ‡ "+Dtoc(PesquisaPagRec.Dp_Data2.Value)+"</br>"
+                   "Per√≠odo de "+Dtoc(PesquisaPagRec.Dp_Data1.Value)+ " √† "+Dtoc(PesquisaPagRec.Dp_Data2.Value)+"</br>"
             oHtml:Picture := {,,,,,"@E 999,999.99",}
         oHtml:File := PutFile({{"*.HTML","*.HTML"}},"Nome do Arquivo")
         oHtml:Header := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
@@ -313,22 +320,22 @@
 
 2020-09-23 18:33 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Classe Tado: Rs:DataSQL(cString)
-    [;] Corrigido formataÁ„o Datetime na consulta quando parametro for string
+    [;] Corrigido formata√ß√£o Datetime na consulta quando parametro for string
 
 2020-09-15 15:29 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [;] AtualizaÁ„o do pacote com Minigui Extend 20.08 update 2 de 10/09/2020
+    [;] Atualiza√ß√£o do pacote com Minigui Extend 20.08 update 2 de 10/09/2020
 
 2020-09-11 10:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
-    [!] ConfiguraÁ„o
+    [!] Configura√ß√£o
         Ajustado o Tooltip para Hyperlink
 
 2020-09-11 09:32 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Projeto.prg => Project_CompilaProjeto( nComp )
-        VerificaÁ„o se a pasta PPO existe, o compilador n„o cria automaticamente .\PPO\
+        Verifica√ß√£o se a pasta PPO existe, o compilador n√£o cria automaticamente .\PPO\
 
 2020-09-10 18:39 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] OpenFMG.prg => Designer_OpenFMG_x( )
-        Arquivos de Terceiros sem espaÁo entre @ e valor (@10,15)
+        Arquivos de Terceiros sem espa√ßo entre @ e valor (@10,15)
 
 2020-09-10 18:31 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] Comuns.prg => itoken( )
@@ -336,7 +343,7 @@
 
 2020-09-10 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
     [!] OpenFMG.prg => Designer_OpenFMG_x( )
-        Corrigido carga de MENU no FMG onde È informado apenas POPUP
+        Corrigido carga de MENU no FMG onde √© informado apenas POPUP
         if substr(xLine,1,18)=="DEFINE MENU POPUP " .or. substr(xLine,1,13) == "DEFINE POPUP " .or. substr(xLine,1,6) == "POPUP "
             ...
         endif
