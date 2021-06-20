@@ -1,4 +1,9 @@
 ﻿[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-06-19 23:26 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] Atualização do Scite para a versão 5.03 (https://www.scintilla.org/SciTEDownload.html)
+    [*] Scite traduzido para BR/IT/ES e nativa US acoplado a escolha da IDE Menu: Tools\Settings\(Item 10)
+    [+] Incluido a propriedade DblClick controle Image
+
 2021-06-19 15:38 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] Melhorias no Wizard
         Nomes dos cabeçalhos iniciados com a primeira letra em maiuscula
