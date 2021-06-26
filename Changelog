@@ -1,4 +1,20 @@
-﻿[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-06-26 00:42 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] Atualização Minigui Extend v2105.4 de 24/06/2021
+    [*] Ajuste função PesquisaCrud(p1,p2,p3,p4,p5)
+        p1=Cursor Database
+        p2=Campo Alvo da Pesquisa
+        p3=Lista de Campos a compor a pesquisa
+        p4=Cabeçalhos dos campos no Grid de pesquisa
+        p5=Coordenadas da Janela Pesquisa (Padrão Nil/cálculo automático)
+            Informando as coordenadas, não haverá mais os redimencionamento 
+            para conter as colunas selecionadas, ficando a cargo do bom senso 
+            do desenvolvedor
+        p6=Registros a retornar na pesquisa internamente
+        
+        A tela de pesquisa agora pode ser abandonada com Esc
+        Ao pesquisar e não houver nada que satisfaça a pesquisa, o foco agora é devolvido a caixa de pesquisa
+
 2021-06-19 23:26 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] Atualização do Scite para a versão 5.03 (https://www.scintilla.org/SciTEDownload.html)
     [*] Scite traduzido para BR/IT/ES e nativa US acoplado a escolha da IDE Menu: Tools\Settings\(Item 10)
