@@ -1,4 +1,7 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-07-23 21:48 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*]Update Minigui Version 21.07 de 21/07/2021
+
 2021-06-26 00:42 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] Atualização Minigui Extend v2105.4 de 24/06/2021
     [*] Ajuste função PesquisaCrud(p1,p2,p3,p4,p5)
