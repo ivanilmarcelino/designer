@@ -1,4 +1,9 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-08-01 00:29 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] start.mod, incluído um procedimento na primeira execução para ajustar a linguagem do scite 
+        para a lingua padrão definida pelo usuário numa instalação anterior.
+        Abertura do changelog na primeira execução
+
 2021-07-31 00:19 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     ; Julho comemoramos 2 Anos de Designer
     [*] Update Minigi Version 21.7.1 de 29/07/2021 (http://hmgextended.com/download-3/)
