@@ -1,4 +1,36 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-08-07 22:31 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] start.mod agora ajustado para redefinir a tradução de debugger de acordo com preferências;
+    [*] reativado o theme
+    [*] executor runtime agora foi aprimorado, possui a mesma funcionalidade que o antigo DOT do clipper, 
+        você pode criar um procedimento completo, para testar copie e  cole o codigo abaixo na caixa do controle;[toolbar f(x)]
+        pode inclusive manter o comentário /**/
+        
+        /*BEGIN*/
+        Local i /*não precisa declarar*/
+        Local cText:="Copy "
+        a:=directory("c:\temp\*.Txt") /*sem declarar*/
+        for i=1 to len(a)
+            ?a[i,1],a[i,2]
+            Mostrar(i)
+            cText += '"'+a[i,1]+'" + '
+        Next
+        cText := substr(cText,1,len(cText)-2)
+        cText += "Todos.Txt"
+        ?cText
+        
+        function mostrar(n)
+            ?n
+        Return
+        
+        /*END*/
+        
+        Pode não fazer sentido a primeira vista, mas abre um leque interessante no dia a dia, o exemplo
+        se desdobra para uma infinidade de opções, inclusive debugar uma parte complexa,fatiando o problema
+        sem ter que recompilar todo o sistema;
+        Gerar evidência de validação... enfim o céu é o limite.
+        
+
 2021-08-01 00:29 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] start.mod, incluído um procedimento na primeira execução para ajustar a linguagem do scite 
         para a lingua padrão definida pelo usuário numa instalação anterior.
