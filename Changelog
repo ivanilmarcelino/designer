@@ -1,5 +1,10 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 2021-08-07 22:31 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [!] titulo das propriedades em edição
+    O titulo das propriedades em edição estavam sendo mudados o titulo do form para o ultimo valor encontrado nas traduções; esse problema 
+    não afeta os valores atribuidos nas propriedades embora;
+    
+2021-08-07 22:31 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] start.mod agora ajustado para redefinir a tradução de debugger de acordo com preferências;
     [*] reativado o theme
     [*] executor runtime agora foi aprimorado, possui a mesma funcionalidade que o antigo DOT do clipper, 
