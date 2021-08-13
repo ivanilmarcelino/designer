@@ -1,4 +1,11 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-08-13 19:47 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    [*] Update Minigui 2107.2 de 12/08/2021
+    [+] adicionado no addons a função LoadFrmExpressao()
+        Agora vc pode incluir o processo de teste diretamente no seu programa, 
+        Deixe marcado a opção addons item 9 de configurações para que seja compilado junto com seu programa, depois basta chamar a função loadFrmExpressao() de qualquer lugar.
+        Apenas aconselho não deixar esta opção aberta na versão final, um usuário mais experiente poderia surfar nas variáveis e objetos de seu sistema;
+
 2021-08-07 22:31 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [!] titulo das propriedades em edição
     O titulo das propriedades em edição estavam sendo mudados o titulo do form para o ultimo valor encontrado nas traduções; esse problema 
