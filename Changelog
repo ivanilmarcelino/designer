@@ -1,4 +1,32 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+    [*] Melhoria na funcao LodFrmExpressao
+        Quando não declarada uma função,agora será colocada uma default para manter a integridade de linhas em procline()
+        Retorno agora é mostrado num grid, provou ser muito mais rápido adicionar um elemento ao grid que atribuir o valor ao rich
+        O teste agora coloca a hora inicial e final para registro visual do tempo
+        Se no texto houver um doEvents ou várias chamadas de Print, você pode utilizar o botão de parada para chamar o break
+        O teste agora pode ser exportado para o excel para documentação de evidencias de testes.
+        Para fazer os testes de mesa, use algo parecido como abaixo, procline ira retornar a linha corretamente para registro.
+        Lembre-se, você pode fazer chamadas as funções e criar um plano de testes rico em detalhes, isto dentro de sua aplicação, use a imaginação.
+        
+        /*BEGIN*/
+        Local i /*não precisa declarar*/
+        Local cText:="Copy "
+        a:=directory("c:\temp\*.Txt") /*sem declarar*/
+        for i=1 to len(a)
+            ?Procline(),a[i,1],a[i,2]
+            Mostrar(i)
+            cText += '"'+a[i,1]+'" + '
+        Next
+        cText := substr(cText,1,len(cText)-2)
+        cText += '  "Todos.Txt"'
+        ?cText
+        
+        function mostrar(n)
+            ?Procline(),n
+        Return
+        
+        /*END*/
+    
 2021-08-13 19:47 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] Update Minigui 2107.2 de 12/08/2021
     [+] adicionado no addons a função LoadFrmExpressao()
