@@ -1,4 +1,11 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-08-17 20:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.3.0 RELEASE CANDIDATE (RC) 210817 1957"
+    [!] Incluido declaração das variáveis locais oExcel,oHtml no wizard para DBF
+        Reportado por JORGE HENRIQUE <Grupo Designer>
+    [*] Incluido [F5] executar e [CTRL+C] copiar retorno de LoadFrmExpressao
+    
+2021-08-14 14:56 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     [*] Melhoria na funcao LodFrmExpressao
         Quando não declarada uma função,agora será colocada uma default para manter a integridade de linhas em procline()
         Retorno agora é mostrado num grid, provou ser muito mais rápido adicionar um elemento ao grid que atribuir o valor ao rich
