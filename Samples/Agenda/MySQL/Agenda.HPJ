@@ -7,7 +7,7 @@ flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
 comments=
 companyname=Ima Solutions Apoio Tec/Adm em Informática
 filedescription=
-fileversion=00  ,00  ,00  ,00  
+fileversion=   0,   0,   0,   0
 internalname=Agenda.Exe
 legalcopyright=Copyright © 2021
 legaltrademarks=
@@ -53,9 +53,8 @@ Frm0001=%PROJETO%\form\Agenda.FMG
 MOD0001=%PROJETO%\Agenda.PRG
 MOD0002=%PROJETO%\CargaInicial.prg
 
-
 [RESOURCES]
-RES0001=vazio;%PROJETO%\res\vazio.png
+RES0063=vazio;%PROJETO%\res\vazio.png
 
 [LIBS]
 

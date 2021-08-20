@@ -1,4 +1,15 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-08-20 20:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.4.0 RELEASE CANDIDATE (RC) 210820 1946"
+    [!] Implementado o metodo Close na lib MySQL compatibilidade com as demais libs.
+        na ultima versão a falta deste metodo encerra o aplicativo.
+        Reportado por Pierpaolo, Mimmo (Italia)
+        
+    [*] Melhoria na funcao LodFrmExpressao
+        Retirado o CTRL+C de On key do form
+        Criado o Botão para copir o retorno do procedimento;(Marque uma ou mais linhas antes de clicar no botão)
+        A implementação de CTRL+C no form tirou a funcionalidade de copiar o Script a ser executado.
+
 2021-08-17 20:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.3.0 RELEASE CANDIDATE (RC) 210817 1957"
     [!] Incluido declaração das variáveis locais oExcel,oHtml no wizard para DBF
