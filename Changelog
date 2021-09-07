@@ -1,4 +1,12 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-09-06 21:53 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.7.0 RELEASE CANDIDATE (RC) 210906 2131"
+    [*] Incluido Ambiente teste de Mesa
+    [+] Manifest windows 10
+        vide \tools\minigui\resource
+    [+] Verificação update automático no GitHub
+    [*] volta do theme black scite
+
 2021-08-31 19:15 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.6.0 RELEASE CANDIDATE (RC) 210831 1905"
     [*] Sincronizado: Harbour MiniGUI Extended Edition 21.07 (Update 4) de 31/08/2021
