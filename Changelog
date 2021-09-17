@@ -1,7 +1,17 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 2021-09-07 19:4 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.9.0 RELEASE CANDIDATE (RC) 210917 2021"
+    [*] Harbour MiniGUI Extended Edition 21.09 (Pre-Release) de 16/09/2021
+       Notas das funcionalidades/correçoes podem ser visto acessando o changelog da minigui,  faça o download 
+       em http://hmgextended.com/download-3/ para obter todo o código fonte e ampliar seus conhecimentos.
+       Faça uma doação ao amigo Grigory, na tela sobre tem o link que vai direcioná-lo para uma página segura ou
+       use o direcionador que vem junto no o pacote de instalação da minigui;
+
+2021-09-07 19:4 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.8.0 RELEASE CANDIDATE (RC) 210907 2010
     [*]Ajuste na interface, font e size agora podem ser ajustados em configurações.
+       
+
 
 2021-09-06 21:53 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.7.0 RELEASE CANDIDATE (RC) 210906 2131"
