@@ -1,4 +1,9 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-10-22 22:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.11.0 RELEASE CANDIDATE (RC) 211022 2234"
+    [*] Harbour Minigui Extend Edition 21.10.0 
+
+
 2021-09-07 19:4 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT  "1.0.10.0 RELEASE CANDIDATE (RC) 211005 1916"
     [!] Retirado limitação do tamanho de campos do Mysql para compatibilizar com DBF, vale lembrar
