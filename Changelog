@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-10-28 19:40 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.12.0 RELEASE CANDIDATE (RC) 211027 1628"
+    [*] Harbour Minigui Extend Edition 21.10.1 
+
 2021-10-22 22:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.11.0 RELEASE CANDIDATE (RC) 211022 2234"
     [*] Harbour Minigui Extend Edition 21.10.0 
