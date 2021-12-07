@@ -1,4 +1,9 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-12-06 21:09 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.15.0 RELEASE CANDIDATE (RC) 211206 2010"
+    [*] Harbour Minigui Extend Edition 21.11
+    [+] Suporte a Panel 
+
 2021-11-06 16:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.14.0 RELEASE CANDIDATE (RC) 211106 1625"
     [*] Harbour Minigui Extend Edition 21.10.3 
