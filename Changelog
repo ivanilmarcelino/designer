@@ -1,4 +1,27 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-12-20 19:50 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.16.0 RELEASE CANDIDATE (RC) 211220 1948"
+    [*] Sincronização Minigui Extend 21.11.2
+    [+] Pacote enxuto
+        A partir de agora vou disponibilizar um pacote apenas com os arquivos Base; já estamos há quase 
+        3 anos trabalhando neste projeto; já temos alguns que estão experts e que gostariam de fazer
+        sua própria personalização estrutural; desta forma basta extrair o pacote expert e manter o resto.
+        Para atualizar o Harbour e minigui e só deixar na mesma estrutura;
+        As vezes são lançadas versões corretivas da minigui e nem sempre eu consigo disponibilizar 
+        em tempo para atender a alguma necessidade e desta forma os usuários passam a ter esta liberdade.
+        Futuramente talvez eu retire a obrigatoriedade da estrutura, mas tornaria mais difícil o entendimento
+        para os iniciantes;
+
+    [+] Lean package
+         From now on I will provide a package with only the Base files; we've been there almost
+         3 years working on this project; we already have some who are experts and who would like to do
+         your own structural customization; this way just extract the expert package and keep the rest.
+         To update the Harbor and minigui and just leave it in the same structure;
+         Sometimes corrective versions of the minigui are released and I am not always able to provide
+         in time to meet any need and thus users have this freedom.
+         In the future, I might withdraw the obligation of the structure, but it would make understanding 
+         more difficult for beginners;
+
 2021-12-06 21:09 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.15.0 RELEASE CANDIDATE (RC) 211206 2010"
     [*] Harbour Minigui Extend Edition 21.11

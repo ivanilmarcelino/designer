@@ -22,6 +22,10 @@ O zip contem um binário auto extraível, após baixar, extraia, e então execut
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
 # ***********************************************************
+### Pacote Expert:
+Se você já vem usando o Designer há algum tempo, talvez queira baixar apenas os arquivos bases; ele é uma opção que te permite fazer suas proprias atualizações do harbour ou Minigui manualmente.
+- [X] DesignerExpert_%Ano%Mes%Dia%.ZIP
+# ***********************************************************
 
 ## Designer for Minigui Extend
 
@@ -44,6 +48,11 @@ The zip contains a self-extracting binary, after downloading, extract, and then 
 
 
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
+
+# ***********************************************************
+### Expert package:
+If you've been using Designer for a while, you might want to download just the base files; it is an option that allows you to make your own harbor or Minigui updates manually.
+- [X] DesignerExpert_%Ano%Mes%Dia%.ZIP
 
 e-mail: ivanil.marcelino@yahoo.com.br
 
