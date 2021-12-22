@@ -1,4 +1,26 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2021-12-21 19:44 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+    VERSION_PRODUCT "1.0.17.0 RELEASE CANDIDATE (RC) 211221 2201"
+    [*] As libs relacionadas a acesso a dados modificados para uso das  otimizações do 
+        designer receberam um z no nome	e alocadas em ADDONS, a ideia inicial era usar
+        a prioridade na lista de libs mas o hbmk coloca o Harbour sempre como  primeiro
+        e  como  estas  libs já vem por  padrão  na  pasta  do  Harbour  houve  choque, 
+        anteriormente eu as sobrepunha, no entanto em projetos antigos, alguns usuários
+        não querem agregar nada, apenas manter o que já tem,  então  as  libs  causavam 
+        conflitos, as vezes eu até tento ajudar, mas se  eu  não sei  o que acontece na 
+        outra ponta não tenho o  que fazer  poucos usuários dão algum  feedback, nenhum 
+        ficou sem solução até hoje, a ferramenta me  atende 100%  pois uso  apenas ADO 
+        com SqlServer,  Access e  Oracle,  então se  alguém  encontrar  problemas em 
+        firebird/ Postgree/ Mysql /Dbf ou Sqlite e não me avisar, provavelmente 
+        nunca será solucionado.
+
+	fbclient.lib => fbclientz.lib
+	hbfbird.lib => hbfbirdz.lib
+	hbmysql.lib => hbmysqlz.lib
+	hbpgsql.lib => hbpgsqlz.lib
+	libmySQL.lib => libmySQLz.lib
+	libpq.lib => libpqz.lib
+
 2021-12-20 19:50 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.16.0 RELEASE CANDIDATE (RC) 211220 1948"
     [*] Sincronização Minigui Extend 21.11.2
