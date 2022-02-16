@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-02-15 21:34 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.20.0 RELEASE CANDIDATE (RC) 220215 2131"
+    [*] Sincronizado Minigui extend 2201.2
+
 2022-01-29 13:33 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
     VERSION_PRODUCT "1.0.19.0 RELEASE CANDIDATE (RC) 220129 1515"
     [*] Sincronizado Minigui extend 2201.0
@@ -17,7 +21,7 @@
         anteriormente eu as sobrepunha, no entanto em projetos antigos, alguns usuários
         não querem agregar nada, apenas manter o que já tem,  então  as  libs  causavam 
         conflitos, as vezes eu até tento ajudar, mas se  eu  não sei  o que acontece na 
-        outra ponta não tenho o  que fazer  poucos usuários dão algum  feedback, nenhum 
+        outra ponta não tenho o  que fazer,  poucos usuários dão algum  feedback, nenhum 
         ficou sem solução até hoje, a ferramenta me  atende 100%  pois uso  apenas ADO 
         com SqlServer,  Access e  Oracle,  então se  alguém  encontrar  problemas em 
         firebird/ Postgree/ Mysql /Dbf ou Sqlite e não me avisar, provavelmente 
