@@ -1,4 +1,12 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-03-05 18:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.23.0 RELEASE CANDIDATE (RC) 220305 0218"
+     Ajuste no Wizard
+     Ao usar a conexão ativa havia uma chamada de erro para uma propriedade invalida
+
+     Ajuste na PesquisaCRUD
+     Alteração para atender mais de 1 monitor causou um bug no hash de coordenadas
+
 2022-03-01 18:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.22.0 RELEASE CANDIDATE (RC) 220228 2041"
 

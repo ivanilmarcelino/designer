@@ -1,0 +1,135 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.22.0 RELEASE CANDIDATE (RC) 220305 0032
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.01.4 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 05/03/2022-01:16:44 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Gui
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:funca2}
+*{Modulo:funca2.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 259, 313 WIDTH 497 HEIGHT 271  TITLE "" MODAL ON INIT (funca2_OnInit(oQuery))
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "MINIGUI_EDIT_CLOSE" ADJUST  TOOLTIP "Fechar o Formulário" ACTION (funca2_ToolbarAction(1,Nil,oQuery)) SEPARATOR  AUTOSIZE 
+        BUTTON oBtnNovo PICTURE "MINIGUI_EDIT_NEW" ADJUST  TOOLTIP "Incluir um novo Registro" ACTION (funca2_ToolbarAction(2,Nil,oQuery))
+        BUTTON oBtnEdit PICTURE "MINIGUI_EDIT_EDIT" ADJUST  TOOLTIP "Editar o Registro atual" ACTION (funca2_ToolbarAction(3,Nil,oQuery))
+        BUTTON oBtnSave PICTURE "MINIGUI_EDIT_OK" ADJUST  TOOLTIP "Salva inclusão/alteração do Registro" ACTION (funca2_ToolbarAction(4,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnExclui PICTURE "MINIGUI_EDIT_DEL" ADJUST  TOOLTIP "Exclui o Registro atual" ACTION (funca2_ToolbarAction(5,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnPesquisa PICTURE "MINIGUI_EDIT_FIND" ADJUST  TOOLTIP "Realiza uma pesquisa" ACTION (funca2_ToolbarAction(6,Nil,oQuery))
+        BUTTON oBtnRelExcel PICTURE "REPORT_EXCEL" ADJUST  TOOLTIP "Relatório Excel EXCEL" ACTION (funca2_ToolbarAction(7,Nil,oQuery))
+        BUTTON oBtnRelHTML PICTURE "REPORT_HTML" ADJUST  TOOLTIP "Relatório Excel HTML" ACTION (funca2_ToolbarAction(8,Nil,oQuery))
+    END TOOLBAR
+
+    DEFINE TAB Tab1 AT 50,10 WIDTH 462 HEIGHT 167 VALUE 1 NOTABSTOP 
+        PAGE  [tabfunca] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 136
+                ROW 25
+                WIDTH 450
+            END FRAME
+
+            DEFINE LABEL lbl_Codigo
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Códgo :"
+                WIDTH 71
+            END LABEL
+
+            DEFINE TEXTBOX Codigo
+                BACKCOLOR { 255 , 255 , 128 }
+                COL 89
+                FONTBOLD TRUE
+                HEIGHT 18
+                MAXLENGTH 11
+                NUMERIC TRUE
+                ONENTER (funca2_Codigo_OnEnter(oQuery))
+                ROW 35
+                WIDTH 89
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nome
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Nome :"
+                WIDTH 71
+            END LABEL
+
+            DEFINE TEXTBOX Nome
+                COL 89
+                HEIGHT 18
+                MAXLENGTH 45
+                ROW 58
+                WIDTH 361
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nascimento
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Nascimento :"
+                WIDTH 71
+            END LABEL
+
+            DEFINE DATEPICKER Nascimento
+                COL 89
+                HEIGHT 20
+                ROW 81
+                WIDTH 105
+            END DATEPICKER
+
+            DEFINE LABEL lbl_Salario
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 106
+                VALUE "Saláio :"
+                WIDTH 71
+            END LABEL
+
+            DEFINE TEXTBOX Salario
+                COL 89
+                HEIGHT 18
+                MAXLENGTH 12
+                NUMERIC TRUE
+                ROW 106
+                WIDTH 97
+            END TEXTBOX
+
+            DEFINE CHECKBOX Ativo
+                CAPTION "Ativo :"
+                COL 89
+                HEIGHT 18
+                ROW 129
+                WIDTH 44
+            END CHECKBOX
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

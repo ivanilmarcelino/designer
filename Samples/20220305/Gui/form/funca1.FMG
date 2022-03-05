@@ -1,0 +1,119 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.22.0 RELEASE CANDIDATE (RC) 220301 1913
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.01.4 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 04/03/2022-22:52:47 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Gui
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:&Funca1}
+*{Modulo:funca1.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 245, 319 WIDTH 449 HEIGHT 205  TITLE "" CHILD
+
+    DEFINE LABEL oLabel1
+        COL 13
+        FONTBOLD TRUE
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 24
+        VALUE "Código"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel2
+        COL 13
+        FONTBOLD TRUE
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 49
+        VALUE "Nome"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel3
+        COL 13
+        FONTBOLD TRUE
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 74
+        VALUE "Nascimento"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE LABEL oLabel4
+        COL 13
+        FONTBOLD TRUE
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 99
+        VALUE "Salário"
+        VCENTERALIGN TRUE
+        WIDTH 100
+    END LABEL
+
+    DEFINE TEXTBOX oText1
+        COL 118
+        HEIGHT 20
+        ROW 24
+        WIDTH 70
+    END TEXTBOX
+
+    DEFINE TEXTBOX oText2
+        COL 118
+        HEIGHT 20
+        ROW 49
+        WIDTH 283
+    END TEXTBOX
+
+    DEFINE TEXTBOX oText3
+        COL 118
+        HEIGHT 20
+        ROW 99
+        WIDTH 100
+    END TEXTBOX
+
+    DEFINE DATEPICKER oDatePicker1
+        COL 118
+        HEIGHT 20
+        ROW 74
+        WIDTH 115
+    END DATEPICKER
+
+    DEFINE CHECKBOX oCheck1
+        CAPTION "Ativo ?"
+        COL 118
+        HEIGHT 18
+        ROW 124
+        WIDTH 80
+    END CHECKBOX
+
+    DEFINE FRAME oFrame1
+        CAPTION "oFrame1"
+        COL 8
+        HEIGHT 150
+        ROW 6
+        WIDTH 408
+    END FRAME
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

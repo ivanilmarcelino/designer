@@ -1,0 +1,122 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.22.0 RELEASE CANDIDATE (RC) 220305 0032
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.01.4 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 05/03/2022-01:18:43 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Gui
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:Gui.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 317, 432 WIDTH 600 HEIGHT 549  TITLE "" MAIN
+
+    DEFINE MAIN MENU
+        DEFINE MENU POPUP "Cadastro" NAME oNMenu_MAIN_Main1
+            MENUITEM "funca1" ACTION (Main_oNMenu_MAIN_Main2_Action()) NAME oNMenu_MAIN_Main2
+            MENUITEM "Funca2" ACTION (Main_oNMenu_MAIN_Main3_Action()) NAME oNMenu_MAIN_Main3
+        END POPUP
+    END MENU
+
+    DEFINE SPLITBOX
+        DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
+            BUTTON Toolbar_1Button1 PICTURE "alignleft"
+            BUTTON Toolbar_1Button2 PICTURE "tmemo"
+            BUTTON Toolbar_1Button3 PICTURE "" ACTION (MsgInfo('DropDown')) DROPDOWN 
+            DEFINE DROPDOWN MENU BUTTON Toolbar_1Button3
+                 MENUITEM "New Item 1" NAME Toolbar_1Button3Down1
+                 MENUITEM "New Item 2" NAME Toolbar_1Button3Down2
+                 MENUITEM "New Item 3" NAME Toolbar_1Button3Down3
+                 MENUITEM "New Item 4" NAME Toolbar_1Button3Down4
+                 MENUITEM "New Item 5" NAME Toolbar_1Button3Down5
+                 MENUITEM "New Item 6" NAME Toolbar_1Button3Down6
+                 MENUITEM "New Item 7" NAME Toolbar_1Button3Down7
+                 MENUITEM "New Item 8" NAME Toolbar_1Button3Down8
+                 MENUITEM "New Item 9" NAME Toolbar_1Button3Down9
+                 MENUITEM "New Item 10" NAME Toolbar_1Button3Down10
+            END MENU
+            BUTTON Toolbar_1Button4 PICTURE ""
+        END TOOLBAR
+
+        DEFINE TOOLBAREX Toolbar_2 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
+            BUTTON Toolbar_2Button1 PICTURE ""
+            BUTTON Toolbar_2Button2 PICTURE "" WHOLEDROPDOWN 
+            DEFINE DROPDOWN MENU BUTTON Toolbar_2Button2
+                 MENUITEM "New Item 1" NAME Toolbar_2Button2Down1
+                 MENUITEM "New Item 2" NAME Toolbar_2Button2Down2
+                 MENUITEM "New Item 3" NAME Toolbar_2Button2Down3
+                 MENUITEM "New Item 4" NAME Toolbar_2Button2Down4
+                 MENUITEM "New Item 5" NAME Toolbar_2Button2Down5
+                 MENUITEM "New Item 6" NAME Toolbar_2Button2Down6
+                 MENUITEM "New Item 7" NAME Toolbar_2Button2Down7
+                 MENUITEM "New Item 8" NAME Toolbar_2Button2Down8
+            END MENU
+            BUTTON Toolbar_2Button3 PICTURE ""
+            BUTTON Toolbar_2Button4 PICTURE ""
+        END TOOLBAR
+
+        DEFINE TOOLBAREX Toolbar_3 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
+            BUTTON Toolbar_3Button1 PICTURE ""
+            BUTTON Toolbar_3Button2 PICTURE ""
+            BUTTON Toolbar_3Button3 PICTURE ""
+            BUTTON Toolbar_3Button4 PICTURE ""
+            BUTTON Toolbar_3Button5 PICTURE ""
+        END TOOLBAR
+
+    END SPLITBOX
+
+    DEFINE TEXTBOX oTextBox
+        BACKCOLOR { 255 , 255 , 128 }
+        COL 63
+        FONTBOLD TRUE
+        FONTCOLOR { 0 , 0 , 128 }
+        FONTNAME "Segoe UI"
+        FONTSIZE 12
+        HEIGHT 26
+        ROW 173
+        WIDTH 160
+    END TEXTBOX
+
+    DEFINE BUTTON oButtonOk
+        COL 69
+        HEIGHT 30
+        PICTURE "tchecklabel"
+        ROW 234
+        TRANSPARENT TRUE
+        WIDTH 100
+    END BUTTON
+
+    DEFINE LABEL oLabelAzul
+        COL 78
+        FONTBOLD TRUE
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTNAME "Segoe UI"
+        FONTSIZE 12
+        HEIGHT 20
+        ROW 302
+        TRANSPARENT TRUE
+        VALUE "oLabelAzul"
+        WIDTH 100
+    END LABEL
+
+    DEFINE STATUSBAR FONT "Arial" SIZE 10
+        STATUSITEM "teste" WIDTH 80 
+    END STATUSBAR
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
