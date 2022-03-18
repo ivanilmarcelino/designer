@@ -1,7 +1,7 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
 2022-03-17 22:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.25.0 RELEASE CANDIDATE (RC) 220317 2244"
-     [*] Sincronizado Minigui extend 2201.7
+     [*] Sincronizado Minigui extend 2201.7(32bits)
 
 2022-03-05 18:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.23.0 RELEASE CANDIDATE (RC) 220305 0218"
