@@ -1,4 +1,14 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-03-31 10:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016"
+     [*] Sincronizado Minigui extend 2203.0(32bits)
+     [*] Correção propriedades x Events controle TimePicker.
+        [ ON GOTFOCUS <OnGotFocusProcedure> | <bBlock> ]
+        [ ON CHANGE <OnChangeProcedure> | <bBlock> ]
+        [ ON LOSTFOCUS <OnLostFocusProcedure> | <bBlock> ]
+        [ ON ENTER <OnEnterProcedure> | <bBlock> ]
+
+
 2022-03-17 22:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.25.0 RELEASE CANDIDATE (RC) 220317 2244"
      [*] Sincronizado Minigui extend 2201.7(32bits)
