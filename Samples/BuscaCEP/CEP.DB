@@ -1,0 +1,25 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.0 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 31/03/2022-21:41:50 Máquina: IMA2018 Usuário:Ivanil
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : CEP
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    Memvar Connection
+    Private Connection //Variáveis globais de conexão
+    Connection := TadoConnection():New() //Cria o objeto ADO
+    Connection:ConnectString := 'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Temp\NovoCEP\DbCEP.mdb;Persist Security Info=False' //String de Conexão
+    if !Connection:Open() //Abre o banco de dados
+        Return .F.
+    Endif

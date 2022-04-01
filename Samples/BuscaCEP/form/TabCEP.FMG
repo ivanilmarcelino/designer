@@ -1,0 +1,162 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.0 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 31/03/2022-21:45:37 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : CEP
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:TabCEP}
+*{Modulo:TabCEP.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 270, 349 WIDTH 550 HEIGHT 278  TITLE "" MODAL ON INIT (TabCEP_OnInit(oQuery))
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "MINIGUI_EDIT_CLOSE" ADJUST  TOOLTIP "Fechar o Formulário" ACTION (TabCEP_ToolbarAction(1,Nil,oQuery)) SEPARATOR  AUTOSIZE 
+        BUTTON oBtnNovo PICTURE "MINIGUI_EDIT_NEW" ADJUST  TOOLTIP "Incluir um novo Registro" ACTION (TabCEP_ToolbarAction(2,Nil,oQuery))
+        BUTTON oBtnEdit PICTURE "MINIGUI_EDIT_EDIT" ADJUST  TOOLTIP "Editar o Registro atual" ACTION (TabCEP_ToolbarAction(3,Nil,oQuery))
+        BUTTON oBtnSave PICTURE "MINIGUI_EDIT_OK" ADJUST  TOOLTIP "Salva inclusão/alteração do Registro" ACTION (TabCEP_ToolbarAction(4,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnExclui PICTURE "MINIGUI_EDIT_DEL" ADJUST  TOOLTIP "Exclui o Registro atual" ACTION (TabCEP_ToolbarAction(5,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnPesquisa PICTURE "MINIGUI_EDIT_FIND" ADJUST  TOOLTIP "Realiza uma pesquisa" ACTION (TabCEP_ToolbarAction(6,Nil,oQuery))
+        BUTTON oBtnRelExcel PICTURE "REPORT_EXCEL" ADJUST  TOOLTIP "Relatório Excel EXCEL" ACTION (TabCEP_ToolbarAction(7,Nil,oQuery))
+        BUTTON oBtnRelHTML PICTURE "REPORT_HTML" ADJUST  TOOLTIP "Relatório Excel HTML" ACTION (TabCEP_ToolbarAction(8,Nil,oQuery))
+    END TOOLBAR
+
+    DEFINE TAB Tab1 AT 50,10 WIDTH 515 HEIGHT 188 VALUE 1 NOTABSTOP 
+        PAGE  [tabcep] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 157
+                ROW 25
+                WIDTH 503
+            END FRAME
+
+            DEFINE LABEL lbl_Cep
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Cep :"
+                WIDTH 84
+            END LABEL
+
+            DEFINE BTNTEXTBOX Cep
+                ACTION (TabCEP_Cep_Action(oQuery))
+                BACKCOLOR { 255 , 255 , 128 }
+                COL 102
+                FONTBOLD TRUE
+                HEIGHT 18
+                MAXLENGTH 8
+                ONENTER (TabCEP_Cep_OnEnter(oQuery))
+                ROW 35
+                WIDTH 125
+            END BTNTEXTBOX
+
+            DEFINE LABEL lbl_Logradouro
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Logradouro :"
+                WIDTH 84
+            END LABEL
+
+            DEFINE TEXTBOX Logradouro
+                COL 102
+                HEIGHT 18
+                MAXLENGTH 50
+                ROW 58
+                WIDTH 401
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Complemento
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Complemento :"
+                WIDTH 84
+            END LABEL
+
+            DEFINE TEXTBOX Complemento
+                COL 102
+                HEIGHT 18
+                MAXLENGTH 50
+                ROW 81
+                WIDTH 401
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Bairro
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 104
+                VALUE "Bairro :"
+                WIDTH 84
+            END LABEL
+
+            DEFINE TEXTBOX Bairro
+                COL 102
+                HEIGHT 18
+                MAXLENGTH 50
+                ROW 104
+                WIDTH 401
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Localidade
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 127
+                VALUE "Localidade :"
+                WIDTH 84
+            END LABEL
+
+            DEFINE TEXTBOX Localidade
+                COL 102
+                HEIGHT 18
+                MAXLENGTH 50
+                ROW 127
+                WIDTH 401
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Uf
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 150
+                VALUE "Uf :"
+                WIDTH 84
+            END LABEL
+
+            DEFINE TEXTBOX Uf
+                COL 102
+                HEIGHT 18
+                MAXLENGTH 2
+                ONENTER (TabCEP_Uf_OnEnter())
+                ROW 150
+                WIDTH 20
+            END TEXTBOX
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

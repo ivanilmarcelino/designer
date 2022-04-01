@@ -1,0 +1,65 @@
+[PROJETO]
+Main=CEP.PRG
+TipoProjeto=1
+nomeprojeto=CEP
+database=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Temp\NovoCEP\DbCEP.mdb;Persist Security Info=False
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=   0,   0,   0,   0
+internalname=CEP.Exe
+legalcopyright=Copyright © 2022
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALPHA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=PORTUGUESE
+setcodepage=BRAZIL
+setdate=FRENCH
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=9
+fontboldMenu=FALSE
+Run=
+NaoIncluiResourceHmg=FALSE
+[FORMULARIOS]
+Frm0001=%PROJETO%\form\CEP.FMG
+Frm0002=%PROJETO%\Form\TabCEP.FMG
+
+[MODULOS]
+MOD0001=%PROJETO%\CEP.PRG
+MOD0002=%PROJETO%\TabCEP.PRG
+
+[RESOURCES]
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]

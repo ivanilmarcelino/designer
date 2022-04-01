@@ -1,0 +1,41 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.0 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 31/03/2022-21:44:57 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : CEP
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:CEP.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 296, 345 WIDTH 600 HEIGHT 549  TITLE "" MAIN
+
+    DEFINE BUTTON oButton1
+        ACTION (Main_oButton1_Action())
+        CAPTION "oButton1"
+        COL 40
+        HEIGHT 26
+        ROW 31
+        TRANSPARENT TRUE
+        WIDTH 96
+    END BUTTON
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
