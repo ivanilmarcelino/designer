@@ -1,4 +1,10 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-14-14 12:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.28.0 RELEASE CANDIDATE (RC) 220414 0949"
+     [*] Sincronizado  Minigui Extend 2203.2
+     [*] Update Scite: Version 5.2.2 https://www.scintilla.org/SciTE.html
+         match statement in local and directory properties provides per-file settings
+
 2022-03-31 10:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016"
      [*] Sincronizado Minigui extend 2203.0(32bits)
