@@ -1,4 +1,8 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-14-15 10:38 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     [!] Excluido propriedades de Slider (Erro em copy/cola)
+	 CLOCK;KEYBOARD;STATUSITEM;DATE;DEFAULT;FONTBOLD,FONTITALIC,FONTNAME,FONTSIZE;FONTSTRIKEOUT,FONTUNDERLINE
+
 2022-14-14 12:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.28.0 RELEASE CANDIDATE (RC) 220414 0949"
      [*] Sincronizado  Minigui Extend 2203.2
