@@ -1,4 +1,9 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-14-21 14:24 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.29.0 RELEASE CANDIDATE (RC)"
+     [*] Sincronização Minigui Extend
+         Harbour MiniGUI Extended Edition 22.03 (Update 3)
+
 2022-14-20 21:47 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.28.3 RELEASE CANDIDATE (RC)"
      [*] Ao nomear objetos agora serão verificados se os nomes se conflitam com propriedades
