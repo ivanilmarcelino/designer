@@ -1,5 +1,17 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-14-20 21:47 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.28.3 RELEASE CANDIDATE (RC)"
+     [*] Ao nomear objetos agora serão verificados se os nomes se conflitam com propriedades
+     [*] Ao salvar o form, será validado se algum nome definido se conflita com propriedades
+     [*] Os objetos criados pelo Wizard estarão sendo precedidos de "o" no nome isso tende
+         a minimizar os conflitos com propriedades
+
+2022-14-18 20:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.28.2 RELEASE CANDIDATE (RC)"
+     [!] Carga das imagens definidas no menu dos botões em toolbar em tempo de projeto relatado por Pierpaolo Martinello (Italy)
+
 2022-14-15 10:38 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.28.1 RELEASE CANDIDATE (RC)"
      [!] Excluido propriedades de Slider (Erro em copy/cola)
 	 CLOCK;KEYBOARD;STATUSITEM;DATE;DEFAULT;FONTBOLD,FONTITALIC,FONTNAME,FONTSIZE;FONTSTRIKEOUT,FONTUNDERLINE
 
