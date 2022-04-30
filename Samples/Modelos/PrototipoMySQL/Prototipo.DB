@@ -1,0 +1,30 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.29.0 RELEASE CANDIDATE (RC) 220429 2145
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.3 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 29/04/2022-23:08:39 Máquina: IMA2018 Usuário:Ivanil
+    Código configuração banco de dados
+    ----------------------------------------------------------------------------------------------
+    Projeto : Prototipo
+    */
+
+    //Este arquivo é criado automaticamente pelo sistema, não altere aqui diretamente
+
+    Memvar oServer
+    Private oServer//Variáveis globais de conexão
+    oServer:=TMySQLServerIma():New('localhost', 'root','root',3311) //Cria o objeto MySQL
+    if oServer:Neterr() //verifica se ouve erro na abertura do banco
+        MsgStop('Erro ao conectar banco de dados Mysql' + oServer:Error())
+        Return .F.
+    Endif
+    oServer:SelectDB('dbdados')
+    if oServer:Neterr() //verifica se ouve erro na abertura do banco
+        MsgStop('Erro ao selecionar o Database !!' + 'dbdados:'+oServer:Error())
+        Return .F.
+    Endif

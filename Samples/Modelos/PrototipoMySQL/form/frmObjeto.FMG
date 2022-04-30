@@ -1,0 +1,215 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.29.0 RELEASE CANDIDATE (RC) 220426 1943
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.3 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 28/04/2022-15:17:31 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Transacao
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:frmObjeto}
+*{Modulo:frmObjeto.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 166, 351 WIDTH 863 HEIGHT 508  TITLE "Cadastro de Objetos" MODAL ON INIT (frmObjeto_OnInit())
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "Minigui_edit_close" ADJUST  TOOLTIP "Fechar o Formulário" ACTION (frmObjeto.Release()) SEPARATOR  AUTOSIZE 
+    END TOOLBAR
+
+    DEFINE TAB Tab1 AT 50,10 WIDTH 827 HEIGHT 401 VALUE 1 NOTABSTOP 
+        PAGE  [tabobjeto] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 157
+                ROW 228
+                WIDTH 811
+            END FRAME
+
+            DEFINE LABEL lbl_Codidobj
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 238
+                VALUE "Codidobj :"
+                WIDTH 61
+            END LABEL
+
+            DEFINE TEXTBOX oCodidobj
+                BACKCOLOR { 255 , 255 , 128 }
+                COL 79
+                FONTBOLD TRUE
+                HEIGHT 18
+                MAXLENGTH 11
+                NUMERIC TRUE
+                READONLY TRUE
+                ROW 238
+                WIDTH 89
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Tipo
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 261
+                VALUE "Tipo :"
+                WIDTH 61
+            END LABEL
+
+            DEFINE TEXTBOX oTipo
+                COL 79
+                HEIGHT 18
+                MAXLENGTH 45
+                READONLY TRUE
+                ROW 261
+                WIDTH 361
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Objeto
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 284
+                VALUE "Objeto :"
+                WIDTH 61
+            END LABEL
+
+            DEFINE TEXTBOX oObjeto
+                COL 79
+                HEIGHT 18
+                MAXLENGTH 60
+                READONLY TRUE
+                ROW 284
+                WIDTH 481
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Descricao
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 307
+                VALUE "Descricao :"
+                WIDTH 61
+            END LABEL
+
+            DEFINE TEXTBOX oDescricao
+                COL 79
+                HEIGHT 18
+                MAXLENGTH 120
+                ROW 307
+                WIDTH 721
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nivel
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 330
+                VALUE "Nivel :"
+                WIDTH 61
+            END LABEL
+
+            DEFINE GRID oListMonitorados
+                COL 12
+                HEADERS { "id" , "tipo" , "objeto" , "descrição" , "níel" , "excluido" }
+                HEIGHT 174
+                JUSTIFY { 0 , 0 , 0 , 0 , 0 , 0 }
+                ONCHANGE (frmObjeto_oList_Onchange( ))
+                ONGOTFOCUS (frmObjeto_oList_Onchange( ))
+                ONHEADCLICK {{||.T.},{||Nil},{||Nil},{||Nil},{||Nil},{||Nil}}
+                ROW 52
+                SHOWHEADERS TRUE
+                VALUE 0
+                WIDTH 382
+                WIDTHS { 4 , 50 , 120 , 149 , 35 , 0 }
+            END GRID
+
+            DEFINE BUTTONEX oMonitoraRetira
+                ACTION (frmObjeto_oMonitoraAddRetira_Action( ))
+                COL 398
+                HEIGHT 30
+                PICTURE "Hbprint_next"
+                ROW 95
+                WIDTH 30
+            END BUTTONEX
+
+            DEFINE BUTTONEX oMonitoraAdd
+                ACTION (frmObjeto_oMonitoraAddRetira_Action( ))
+                COL 398
+                HEIGHT 30
+                PICTURE "Hbprint_back"
+                ROW 130
+                WIDTH 30
+            END BUTTONEX
+
+            DEFINE LABEL oLabel1
+                COL 12
+                HEIGHT 20
+                ROW 30
+                VALUE "Objetos Monitorados"
+                VCENTERALIGN TRUE
+                WIDTH 160
+            END LABEL
+
+            DEFINE GRID oListNaoMonitorados
+                COL 434
+                HEADERS { "id" , "tipo" , "objeto" , "descrição" , "níel" , "excluido" }
+                HEIGHT 174
+                JUSTIFY { 0 , 0 , 0 , 0 , 0 , 0 }
+                ONCHANGE (frmObjeto_oList_Onchange( ))
+                ONGOTFOCUS (frmObjeto_oList_Onchange( ))
+                ONHEADCLICK {{||.T.},{||Nil},{||Nil},{||Nil},{||Nil},{||Nil}}
+                ROW 52
+                SHOWHEADERS TRUE
+                VALUE 0
+                WIDTH 382
+                WIDTHS { 4 , 50 , 120 , 149 , 35 , 0 }
+            END GRID
+
+            DEFINE LABEL oLabel2
+                COL 440
+                HEIGHT 20
+                ROW 31
+                VALUE "Objetos não Monitorados"
+                VCENTERALIGN TRUE
+                WIDTH 160
+            END LABEL
+
+            DEFINE COMBOBOX oNivel
+                COL 79
+                HEIGHT 300
+                LISTWIDTH 190
+                ROW 330
+                VALUE 0
+                WIDTH 190
+            END COMBOBOX
+
+            DEFINE BUTTONEX oMonitoraDelete
+                ACTION (frmObjeto_oMonitoraDelete_Action())
+                COL 398
+                HEIGHT 30
+                PICTURE "Minigui_edit_delete"
+                ROW 165
+                WIDTH 30
+            END BUTTONEX
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

@@ -1,0 +1,45 @@
+Create Database dbdados CHARACTER SET Latin1 COLLATE latin1_swedish_ci;
+
+--CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+Use DbDados;
+CREATE  TABLE `dbdados`.`tabuser` (
+  `codigo` INT NOT NULL AUTO_INCREMENT ,
+  `usuario` VARCHAR(30) NULL ,
+  `nome` VARCHAR(100) NULL ,
+  `password` VARCHAR(32) NULL ,
+  `dtinivalidade` DATETIME NULL ,
+  `dtfimvalidade` DATETIME NULL ,
+  `status` BIT NULL ,
+  `nivel` INT NULL ,
+  `alterasenha` BIT NULL ,
+  `crc` VARCHAR(32) NULL ,
+  PRIMARY KEY (`codigo`) ,
+  UNIQUE INDEX `usuario_UNIQUE` (`usuario` ASC) );
+
+
+CREATE  TABLE `dbdados`.`tabobjeto` (
+  `codidobj` INT NOT NULL AUTO_INCREMENT ,
+  `tipo` VARCHAR(45) NULL ,
+  `objeto` VARCHAR(60) NULL ,
+  `descricao` VARCHAR(120) NULL ,
+  `nivel` INT NULL ,
+  `crc` VARCHAR(32) NULL ,
+  PRIMARY KEY (`codidobj`) );
+
+
+ALTER TABLE `dbdados`.`tabobjeto`
+ADD UNIQUE INDEX `idxobjeto` (`tipo` ASC, `objeto` ASC) ;
+
+CREATE  TABLE `dbdados`.`tabacesso` (
+  `codigo` INT NOT NULL ,
+  `codidobj` INT NOT NULL ,
+  `crc` VARCHAR(32) NULL ,
+  PRIMARY KEY (`codigo`, `codidobj`),
+  FOREIGN KEY (codidobj) REFERENCES tabobjeto (codidobj),
+  FOREIGN KEY (codigo)   REFERENCES tabuser (codigo));
+
+
+
+
+

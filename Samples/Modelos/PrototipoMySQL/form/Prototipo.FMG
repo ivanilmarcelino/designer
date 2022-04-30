@@ -1,0 +1,69 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.29.0 RELEASE CANDIDATE (RC) 220426 1943
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.3 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 28/04/2022-15:46:33 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Transacao
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:Transacao.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 180, 344 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso geral" MAIN
+
+    DEFINE MAIN MENU
+        DEFINE MENU POPUP "Cadastro" NAME oNMenu_MAIN_Main1 FONT "Fnt_P_D_R"
+            MENUITEM "Empresa" NAME oNMenu_MAIN_Main5 FONT "Fnt_P_D_R"
+            MENUITEM "Filiais" NAME oNMenu_MAIN_Main6 FONT "Fnt_P_D_R"
+            MENUITEM "Lotação" NAME oNMenu_MAIN_Main7 FONT "Fnt_P_D_R"
+            MENUITEM "Departamentos" NAME oNMenu_MAIN_Main8 FONT "Fnt_P_D_R"
+        END POPUP
+        DEFINE MENU POPUP "Manutenção" NAME oNMenu_MAIN_Main2 FONT "Fnt_P_D_R"
+            MENUITEM "Carga horária" NAME oNMenu_MAIN_Main9 FONT "Fnt_P_D_R"
+            MENUITEM "Serviços" NAME oNMenu_MAIN_Main10 FONT "Fnt_P_D_R"
+            MENUITEM "Materiais" NAME oNMenu_MAIN_Main11 FONT "Fnt_P_D_R"
+            MENUITEM "Usuários" ACTION (Main_oNMenu_MAIN_Main12_Action()) NAME oNMenu_MAIN_Main12 FONT "Fnt_P_D_R"
+            DEFINE MENU POPUP "Segurança" NAME oNMenu_MAIN_Main18 FONT "Fnt_P_D_R"
+                MENUITEM "Objetos" ACTION (Main_oNMenu_MAIN_Main19_Action()) NAME oNMenu_MAIN_Main19 FONT "Fnt_P_D_R"
+            END POPUP
+        END POPUP
+        DEFINE MENU POPUP "Ferramentas" NAME oNMenu_MAIN_Main3 FONT "Fnt_P_D_R"
+            MENUITEM "Calculo geral" NAME oNMenu_MAIN_Main13 FONT "Fnt_P_D_R"
+            MENUITEM "Vira mes" NAME oNMenu_MAIN_Main14 FONT "Fnt_P_D_R"
+        END POPUP
+        DEFINE MENU POPUP "Relatórios" NAME oNMenu_MAIN_Main4 FONT "Fnt_P_D_R"
+            MENUITEM "Aniversariantes" NAME oNMenu_MAIN_Main15 FONT "Fnt_P_D_R"
+            MENUITEM "Liquido negativo" NAME oNMenu_MAIN_Main16 FONT "Fnt_P_D_R"
+            MENUITEM "Resumo geral" NAME oNMenu_MAIN_Main17 FONT "Fnt_P_D_R"
+        END POPUP
+    END MENU
+
+    DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
+        BUTTON Toolbar_1Button1 PICTURE "Minigui_edit_close"
+        BUTTON Toolbar_1Button2 PICTURE "Hbprint_zoomin"
+        BUTTON Toolbar_1Button3 PICTURE "Hbprint_zoomout"
+    END TOOLBAR
+
+    DEFINE STATUSBAR FONT "Arial" SIZE 10
+        STATUSITEM "" WIDTH 80 
+        STATUSITEM "usuario" WIDTH 120 
+        PROGRESSITEM WIDTH 120 RANGE 1,100
+    END STATUSBAR
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

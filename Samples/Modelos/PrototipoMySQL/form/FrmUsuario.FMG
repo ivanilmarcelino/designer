@@ -1,0 +1,217 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.29.0 RELEASE CANDIDATE (RC) 220426 1943
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.3 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 28/04/2022-15:18:11 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Transacao
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:FrmUsuario}
+*{Modulo:FrmUsuario.Prg}
+
+
+DEFINE WINDOW TEMPLATE AT 152, 344 WIDTH 624 HEIGHT 521  TITLE "Cadastro de Usuários" MODAL ON INIT (FrmUsuario_OnInit(oQuery))
+
+    DEFINE TOOLBAREX Toolbar BUTTONSIZE  35, 35 FONT 'Courier New' SIZE   7 BORDER 
+        BUTTON oBtnSair PICTURE "Minigui_edit_close" ADJUST  TOOLTIP "Fechar o Formulário" ACTION (FrmUsuario_ToolbarAction(1,Nil,oQuery)) SEPARATOR  AUTOSIZE 
+        BUTTON oBtnNovo PICTURE "Minigui_edit_new" ADJUST  TOOLTIP "Incluir um novo Registro" ACTION (FrmUsuario_ToolbarAction(2,Nil,oQuery))
+        BUTTON oBtnEdit PICTURE "Minigui_edit_edit" ADJUST  TOOLTIP "Editar o Registro atual" ACTION (FrmUsuario_ToolbarAction(3,Nil,oQuery))
+        BUTTON oBtnSave PICTURE "Minigui_edit_ok" ADJUST  TOOLTIP "Salva inclusão/alteração do Registro" ACTION (FrmUsuario_ToolbarAction(4,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnExclui PICTURE "Minigui_edit_del" ADJUST  TOOLTIP "Exclui o Registro atual" ACTION (FrmUsuario_ToolbarAction(5,Nil,oQuery)) SEPARATOR 
+        BUTTON oBtnPesquisa PICTURE "Minigui_edit_find" ADJUST  TOOLTIP "Realiza uma pesquisa" ACTION (FrmUsuario_ToolbarAction(6,Nil,oQuery))
+    END TOOLBAR
+
+    DEFINE TAB Tab1 AT 50,10 WIDTH 592 HEIGHT 424 VALUE 1 NOTABSTOP 
+        PAGE  [tabuser] IMAGE "" TOOLTIP ""
+            DEFINE FRAME Frm1
+                COL 5
+                HEIGHT 393
+                ROW 25
+                WIDTH 582
+            END FRAME
+
+            DEFINE LABEL lbl_Codigo
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 35
+                VALUE "Código :"
+                WIDTH 57
+            END LABEL
+
+            DEFINE TEXTBOX oCodigo
+                BACKCOLOR { 255 , 255 , 128 }
+                COL 75
+                FONTBOLD TRUE
+                HEIGHT 18
+                MAXLENGTH 11
+                NUMERIC TRUE
+                ONENTER (FrmUsuario_oCodigo_OnEnter(oQuery))
+                ROW 35
+                WIDTH 89
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Usuario
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 58
+                VALUE "Usuário :"
+                WIDTH 57
+            END LABEL
+
+            DEFINE TEXTBOX oUsuario
+                COL 75
+                HEIGHT 18
+                MAXLENGTH 30
+                ROW 58
+                WIDTH 241
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Nome
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 81
+                VALUE "Nome :"
+                WIDTH 57
+            END LABEL
+
+            DEFINE TEXTBOX oNome
+                COL 75
+                HEIGHT 18
+                MAXLENGTH 60
+                ROW 81
+                WIDTH 501
+            END TEXTBOX
+
+            DEFINE LABEL lbl_Password
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 104
+                VALUE "Password :"
+                WIDTH 57
+            END LABEL
+
+            DEFINE TEXTBOX oPassword
+                COL 75
+                HEIGHT 18
+                MAXLENGTH 32
+                PASSWORD TRUE
+                ROW 104
+                WIDTH 257
+            END TEXTBOX
+
+            DEFINE CHECKBOX oStatus
+                CAPTION "Ativo ?"
+                COL 75
+                HEIGHT 18
+                ROW 127
+                WIDTH 50
+            END CHECKBOX
+
+            DEFINE LABEL lbl_Nivel
+                COL 15
+                HEIGHT 18
+                RIGHTALIGN TRUE
+                ROW 150
+                VALUE "Nivel :"
+                WIDTH 57
+            END LABEL
+
+            DEFINE COMBOBOXEX oNivel
+                COL 75
+                HEIGHT 300
+                ITEMS { "Operador" , "Manutenção" , "Gerencial" }
+                ONCHANGE (FrmUsuario_oNivel_Onchange())
+                ROW 150
+                VALUE 0
+                WIDTH 145
+            END COMBOBOXEX
+
+            DEFINE GRID oGridAutorizados
+                COL 12
+                HEADERS { "id" , "tipo" , "objeto" , "descrição" , "nivel" }
+                HEIGHT 213
+                JUSTIFY { 0 , 0 , 0 , 0 , 0 }
+                ONCHANGE (FrmUsuario_oGrid_Onchange())
+                ONHEADCLICK {{||.T.},{||Nil},{||Nil},{||Nil},{||Nil}}
+                ROW 197
+                SHOWHEADERS TRUE
+                VALUE 0
+                WIDTH 267
+                WIDTHS { 4 , 0 , 74 , 166 , 0 }
+            END GRID
+
+            DEFINE BUTTONEX oBtnNaoAutoriza
+                ACTION (FrmUsuario_oBtnAutorizacao_Action( ))
+                COL 284
+                HEIGHT 23
+                PICTURE "Hbprint_next"
+                ROW 262
+                WIDTH 25
+            END BUTTONEX
+
+            DEFINE BUTTONEX oBtnAutoriza
+                ACTION (FrmUsuario_oBtnAutorizacao_Action( ))
+                COL 284
+                HEIGHT 23
+                PICTURE "Hbprint_back"
+                ROW 290
+                WIDTH 25
+            END BUTTONEX
+
+            DEFINE GRID oGridNaoAutorizados
+                COL 315
+                HEADERS { "id" , "tipo" , "objeto" , "descrição" , "nivel" }
+                HEIGHT 213
+                JUSTIFY { 0 , 0 , 0 , 0 , 0 }
+                ONCHANGE (FrmUsuario_oGrid_Onchange())
+                ONHEADCLICK {{||.T.},{||Nil},{||Nil},{||Nil},{||Nil}}
+                ROW 197
+                SHOWHEADERS TRUE
+                VALUE 0
+                WIDTH 267
+                WIDTHS { 4 , 0 , 74 , 166 , 0 }
+            END GRID
+
+            DEFINE LABEL oLabel1
+                COL 12
+                HEIGHT 20
+                ROW 177
+                VALUE "Opções autorizadas"
+                VCENTERALIGN TRUE
+                WIDTH 100
+            END LABEL
+
+            DEFINE LABEL oLabel2
+                COL 319
+                HEIGHT 20
+                ROW 177
+                VALUE "Opções não autorizadas"
+                VCENTERALIGN TRUE
+                WIDTH 140
+            END LABEL
+
+        END PAGE 
+
+    END TAB 
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

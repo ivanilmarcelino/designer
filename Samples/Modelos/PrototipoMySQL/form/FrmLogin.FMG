@@ -1,0 +1,158 @@
+/*  SOBRE A IDE
+    ==============================================================================================
+    Gerado pela IDE Designer
+    1.0.29.0 RELEASE CANDIDATE (RC) 220429 2145
+    https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+    Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.3 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
+    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+    Compilador : MinGW GNU C 11.2 (32-bit)
+    ----------------------------------------------------------------------------------------------
+    SOBRE ESTE CÓDIGO GERADO:
+    Última alteração : 30/04/2022-15:30:37 Máquina: IMA2018 Usuário:Ivanil
+    Código do formulário ajustado
+    ----------------------------------------------------------------------------------------------
+    Projeto : Prototipo
+    */
+
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Frmlogin}
+*{Modulo:FrmLogin.prg}
+
+
+DEFINE WINDOW TEMPLATE AT 159, 351 WIDTH 371 HEIGHT 242  TITLE "Login" MODAL ON INIT (Frmlogin_Oninit()) ON RELEASE (Frmlogin_Onrelease(lFezLogin))
+
+    DEFINE FRAME oFrame1
+        CAPTION "Autenticação"
+        COL 21
+        HEIGHT 152
+        ROW 5
+        WIDTH 321
+    END FRAME
+
+    DEFINE LABEL oLabel1
+        COL 56
+        HEIGHT 21
+        RIGHTALIGN TRUE
+        ROW 29
+        VALUE "Usuário:"
+        VCENTERALIGN TRUE
+        WIDTH 58
+    END LABEL
+
+    DEFINE LABEL oLabel2
+        COL 56
+        HEIGHT 21
+        RIGHTALIGN TRUE
+        ROW 60
+        VALUE "Senha:"
+        VCENTERALIGN TRUE
+        WIDTH 58
+    END LABEL
+
+    DEFINE TEXTBOX oUsuario
+        COL 118
+        HEIGHT 20
+        ROW 29
+        WIDTH 214
+    END TEXTBOX
+
+    DEFINE TEXTBOX oSenha
+        COL 118
+        HEIGHT 20
+        PASSWORD TRUE
+        ROW 62
+        WIDTH 214
+    END TEXTBOX
+
+    DEFINE LABEL oLabelNovaSenha
+        COL 32
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 100
+        VALUE "Nova Senha:"
+        VCENTERALIGN TRUE
+        WIDTH 81
+    END LABEL
+
+    DEFINE LABEL oLabelRepete
+        COL 32
+        HEIGHT 20
+        RIGHTALIGN TRUE
+        ROW 125
+        VALUE "Repete Senha:"
+        VCENTERALIGN TRUE
+        WIDTH 81
+    END LABEL
+
+    DEFINE TEXTBOX oNovaSenha
+        COL 118
+        HEIGHT 20
+        PASSWORD TRUE
+        ROW 100
+        WIDTH 214
+    END TEXTBOX
+
+    DEFINE TEXTBOX oRepete
+        COL 118
+        HEIGHT 20
+        PASSWORD TRUE
+        ROW 127
+        WIDTH 214
+    END TEXTBOX
+
+    DEFINE BUTTONEX oBtnConfirma
+        ACTION (lFezLogin := Frmlogin_oBtnConfirma_Action(),IIF(lFezLogin,FrmLogin.Release(),Nil))
+        CAPTION "Confirma"
+        COL 89
+        HEIGHT 26
+        IMAGEHEIGHT 22
+        IMAGEWIDTH 22
+        PICTURE "tchecklabel"
+        ROW 167
+        WIDTH 96
+    END BUTTONEX
+
+    DEFINE BUTTONEX oBtnCancela
+        ACTION (frmLogin.Release())
+        CAPTION "Cancela"
+        COL 190
+        HEIGHT 26
+        IMAGEHEIGHT 22
+        IMAGEWIDTH 22
+        PICTURE "Hbprint_close"
+        ROW 167
+        WIDTH 96
+    END BUTTONEX
+
+    DEFINE IMAGE oImage1
+        ADJUSTIMAGE TRUE
+        COL 29
+        HEIGHT 34
+        PICTURE "PrimaryKey"
+        ROW 33
+        STRETCH TRUE
+        TRANSPARENT TRUE
+        WIDTH 34
+    END IMAGE
+
+    DEFINE HYPERLINK oMudaSenha
+        ADDRESS "nil@nil"
+        COL 118
+        FONTCOLOR { 0 , 0 , 255 }
+        FONTUNDERLINE TRUE
+        HANDCURSOR TRUE
+        HEIGHT 20
+        ROW 80
+        TRANSPARENT TRUE
+        VALUE "Trocar/Alterar Senha"
+        WIDTH 214
+    END HYPERLINK
+
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+
