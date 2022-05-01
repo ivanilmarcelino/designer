@@ -56,7 +56,8 @@ Static Function FrmUsuario_OnInit( oQuery )
     ***********************************************
 Static function FrmUsuario_ToolbarAction( nParam , lFlag, oQuery )
     Local oRet,cSQL:='',cCondicao,i,aItem,cCRC
-
+    FrmUsuario.oBtnNaoAutoriza.enabled := .F.
+    FrmUsuario.oBtnAutoriza.enabled := .F.
     Do Case
         Case nParam = 0 //Atualiza os componentes com os dados do recorset
             FrmUsuario.oBtnNovo.Picture            := 'Minigui_edit_new'
@@ -330,7 +331,7 @@ Static Function FrmUsuario_oNivel_Onchange(oQuery )
         aItem := {hb_ntos(oQuery.field.codidobj.value),;
                   oQuery.field.tipo.value,;
                   oQuery.field.objeto.value,;
-                  oQuery.field.descricao.value,;
+                  hb_AnsitoOem(oQuery.field.descricao.value),;
                   hb_ntos(oQuery.field.nivel.value)}
                   
         //O left Join garante todos os objetos user=empty =>Não autorizado

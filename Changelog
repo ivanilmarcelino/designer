@@ -1,4 +1,13 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-14-30 18:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     [+] Adicionado prototipo de uso geral para Db MySQL
+     [!] Ajuste na Lib Mysql para reconhecer a estrutura de Datetime
+     [!] Incluido no Header :BeginTrans/:RollbackTrans/:CommitTrans
+     [!] Retirado a obrigatorieade de preencher AddRess em Hyperlink, incluido Action no objeto;
+     [%] eliminado a função tableStruct de Wizard.prg , agora leitura é pelo metodo :TableStruct da lib
+     [*] Ajuste em algumas traduções em [translate]
+     [*] Inclusão de trantamento de Ponteiro em TipoVar(<p>)
+
 2022-14-21 14:24 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.29.0 RELEASE CANDIDATE (RC)"
      [*] Sincronização Minigui Extend

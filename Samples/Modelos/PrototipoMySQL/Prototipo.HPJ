@@ -38,8 +38,8 @@ setmenustyle=EXTENDED
 setmenucursor=FULL
 setmenuseparator=SINGLE LEFTALIGN
 setmenuitemborder=3D
-fontname=
-fontsize=6
+fontname=Segoe UI
+fontsize=9
 fontbold=FALSE
 fontnameMenu=
 fontsizeMenu=9
@@ -50,13 +50,13 @@ NaoIncluiResourceHmg=FALSE
 Frm0001=%PROJETO%\Form\FrmLogin.FMG
 Frm0002=%PROJETO%\form\frmObjeto.FMG
 Frm0003=%PROJETO%\Form\FrmUsuario.FMG
+Frm0004=%PROJETO%\form\Prototipo.FMG
 
 [MODULOS]
 MOD0001=%PROJETO%\FrmLogin.Prg
 MOD0002=%PROJETO%\frmObjeto.PRG
 MOD0003=%PROJETO%\FrmUsuario.PRG
 MOD0004=%PROJETO%\Prototipo.PRG
-MOD0005=E:\Prgplus\Git\Lib2022\Biblioteca\64\tmysqlIma.prg
 
 [RESOURCES]
 RES0061=PrimaryKey;%PROJETO%\res\PrimaryKey.png

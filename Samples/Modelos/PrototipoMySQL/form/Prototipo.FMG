@@ -1,17 +1,17 @@
 /*  SOBRE A IDE
     ==============================================================================================
     Gerado pela IDE Designer
-    1.0.29.0 RELEASE CANDIDATE (RC) 220426 1943
+    1.0.29.0 RELEASE CANDIDATE (RC) 220430 1821
     https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
     Versão Minigui:  Harbour MiniGUI Extended Edition 22.03.3 (32-bit) ANSI  Grigory Filatov <gfilatov@inbox.ru>
     Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
     Compilador : MinGW GNU C 11.2 (32-bit)
     ----------------------------------------------------------------------------------------------
     SOBRE ESTE CÓDIGO GERADO:
-    Última alteração : 28/04/2022-15:46:33 Máquina: IMA2018 Usuário:Ivanil
+    Última alteração : 30/04/2022-23:04:23 Máquina: IMA2018 Usuário:Ivanil
     Código do formulário ajustado
     ----------------------------------------------------------------------------------------------
-    Projeto : Transacao
+    Projeto : Prototipo
     */
 
     #ifndef TRUE
@@ -19,10 +19,10 @@
     #endif
 
 *{Name:Main}
-*{Modulo:Transacao.prg}
+*{Modulo:Prototipo.PRG}
 
 
-DEFINE WINDOW TEMPLATE AT 180, 344 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso geral" MAIN
+DEFINE WINDOW TEMPLATE AT 251, 324 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso geral" MAIN
 
     DEFINE MAIN MENU
         DEFINE MENU POPUP "Cadastro" NAME oNMenu_MAIN_Main1 FONT "Fnt_P_D_R"
