@@ -8,7 +8,7 @@
     Compilador : MinGW GNU C 11.2 (32-bit)
     ----------------------------------------------------------------------------------------------
     SOBRE ESTE CÓDIGO GERADO:
-    Última alteração : 30/04/2022-23:04:23 Máquina: IMA2018 Usuário:Ivanil
+    Última alteração : 01/05/2022-11:36:44 Máquina: IMA2018 Usuário:Ivanil
     Código do formulário ajustado
     ----------------------------------------------------------------------------------------------
     Projeto : Prototipo
@@ -22,7 +22,7 @@
 *{Modulo:Prototipo.PRG}
 
 
-DEFINE WINDOW TEMPLATE AT 251, 324 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso geral" MAIN
+DEFINE WINDOW TEMPLATE AT 251, 324 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso geral" MAIN ON RELEASE (Main_Onrelease()) ON INTERACTIVECLOSE (Main_Oninteractiveclose())
 
     DEFINE MAIN MENU
         DEFINE MENU POPUP "Cadastro" NAME oNMenu_MAIN_Main1 FONT "Fnt_P_D_R"
@@ -52,7 +52,7 @@ DEFINE WINDOW TEMPLATE AT 251, 324 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso ge
     END MENU
 
     DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
-        BUTTON Toolbar_1Button1 PICTURE "Minigui_edit_close"
+        BUTTON Toolbar_1Button1 PICTURE "Minigui_edit_close" ACTION (Main_Toolbar_1Button1_Action())
         BUTTON Toolbar_1Button2 PICTURE "Hbprint_zoomin"
         BUTTON Toolbar_1Button3 PICTURE "Hbprint_zoomout"
     END TOOLBAR

@@ -123,7 +123,7 @@ Static Function Frmlogin_oBtnConfirma_Action( )
     endif
     
     //Validação da Senha
-    if !oQuery.Field.password.value == FrmLogin.oSenha.value
+    if !oQuery.Field.password.value == GetToxNo(FrmLogin.oSenha.value)
         //Nao achou o usuário, mas não mandamos a mensagem correta.
         MsgInfo("Usuário ou senha inválido !!")
         FrmLogin.oUsuario.Setfocus()
@@ -160,14 +160,14 @@ Static Function Frmlogin_oBtnConfirma_Action( )
 
     //Se houver uma associação de troca de senha o comando é enviado para atualização.
     if lMudaSenha
-        oQuery.SQL := "Update tabUser set Password='"+(FrmLogin.oNovaSenha.value)+"',"+;
+        oQuery.SQL := "Update tabUser set Password='"+GetToxNo(FrmLogin.oNovaSenha.value)+"',"+;
                           "alterasenha=0,"+;
                           "CRC='"+ HB_MD5(App.Cargo["user"]["usuario"]+;
                                           App.Cargo["user"]["nome"]+;
-                                          (FrmLogin.oNovaSenha.value)+;
+                                          GetToxNo(FrmLogin.oNovaSenha.value)+;
                                           Tipovar(TRUE)+;
                                           hb_ntos(App.Cargo["user"]["nivel"]))+"'"+;
-                       " Where codxigo="+hb_ntos(App.Cargo["user"]["id"] )
+                       " Where codigo="+hb_ntos(App.Cargo["user"]["id"] )
                                           
         oQuery.Execute()
         If oQuery.ErrorSQL()

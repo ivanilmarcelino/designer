@@ -78,6 +78,7 @@ Static function FrmUsuario_ToolbarAction( nParam , lFlag, oQuery )
                 FrmUsuario.oUsuario.Value              := oQuery.Field.Usuario.Value
                 FrmUsuario.oNome.Value                 := oQuery.Field.Nome.Value
                 FrmUsuario.oPassword.Value             := oQuery.Field.Password.Value
+                FrmUsuario.oPassword.Cargo             := oQuery.Field.Password.Value
                 FrmUsuario.oStatus.Value               := oQuery.Field.Status.Value
                 FrmUsuario.oNivel.Value                := oQuery.Field.Nivel.Value
 
@@ -166,7 +167,14 @@ Static function FrmUsuario_ToolbarAction( nParam , lFlag, oQuery )
                 Endif
                 oQuery.Field.Usuario.Value             := FrmUsuario.oUsuario.value
                 oQuery.Field.Nome.Value                := FrmUsuario.oNome.value
-                oQuery.Field.Password.Value            := FrmUsuario.oPassword.value
+                
+                //Aqui verificamos se houve mudança de Senha 
+                if FrmUsuario.oPassword.Value <> FrmUsuario.oPassword.Cargo
+                    //Se mudou é necessario aplicar md5 no valor do objeto 
+                    FrmUsuario.oPassword.Value   := GetToxNo(FrmUsuario.oPassword.Value)
+                    oQuery.Field.Password.Value  := FrmUsuario.oPassword.value
+                endif
+                
                 oQuery.Field.Status.Value              := FrmUsuario.oStatus.value
                 oQuery.Field.Nivel.Value               := FrmUsuario.oNivel.value
                 oQuery.Field.CRC.value                 := HB_MD5(FrmUsuario.oUsuario.value+;

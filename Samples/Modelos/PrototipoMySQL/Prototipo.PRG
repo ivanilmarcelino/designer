@@ -16,11 +16,12 @@
 
 #include <hmg.ch>
 #include <version.h>
-
+memvar oServer
 Function Main( vParam )
     /*Configuração do banco de dados
 Caso queira criar sua própria configuração, basta excluir a linha abaixo e escrever seu código aqui...*/
     #Include <Prototipo.DB>
+    waitwindow()
 
     (vParam)
 
@@ -57,4 +58,45 @@ Static Function Main_oNMenu_MAIN_Main19_Action( )
     ***********************************************
 Static Function Main_oNMenu_MAIN_Main12_Action( )
     LoadFrmFrmUsuario()
+    Return .T.
+    ***********************************************
+    ///////////////////////////////////////////////
+    ***********************************************
+Function GetToxNo(c)
+   Return hb_md5(alltrim(c)+"182f3b425V657z8V9810k11q12R13714A15r16c17A18C19720C21922p23I24D25w26G27528429030631532V")
+    ***********************************************
+    ///////////////////////////////////////////////
+    ***********************************************
+Function CloseDatabase()
+    //Desativa a confirmação da tela
+    Main.Oninteractiveclose := {||TRUE}
+    //Fecha o banco de dados
+    if Valtype(oServer)="O"
+        oServer:Close()
+    endif
+    Return .T.
+    ***********************************************
+    ///////////////////////////////////////////////
+    ***********************************************
+Static Function Main_Onrelease( )
+    //Chama o Fechamento da base
+    CloseDatabase()
+    Return .T.
+
+    ***********************************************
+    ///////////////////////////////////////////////
+    ***********************************************
+Static Function Main_Oninteractiveclose( )
+    if !Confirma("Tem certeza que deseja encerrar o Sistema?")
+        Return .F.
+    endif
+    Return .T.
+
+    ***********************************************
+    ///////////////////////////////////////////////
+    ***********************************************
+Static Function Main_Toolbar_1Button1_Action( )
+    if Main_Oninteractiveclose( )
+        Main.Release()
+    endif
     Return .T.
