@@ -1,4 +1,13 @@
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-05-24 22:52 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     VERSION_PRODUCT "1.0.30.1 RELEASE CANDIDATE (RC) 220524 2244"
+     Update Minigui 22.05(Update 1)
+     [!] Ajuste na propriedade Horizontal de Spinner e Radiogroup
+         Agora os controles são redesenhados em tempo de projeto sem precisar reabrir o formulário
+
+2022-05-17 14:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+     [!] Ajustado propriedade COL de Getbox; conflito com BackColor (Reportado por Joao Bosco)
+
 2022-05-01 12:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
      VERSION_PRODUCT "1.0.29.1 RELEASE CANDIDATE (RC)"
      [+] Adicionado prototipo de uso geral para Db MySQL
