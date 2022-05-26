@@ -1,14 +1,22 @@
+Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
+[Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
-2022-05-24 22:52 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-05-26 18:25 
+     [+] Incluido o controle Progresswhell na barra de ferramentas
+     [+] Incluido em configurações do  projeto guia Sets, o check [Set context menu [On/Off]]
+     [!] Incluido o comando de fechamento do processo wait "abrindo servidor"
+     [+] Incluido as propriedades OnRClick para Label/Image conforme evolução da minigui
+
+2022-05-24 22:52 
      VERSION_PRODUCT "1.0.30.1 RELEASE CANDIDATE (RC) 220524 2244"
      Update Minigui 22.05(Update 1)
      [!] Ajuste na propriedade Horizontal de Spinner e Radiogroup
          Agora os controles são redesenhados em tempo de projeto sem precisar reabrir o formulário
 
-2022-05-17 14:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-05-17 14:00 
      [!] Ajustado propriedade COL de Getbox; conflito com BackColor (Reportado por Joao Bosco)
 
-2022-05-01 12:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-05-01 12:30 
      VERSION_PRODUCT "1.0.29.1 RELEASE CANDIDATE (RC)"
      [+] Adicionado prototipo de uso geral para Db MySQL
      [!] Ajuste na Lib Mysql para reconhecer a estrutura de Datetime
@@ -18,34 +26,34 @@
      [*] Ajuste em algumas traduções em [translate]
      [*] Inclusão de trantamento de Ponteiro em TipoVar(<p>)
 
-2022-14-21 14:24 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-14-21 14:24 
      VERSION_PRODUCT "1.0.29.0 RELEASE CANDIDATE (RC)"
      [*] Sincronização Minigui Extend
          Harbour MiniGUI Extended Edition 22.03 (Update 3)
 
-2022-14-20 21:47 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-14-20 21:47 
      VERSION_PRODUCT "1.0.28.3 RELEASE CANDIDATE (RC)"
      [*] Ao nomear objetos agora serão verificados se os nomes se conflitam com propriedades
      [*] Ao salvar o form, será validado se algum nome definido se conflita com propriedades
      [*] Os objetos criados pelo Wizard estarão sendo precedidos de "o" no nome isso tende
          a minimizar os conflitos com propriedades
 
-2022-14-18 20:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-14-18 20:00 
      VERSION_PRODUCT "1.0.28.2 RELEASE CANDIDATE (RC)"
      [!] Carga das imagens definidas no menu dos botões em toolbar em tempo de projeto relatado por Pierpaolo Martinello (Italy)
 
-2022-14-15 10:38 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-14-15 10:38 
      VERSION_PRODUCT "1.0.28.1 RELEASE CANDIDATE (RC)"
      [!] Excluido propriedades de Slider (Erro em copy/cola)
 	 CLOCK;KEYBOARD;STATUSITEM;DATE;DEFAULT;FONTBOLD,FONTITALIC,FONTNAME,FONTSIZE;FONTSTRIKEOUT,FONTUNDERLINE
 
-2022-14-14 12:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-14-14 12:00 
      VERSION_PRODUCT "1.0.28.0 RELEASE CANDIDATE (RC) 220414 0949"
      [*] Sincronizado  Minigui Extend 2203.2
      [*] Update Scite: Version 5.2.2 https://www.scintilla.org/SciTE.html
          match statement in local and directory properties provides per-file settings
 
-2022-03-31 10:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-03-31 10:46 
      VERSION_PRODUCT "1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016"
      [*] Sincronizado Minigui extend 2203.0(32bits)
      [*] Correção propriedades x Events controle TimePicker.
@@ -55,11 +63,11 @@
         [ ON ENTER <OnEnterProcedure> | <bBlock> ]
 
 
-2022-03-17 22:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-03-17 22:46 
      VERSION_PRODUCT "1.0.25.0 RELEASE CANDIDATE (RC) 220317 2244"
      [*] Sincronizado Minigui extend 2201.7(32bits)
 
-2022-03-05 18:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-03-05 18:00 
      VERSION_PRODUCT "1.0.23.0 RELEASE CANDIDATE (RC) 220305 0218"
      Ajuste no Wizard
      Ao usar a conexão ativa havia uma chamada de erro para uma propriedade invalida
@@ -67,23 +75,23 @@
      Ajuste na PesquisaCRUD
      Alteração para atender mais de 1 monitor causou um bug no hash de coordenadas
 
-2022-03-01 18:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-03-01 18:00 
      VERSION_PRODUCT "1.0.22.0 RELEASE CANDIDATE (RC) 220228 2041"
 
-2022-02-15 21:34 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-02-15 21:34 
      VERSION_PRODUCT "1.0.20.0 RELEASE CANDIDATE (RC) 220215 2131"
     [*] Sincronizado Minigui extend 2201.2
 
-2022-01-29 13:33 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-01-29 13:33 
     VERSION_PRODUCT "1.0.19.0 RELEASE CANDIDATE (RC) 220129 1515"
     [*] Sincronizado Minigui extend 2201.0
 
-2022-01-03 22:50 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2022-01-03 22:50 
     VERSION_PRODUCT "1.0.18.0 RELEASE CANDIDATE (RC) 220103 2242"
     [*] Ajustado erro ao Salvar form 
     [*] Incluido opção de desligar animação
 
-2021-12-21 19:44 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-12-21 19:44 
     VERSION_PRODUCT "1.0.17.0 RELEASE CANDIDATE (RC) 211221 2201"
     [*] As libs relacionadas a acesso a dados modificados para uso das  otimizações do 
         designer receberam um z no nome	e alocadas em ADDONS, a ideia inicial era usar
@@ -105,7 +113,7 @@
 	libmySQL.lib => libmySQLz.lib
 	libpq.lib => libpqz.lib
 
-2021-12-20 19:50 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-12-20 19:50 
     VERSION_PRODUCT "1.0.16.0 RELEASE CANDIDATE (RC) 211220 1948"
     [*] Sincronização Minigui Extend 21.11.2
     [+] Pacote enxuto
@@ -128,31 +136,31 @@
          In the future, I might withdraw the obligation of the structure, but it would make understanding 
          more difficult for beginners;
 
-2021-12-06 21:09 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-12-06 21:09 
     VERSION_PRODUCT "1.0.15.0 RELEASE CANDIDATE (RC) 211206 2010"
     [*] Harbour Minigui Extend Edition 21.11
     [+] Suporte a Panel 
 
-2021-11-06 16:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-11-06 16:30 
     VERSION_PRODUCT "1.0.14.0 RELEASE CANDIDATE (RC) 211106 1625"
     [*] Harbour Minigui Extend Edition 21.10.3 
 
-2021-10-28 19:40 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-10-28 19:40 
     VERSION_PRODUCT "1.0.12.0 RELEASE CANDIDATE (RC) 211027 1628"
     [*] Harbour Minigui Extend Edition 21.10.1 
 
-2021-10-22 22:46 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-10-22 22:46 
     VERSION_PRODUCT "1.0.11.0 RELEASE CANDIDATE (RC) 211022 2234"
     [*] Harbour Minigui Extend Edition 21.10.0 
 
 
-2021-09-07 19:4 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-09-07 19:4 
     VERSION_PRODUCT  "1.0.10.0 RELEASE CANDIDATE (RC) 211005 1916"
     [!] Retirado limitação do tamanho de campos do Mysql para compatibilizar com DBF, vale lembrar
 	que estou tirando da biblioteca todas compatibilizações as quais não vejo nenhum sentido,
 	tentar criar compatibilidade é perder o que o SQL tem de melhor, velocidade e praticidade.
 
-2021-09-07 19:4 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-09-07 19:4 
     VERSION_PRODUCT "1.0.9.0 RELEASE CANDIDATE (RC) 210917 2021"
     [*] Harbour MiniGUI Extended Edition 21.09 (Pre-Release) de 16/09/2021
        Notas das funcionalidades/correçoes podem ser visto acessando o changelog da minigui,  faça o download 
@@ -160,13 +168,13 @@
        Faça uma doação ao amigo Grigory, na tela sobre tem o link que vai direcioná-lo para uma página segura ou
        use o direcionador que vem junto no o pacote de instalação da minigui;
 
-2021-09-07 19:4 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-09-07 19:4 
     VERSION_PRODUCT "1.0.8.0 RELEASE CANDIDATE (RC) 210907 2010
     [*]Ajuste na interface, font e size agora podem ser ajustados em configurações.
        
 
 
-2021-09-06 21:53 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-09-06 21:53 
     VERSION_PRODUCT "1.0.7.0 RELEASE CANDIDATE (RC) 210906 2131"
     [*] Incluido Ambiente teste de Mesa
     [+] Manifest windows 10
@@ -174,15 +182,15 @@
     [+] Verificação update automático no GitHub
     [*] volta do theme black scite
 
-2021-08-31 19:15 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-31 19:15 
     VERSION_PRODUCT "1.0.6.0 RELEASE CANDIDATE (RC) 210831 1905"
     [*] Sincronizado: Harbour MiniGUI Extended Edition 21.07 (Update 4) de 31/08/2021
 
-2021-08-29 20:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-29 20:07 
     VERSION_PRODUCT "1.0.5.0 RELEASE CANDIDATE (RC) 210829 1958"
     [*] Sincronizado: Harbour MiniGUI Extended Edition 21.07 (Update 3)
 
-2021-08-20 20:00 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-20 20:00 
     VERSION_PRODUCT "1.0.4.0 RELEASE CANDIDATE (RC) 210820 1946"
     [!] Implementado o metodo Close na lib MySQL compatibilidade com as demais libs.
         na ultima versão a falta deste metodo encerra o aplicativo.
@@ -193,13 +201,13 @@
         Criado o Botão para copir o retorno do procedimento;(Marque uma ou mais linhas antes de clicar no botão)
         A implementação de CTRL+C no form tirou a funcionalidade de copiar o Script a ser executado.
 
-2021-08-17 20:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-17 20:07 
     VERSION_PRODUCT "1.0.3.0 RELEASE CANDIDATE (RC) 210817 1957"
     [!] Incluido declaração das variáveis locais oExcel,oHtml no wizard para DBF
         Reportado por JORGE HENRIQUE <Grupo Designer>
     [*] Incluido [F5] executar e [CTRL+C] copiar retorno de LoadFrmExpressao
     
-2021-08-14 14:56 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-14 14:56 
     [*] Melhoria na funcao LodFrmExpressao
         Quando não declarada uma função,agora será colocada uma default para manter a integridade de linhas em procline()
         Retorno agora é mostrado num grid, provou ser muito mais rápido adicionar um elemento ao grid que atribuir o valor ao rich
@@ -228,19 +236,19 @@
         
         /*END*/
     
-2021-08-13 19:47 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-13 19:47 
     [*] Update Minigui 2107.2 de 12/08/2021
     [+] adicionado no addons a função LoadFrmExpressao()
         Agora vc pode incluir o processo de teste diretamente no seu programa, 
         Deixe marcado a opção addons item 9 de configurações para que seja compilado junto com seu programa, depois basta chamar a função loadFrmExpressao() de qualquer lugar.
         Apenas aconselho não deixar esta opção aberta na versão final, um usuário mais experiente poderia surfar nas variáveis e objetos de seu sistema;
 
-2021-08-07 22:31 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-07 22:31 
     [!] titulo das propriedades em edição
     O titulo das propriedades em edição estavam sendo mudados o titulo do form para o ultimo valor encontrado nas traduções; esse problema 
     não afeta os valores atribuidos nas propriedades embora;
     
-2021-08-07 22:31 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-07 22:31 
     [*] start.mod agora ajustado para redefinir a tradução de debugger de acordo com preferências;
     [*] reativado o theme
     [*] executor runtime agora foi aprimorado, possui a mesma funcionalidade que o antigo DOT do clipper, 
@@ -272,20 +280,20 @@
         Gerar evidência de validação... enfim o céu é o limite.
         
 
-2021-08-01 00:29 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-08-01 00:29 
     [*] start.mod, incluído um procedimento na primeira execução para ajustar a linguagem do scite 
         para a lingua padrão definida pelo usuário numa instalação anterior.
         Abertura do changelog na primeira execução
 
-2021-07-31 00:19 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-07-31 00:19 
     ; Julho comemoramos 2 Anos de Designer
     [*] Update Minigi Version 21.7.1 de 29/07/2021 (http://hmgextended.com/download-3/)
     [*] Update Scite v 5.1.1 (https://www.scintilla.org/SciTEDownload.html)
 
-2021-07-23 21:48 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-07-23 21:48 
     [*]Update Minigui Version 21.07 de 21/07/2021
 
-2021-06-26 00:42 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-26 00:42 
     [*] Atualização Minigui Extend v2105.4 de 24/06/2021
     [*] Ajuste função PesquisaCrud(p1,p2,p3,p4,p5)
         p1=Cursor Database
@@ -301,32 +309,32 @@
         A tela de pesquisa agora pode ser abandonada com Esc
         Ao pesquisar e não houver nada que satisfaça a pesquisa, o foco agora é devolvido a caixa de pesquisa
 
-2021-06-19 23:26 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-19 23:26 
     [*] Atualização do Scite para a versão 5.03 (https://www.scintilla.org/SciTEDownload.html)
     [*] Scite traduzido para BR/IT/ES e nativa US acoplado a escolha da IDE Menu: Tools\Settings\(Item 10)
     [+] Incluido a propriedade DblClick controle Image
 
-2021-06-19 15:38 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-19 15:38 
     [*] Melhorias no Wizard
         Nomes dos cabeçalhos iniciados com a primeira letra em maiuscula
         Quando alterado o tipo de controle de numerico para Check, automaticamente definido o valor para falso em limpar controles
         Adicionado inteligência aos botões de Novo e Edição, agora é possivel abortar o processo sem ter que chamar o filtro ou fechar o form
         Nota: Estas melhorias foram sugeridas pelo amigo Pierpaolo
 
-2021-06-16 23:07 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-16 23:07 
     [!] AddOns - Classe MySQL error
     [*] atualizado com minigui 20.05 Update 3 de 16/06/2021
 
-2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-09 14:30 
     [!] Ajuste classe MySQL tipo BIT
         Atenção:
         BIT = Lógico
         BOOL é um alias para Tinyint ou seja = Numérico
     
-2021-06-09 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-09 14:30 
     [*] Atualizado com minigui 20.05 Update 2 de 09/06/2021
 
-2021-06-02 14:30 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-02 14:30 
     [!] Cargo de oBtnEdit ajustado para TRUE em caso de edição.
     
         Case nParam = 3 //Editar Registro atual
@@ -336,14 +344,14 @@
             &(FrmMunicip).oBtnEdit.Cargo               := TRUE //Permite identificar se o registro atual está em edição 
             &(FrmMunicip).oBtnExclui.Enabled           := FALSE    
 
-2021-06-01 18:06 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-06-01 18:06 
     [*] Atualizado com minigui 20.05 de 31/05/2021
 
-2021-05-21 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-05-21 7:12 
     [+] incluido lingua espanhola
 	Caso sejam corrigidos algo na tradução me envie o arquivo  de volta para ser incluido na proxima distribuição.
 
-2021-05-18 7:12 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-05-18 7:12 
     [!] Modulo Endenta.prg
         FrmProjeto_oBtnModStruct_Action( ) - Endentamento => problemas quando o grid do modulo estava sob um filtro
         FrmProjeto_oBtnModExtract_Action() - Extração de form => problemas quando o grid do modulo estava sob um filtro
@@ -355,10 +363,10 @@
             
         FrmProjeto_oBtnModExtract_Action() - Ajuste para corrigir codigo do usuario quando terminado com ; mantendo linhas em branco.
     
-2021-05-02 17:54 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-05-02 17:54 
     [!]	Correção :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
 
-2021-04-30 10:25 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+2021-04-30 10:25 
     ; #Define VERSION_PRODUCT "0.99.23.28"
     [*] Atualização Tradução para o Italiano por [Pierpaolo Martinello](pier.martinello@alice.it)
     [*] [Update Scite 5.02](https://www.scintilla.org/SciTEDownload.html)
