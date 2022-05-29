@@ -1,6 +1,108 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-05-29 02:03
+     VERSION_PRODUCT "1.0.30.3 RELEASE CANDIDATE (RC) 220529 0213"
+     [+] Tradução report texcel/thtml
+     [+] Opção cancelar processamento texcel/thtml
+        CREATE CLASS TExcel
+        VAR hProtege Init hash()
+        Data lOpen Init .F.
+        Data lDB   Init .F.
+        Data oType Init {}
+        Data oExcel
+        Data oTabs
+        Data oBook
+        Data Cells     Init Nil
+        Data lFormula  Init .T.
+        Data Headers   Init  {}
+        Data Fields    Init  {}
+        Data DataBase
+        Data Cabecalho Init  ""
+        Data FontSize  Init  9
+        Data FontName  Init  "Calibri"
+        Data lBorda    Init .T.
+        Data SetRow    Init 1
+        Data Totaliza  Init .T.
+        Data aTotaliza Init NIL
+        Data noShow    init .F.
+        Data lMalaDireta init .F.
+        Data Row       Init 1
+        Data lAdd      Init .F.
+        Data Version   Init "0"
+
+        Data Condicao  Init {||.T.}
+        Data cName     Init ""
+        Data Cache     Init MARGE_CACHE
+        Data nFormat   Init 50
+        Data Type      Init "EXCEL"
+        Data translate Init Exceltranslaction()
+        Data Rodape    Init ""
+
+
+        METHOD New(cFile)
+        Method Add(Name)
+        Method Open(cFile)
+        Method SetPasta(cPasta)
+        Method End(T)
+        Method Close() inline ::End()
+        METHOD Release(t)  inline ::End(t)
+        Method AddLine(n)  inline (::Row+=IIF(n=nil,1,n))
+        Method Escreva(Col,cText)   INLINE ::oTabs:Cells( ::Row,Col):Value:=cText
+        Method SaveAs(cFile) inline  doSAve(self,cFile)
+        Method Save()        inline ::oBook:Save()
+        Method REfresh
+        Method Show
+        Method Celula(Row,Col)   //                                                                                      2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+        Method Protege(cPassword) //Inline  ::oExcel:ActiveSheet:Protect(IIF(cPassword=Nil,SENHAPADRAOOFFICE,cPassword)) //,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.T.,.T.,.T.)
+        ASSIGN Range(cText)   INLINE ::oTabs:Range( cText )
+        ACCESS Protection      INLINE ::oTabs:Protection
+        Method AddCol(cTitle,bField)
+        Method Help Inline doHelp()
+
+        //Method Release inline ::oExcel:Release
+        END CLASS
+
+
+        THtmlReport():new()
+        oClass = HBClass():New( "THtmlRel" )
+        oClass:AddData("Sucess",.F.) //Retorna TRUE se concluido com sucesso
+        oClass:AddData("HeaderReport","Report Html Ima Solutions")
+        oClass:AddData("Rs") //Cursor ou Alias
+        oClass:AddData("Border",1)
+        oClass:AddData("CharSet","ISO-8859-1")  //Charset Padrao
+        oClass:AddData("BackGround","#b3d1ff")
+        oClass:AddData("Align") //Array de alinhamento {0=Esquerda,1=Centro,2,Direita}
+        oClass:AddData("Header") //Array de cabecalho, Default nomes dos campos
+        oClass:AddData("Fields") //Array de campos, default os campos
+        oClass:AddData("iFields") //Indice dos campos para acelerar o relatorio
+        oClass:AddData("translate",Htmltranslate()) //tradução
+
+        oClass:AddData("Picture") // Array de Mascara : {"@R 999,00", ...} será passada como parametro de Transform
+        oClass:AddData("Totaliza") //Array de campos que devem totalizados se numericos
+        oClass:AddData("FontName","Arial")
+        oClass:AddData("FontSize",1)
+        oClass:AddData("Reg",0) //Total de Registros processados no relatorio
+        //Cabecalhos
+        oClass:AddData( "Title","") //Cabeçãlho do Relatorio
+
+        oClass:AddDAta("Footer") //Rodapé do Relatorio
+
+        oClass:AddData( "File") //Nome do arquivo a ser gerado
+        oClass:AddData( "Title","Report HTML Ima-Solutions")
+        oClass:AddData( "Handle") //Handle do arquivo Uso interno
+        oClass:AddData( "ZipFile","") //Nome do arquivo ZIP Gerado caso seja acionado o metodo Zip
+
+        oClass:AddMethod( "New",  @New() )  // define this class objects methods
+        oClass:AddMethod( "Report", @ShowProgress() ) //Consome os dados  do cursor ou dbf
+        oClass:AddMethod( "Show",@Show()) //Mostra na tela o resultado
+        oClass:AddMethod( "Zip",@doZip()) //Gera um ZIP com Resultado
+        oClass:Create()
+
+**********************************
+//////////////////////////////////
+**********************************
+
 2022-05-26 18:25 
      [+] Incluido o controle Progresswhell na barra de ferramentas
      [+] Incluido em configurações do  projeto guia Sets, o check [Set context menu [On/Off]]
