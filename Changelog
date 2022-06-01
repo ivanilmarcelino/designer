@@ -1,6 +1,15 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-05-31 22:14
+    VERSION_PRODUCT "1.0.30.4 RELEASE CANDIDATE (RC)"
+    Update Minigui 2005.3 de 31/05
+    Thtml=>Propriedade Header mudou para Headers, Plural
+
+2022-05-29 22:00
+     [*] Inclusão Zebramento em excel/html
+     [*] Zebramento excel passou a usar o recurso formato de tabela;(mais rapido e eficiente)
+
 2022-05-29 02:03
      VERSION_PRODUCT "1.0.30.3 RELEASE CANDIDATE (RC) 220529 0213"
      [+] Tradução report texcel/thtml
