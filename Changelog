@@ -1,6 +1,14 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-07-05
+     VERSION_PRODUCT "1.0.31.1 RELEASE CANDIDATE (RC) 220705 1554"
+     Update Minigui 2206.1
+
+2022-06-30
+     VERSION_PRODUCT "1.0.31.0 RELEASE CANDIDATE (RC) 220630 2007"
+     Update Minigui 2206.0 (update)
+
 2022-06-07 10:36
      VERSION_PRODUCT "1.0.30.5 RELEASE CANDIDATE (RC) 220607 1010"
      Update Minigui 2205.3
