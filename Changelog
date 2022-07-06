@@ -1,6 +1,10 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-07-06
+     Correção tradução para o Italiano: logic Sim/Não => _HMG_alanguser[[29,30]] & translate[41]
+     colaboração Pierpaolo Martinello (Italy)
+
 2022-07-05
      VERSION_PRODUCT "1.0.31.1 RELEASE CANDIDATE (RC) 220705 1554"
      Update Minigui 2206.1
