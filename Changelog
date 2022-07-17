@@ -1,6 +1,11 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-07-17
+     VERSION_PRODUCT "1.0.31.4 RELEASE CANDIDATE (RC) 220717 1345"
+     [+] Adicionado a imagem email_24.bmp aos recursos da Lib de impressao núcleo reportado Pierpaolo Martinello (Italy)
+     [*] Melhorado o tamanho do CRUD pesquisa reportado Pierpaolo Martinello (Italy)
+
 2022-07-16
      VERSION_PRODUCT "1.0.31.3 RELEASE CANDIDATE (RC) 220716 2032"
      [*] Melhorias tradução de mensagens do núcleo da Minigui
