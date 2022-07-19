@@ -1,6 +1,11 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-07-19
+     [+] Incluido controle RichBoxEditEX
+     [!] Corrigido função de fehamento da aplicação quando usado o Db Firebird
+     [*] Atualizado firebird.conf na pasta do IDE para Db Modo Compartilhado ServerClassic
+
 2022-07-17
      VERSION_PRODUCT "1.0.31.4 RELEASE CANDIDATE (RC) 220717 1345"
      [+] Adicionado a imagem email_24.bmp aos recursos da Lib de impressao núcleo reportado Pierpaolo Martinello (Italy)
