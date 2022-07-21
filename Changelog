@@ -1,6 +1,11 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=Comment
+2022-07-20
+     VERSION_PRODUCT "1.0.31.5 RELEASE CANDIDATE (RC)"
+     [*]Ajuste debug, adiciona todas propriedades para análise
+     [*]Atualizado propriedades (exclusão\inclusão e renomeação)
+
 2022-07-19
      [+] Incluido controle RichBoxEditEX
      [!] Corrigido função de fehamento da aplicação quando usado o Db Firebird
