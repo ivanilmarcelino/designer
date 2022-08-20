@@ -1,0 +1,894 @@
+Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
+[Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-07-29
+     [;] Distribuição de aniversário 2019/2022
+         VERSION_PRODUCT "1.0.32.0 RELEASE CANDIDATE (RC) 220729 2141"
+         Versão Minigui 2207 (update 1)
+     [%] Edição de Label diretamente no formulário
+     [*] Centralização do objeto no container
+     [*] validação do posicionamento do objeto dentro do container
+     [*] aprimoramento do tratamento da linguagem
+     [*] varias correções
+
+2022-07-25
+     [*] Separação em 2 grupos - Alinhamento e Resize dos objetos solicitado por Pierpaolo Martinello (Italy)
+
+2022-07-24
+     [*] Divisão da distrubuição em 3 modos
+         Completa : distribuição full, basta baixar e usar sem se preocupar com qualquer configuração
+                    Ideal para a maioria dos usuários e para acompanhar os videos no youtube;
+
+         Expert : distribuição apenas com o executável e arquivos vinculados.
+                  Ideal para usuarios experientes que pretende atualizar tudo manualmente
+
+         Personal : distribuição leve, não possui minigui;harbour;borland;mysql entre outros
+                    Ideal para os usuários que pretende usar o Designer apenas para desenhar telas, embora possa
+                    configurar tudo manualmente;
+                    Este pacote não é recomendado se pretende acompanhar os exemplos no youtube
+
+     [*] Ajuste na configuração
+         Item [06] Alterado para compilador (uso futuro)
+         item [27] Permite selecionar a pasta da minigui a ser usada pelo IDE
+         item [28] Permite selecionar a pasta do compilador a ser usado pelo IDE
+         item [29] Permite selecionar a pasta do harbour a ser usado pelo IDE
+
+     [+] Direitos autorais/Licenciamento
+         Procura pelo arquivo Licenciamento.txt na pasta do IDE;
+         Quando preenchido substitui o cabecalho padrao gerado pelo Designer
+         você pode usar usar as marcações {# #} para gerar cabeçalhos personalizados
+         Exemplo:
+            https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+            Versão Minigui:  {#Miniguiversion()#} by Grigory Filatov <gfilatov@inbox.ru>
+            Versão Harbour/xHarbour: {#version()#}
+            Compilador : {#hb_compiler()#}
+            -------------------------------------------------------------------------------------------------------------
+            Este programa é distribuído na esperança de que seja útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia
+            implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO PARA UM PROPÓSITO ESPECÍFICO.
+            -------------------------------------------------------------------------------------------------------------
+            SOBRE ESTE CÓDIGO GERADO:
+            Criado em : {#Datetime()#} Máquina: {#netname()#} Usuário:{#getusername()#}
+
+
+2022-07-20
+     VERSION_PRODUCT "1.0.31.5 RELEASE CANDIDATE (RC)"
+     [*]Ajuste debug, adiciona todas propriedades para análise
+     [*]Atualizado propriedades (exclusão\inclusão e renomeação)
+
+2022-07-19
+     [+] Incluido controle RichBoxEditEX
+     [!] Corrigido função de fehamento da aplicação quando usado o Db Firebird
+     [*] Atualizado firebird.conf na pasta do IDE para Db Modo Compartilhado ServerClassic
+
+2022-07-17
+     VERSION_PRODUCT "1.0.31.4 RELEASE CANDIDATE (RC) 220717 1345"
+     [+] Adicionado a imagem email_24.bmp aos recursos da Lib de impressao núcleo reportado Pierpaolo Martinello (Italy)
+     [*] Melhorado o tamanho do CRUD pesquisa reportado Pierpaolo Martinello (Italy)
+
+2022-07-16
+     VERSION_PRODUCT "1.0.31.3 RELEASE CANDIDATE (RC) 220716 2032"
+     [*] Melhorias tradução de mensagens do núcleo da Minigui
+         Português
+         Italiano
+         Inglês
+         Espanhol
+
+     [!] Corrigido o erro da tela de alerta de Problema encontrado quando algum arquivo
+         esta ligado ao projeto mas não existe mais no disco.
+
+2022-07-15
+     VERSION_PRODUCT "1.0.31.2 RELEASE CANDIDATE (RC) 220715 2335"
+     Sincronização Minigui Update Minigui 2206.2
+     [!] Correção PesquisaCRUD
+         *Ajustes automáticos ou Informados Reportado Pierpaolo Martinello (Italy)
+         *Zebramento do Grid
+     [%] Melhoramentos Definição fontes usados no projeto
+
+2022-07-06
+     Correção tradução para o Italiano: logic Sim/Não => _HMG_alanguser[[29,30]] & translate[41]
+     colaboração Pierpaolo Martinello (Italy)
+
+2022-07-05
+     VERSION_PRODUCT "1.0.31.1 RELEASE CANDIDATE (RC) 220705 1554"
+     Update Minigui 2206.1
+
+2022-06-30
+     VERSION_PRODUCT "1.0.31.0 RELEASE CANDIDATE (RC) 220630 2007"
+     Update Minigui 2206.0 (update)
+
+2022-06-07 10:36
+     VERSION_PRODUCT "1.0.30.5 RELEASE CANDIDATE (RC) 220607 1010"
+     Update Minigui 2205.3
+
+2022-05-31 22:14
+    VERSION_PRODUCT "1.0.30.4 RELEASE CANDIDATE (RC)"
+    Update Minigui 2005.3 de 31/05
+    Thtml=>Propriedade Header mudou para Headers, Plural
+
+2022-05-29 22:00
+     [*] Inclusão Zebramento em excel/html
+     [*] Zebramento excel passou a usar o recurso formato de tabela;(mais rapido e eficiente)
+
+2022-05-29 02:03
+     VERSION_PRODUCT "1.0.30.3 RELEASE CANDIDATE (RC) 220529 0213"
+     [+] Tradução report texcel/thtml
+     [+] Opção cancelar processamento texcel/thtml
+        CREATE CLASS TExcel
+        VAR hProtege Init hash()
+        Data lOpen Init .F.
+        Data lDB   Init .F.
+        Data oType Init {}
+        Data oExcel
+        Data oTabs
+        Data oBook
+        Data Cells     Init Nil
+        Data lFormula  Init .T.
+        Data Headers   Init  {}
+        Data Fields    Init  {}
+        Data DataBase
+        Data Cabecalho Init  ""
+        Data FontSize  Init  9
+        Data FontName  Init  "Calibri"
+        Data lBorda    Init .T.
+        Data SetRow    Init 1
+        Data Totaliza  Init .T.
+        Data aTotaliza Init NIL
+        Data noShow    init .F.
+        Data lMalaDireta init .F.
+        Data Row       Init 1
+        Data lAdd      Init .F.
+        Data Version   Init "0"
+
+        Data Condicao  Init {||.T.}
+        Data cName     Init ""
+        Data Cache     Init MARGE_CACHE
+        Data nFormat   Init 50
+        Data Type      Init "EXCEL"
+        Data translate Init Exceltranslaction()
+        Data Rodape    Init ""
+
+
+        METHOD New(cFile)
+        Method Add(Name)
+        Method Open(cFile)
+        Method SetPasta(cPasta)
+        Method End(T)
+        Method Close() inline ::End()
+        METHOD Release(t)  inline ::End(t)
+        Method AddLine(n)  inline (::Row+=IIF(n=nil,1,n))
+        Method Escreva(Col,cText)   INLINE ::oTabs:Cells( ::Row,Col):Value:=cText
+        Method SaveAs(cFile) inline  doSAve(self,cFile)
+        Method Save()        inline ::oBook:Save()
+        Method REfresh
+        Method Show
+        Method Celula(Row,Col)   //                                                                                      2   3   4   5   6   7   8   9  10  11  12  13  14  15  16
+        Method Protege(cPassword) //Inline  ::oExcel:ActiveSheet:Protect(IIF(cPassword=Nil,SENHAPADRAOOFFICE,cPassword)) //,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.F.,.T.,.T.,.T.)
+        ASSIGN Range(cText)   INLINE ::oTabs:Range( cText )
+        ACCESS Protection      INLINE ::oTabs:Protection
+        Method AddCol(cTitle,bField)
+        Method Help Inline doHelp()
+
+        //Method Release inline ::oExcel:Release
+        END CLASS
+
+
+        THtmlReport():new()
+        oClass = HBClass():New( "THtmlRel" )
+        oClass:AddData("Sucess",.F.) //Retorna TRUE se concluido com sucesso
+        oClass:AddData("HeaderReport","Report Html Ima Solutions")
+        oClass:AddData("Rs") //Cursor ou Alias
+        oClass:AddData("Border",1)
+        oClass:AddData("CharSet","ISO-8859-1")  //Charset Padrao
+        oClass:AddData("BackGround","#b3d1ff")
+        oClass:AddData("Align") //Array de alinhamento {0=Esquerda,1=Centro,2,Direita}
+        oClass:AddData("Header") //Array de cabecalho, Default nomes dos campos
+        oClass:AddData("Fields") //Array de campos, default os campos
+        oClass:AddData("iFields") //Indice dos campos para acelerar o relatorio
+        oClass:AddData("translate",Htmltranslate()) //tradução
+
+        oClass:AddData("Picture") // Array de Mascara : {"@R 999,00", ...} será passada como parametro de Transform
+        oClass:AddData("Totaliza") //Array de campos que devem totalizados se numericos
+        oClass:AddData("FontName","Arial")
+        oClass:AddData("FontSize",1)
+        oClass:AddData("Reg",0) //Total de Registros processados no relatorio
+        //Cabecalhos
+        oClass:AddData( "Title","") //Cabeçãlho do Relatorio
+
+        oClass:AddDAta("Footer") //Rodapé do Relatorio
+
+        oClass:AddData( "File") //Nome do arquivo a ser gerado
+        oClass:AddData( "Title","Report HTML Ima-Solutions")
+        oClass:AddData( "Handle") //Handle do arquivo Uso interno
+        oClass:AddData( "ZipFile","") //Nome do arquivo ZIP Gerado caso seja acionado o metodo Zip
+
+        oClass:AddMethod( "New",  @New() )  // define this class objects methods
+        oClass:AddMethod( "Report", @ShowProgress() ) //Consome os dados  do cursor ou dbf
+        oClass:AddMethod( "Show",@Show()) //Mostra na tela o resultado
+        oClass:AddMethod( "Zip",@doZip()) //Gera um ZIP com Resultado
+        oClass:Create()
+
+**********************************
+//////////////////////////////////
+**********************************
+
+2022-05-26 18:25 
+     [+] Incluido o controle Progresswhell na barra de ferramentas
+     [+] Incluido em configurações do  projeto guia Sets, o check [Set context menu [On/Off]]
+     [!] Incluido o comando de fechamento do processo wait "abrindo servidor"
+     [+] Incluido as propriedades OnRClick para Label/Image conforme evolução da minigui
+
+2022-05-24 22:52 
+     VERSION_PRODUCT "1.0.30.1 RELEASE CANDIDATE (RC) 220524 2244"
+     Update Minigui 22.05(Update 1)
+     [!] Ajuste na propriedade Horizontal de Spinner e Radiogroup
+         Agora os controles são redesenhados em tempo de projeto sem precisar reabrir o formulário
+
+2022-05-17 14:00 
+     [!] Ajustado propriedade COL de Getbox; conflito com BackColor (Reportado por Joao Bosco)
+
+2022-05-01 12:30 
+     VERSION_PRODUCT "1.0.29.1 RELEASE CANDIDATE (RC)"
+     [+] Adicionado prototipo de uso geral para Db MySQL
+     [!] Ajuste na Lib Mysql para reconhecer a estrutura de Datetime
+     [!] Incluido no Header :BeginTrans/:RollbackTrans/:CommitTrans
+     [!] Retirado a obrigatorieade de preencher AddRess em Hyperlink, incluido Action no objeto;
+     [%] eliminado a função tableStruct de Wizard.prg , agora leitura é pelo metodo :TableStruct da lib
+     [*] Ajuste em algumas traduções em [translate]
+     [*] Inclusão de trantamento de Ponteiro em TipoVar(<p>)
+
+2022-14-21 14:24 
+     VERSION_PRODUCT "1.0.29.0 RELEASE CANDIDATE (RC)"
+     [*] Sincronização Minigui Extend
+         Harbour MiniGUI Extended Edition 22.03 (Update 3)
+
+2022-14-20 21:47 
+     VERSION_PRODUCT "1.0.28.3 RELEASE CANDIDATE (RC)"
+     [*] Ao nomear objetos agora serão verificados se os nomes se conflitam com propriedades
+     [*] Ao salvar o form, será validado se algum nome definido se conflita com propriedades
+     [*] Os objetos criados pelo Wizard estarão sendo precedidos de "o" no nome isso tende
+         a minimizar os conflitos com propriedades
+
+2022-14-18 20:00 
+     VERSION_PRODUCT "1.0.28.2 RELEASE CANDIDATE (RC)"
+     [!] Carga das imagens definidas no menu dos botões em toolbar em tempo de projeto relatado por Pierpaolo Martinello (Italy)
+
+2022-14-15 10:38 
+     VERSION_PRODUCT "1.0.28.1 RELEASE CANDIDATE (RC)"
+     [!] Excluido propriedades de Slider (Erro em copy/cola)
+	 CLOCK;KEYBOARD;STATUSITEM;DATE;DEFAULT;FONTBOLD,FONTITALIC,FONTNAME,FONTSIZE;FONTSTRIKEOUT,FONTUNDERLINE
+
+2022-14-14 12:00 
+     VERSION_PRODUCT "1.0.28.0 RELEASE CANDIDATE (RC) 220414 0949"
+     [*] Sincronizado  Minigui Extend 2203.2
+     [*] Update Scite: Version 5.2.2 https://www.scintilla.org/SciTE.html
+         match statement in local and directory properties provides per-file settings
+
+2022-03-31 10:46 
+     VERSION_PRODUCT "1.0.26.0 RELEASE CANDIDATE (RC) 220331 1016"
+     [*] Sincronizado Minigui extend 2203.0(32bits)
+     [*] Correção propriedades x Events controle TimePicker.
+        [ ON GOTFOCUS <OnGotFocusProcedure> | <bBlock> ]
+        [ ON CHANGE <OnChangeProcedure> | <bBlock> ]
+        [ ON LOSTFOCUS <OnLostFocusProcedure> | <bBlock> ]
+        [ ON ENTER <OnEnterProcedure> | <bBlock> ]
+
+
+2022-03-17 22:46 
+     VERSION_PRODUCT "1.0.25.0 RELEASE CANDIDATE (RC) 220317 2244"
+     [*] Sincronizado Minigui extend 2201.7(32bits)
+
+2022-03-05 18:00 
+     VERSION_PRODUCT "1.0.23.0 RELEASE CANDIDATE (RC) 220305 0218"
+     Ajuste no Wizard
+     Ao usar a conexão ativa havia uma chamada de erro para uma propriedade invalida
+
+     Ajuste na PesquisaCRUD
+     Alteração para atender mais de 1 monitor causou um bug no hash de coordenadas
+
+2022-03-01 18:00 
+     VERSION_PRODUCT "1.0.22.0 RELEASE CANDIDATE (RC) 220228 2041"
+
+2022-02-15 21:34 
+     VERSION_PRODUCT "1.0.20.0 RELEASE CANDIDATE (RC) 220215 2131"
+    [*] Sincronizado Minigui extend 2201.2
+
+2022-01-29 13:33 
+    VERSION_PRODUCT "1.0.19.0 RELEASE CANDIDATE (RC) 220129 1515"
+    [*] Sincronizado Minigui extend 2201.0
+
+2022-01-03 22:50 
+    VERSION_PRODUCT "1.0.18.0 RELEASE CANDIDATE (RC) 220103 2242"
+    [*] Ajustado erro ao Salvar form 
+    [*] Incluido opção de desligar animação
+
+2021-12-21 19:44 
+    VERSION_PRODUCT "1.0.17.0 RELEASE CANDIDATE (RC) 211221 2201"
+    [*] As libs relacionadas a acesso a dados modificados para uso das  otimizações do 
+        designer receberam um z no nome	e alocadas em ADDONS, a ideia inicial era usar
+        a prioridade na lista de libs mas o hbmk coloca o Harbour sempre como  primeiro
+        e  como  estas  libs já vem por  padrão  na  pasta  do  Harbour  houve  choque, 
+        anteriormente eu as sobrepunha, no entanto em projetos antigos, alguns usuários
+        não querem agregar nada, apenas manter o que já tem,  então  as  libs  causavam 
+        conflitos, as vezes eu até tento ajudar, mas se  eu  não sei  o que acontece na 
+        outra ponta não tenho o  que fazer,  poucos usuários dão algum  feedback, nenhum 
+        ficou sem solução até hoje, a ferramenta me  atende 100%  pois uso  apenas ADO 
+        com SqlServer,  Access e  Oracle,  então se  alguém  encontrar  problemas em 
+        firebird/ Postgree/ Mysql /Dbf ou Sqlite e não me avisar, provavelmente 
+        nunca será solucionado.
+
+	fbclient.lib => fbclientz.lib
+	hbfbird.lib => hbfbirdz.lib
+	hbmysql.lib => hbmysqlz.lib
+	hbpgsql.lib => hbpgsqlz.lib
+	libmySQL.lib => libmySQLz.lib
+	libpq.lib => libpqz.lib
+
+2021-12-20 19:50 
+    VERSION_PRODUCT "1.0.16.0 RELEASE CANDIDATE (RC) 211220 1948"
+    [*] Sincronização Minigui Extend 21.11.2
+    [+] Pacote enxuto
+        A partir de agora vou disponibilizar um pacote apenas com os arquivos Base; já estamos há quase 
+        3 anos trabalhando neste projeto; já temos alguns que estão experts e que gostariam de fazer
+        sua própria personalização estrutural; desta forma basta extrair o pacote expert e manter o resto.
+        Para atualizar o Harbour e minigui e só deixar na mesma estrutura;
+        As vezes são lançadas versões corretivas da minigui e nem sempre eu consigo disponibilizar 
+        em tempo para atender a alguma necessidade e desta forma os usuários passam a ter esta liberdade.
+        Futuramente talvez eu retire a obrigatoriedade da estrutura, mas tornaria mais difícil o entendimento
+        para os iniciantes;
+
+    [+] Lean package
+         From now on I will provide a package with only the Base files; we've been there almost
+         3 years working on this project; we already have some who are experts and who would like to do
+         your own structural customization; this way just extract the expert package and keep the rest.
+         To update the Harbor and minigui and just leave it in the same structure;
+         Sometimes corrective versions of the minigui are released and I am not always able to provide
+         in time to meet any need and thus users have this freedom.
+         In the future, I might withdraw the obligation of the structure, but it would make understanding 
+         more difficult for beginners;
+
+2021-12-06 21:09 
+    VERSION_PRODUCT "1.0.15.0 RELEASE CANDIDATE (RC) 211206 2010"
+    [*] Harbour Minigui Extend Edition 21.11
+    [+] Suporte a Panel 
+
+2021-11-06 16:30 
+    VERSION_PRODUCT "1.0.14.0 RELEASE CANDIDATE (RC) 211106 1625"
+    [*] Harbour Minigui Extend Edition 21.10.3 
+
+2021-10-28 19:40 
+    VERSION_PRODUCT "1.0.12.0 RELEASE CANDIDATE (RC) 211027 1628"
+    [*] Harbour Minigui Extend Edition 21.10.1 
+
+2021-10-22 22:46 
+    VERSION_PRODUCT "1.0.11.0 RELEASE CANDIDATE (RC) 211022 2234"
+    [*] Harbour Minigui Extend Edition 21.10.0 
+
+
+2021-09-07 19:4 
+    VERSION_PRODUCT  "1.0.10.0 RELEASE CANDIDATE (RC) 211005 1916"
+    [!] Retirado limitação do tamanho de campos do Mysql para compatibilizar com DBF, vale lembrar
+	que estou tirando da biblioteca todas compatibilizações as quais não vejo nenhum sentido,
+	tentar criar compatibilidade é perder o que o SQL tem de melhor, velocidade e praticidade.
+
+2021-09-07 19:4 
+    VERSION_PRODUCT "1.0.9.0 RELEASE CANDIDATE (RC) 210917 2021"
+    [*] Harbour MiniGUI Extended Edition 21.09 (Pre-Release) de 16/09/2021
+       Notas das funcionalidades/correçoes podem ser visto acessando o changelog da minigui,  faça o download 
+       em http://hmgextended.com/download-3/ para obter todo o código fonte e ampliar seus conhecimentos.
+       Faça uma doação ao amigo Grigory, na tela sobre tem o link que vai direcioná-lo para uma página segura ou
+       use o direcionador que vem junto no o pacote de instalação da minigui;
+
+2021-09-07 19:4 
+    VERSION_PRODUCT "1.0.8.0 RELEASE CANDIDATE (RC) 210907 2010
+    [*]Ajuste na interface, font e size agora podem ser ajustados em configurações.
+       
+
+
+2021-09-06 21:53 
+    VERSION_PRODUCT "1.0.7.0 RELEASE CANDIDATE (RC) 210906 2131"
+    [*] Incluido Ambiente teste de Mesa
+    [+] Manifest windows 10
+        vide \tools\minigui\resource
+    [+] Verificação update automático no GitHub
+    [*] volta do theme black scite
+
+2021-08-31 19:15 
+    VERSION_PRODUCT "1.0.6.0 RELEASE CANDIDATE (RC) 210831 1905"
+    [*] Sincronizado: Harbour MiniGUI Extended Edition 21.07 (Update 4) de 31/08/2021
+
+2021-08-29 20:07 
+    VERSION_PRODUCT "1.0.5.0 RELEASE CANDIDATE (RC) 210829 1958"
+    [*] Sincronizado: Harbour MiniGUI Extended Edition 21.07 (Update 3)
+
+2021-08-20 20:00 
+    VERSION_PRODUCT "1.0.4.0 RELEASE CANDIDATE (RC) 210820 1946"
+    [!] Implementado o metodo Close na lib MySQL compatibilidade com as demais libs.
+        na ultima versão a falta deste metodo encerra o aplicativo.
+        Reportado por Pierpaolo, Mimmo (Italia)
+        
+    [*] Melhoria na funcao LodFrmExpressao
+        Retirado o CTRL+C de On key do form
+        Criado o Botão para copir o retorno do procedimento;(Marque uma ou mais linhas antes de clicar no botão)
+        A implementação de CTRL+C no form tirou a funcionalidade de copiar o Script a ser executado.
+
+2021-08-17 20:07 
+    VERSION_PRODUCT "1.0.3.0 RELEASE CANDIDATE (RC) 210817 1957"
+    [!] Incluido declaração das variáveis locais oExcel,oHtml no wizard para DBF
+        Reportado por JORGE HENRIQUE <Grupo Designer>
+    [*] Incluido [F5] executar e [CTRL+C] copiar retorno de LoadFrmExpressao
+    
+2021-08-14 14:56 
+    [*] Melhoria na funcao LodFrmExpressao
+        Quando não declarada uma função,agora será colocada uma default para manter a integridade de linhas em procline()
+        Retorno agora é mostrado num grid, provou ser muito mais rápido adicionar um elemento ao grid que atribuir o valor ao rich
+        O teste agora coloca a hora inicial e final para registro visual do tempo
+        Se no texto houver um doEvents ou várias chamadas de Print, você pode utilizar o botão de parada para chamar o break
+        O teste agora pode ser exportado para o excel para documentação de evidencias de testes.
+        Para fazer os testes de mesa, use algo parecido como abaixo, procline ira retornar a linha corretamente para registro.
+        Lembre-se, você pode fazer chamadas as funções e criar um plano de testes rico em detalhes, isto dentro de sua aplicação, use a imaginação.
+        
+        /*BEGIN*/
+        Local i /*não precisa declarar*/
+        Local cText:="Copy "
+        a:=directory("c:\temp\*.Txt") /*sem declarar*/
+        for i=1 to len(a)
+            ?Procline(),a[i,1],a[i,2]
+            Mostrar(i)
+            cText += '"'+a[i,1]+'" + '
+        Next
+        cText := substr(cText,1,len(cText)-2)
+        cText += '  "Todos.Txt"'
+        ?cText
+        
+        function mostrar(n)
+            ?Procline(),n
+        Return
+        
+        /*END*/
+    
+2021-08-13 19:47 
+    [*] Update Minigui 2107.2 de 12/08/2021
+    [+] adicionado no addons a função LoadFrmExpressao()
+        Agora vc pode incluir o processo de teste diretamente no seu programa, 
+        Deixe marcado a opção addons item 9 de configurações para que seja compilado junto com seu programa, depois basta chamar a função loadFrmExpressao() de qualquer lugar.
+        Apenas aconselho não deixar esta opção aberta na versão final, um usuário mais experiente poderia surfar nas variáveis e objetos de seu sistema;
+
+2021-08-07 22:31 
+    [!] titulo das propriedades em edição
+    O titulo das propriedades em edição estavam sendo mudados o titulo do form para o ultimo valor encontrado nas traduções; esse problema 
+    não afeta os valores atribuidos nas propriedades embora;
+    
+2021-08-07 22:31 
+    [*] start.mod agora ajustado para redefinir a tradução de debugger de acordo com preferências;
+    [*] reativado o theme
+    [*] executor runtime agora foi aprimorado, possui a mesma funcionalidade que o antigo DOT do clipper, 
+        você pode criar um procedimento completo, para testar copie e  cole o codigo abaixo na caixa do controle;[toolbar f(x)]
+        pode inclusive manter o comentário /**/
+        
+        /*BEGIN*/
+        Local i /*não precisa declarar*/
+        Local cText:="Copy "
+        a:=directory("c:\temp\*.Txt") /*sem declarar*/
+        for i=1 to len(a)
+            ?a[i,1],a[i,2]
+            Mostrar(i)
+            cText += '"'+a[i,1]+'" + '
+        Next
+        cText := substr(cText,1,len(cText)-2)
+        cText += "Todos.Txt"
+        ?cText
+        
+        function mostrar(n)
+            ?n
+        Return
+        
+        /*END*/
+        
+        Pode não fazer sentido a primeira vista, mas abre um leque interessante no dia a dia, o exemplo
+        se desdobra para uma infinidade de opções, inclusive debugar uma parte complexa,fatiando o problema
+        sem ter que recompilar todo o sistema;
+        Gerar evidência de validação... enfim o céu é o limite.
+        
+
+2021-08-01 00:29 
+    [*] start.mod, incluído um procedimento na primeira execução para ajustar a linguagem do scite 
+        para a lingua padrão definida pelo usuário numa instalação anterior.
+        Abertura do changelog na primeira execução
+
+2021-07-31 00:19 
+    ; Julho comemoramos 2 Anos de Designer
+    [*] Update Minigi Version 21.7.1 de 29/07/2021 (http://hmgextended.com/download-3/)
+    [*] Update Scite v 5.1.1 (https://www.scintilla.org/SciTEDownload.html)
+
+2021-07-23 21:48 
+    [*]Update Minigui Version 21.07 de 21/07/2021
+
+2021-06-26 00:42 
+    [*] Atualização Minigui Extend v2105.4 de 24/06/2021
+    [*] Ajuste função PesquisaCrud(p1,p2,p3,p4,p5)
+        p1=Cursor Database
+        p2=Campo Alvo da Pesquisa
+        p3=Lista de Campos a compor a pesquisa
+        p4=Cabeçalhos dos campos no Grid de pesquisa
+        p5=Coordenadas da Janela Pesquisa (Padrão Nil/cálculo automático)
+            Informando as coordenadas, não haverá mais os redimencionamento 
+            para conter as colunas selecionadas, ficando a cargo do bom senso 
+            do desenvolvedor
+        p6=Registros a retornar na pesquisa internamente
+        
+        A tela de pesquisa agora pode ser abandonada com Esc
+        Ao pesquisar e não houver nada que satisfaça a pesquisa, o foco agora é devolvido a caixa de pesquisa
+
+2021-06-19 23:26 
+    [*] Atualização do Scite para a versão 5.03 (https://www.scintilla.org/SciTEDownload.html)
+    [*] Scite traduzido para BR/IT/ES e nativa US acoplado a escolha da IDE Menu: Tools\Settings\(Item 10)
+    [+] Incluido a propriedade DblClick controle Image
+
+2021-06-19 15:38 
+    [*] Melhorias no Wizard
+        Nomes dos cabeçalhos iniciados com a primeira letra em maiuscula
+        Quando alterado o tipo de controle de numerico para Check, automaticamente definido o valor para falso em limpar controles
+        Adicionado inteligência aos botões de Novo e Edição, agora é possivel abortar o processo sem ter que chamar o filtro ou fechar o form
+        Nota: Estas melhorias foram sugeridas pelo amigo Pierpaolo
+
+2021-06-16 23:07 
+    [!] AddOns - Classe MySQL error
+    [*] atualizado com minigui 20.05 Update 3 de 16/06/2021
+
+2021-06-09 14:30 
+    [!] Ajuste classe MySQL tipo BIT
+        Atenção:
+        BIT = Lógico
+        BOOL é um alias para Tinyint ou seja = Numérico
+    
+2021-06-09 14:30 
+    [*] Atualizado com minigui 20.05 Update 2 de 09/06/2021
+
+2021-06-02 14:30 
+    [!] Cargo de oBtnEdit ajustado para TRUE em caso de edição.
+    
+        Case nParam = 3 //Editar Registro atual
+            &(FrmMunicip).oBtnNovo.Cargo               := FALSE
+            &(FrmMunicip).oBtnSave.Enabled             := TRUE
+            &(FrmMunicip).oBtnEdit.Enabled             := FALSE
+            &(FrmMunicip).oBtnEdit.Cargo               := TRUE //Permite identificar se o registro atual está em edição 
+            &(FrmMunicip).oBtnExclui.Enabled           := FALSE    
+
+2021-06-01 18:06 
+    [*] Atualizado com minigui 20.05 de 31/05/2021
+
+2021-05-21 7:12 
+    [+] incluido lingua espanhola
+	Caso sejam corrigidos algo na tradução me envie o arquivo  de volta para ser incluido na proxima distribuição.
+
+2021-05-18 7:12 
+    [!] Modulo Endenta.prg
+        FrmProjeto_oBtnModStruct_Action( ) - Endentamento => problemas quando o grid do modulo estava sob um filtro
+        FrmProjeto_oBtnModExtract_Action() - Extração de form => problemas quando o grid do modulo estava sob um filtro
+            if (n:=FrmProjeto.oModulo.Value) = 0
+                Return .F.
+            Endif
+            //Pode ter estar sob um filtro, vamos recuperar o indice real
+            n := FrmProjeto.oModulo.Cargo[n]
+            
+        FrmProjeto_oBtnModExtract_Action() - Ajuste para corrigir codigo do usuario quando terminado com ; mantendo linhas em branco.
+    
+2021-05-02 17:54 
+    [!]	Correção :Method Execute Class TAdoConnection = Select Return Cursor, Comandos return Numeros registros afetados..
+
+2021-04-30 10:25 
+    ; #Define VERSION_PRODUCT "0.99.23.28"
+    [*] Atualização Tradução para o Italiano por [Pierpaolo Martinello](pier.martinello@alice.it)
+    [*] [Update Scite 5.02](https://www.scintilla.org/SciTEDownload.html)
+    [*] [Sincronizado Minigui 20.03.3 de 29/04/2021](http://hmgextended.com/files/CONTRIB/hmg-21.03-setup.exe)
+
+2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] Ajustes reportados por Pierpaolo Martinello (pier.martinello@alice.it)
+        [!] Corrigido Designer_Finaliza() quando acionado pelo menu Main
+        [*] Função Confirma() de AddOns estava com Confirmation em ingles quando fornecido um titulo vazio, mantido o vazio
+        [*] PesquisaCRUD redimencionamento corrigido.
+
+    [!] Wizard=>Edição de registro, codigo redundante ao habilitar itens editaveis.
+    
+2021-04-21 20:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Classe Ado - Update SQLServer Fixed
+    [*] Reposionamento correto em PesquisaCRUD
+        .MinWidth=330
+        .MaxWidth=(Application.Width)
+
+2021-04-15 16:24 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [%] Ajust appBuild_%aplication%.bat para se posicionar no RAIS permitido a chamada de outras pastas
+
+2021-04-14 17:56 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] VERSION_PRODUCT "0.99.23.25"
+    [!] PesquisaCRUD com MySQL {change ::cQuery to ::SQL => ::Server:SQL}
+
+2021-04-14 15:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] VERSION_PRODUCT "0.99.23.25"
+    [*] Sincronizado com a Minigui 21.03.2 de 12/04/2021
+    [*] Ajuste tradução addons PesquisaCRUD
+
+2021-04-12 14:47 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] VERSION_PRODUCT "0.99.23.24"
+    [*] Sincronizado com a Minigui 21.03.1
+    [*] Atualização Tradução para o Italiano por Pierpaolo Martinello (pier.martinello@alice.it)
+    [*] Suporte Tipo Booleano no Firebird
+    [*] Atualização Scite, Scintilla Release 5.0.1
+
+2021-04-03 15:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido Bug em FileVersion - RC
+    [*] Sincronizado PostGreSQL github core com ajustes de 31/03/2021
+        Atualizado o pacote de DLL da versão postgresql-10.16-1 de 02/2021
+    [*] Sincronizado com a Minigui 21.03 de 31/03/2021
+    [+] Ajuste de imagens nos ButtonEX ImageWidth/ImageHeight
+    
+2021-03-04 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido Bug no Wizard, erro de acesso ao adicionar o objeto ao Grid
+    [+] Adicionado suporte ao PostGreSQL
+        Classes MySQL+Firebird+PostGreSQL e Sqlite foram modificados para padronização de codigo, as classes receberem o complemento de Ima 
+        desta forma não se chocam com as originais, ficando o usuario livre para escolher usar as Libs embarcadas na IDE ou a Lib do Contrib Harbour;
+    [*] Adicionado samples\agenda\PostgreSQL
+
+2021-03-03 10:24 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] atualizado a libmysql.dll, nova compilação
+        Será necessário substituir a libmysql.dll no projeto que forem recompilados com esta versão do Designer para obter compatibilidade
+    [+] incluido no pacote o aplicativo GrepWin [https://github.com/stefankueng/grepWin], trata-se de um buscador avançado que uso muito 
+    no dia a dia, você pode configurá-lo para várias linguagens, inclusive o português(BR) bastando acessar as configurações no aplicativo e 
+    estas ficarão salvas mesmo que atualize o Designer.
+    
+2021-02-27 19:56 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    Versão: [00,99,23,000 ]
+    [*] Ajuste na conexão com firebird para permitir a configuração remota
+    vale lembrar que se for usar um servidor, lembre-se retirar o arquivo firebird.conf da pasta da IDE e tambem do projeto, caso contrario
+    esta configuração terá prioridade e provavelmente não ira conectar por conta da configuração deste arquivo estar setada para o modo embarcado.
+    [!] correção na abertura projetos automaticamente, ocorria problemas com os arquivos com endereco relativo.
+
+2021-02-23 15:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    Versão: [00,99,21,109 ]
+    [*] Ajuste na função RelativePath
+    
+2021-02-22 19:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    Versão: [00,99,21,109 ]
+    [+] Incluido o localizador de função/procedimento ou methodo no projeto 
+        Na medida que o projeto cresce, é comum esquecer em qual modulo esta a função.
+    
+2021-02-19 20:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] a Inclusão de arquivos de outros projetos agora serão sinalizados com (*) e o tooltip informara o endereco do arquivo
+    [*] Agora é possivel informar no projeto para não carregar os recursos da Minigui (res), percebi alguns conflitos
+    [+] Suporte de acesso ao Firebird; ao fazer a conexao o designer irá desempacotar os arquivos na pasta do projeto para uma conexao 
+        autonoma (embarcada) sem interferir no servidor real; não precisa ter um servidor do Firebird rodando
+    [+] Inclusão samples\agenda {AdoDb,MySQL,Firebird,SQlite)
+        Os projetos possuem as funcionalidades de acesso e CRUD, é uma boa opção para o aprendizado.
+    
+2021-01-22 18:46 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Sincronização com Minigui v21.01 de 20/01/2021
+    
+2020-12-16 18:20 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ajustado a criação do arquivo de cabecalho dos SETS na definição do projeto
+    [!] compatibilidade MoveNext.MovePrevious,MoveLast com Mysql
+    
+2020-12-13 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ajustado a importação de estrutura do dbf para um comando Create Table da tela de comandos sql
+    [!] Ajustado o dispositivo de saida de erro para :OnError para comandos SQL
+    [!] Ajustado o codigo Sql for ADO para captura de error pos comando.
+    [*] Retirado o filtro pre-estabelecido de controles de acordo com o tipo em virtude de SQLite ser texto e nem 
+        sempre queremos tratar tudo como texto no programa, agora você consegue direcionar um texto para controle 
+        date/numeric/etc, tendo cuidado de fazer a devida transformação no codigo gerado posteriormente.
+    [*] Restart direcionado para pasta temporaria, estava sempre criando na pasta atual, nem sempre pasta da IDE
+    [!] Ajustado o comando SQL de Sqlite, desviando corretamente :onError
+    
+    
+2020-12-12 18:35 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Atualizado com a Biblioteca Minigui v2012.0 de 09/12/2020
+    [;] Incluido (Suporte SQL) ainda experimental, versão anterior ficara congelada
+    [+] Wizard agora cria um codigo unico para trabalhar com SQL (SQLite nativo,Mysql nativo,Access\SQlSErver via ADO)
+    
+2020-11-12 10:25 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Atualizado com a Biblioteca Minigui v2010.4 de 12/11/2020
+    [!] NoMaximize/NoMinimize retirado de SaveForm quando Type Form=MODAL
+    
+
+2020-11-09 21:22 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Melhorado o processo de Pesquisa CRUD
+    [*] Melhorado processo de extração de formulario do PRG 
+
+2020-11-09 08:08 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Atualizado com a biblioteca Minigui v2010 Update 3 de 09/11/2020
+    [!] Ajuste na Classe ADO, incompatibilidade com a inclusão de novos recursos
+    [*] Ajustado o Wizard para (ACCESS/SQL SERVER) Traz apenas Tabelas ou Views sem as tabelas Internas;
+
+
+2020-11-05 12:17 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Atualizado com a biblioteca Minigui v2010 Update 2 de 05/11/2020
+        Ajustado o pacote de compilação para incluir a biblioteca Bostaurus
+    [%] Incluído filtro para formularios e modulos
+        Você pode usar o método SQL "va%" começa com; "%va%" termina com ou "%va%" contem;
+    [%] Incluido filtro para Recursos
+        Pesquisa digitável:
+        Você pode usar o método SQL "va%" começa com; "%va%" termina com ou "%va%" contem;
+        Pesquisa Combo:
+        Você pode selecionar o tipo de recurso a ser carregado na lista
+
+2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ao adicionar uma nova pagina no page pelo botao direito do mouse ocorria um estouro de memoria ao salvar, problema incluindo quando foi incluido a opcao de
+    tooltip nas paginas;
+
+2020-11-04 11:16 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Toolbar simples no modo Bottom, não estava sendo aberta adequadamente, sendo colocada no topo quando reaberta;
+    Informado por jrsancheze via github
+    
+2020-10-26 20:21 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Seleção de campos no wizard de relatórios estava com um crash
+    [+] Incluido opcoes no Wizard (sem relatórios/Excel/Html)
+
+2020-10-24 19:41 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [%] Melhoria nas seleções de objetos
+        Menu de contexto do form de desenho tem agora a opção de seleção de grupo 
+        Agora é possivel marcar e desmarcar o objetos
+    [!] Crash na escolha de opcoes de campos no wizard
+
+2020-10-22 20:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ato abrir um projeto vazio e tentar criar um formulario solto, ocorria um erro de estouro de matriz
+    [+] Projeto ainda em fase de testes, ao clicar com o botao direito no form, é possivel selecionar varios objetos select group
+
+
+2020-10-21 20:27 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Quando inserido apenas uma toolbar e pelo menos 1 combo, a Designer não estava envolvendo ambos numa SplitBox gerando um erro de atribuição de listWidth no combo
+    [*] Designer atualizado com a Minigui v20.10 Release distribuida em 21/10/2020
+    [*] Atualização Scite Versão 4.4.5 (http://www.scintilla.org)
+    
+2020-10-19 20:49 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Ao arrastar um objeto em form sem o toolbar estava dando acesso invalido, bug  inserido  ao atualizar a toolbar
+
+2020-10-14 09:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] ao renomear um objeto, o elemento selecionado ficava nulo, com isso ao clicar sobre as propriedades não havia resposta
+
+2020-10-13 21:12 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [%] A função adjust dos botoes só faz sentido quando todos os botoes da toolbar tem o Flag=TRUE, então esta opção foi colocada em propriedades da toolbar, um unico clik
+        ativa ou desativa todos os botoes da serie.
+    [*] A funcao Group depende de check, então quando clicado em group automaticamente sera marcado check
+    [*] ativado a função break em tempo de designer.
+    [+] adicionado a função Modo de desenvolvimento no menu em Ferramentas, quando ativa o designer se libera dos try/Catch para indicar a linha real do erro, alem de gerar um log 
+        na montagem do form, permitindo uma analise apurada do que ele conseguiu montar.
+    [*] Corrigido os espaçamentos na montagem do menu
+    [*] Corrigido a fonte padrao para MenuDropdown
+
+2020-10-12 21:30 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [+] Incluido a opção de adicionar um combo na Toolbar
+    [!] Problema de carga de Menu dropdown ocasionado na tentativa de compatibilidade com a IDE de Walter, o codigo voltou a ser como antes o menu volta a ficar logo abaixo do botao
+    [!] Problema de exclusão de Objetos na toolbar corrigidos
+
+2020-10-09 16:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido o controle de API, alguns valores estavam se duplicando
+        ==>SUGESTÃO, ELIMINE O CONTEUDO DA PASTA .\API\*.* o sistema vai recria-los.
+
+2020-10-09 10:40 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [*] Ajustado o processo de criar formulario, agora é possivel escolher criar modulo e entre modal/child
+        Você poderia criar um fomulario generico, sem a necessidade de ter um modulo vinculado
+    Ao escolher modal, basicamente não ha mudança no codigo resultante já que o tipo modal não permite o empilhamento
+    Ao escolher child, o codigo é gerado preparado para o empilhamento, as funções criadas ja passam o parametro nome do formulario.
+    [-] Ao trocar o nome do formulário, o Designer não vai mais renomear as referencias no projeto, a ideia era tornar o processo mais facil, 
+        mas é o tipo de situação que pode trazer problemas de dificil solução se o nome do form for algo trivial; o Designer usara o sinal de [&]
+        no nome do form para identificar se é para criar as funcoes com parametros.
+    [%] Processo de atribuição foi otimizado para reconhecer o máximo de alterações possíveis em tempo de projeto, no entanto, conforme documentação da minigui
+        alguns atributos são Read-Only, são ajustáveis apenas na criação do objeto.
+        
+
+2020-10-07 14:59 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido processo de carga da Toolbar de legado quando fonte não possui FONT SIZE definida
+    [!] Corrigido processo de carga de legado na propriedade [@...Range 10,50],  deveria abrir para RANGEMIN 10 e RANGEMAX 50
+    [!] Corrigido Translate POE_PARENTESES, agora ignora se o conteudo é um bloco.
+    [+] Incluido as propriedades em ButtonEX
+    ImageWidth; ImageHeight; Horizontal; Handcursor; GradientFill
+    
+2020-10-06 19:00 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Corrigido atribuição propriedades
+    [!] Corrigido dimensão que incluia controle de rolagem horizontal em propriedades
+    [!] Corrigido menu que mantinha desabilita o run de aplicativos compilados ao iniciar o projeto
+    [;] Sincronização designer com minigui v20.08 Update 5
+    [+] Adicionado a Classe THTMLReport Buitin
+        oClass = HBClass():New( "THtmlRel" )
+        oClass:AddData("Sucess",.F.) //Retorna TRUE se concluido com sucesso
+        oClass:AddData("HeaderReport","Report Html Ima Solutions")
+        oClass:AddData("Rs") //Cursor ou Alias 
+        oClass:AddData("Border",1)
+        oClass:AddData("CharSet","ISO-8859-1")  //Charset Padrao
+        oClass:AddData("BackGround","#b3d1ff")
+        oClass:AddData("Align") //Array de alinhamento {0=Esquerda,1=Centro,2,Direita}
+        oClass:AddData("Header") //Array de cabecalho, Default nomes dos campos
+        oClass:AddData("Picture") // Array de Mascara : {"@E 999.00", ...} será passada como parametro de Transform
+        oClass:AddData("Totaliza") //Array de campos que devem totalizados se numericos
+        oClass:AddData("FontName","Arial")
+        oClass:AddData("FontSize",1)
+        oClass:AddData("Reg",0) //Total de Registros processados no relatorio
+        //Cabecalhos
+        oClass:AddData( "Title","") //Cabeçãlho do Relatorio
+        
+        oClass:AddDAta("Footer") //Rodapé do Relatorio
+        
+        oClass:AddData( "File") //Nome do arquivo a ser gerado
+        oClass:AddData( "Title","Report HTML Ima-Solutions")
+        oClass:AddData( "Handle") //Handle do arquivo Uso interno
+        oClass:AddData( "ZipFile","") //Nome do arquivo ZIP Gerado caso seja acionado o metodo Zip
+        
+        oClass:AddMethod( "New",  @New() )  // define this class objects methods
+        oClass:AddMethod( "Report", @Refresh() ) //Consome os dados  do cursor ou dbf
+        oClass:AddMethod( "Show",@Show()) //Mostra na tela o resultado
+        oClass:AddMethod( "Zip",@doZip()) //Gera um ZIP com Resultado
+        oClass:Create()
+
+    Exemplo:
+        Rs:SQL:="Select .... from..."
+            Rs:OPen()
+
+        if Rs:Eof()
+            Return .F.
+        endif
+
+        oHtml := THtmlReport():New()
+        oHtml:Rs   := Rs
+        oHtml:Title := "<h3>"+PesquisaPagRec.Title+"</h3>"+;
+                   "Período de "+Dtoc(PesquisaPagRec.Dp_Data1.Value)+ " à "+Dtoc(PesquisaPagRec.Dp_Data2.Value)+"</br>"
+            oHtml:Picture := {,,,,,"@E 999,999.99",}
+        oHtml:File := PutFile({{"*.HTML","*.HTML"}},"Nome do Arquivo")
+        oHtml:Header := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
+        oHtml:Align  := {2,0,0,0,0,2,0}
+        oHtml:Totaliza:={,,,,,.T.,}
+        oHTml:Report()
+        oHtml:Show()
+        Return .T.
+
+
+
+2020-09-24 09:45 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] Sincronizado designer com Minigui v20.08 Update 4
+
+2020-09-23 18:33 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Classe Tado: Rs:DataSQL(cString)
+    [;] Corrigido formatação Datetime na consulta quando parametro for string
+
+2020-09-15 15:29 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [;] Atualização do pacote com Minigui Extend 20.08 update 2 de 10/09/2020
+
+2020-09-11 10:54 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Configuração
+        Ajustado o Tooltip para Hyperlink
+
+2020-09-11 09:32 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Projeto.prg => Project_CompilaProjeto( nComp )
+        Verificação se a pasta PPO existe, o compilador não cria automaticamente .\PPO\
+
+2020-09-10 18:39 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] OpenFMG.prg => Designer_OpenFMG_x( )
+        Arquivos de Terceiros sem espaço entre @ e valor (@10,15)
+
+2020-09-10 18:31 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Comuns.prg => itoken( )
+        Arquivos de terceiros com ocorrencia de chr(26) e chr(9) em meio aos comandos
+
+2020-09-10 16:50 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] OpenFMG.prg => Designer_OpenFMG_x( )
+        Corrigido carga de MENU no FMG onde é informado apenas POPUP
+        if substr(xLine,1,18)=="DEFINE MENU POPUP " .or. substr(xLine,1,13) == "DEFINE POPUP " .or. substr(xLine,1,6) == "POPUP "
+            ...
+        endif
+           
+2020-09-10 09:29 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [!] Designer.prg => Designer_AjustaNovoValorGRID( cProp , cVal )
+        Corrigido erro ao tratar as propriedades dos Forms
+            j:= len(aMoveSize)
+            if j>0
+               ...
+            elseif n=1
+                if cType="C"
+                    Testavar("w:"+cProp+":=["+cVal+"]")
+                Elseif cType="L"
+                    Testavar("w:"+cProp+":=(["+cVal+"] $ [.T.,.t.,TRUE])")
+                Elseif cType<>"B"
+                    Testavar("w:"+cProp+":="+cVal)
+                endif
+            endif   
+   
+2020-09-09 12:02 Ivanil Marcelino (ivanil.marcelino@yahoo.com.br)
+    [+] Carga Inicial no GitHUB 
+    [;] #Define VERSION_PRODUCT "00.99.20.081 RELEASE CANDIDATE (RC) 200907 1108"
