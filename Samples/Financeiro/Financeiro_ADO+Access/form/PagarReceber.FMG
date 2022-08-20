@@ -1,18 +1,22 @@
-/*  SOBRE A IDE
-    ==============================================================================================
-    Gerado pela IDE Designer
-    #Define VERSION_PRODUCT "00.99.20.084 RELEASE CANDIDATE (RC) 200924 0918"
-    Versão Minigui:  Harbour MiniGUI Extended Edition 20.08 (Update 4)  Grigory Filatov <gfilatov@inbox.ru>
-    Versão Harbour/xHarbour: Harbour 3.2.0dev (r2008190002)
-    Compilador : MinGW GNU C 10.2 (32-bit)
-    ----------------------------------------------------------------------------------------------
-    SOBRE ESTE CÓDIGO GERADO:
-    Última alteração : 06/10/2020-18:30:33 Máquina: IMA2018 Usuário:ivani
-    Código do formulário ajustado
-    ----------------------------------------------------------------------------------------------
-    Projeto : Financeiro
-    */
+/*
+Versão Designer : 2.2207.3.0 RELEASE SPECIAL SILVER (Ag) 220819 1932
+==============================================================================================================
+https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+Versão Minigui:  Harbour MiniGUI Extended Edition 22.07.3 (32-bit) ANSI by Grigory Filatov <gfilatov@inbox.ru>
+Versão Harbour/xHarbour: Harbour 3.2.0dev (r2104281802)
+Compilador : MinGW GNU C 12.1 (32-bit)
+-------------------------------------------------------------------------------------------------------------
+Este programa é distribuído na esperança de que seja útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia
+implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO PARA UM PROPÓSITO ESPECÍFICO.
+-------------------------------------------------------------------------------------------------------------
+SOBRE ESTE CÓDIGO GERADO:
+Criado em : 19/08/2022 19:34:08 Máquina: IMA2018 Usuário:getusername()
 
+
+--------------------------------------------------------------------------------------------------------------
+Projeto : Financeiro
+--------------------------------------------------------------------------------------------------------------
+*/
     #ifndef TRUE
       # DEFINE TRUE .T.
     #endif
@@ -33,10 +37,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END FRAME
 
             DEFINE LABEL Lb_Controle
+                VALUE "Controle"
                 COL 17
                 HEIGHT 20
                 ROW 52
-                VALUE "Controle"
                 WIDTH 60
             END LABEL
 
@@ -48,20 +52,20 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END LABEL
 
             DEFINE LABEL Lb_Fornecedor
+                VALUE "Fornecedor"
                 COL 177
                 HEIGHT 20
                 ROW 52
-                VALUE "Fornecedor"
                 WIDTH 66
             END LABEL
 
             DEFINE COMBOBOX Cb_CliForn
-                COL 247
-                DISPLAYEDIT TRUE
-                HEIGHT 300
                 ONLISTDISPLAY (PagarReceber_Cb_Fornecedor_Onlistdisplay())
-                ROW 52
                 TOOLTIP "Informe Fornecedor"
+                DISPLAYEDIT .T.
+                COL 247
+                HEIGHT 300
+                ROW 52
                 VALUE 0
                 WIDTH 300
             END COMBOBOX
@@ -74,50 +78,50 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END FRAME
 
             DEFINE LABEL Lb_Historico
+                VALUE "Histórico"
+                RIGHTALIGN .T.
                 COL 17
                 HEIGHT 20
-                RIGHTALIGN TRUE
                 ROW 98
-                VALUE "Histórico"
                 WIDTH 65
             END LABEL
 
             DEFINE TEXTBOX TxtHistorico
+                ONENTER (PagarReceber.TxtDocumento.SetFocus)
+                TOOLTIP "Digite o Histórico desre Lançamento"
+                UPPERCASE .T.
                 COL 87
                 HEIGHT 20
                 MAXLENGTH 50
-                ONENTER (PagarReceber.TxtDocumento.SetFocus)
                 ROW 98
-                TOOLTIP "Digite o Histórico desre Lançamento"
-                UPPERCASE TRUE
                 WIDTH 460
             END TEXTBOX
 
             DEFINE LABEL Lb_Documento
+                VALUE "Documento"
+                RIGHTALIGN .T.
                 COL 17
                 HEIGHT 20
-                RIGHTALIGN TRUE
                 ROW 128
-                VALUE "Documento"
                 WIDTH 65
             END LABEL
 
             DEFINE TEXTBOX TxtDocumento
+                ONENTER (PagarReceber.Dp_Vencto.SetFocus)
+                TOOLTIP "Digite o Número do Documento"
+                UPPERCASE .T.
                 COL 87
                 HEIGHT 20
                 MAXLENGTH 12
-                ONENTER (PagarReceber.Dp_Vencto.SetFocus)
                 ROW 128
-                TOOLTIP "Digite o Número do Documento"
-                UPPERCASE TRUE
                 WIDTH 100
             END TEXTBOX
 
             DEFINE LABEL Lb_Vencto
+                VALUE "DT Vencto"
                 COL 207
                 HEIGHT 20
                 ROW 128
-                VALUE "DT Vencto"
                 WIDTH 65
             END LABEL
 
@@ -129,70 +133,70 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END DATEPICKER
 
             DEFINE LABEL Lb_Valor
+                VALUE "Valor"
                 COL 407
                 HEIGHT 20
                 ROW 128
-                VALUE "Valor"
                 WIDTH 36
             END LABEL
 
             DEFINE TEXTBOX TxtValor
+                INPUTMASK "999,999.99"
+                NUMERIC .T.
                 COL 447
                 HEIGHT 24
-                INPUTMASK "999,999.99"
-                NUMERIC TRUE
                 ROW 128
                 WIDTH 100
             END TEXTBOX
 
             DEFINE LABEL Lb_Pagto
+                VALUE "Data Pagto"
+                RIGHTALIGN .T.
                 COL 17
                 HEIGHT 20
-                RIGHTALIGN TRUE
                 ROW 158
-                VALUE "DT Pagto"
                 WIDTH 65
             END LABEL
 
             DEFINE DATEPICKER Dp_Pagto
+                RIGHTALIGN .T.
+                SHOWNONE .T.
                 COL 87
                 HEIGHT 24
-                RIGHTALIGN TRUE
                 ROW 158
-                SHOWNONE TRUE
                 WIDTH 100
             END DATEPICKER
 
             DEFINE LABEL Lb_ValorPago
+                VALUE "Valor Pago"
                 COL 207
                 HEIGHT 20
                 ROW 158
-                VALUE "Valor Pago"
                 WIDTH 65
             END LABEL
 
             DEFINE TEXTBOX TxtValorPago
+                INPUTMASK "999,999.99"
+                NUMERIC .T.
                 COL 277
                 HEIGHT 24
-                INPUTMASK "999,999.99"
-                NUMERIC TRUE
                 ROW 158
                 WIDTH 100
             END TEXTBOX
 
             DEFINE LABEL Lb_Diferenca
+                VALUE "Diferença"
                 COL 387
                 HEIGHT 20
                 ROW 158
-                VALUE "Diferença"
                 WIDTH 60
             END LABEL
 
             DEFINE TEXTBOX TxtDiferenca
+                INPUTMASK "999,999.99"
+                NUMERIC .T.
                 COL 447
                 HEIGHT 24
-                INPUTMASK "999,999.99"
-                NUMERIC TRUE
                 ROW 158
                 WIDTH 100
             END TEXTBOX
@@ -205,58 +209,58 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END FRAME
 
             DEFINE LABEL Lb_Conta
+                VALUE "Conta"
                 COL 16
                 HEIGHT 20
                 ROW 210
-                VALUE "Conta"
+                WIDTH 130
+            END LABEL
+
+            DEFINE LABEL Lb_Grupo
+                VALUE "Grupo"
+                COL 196
+                HEIGHT 20
+                ROW 210
+                WIDTH 130
+            END LABEL
+
+            DEFINE LABEL Lb_CCusto
+                VALUE "Centro de Custo"
+                COL 376
+                HEIGHT 20
+                ROW 210
                 WIDTH 130
             END LABEL
 
             DEFINE COMBOBOX Cb_Conta
-                COL 16
-                DISPLAYEDIT TRUE
-                HEIGHT 300
                 ONLISTDISPLAY (PagarReceber_Cb_Conta_Onlistdisplay())
-                ROW 230
                 TOOLTIP "Informe Conta Financeira"
+                DISPLAYEDIT .T.
+                COL 16
+                HEIGHT 300
+                ROW 230
                 VALUE 0
                 WIDTH 170
             END COMBOBOX
-
-            DEFINE LABEL Lb_Grupo
-                COL 196
-                HEIGHT 20
-                ROW 210
-                VALUE "Grupo"
-                WIDTH 130
-            END LABEL
 
             DEFINE COMBOBOX Cb_Grupo
-                COL 196
-                DISPLAYEDIT TRUE
-                HEIGHT 300
                 ONLISTDISPLAY (PagarReceber_Cb_Grupo_Onlistdisplay())
-                ROW 230
                 TOOLTIP "Informe Grupo de Contas"
+                DISPLAYEDIT .T.
+                COL 196
+                HEIGHT 300
+                ROW 230
                 VALUE 0
                 WIDTH 170
             END COMBOBOX
 
-            DEFINE LABEL Lb_CCusto
-                COL 376
-                HEIGHT 20
-                ROW 210
-                VALUE "Centro de Custo"
-                WIDTH 130
-            END LABEL
-
             DEFINE COMBOBOX Cb_Custo
-                COL 376
-                DISPLAYEDIT TRUE
-                HEIGHT 300
                 ONLISTDISPLAY (PagarReceber_Cb_Custo_Onlistdisplay())
-                ROW 230
                 TOOLTIP "Informe Centro de Custo"
+                DISPLAYEDIT .T.
+                COL 376
+                HEIGHT 300
+                ROW 230
                 VALUE 0
                 WIDTH 170
             END COMBOBOX
@@ -270,10 +274,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END FRAME
 
             DEFINE LABEL Lb_Data_Cad1
+                VALUE "DT Cadastro:"
                 COL 15
                 HEIGHT 20
                 ROW 295
-                VALUE "DT Cadastro:"
                 WIDTH 80
             END LABEL
 
@@ -285,10 +289,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END LABEL
 
             DEFINE LABEL Lb_Ult_Alt1
+                VALUE "Últ Alteração:"
                 COL 205
                 HEIGHT 20
                 ROW 295
-                VALUE "Últ Alteração:"
                 WIDTH 80
             END LABEL
 
@@ -300,10 +304,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
             END LABEL
 
             DEFINE LABEL Lb_Usuario1
+                VALUE "Usuário:"
                 COL 385
                 HEIGHT 20
                 ROW 295
-                VALUE "Usuário:"
                 WIDTH 49
             END LABEL
 
@@ -321,10 +325,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
     DEFINE BUTTONEX Salvar
         ACTION (PagarReceber_Salvar_Action())
         CAPTION "&Salvar"
-        COL 14
-        FLAT TRUE
-        HEIGHT 37
         PICTURE "Minigui_edit_ok"
+        FLAT .T.
+        COL 136.0000
+        HEIGHT 37
         ROW 352
         WIDTH 100
     END BUTTONEX
@@ -332,10 +336,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
     DEFINE BUTTONEX Excluir
         ACTION (PagarReceber_Excluir_Action())
         CAPTION "&Exclui"
-        COL 124
-        FLAT TRUE
-        HEIGHT 37
         PICTURE "Minigui_edit_del"
+        FLAT .T.
+        COL 241.0000
+        HEIGHT 37
         ROW 352
         WIDTH 100
     END BUTTONEX
@@ -343,10 +347,10 @@ DEFINE WINDOW TEMPLATE AT 178, 441 WIDTH 588 HEIGHT 451  TITLE "" MODAL NOSIZE O
     DEFINE BUTTONEX CONTROL_39
         ACTION (PagarReceber.Release)
         CAPTION "Ca&ncela"
-        COL 467
-        FLAT TRUE
-        HEIGHT 37
         PICTURE "Minigui_edit_undo"
+        FLAT .T.
+        COL 346.0000
+        HEIGHT 37
         ROW 352
         WIDTH 100
     END BUTTONEX

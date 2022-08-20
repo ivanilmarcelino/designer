@@ -247,7 +247,7 @@ Static Function PesquisaPagRec_oReport_Action( )
     
     oHtml:Picture := {,,,,,"@E 999,999.99",}
     oHtml:File := PutFile({{"*.HTML","*.HTML"}},"Nome do Arquivo")
-    oHtml:Header := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
+    oHtml:Headers := {"Id","Vencimento","Pagamento","Conta",IIF(Flag_P_R="P","Fornecedor","Cliente"),"Valor","Atualizado"}
     oHtml:Align  := {2,0,0,0,0,2,0}
     oHtml:Totaliza:={,,,,,.T.,}
     oHTml:Report()
