@@ -1,6 +1,10 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-08-21
+    [!] Ajustados propriedades do form
+        Ao aplicar as propriedades os novos valores não afetavam o objeto em tempo real;
+
 2022-08-18
     [%] Refatoração do núcleo;
         Versão 2 - Especial Prata
