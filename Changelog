@@ -1,6 +1,15 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-08-27
+    [!] Criado procedimento para detecção de topmost; evitando problemas de sobreposição;
+        Nota: excepcionalmente quando é chamado um dialogo do nucleo, este tende a ficar por traz da TopMost; então usar o
+        benefício de TopMost deve ser usado com cautela;
+    [!] Retirado o Gotfocus dos Buttons em tempo de projeto
+    [!] Corrigido acesso de array quando um objeto é copiado dentro de um TAB e tenta-se executar a reordenação;
+    Um agradecimento especial ao amigo Pierpaolo Martinello que colaborou nas descobertas dos bugs;
+
+
 2022-08-21
     [!] Ajustados propriedades do form
         Ao aplicar as propriedades os novos valores não afetavam o objeto em tempo real;
