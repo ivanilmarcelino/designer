@@ -1,6 +1,11 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-09-03
+    VERSION_PRODUCT "2.2207.3.2 RELEASE SPECIAL SILVER (Ag) 220903 2250"
+    [!] Correções diversas
+    [*] Melhorias no controle Panel
+
 2022-08-27
     [!] Criado procedimento para detecção de topmost; evitando problemas de sobreposição;
         Nota: excepcionalmente quando é chamado um dialogo do nucleo, este tende a ficar por traz da TopMost; então usar o
