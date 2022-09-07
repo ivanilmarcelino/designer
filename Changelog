@@ -1,6 +1,12 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-09-06
+    VERSION_PRODUCT "2.2207.3.3 RELEASE SPECIAL SILVER (Ag) 220906 2145"
+    [!] Ajuste no Panel (várias melhorias)
+    [!] Objetos ficando sem borda na edição. Reportado por Alexandre Drescher
+
+
 2022-09-03
     VERSION_PRODUCT "2.2207.3.2 RELEASE SPECIAL SILVER (Ag) 220903 2250"
     [!] Correções diversas
