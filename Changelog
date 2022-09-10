@@ -1,6 +1,14 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-09-10
+    VERSION_PRODUCT "2.2207.3.3 RELEASE SPECIAL SILVER (Ag) 220910 1551"
+    [!] Correção ONHEADCLICK Grid
+        Ao editar o objeto, os valores widths {} do grid se perdiam ao recriar o objeto, Bug relatado por  Alexandre Drescher
+        Nota de otimização de uso:
+        Ajuste os colunas do grid arrastando naturalmente, quando estiver do seu gosto simplesmente clique em qualquer coluna
+        os valores serão capturados do objeto e guardados na propriedade;
+
 2022-09-06
     VERSION_PRODUCT "2.2207.3.3 RELEASE SPECIAL SILVER (Ag) 220906 2145"
     [!] Ajuste no Panel (várias melhorias)
