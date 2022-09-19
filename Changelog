@@ -1,6 +1,11 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-09-19
+    VERSION_PRODUCT "2.2209.0.1 RELEASE SPECIAL SILVER (Ag) 220919 2022"
+    [+] Incluido tratamento do elemento separador nos menus dos buttons dropdown da toolbar
+        Sugerido por Pierpaolo Martinello
+
 2022-09-15
     Harbour MiniGUI Extended Edition 22.09 (Release)
 
