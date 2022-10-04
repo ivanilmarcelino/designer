@@ -1,6 +1,11 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-10-04
+    VERSION_PRODUCT "2.2209.1.3 RELEASE SPECIAL SILVER (Ag) 221004 1900"
+    [!] Incluido opção de excluir um separador de Menu pelo próprio Wizard
+        Relatado por Pierpaolo Martinello (Italia)
+
 2022-10-02
     VERSION_PRODUCT "2.2209.1.2 RELEASE SPECIAL SILVER (Ag) 221002 1951"
     Harbour MiniGUI Extended Edition 22.09 (Update 1)
