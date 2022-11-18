@@ -1,6 +1,16 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-11-17
+    VERSION_PRODUCT "2.2211.0.0 RELEASE SPECIAL SILVER (Ag) 221117 1901"
+    Sincronizado com Minigui 2211.0
+
+    [*] PesquisaCRUD - Agora a pesquisa pode ser realizada utilizando qualquer campo, bastando
+        clicar no titulo da coluna;
+        Contribuição de Pierpaolo Martinello (Italy)
+
+    [*] Versão do produto agora pode ser editado, combo alterado para Editable=TRUE
+
 2022-11-01
     VERSION_PRODUCT "2.2209.3.0 RELEASE SPECIAL SILVER (Ag) 221101 2043"
     Sincronizado com Minigui 2209.3
