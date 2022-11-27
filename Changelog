@@ -1,6 +1,20 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-11-26
+    VERSION_PRODUCT "2.2211.0.1 RELEASE SPECIAL SILVER (Ag) 221127 0019"
+    Value/Caption agora aceitam variáveis ou funções em tempo de projeto; embora minha
+    orientação é que os valores sejam atribuitos no OnInit do form;
+    O Designer vai entender que os valores passados para Value/Caption entre parêntese
+    devem ser tratados como variáveis e não uma literal;
+    Pontos de atenção:
+    atribuindo value=(hb_username()) , será mostrado o usuário atual no form, mas guardará (hb_username()) no código;
+    atribuindo value=(funcaoNaoreconhecida()) , será mostrado o (funcaoNaoreconhecida()) no form, pois é uma função
+    não reconhecida pelo Designer e será mostrada apenas quando seu projeto for compilado e ligado a função, meio
+    obvio, mas necessario o comentário;
+
+    Ajustado as cores do projeto quando manipulado um form com tab;
+
 2022-11-17
     VERSION_PRODUCT "2.2211.0.0 RELEASE SPECIAL SILVER (Ag) 221117 1901"
     Sincronizado com Minigui 2211.0
