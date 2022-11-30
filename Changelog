@@ -1,6 +1,10 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-11-29
+    VERSION_PRODUCT "2.2212.0.0 RELEASE SPECIAL SILVER (Ag) 221129 2242"
+    Sincronização com Minigui Extend 22.12
+
 2022-11-26
     VERSION_PRODUCT "2.2211.0.1 RELEASE SPECIAL SILVER (Ag) 221127 0019"
     Value/Caption agora aceitam variáveis ou funções em tempo de projeto; embora minha
