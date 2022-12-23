@@ -1,6 +1,13 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2022-12-22
+    VERSION_PRODUCT "2.2212.2.0 RELEASE SPECIAL SILVER (Ag) 221222 2002"
+    Sincronização com Minigui Extend 22.12.2
+    [*] Agora os arquivos ini do Ide serão salvos em %appdata%, anteriormente estava sendo utilizado %temp% mas
+        alguns colegas costumam limpar a pasta perdendo a configuração.
+        Solicitado por Pierpaolo Martinello (Italy)
+
 2022-12-12
     VERSION_PRODUCT "2.2212.1.0 RELEASE SPECIAL SILVER (Ag) 221212 1933"
     Sincronização com Minigui Extend 22.12.1
