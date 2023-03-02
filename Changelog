@@ -1,6 +1,14 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2023-03-02
+    VERSION_PRODUCT "2.2302.2.1 RELEASE SPECIAL SILVER (Ag) 230302 2014"
+    Sincronização com Minigui Extend 23.02(2)
+
+2023-02-28
+    Designer_Comuns->Designer_Getpropriedade
+    Verificação de sintaxe nas fórmulas, tratando variáveis usadas em controles em tempo de projeto a pedido Alexandre Drescher
+
 2023-02-22
     VERSION_PRODUCT "2.2302.1.0 RELEASE SPECIAL SILVER (Ag) 230222 2012"
     Sincronização com Minigui Extend 23.02(1)
