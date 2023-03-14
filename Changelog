@@ -1,6 +1,12 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2023-03-14
+    Update Harbour MiniGUI Extended Edition 23.02 (Update 3)
+    VERSION_PRODUCT "2.2302.3.1 RELEASE SPECIAL SILVER (Ag) 230314 1648"
+    .\Tools\Scite\Scite 5,35
+    Incluido Set CenterWindow\DigalogBox em configuração
+
 2023-03-02
     VERSION_PRODUCT "2.2302.2.1 RELEASE SPECIAL SILVER (Ag) 230302 2014"
     Sincronização com Minigui Extend 23.02(2)
