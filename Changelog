@@ -1,6 +1,30 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2023-05-18
+    VERSION_PRODUCT "3.2304.1.0 SPECIAL RHENIUM (Re) Year IV 230518 1929"
+    Update Harbour MiniGUI Extended Edition 23.04 (Update 1)
+
+2023-05-05
+    VERSION_PRODUCT "3.2304.0.0 SPECIAL RHENIUM (Re) Year IV 230505 2012"
+    Update Harbour MiniGUI Extended Edition 23.04
+    Agora você pode:
+    a) Modificar/criar sua própria interface de compilação, use o modelo: ide\user\DesignerPersonalCompiler.prg
+    b) ter um modelo de cabeçalho por projeto, personalise a seu gosto por cliente
+    c) exportar seu projeto (resultado é um material limpo, somente os arquivos necessarios ao projeto)
+    d) Ocultar objetos para sobreposição e volta-los facilmente a reexibição
+    
+    Melhorias:
+    a) Refatoração do codigo
+    b) validação de imagens no projeto
+    c) reestruturação do projeto .\src .\include
+    d) Pesquisa avançada agora abre diretamente no projeto
+    e) Melhorias em expressão para execução de testes de mesa e validações de codigo
+    f) as Imagens agora estão visiveis no combo facilitando a escolha
+    g) correção de erros
+****************************************************************************************
+////////////////////////////////////////////////////////////////////////////////////////
+****************************************************************************************
 2023-03-14
     Update Harbour MiniGUI Extended Edition 23.02 (Update 3)
     VERSION_PRODUCT "2.2302.3.1 RELEASE SPECIAL SILVER (Ag) 230314 1648"
