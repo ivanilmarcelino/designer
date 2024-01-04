@@ -15,6 +15,24 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-01-04
+    VERSION_PRODUCT "3.2312.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240104 1935"
+    Update Harbour MiniGUI Extended Edition 23.12 (Release)
+    Conversão de nomes longos para curtos evitando conflitos com hbmk2
+    Corrigido Temp para uso internacional reportado por Grigory (gfilatov@gmail.com)
+    Adicionado suporte SQLRDD ao projeto;
+    Incluido SQLRDD ao prototipo do Wizard;
+    Incluido Importador de DBF para SQL;
+
+    Nota:
+    a) Para sua comodidade de migração de DBF para SQL, foi incluido um importador à ferramenta, mas lembre-se que
+    você deve fazer backup antes de iniciar este processo, o padrao utilizado para abrir os DBF é o SQLCDX com autoOpen=OFF
+    caso utilize um RDD diferente pode haver incompatibilidade com os campos Memos;
+
+    b) Para que o SQLRDD rode na sintaxe padrao xbase, a tabela deve ser criada pelo importador da ferramenta ou 
+    atravès da funcao dbCreate(...), caso você crie usando o metodo convencional sqL, as tabelas auxiliares não serão
+    alimentadas e com isso os comandos use/index/seek/etc não funcionarão como esperado;
+
 2023-11-11
     VERSION_PRODUCT "3.2310.0.0 SPECIAL RHENIUM (Re) Year IV 231111 2229"
     Update Harbour MiniGUI Extended Edition 23.10 (Release)
