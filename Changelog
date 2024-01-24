@@ -15,6 +15,12 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-01-23
+    VERSION_PRODUCT "3.2401.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240122 2301"
+    Update Harbour MiniGUI Extended Edition 24.01
+    Correções em CodePage para atender Russia reportado por Grigory (gfilatov@gmail.com)
+
+
 2024-01-04
     VERSION_PRODUCT "3.2312.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240104 1935"
     Update Harbour MiniGUI Extended Edition 23.12 (Release)
