@@ -11,7 +11,7 @@ Colabore para que nosso projeto xbase volte a ser algo tão popular quanto um di
 
 Caso queira baixar apenas o Designer, sem baixar o Samples, clique sobre o arquivo conforme modelo abaixo:
 
-- [X] Designer_%Ano%Mes%Dia%.ZIP
+- [X] DesignerFull.ZIP
 
 Você será direcionado para uma nova pagina, procure pelo botão download, desta forma forma voce terá acesso apenas ao pacote completo do Designer;
 
@@ -24,7 +24,7 @@ Você não precisa de acesso administrativo, descompacte onde quiser, mas evite 
 # ***********************************************************
 ### Pacote Expert:
 Se você já vem usando o Designer há algum tempo, talvez queira baixar apenas os arquivos bases; ele é uma opção que te permite fazer suas proprias atualizações do harbour ou Minigui manualmente.
-- [X] DesignerExpert_%Ano%Mes%Dia%.ZIP
+- [X] DesignerExpert.ZIP
 # ***********************************************************
 
 ## Designer for Minigui Extend
@@ -38,13 +38,13 @@ Collaborate for our xbase project to become something as popular as once Clipper
 
 If you want to download only the Designer, without downloading Samples, click on the file according to the model below:
 
-- [X] Designer_% Year% Month% Day% .ZIP
+- [X] DesignerFull.ZIP
 
 You will be directed to a new page, look for the download button, this way you will only have access to the complete Designer package;
 
 Or use this link to download using the GitHub ZIP feature [Download now](https://github.com/ivanilmarcelino/designer/archive/master.zip) to access a clone of the repository;
 
-The zip contains a self-extracting binary, after downloading, extract, and then run the self-extracting, follow the instructions; 
+The zip contains a self-extracting binary, after downloading, extract, and then run the self-extracting, follow the instructions;
 
 
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
@@ -52,7 +52,7 @@ You do not need administrative access, unzip wherever you want, but avoid a Path
 # ***********************************************************
 ### Expert package:
 If you've been using Designer for a while, you might want to download just the base files; it is an option that allows you to make your own harbor or Minigui updates manually.
-- [X] DesignerExpert_%Ano%Mes%Dia%.ZIP
+- [X] DesignerExpert.ZIP
 
 e-mail: ivanil.marcelino@yahoo.com.br
 
@@ -74,12 +74,12 @@ e-mail: ivanil.marcelino@yahoo.com.br
 #
 ## Migrando de Console para Gráfico sem traumas;
 [![banner](https://github.com/ivanilmarcelino/designer/blob/master/Image/telaPreta.jpg)](https://www.youtube.com/watch?v=9r-ysSF67us)
-# 
+#
 
 #
 ## Migração de DBF para SQL - PlayList;
 [![banner](https://github.com/ivanilmarcelino/designer/blob/master/Image/YouTube.jpg)](https://www.youtube.com/playlist?list=PLK0WK4h0-ohQ8FrMVVRhHa-QAeT0HFHs1)
-# 
+#
 
 ![banner](https://repository-images.githubusercontent.com/236748085/32939000-4280-11ea-963c-07b0dbc66c94)
 #
