@@ -20,7 +20,7 @@ O zip contem um binário auto extraível, após baixar, extraia, e então execut
 
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
-Não deixe de visitar o site [Minigui Extend](https://www.hmgextended.com/), faça sua contribuição financeira financeira e ajude no crescimento da ferramenta;
+Não deixe de visitar o site [Minigui Extend](https://www.hmgextended.com/), faça sua contribuição financeira e ajude no crescimento da ferramenta;
 
 # ***********************************************************
 ### Pacote Expert:
