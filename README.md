@@ -20,6 +20,10 @@ O zip contem um binário auto extraível, após baixar, extraia, e então execut
 
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
+###[NOVO]
+"A partir de janeiro de 2024, o designer passou a ter suporte ao RDDSQL. Agora, você não tem mais desculpas para evoluir no mundo do SQL. Com apenas alguns cliques através do assistente, você pode ter um formulário com CRUD completo que pode ser usado como protótipo. Você pode personalizá-lo conforme sua preferência, e o código gerado não possui dependência com o designer. Aproveite ao máximo o resultado!"
+
+
 Não deixe de visitar o site [Minigui Extend](https://www.hmgextended.com/), faça sua contribuição financeira e ajude no crescimento da ferramenta;
 
 # ***********************************************************
@@ -49,6 +53,10 @@ The zip contains a self-extracting binary, after downloading, extract, and then 
 
 
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
+
+
+###[NEW]
+"As of January 2024, the designer now supports RDDSQL. Now, you have no more excuses to evolve in the SQL world. With just a few clicks through the wizard, you can have a complete CRUD form that can be used as a prototype. You can customize it to your liking, and the generated code has no dependency on the designer. Make the most of the result!"
 
 Be sure to visit the [Minigui Extend](https://www.hmgextended.com/) website,make your financial contribution and help the tool's growth;
 
