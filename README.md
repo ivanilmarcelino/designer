@@ -1,7 +1,6 @@
 # Designer
 
-## Designer for Minigui Extend
-
+## Designer for [Minigui Extend](https://www.hmgextended.com/)
 
 Veja o vídeo em [YouTube](https://www.youtube.com/watch?v=1GPAUNJtgIA&t=25s), aproveite, faça o download e use, é gratis, tenha produtividade em seus projetos.
 Entre para o grupo [designerminigui@googlegroups.com](https://groups.google.com/g/designerminigui?pli=1) para ficar informado e postar dúvidas junto à comunidade
@@ -21,13 +20,15 @@ O zip contem um binário auto extraível, após baixar, extraia, e então execut
 
 Você não precisa de acesso administrativo, descompacte onde quiser, mas evite um Path com nomes longos, embora exista um tratamento para esse fim, você poderia encontrar alguma incompatibilidade ainda não mapeada.
 
+Não deixe de visitar o site [Minigui Extend](https://www.hmgextended.com/), faça sua contribuição financeira financeira e ajude no crescimento da ferramenta;
+
 # ***********************************************************
 ### Pacote Expert:
 Se você já vem usando o Designer há algum tempo, talvez queira baixar apenas os arquivos bases; ele é uma opção que te permite fazer suas proprias atualizações do harbour ou Minigui manualmente.
 - [X] DesignerExpert.ZIP
 # ***********************************************************
 
-## Designer for Minigui Extend
+## Designer for [Minigui Extend](https://www.hmgextended.com/)
 
 Watch the video at [YouTube](https://www.youtube.com/watch?v=1GPAUNJtgIA&t=25s), enjoy, download and use, it's free, have productivity in your projects.
 Join the [designerminigui@googlegroups.com](https://groups.google.com/g/designerminigui?pli=1) group to stay informed and post questions with the community
@@ -48,6 +49,8 @@ The zip contains a self-extracting binary, after downloading, extract, and then 
 
 
 You do not need administrative access, unzip wherever you want, but avoid a Path with long names, although there is a treatment for that purpose, you could find some incompatibility not yet mapped.
+
+Be sure to visit the [Minigui Extend](https://www.hmgextended.com/) website,make your financial contribution and help the tool's growth;
 
 # ***********************************************************
 ### Expert package:
