@@ -15,8 +15,15 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
-2024-02-26
+2024-02-27
     Update Harbour MiniGUI Extended Edition 24.02
+    VERSION_PRODUCT "3.2402.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240227 1630"
+    [%]As Propriedades incompativeis com o tipo de janela ficarão em vermelho, caso tenha sido informado algum valor
+       o usuário será notificado ao salvar, para evitar perda de dados;
+       Caso de  uso:
+       O usuário cria um formulário tipo chield, adiciona valores em eventos/propriedades, mais tarde, altera a janela para
+       modal, cuja propriedades e eventos não são 100% compativeis;
+    
 
 2024-02-15
     [!]Agora é possível definir  font/size para o formulário, permitindo que seus controles herdem esses valores caso 
