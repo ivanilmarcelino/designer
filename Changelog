@@ -15,6 +15,15 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+
+2024-03-01
+    [!] Tooltip gerado em outras IDE;
+        Quando um formulário criado por outra IDE é aberto, os controles com tooltip do tipo Array estavam sendo 
+        tratados como variáveis pelo Designer, o que causava erros na compilação. Nesta versão, verificamos se o tooltip é uma array, 
+        deixando tudo normalizado. Reportado por José Maurício BH - MG (bhz.mg@hotmail.com)
+
+Espero que isso atenda às suas expectativas! Se precisar de mais alguma correção ou
+
 2024-02-27
     Update Harbour MiniGUI Extended Edition 24.02
     VERSION_PRODUCT "3.2402.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240227 1630"
