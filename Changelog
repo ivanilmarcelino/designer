@@ -15,6 +15,10 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-03-18
+    Update Harbour MiniGUI Extended Edition 24.03 
+    [!] propriedades tipo string com "// &&" estavam sendo tratadas como comentários.
+
 
 2024-03-01
     [!] Tooltip gerado em outras IDE;
