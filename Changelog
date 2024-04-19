@@ -15,6 +15,9 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-04-18
+    Update Harbour MiniGUI Extended Edition 24.04 
+
 2024-03-18
     Update Harbour MiniGUI Extended Edition 24.03 
     [!] propriedades tipo string com "// &&" estavam sendo tratadas como comentários.
