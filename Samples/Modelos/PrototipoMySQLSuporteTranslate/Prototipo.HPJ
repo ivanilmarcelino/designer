@@ -1,0 +1,78 @@
+[PROJETO]
+Main=Prototipo.PRG
+TipoProjeto=1
+nomeprojeto=Prototipo
+database=MYSQL;localhost;root;root;3311;dbdados
+flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
+comments=
+companyname=Ima Solutions Apoio Tec/Adm em Informática
+filedescription=
+fileversion=   0,   0,   0,   0
+internalname=Prototipo MySQL
+legalcopyright=Copyright © 2022
+legaltrademarks=
+originalfilename=
+privatebuild=
+productname=
+productversion=ALPHA
+specialbuild=
+
+seticonepadrao=None
+setlanguage=PORTUGUESE
+setcodepage=BRAZIL
+setdate=FRENCH
+setcentury=ON
+setepoch=1960
+setdecimals=4
+setdeleted=ON
+setautoadjust=OFF
+setinteractive=ON
+settooltipballon=ON
+tooltipicon=TTI_NONE
+tooltiptitle=Dica
+setnavigation=EXTENDED
+setinstances=ON
+setinstanceswarning=OFF
+setexact=ON
+setmenustyle=EXTENDED
+setmenucursor=FULL
+setmenuseparator=SINGLE LEFTALIGN
+setmenuitemborder=3D
+fontname=Segoe UI
+fontsize=9
+fontbold=FALSE
+fontnameMenu=
+fontsizeMenu=9
+fontboldMenu=FALSE
+Run=
+NaoIncluiResourceHmg=FALSE
+setcontextmenu=ON
+setdialogboxcenter=OFF
+setwindowcenterrelative=OFF
+AddOns=0
+
+[FORMULARIOS]
+Frm0001=%PROJETO%\Form\FrmLogin.FMG
+Frm0002=%PROJETO%\form\frmObjeto.FMG
+Frm0003=%PROJETO%\Form\FrmUsuario.FMG
+Frm0004=%PROJETO%\form\Prototipo.FMG
+
+[MODULOS]
+MOD0001=%PROJETO%\FrmLogin.Prg
+MOD0002=%PROJETO%\frmObjeto.PRG
+MOD0003=%PROJETO%\FrmUsuario.PRG
+MOD0004=%PROJETO%\Prototipo.PRG
+MOD0005=%PROJETO%\src\TranslateUniversal.prg
+
+[RESOURCES]
+RES0064=PrimaryKey;%PROJETO%\res\PrimaryKey.png
+RES0067=tchecklabel;%PROJETO%\res\tchecklabel.png
+RES0068=Windows10;%PROJETO%\res\Windows10.Manifest
+
+[LIBS]
+
+[INCLUDES]
+
+[FILES]
+
+[FIM]

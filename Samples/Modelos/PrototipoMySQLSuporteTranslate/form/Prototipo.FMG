@@ -1,0 +1,78 @@
+/*
+Versão Designer : 3.2404.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240420 1545
+==============================================================================================================
+https://github.com/ivanilmarcelino/designer by IVANIL MARCELINO <ivanil.marcelino@yahoo.com.br>
+Versão Minigui:  Harbour MiniGUI Extended Edition 24.04 (32-bit) ANSI by Grigory Filatov <gfilatov@inbox.ru>
+Versão Harbour/xHarbour: Harbour 3.2.0dev (r2404101339)
+Compilador : MinGW GNU C 13.2 (32-bit)
+-------------------------------------------------------------------------------------------------------------
+Este programa (Apenas Binário) é distribuído na esperança de que seja útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia
+implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO PARA UM PROPÓSITO ESPECÍFICO.
+-------------------------------------------------------------------------------------------------------------
+SOBRE ESTE CÓDIGO GERADO:
+Projeto : Designer
+Este projeto é de código fechado, caso você tenha acesso a este fonte, saiba que você não tem autorização de 
+copiar, modificar ou distribuir .
+Criado em : 20/04/2024 18:31:53 Máquina: IMA2023 Usuário:ivani
+
+--------------------------------------------------------------------------------------------------------------
+Projeto : Prototipo
+--------------------------------------------------------------------------------------------------------------
+*/
+    #ifndef TRUE
+      # DEFINE TRUE .T.
+    #endif
+
+*{Name:Main}
+*{Modulo:Prototipo.PRG}
+
+
+DEFINE WINDOW TEMPLATE AT 251, 324 WIDTH 600 HEIGHT 549  TITLE "Prototipo uso geral" MAIN ON RELEASE (Main_Onrelease()) ON INTERACTIVECLOSE (Main_Oninteractiveclose())
+
+    DEFINE MAIN MENU
+        DEFINE MENU POPUP "Cadastro" NAME oNMenu_MAIN_Main1 FONT "Fnt_P_D_R"
+            MENUITEM "Empresa" NAME oNMenu_MAIN_Main5 FONT "Fnt_P_D_R"
+            MENUITEM "Filiais" NAME oNMenu_MAIN_Main6 FONT "Fnt_P_D_R"
+            MENUITEM "Lotação" NAME oNMenu_MAIN_Main7 FONT "Fnt_P_D_R"
+            MENUITEM "Departamentos" NAME oNMenu_MAIN_Main8 FONT "Fnt_P_D_R"
+        END POPUP
+        DEFINE MENU POPUP "Manutenção" NAME oNMenu_MAIN_Main2 FONT "Fnt_P_D_R"
+            MENUITEM "Carga horária" NAME oNMenu_MAIN_Main9 FONT "Fnt_P_D_R"
+            MENUITEM "Serviços" NAME oNMenu_MAIN_Main10 FONT "Fnt_P_D_R"
+            MENUITEM "Materiais" NAME oNMenu_MAIN_Main11 FONT "Fnt_P_D_R"
+            MENUITEM "Usuários" ACTION (Main_oNMenu_MAIN_Main12_Action()) NAME oNMenu_MAIN_Main12 FONT "Fnt_P_D_R"
+            DEFINE MENU POPUP "Segurança" NAME oNMenu_MAIN_Main18 FONT "Fnt_P_D_R"
+                MENUITEM "Objetos" ACTION (Main_oNMenu_MAIN_Main19_Action()) NAME oNMenu_MAIN_Main19 FONT "Fnt_P_D_R"
+            END POPUP
+        END POPUP
+        DEFINE MENU POPUP "Ferramentas" NAME oNMenu_MAIN_Main3 FONT "Fnt_P_D_R"
+            MENUITEM "Calculo geral" NAME oNMenu_MAIN_Main13 FONT "Fnt_P_D_R"
+            MENUITEM "Vira mes" NAME oNMenu_MAIN_Main14 FONT "Fnt_P_D_R"
+            DEFINE MENU POPUP "Linguagem" NAME oNMenu_MAIN_Main20
+                MENUITEM "Portugues [BR]" ACTION (Main_oNMenu_MAIN_Main21_Action()) NAME oNMenu_MAIN_Main21
+                MENUITEM "Italia [IT]" ACTION (Main_oNMenu_MAIN_Main22_Action()) NAME oNMenu_MAIN_Main22
+            END POPUP
+        END POPUP
+        DEFINE MENU POPUP "Relatórios" NAME oNMenu_MAIN_Main4 FONT "Fnt_P_D_R"
+            MENUITEM "Aniversariantes" NAME oNMenu_MAIN_Main15 FONT "Fnt_P_D_R"
+            MENUITEM "Liquido negativo" NAME oNMenu_MAIN_Main16 FONT "Fnt_P_D_R"
+            MENUITEM "Resumo geral" NAME oNMenu_MAIN_Main17 FONT "Fnt_P_D_R"
+        END POPUP
+    END MENU
+
+    DEFINE TOOLBAREX Toolbar_1 BUTTONSIZE  30, 30 FONT 'Arial' SIZE   7 FLAT 
+        BUTTON Toolbar_1Button1 PICTURE "Minigui_edit_close" ACTION (Main_Toolbar_1Button1_Action())
+        BUTTON Toolbar_1Button2 PICTURE "Hbprint_zoomin"
+        BUTTON Toolbar_1Button3 PICTURE "Hbprint_zoomout"
+    END TOOLBAR
+
+    DEFINE STATUSBAR FONT "Arial" SIZE 10
+        STATUSITEM "" WIDTH 80 
+        STATUSITEM "usuario" WIDTH 120 
+        PROGRESSITEM WIDTH 120 RANGE 1,100
+    END STATUSBAR
+END WINDOW
+
+SendMessageString( GetFormToolTipHandle ( _HMG_TempWindowName ), TTM_SETTITLE,TTI_NONE ,"Dica")
+/*Fim*/
+

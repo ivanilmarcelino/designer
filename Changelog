@@ -15,6 +15,12 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-04-20
+    [!] Ajuste classe tMysqlIma - row acesso a array error
+    [+] incluido samples\modelo\PrototipoMySQLSuporteTranslate
+        Deixe seu aplicativo mult-lingue de forma automatizada usando ini, você pode enriquecer a ferramente lendo um banco de dados,
+        use a imaginação.	
+
 2024-04-18
     Update Harbour MiniGUI Extended Edition 24.04 
 
