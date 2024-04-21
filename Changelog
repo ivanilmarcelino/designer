@@ -15,6 +15,12 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-04-21
+    [!] Ajuste cores Designer Menu
+    [!] Adicionado excpetion SHOWHEADER=.F. GRID
+    [!] Corrigido comentario em form //|&&
+    [!] Corrigido opcao de ajustar o menu diretamente sem abrir o Menu principal
+
 2024-04-20
     [!] Ajuste classe tMysqlIma - row acesso a array error
     [+] incluido samples\modelo\PrototipoMySQLSuporteTranslate
