@@ -15,6 +15,9 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2024-04-24
+    [+] Adicionado Ini.prg ao projeto samples\modelo\PrototipoMySQLSuporteTranslate
+
 2024-04-21
     [!] Ajuste cores Designer Menu
     [!] Adicionado excpetion SHOWHEADER=.F. GRID

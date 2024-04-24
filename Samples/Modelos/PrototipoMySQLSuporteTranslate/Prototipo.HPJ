@@ -61,15 +61,16 @@ Frm0004=%PROJETO%\form\Prototipo.FMG
 MOD0001=%PROJETO%\src\FrmLogin.Prg
 MOD0002=%PROJETO%\src\frmObjeto.PRG
 MOD0003=%PROJETO%\src\FrmUsuario.PRG
-MOD0004=%PROJETO%\src\Prototipo.PRG
-MOD0005=%PROJETO%\src\TranslateUniversal.prg
+MOD0004=%PROJETO%\src\INI.PRG
+MOD0005=%PROJETO%\src\Prototipo.PRG
+MOD0006=%PROJETO%\src\TranslateUniversal.prg
 
 [RESOURCES]
 RES0001=Brazil;%PROJETO%\res\Brazil.png
 RES0042=Italy;%PROJETO%\res\Italy.png
-RES0066=PrimaryKey;%PROJETO%\res\PrimaryKey.png
-RES0069=tchecklabel;%PROJETO%\res\tchecklabel.png
-RES0070=Windows10;%PROJETO%\res\Windows10.Manifest
+RES0064=PrimaryKey;%PROJETO%\res\PrimaryKey.png
+RES0067=tchecklabel;%PROJETO%\res\tchecklabel.png
+RES0068=Windows10;%PROJETO%\res\Windows10.Manifest
 
 [LIBS]
 
