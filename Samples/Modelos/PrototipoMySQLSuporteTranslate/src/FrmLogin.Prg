@@ -38,6 +38,7 @@ Static Function Frmlogin_Onrelease( lFezLogin)
     //Qualquer que seja o modo de fechamento do form
     if !lFezLogin
         //Finaliza o Sistema
+        Msginfo("exit...")
         ExitProcess(0)
     endif
     Return .T.

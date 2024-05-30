@@ -34,6 +34,7 @@ Caso queira fixar sua própria configuração, basta excluir a linha abaixo.*/
     App.Cargo := hash()
     
     /*Carregando o formulário Principal*/
+    
     Load window Prototipo as Main
     //Login
     LoadFrmFrmlogin()

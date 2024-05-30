@@ -29,7 +29,7 @@ Function TranslateUniversal(cForm)
             If !Empty(aTemp)
                 if valtype(aTemp)="A"
                     for k=1 to len(aTemp)
-                        if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".Tooltip." + hb_ntos(k)})) = 0
+                        if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".Tooltip." + hb_ntos(k))})) = 0
                             Ini(cChave, cName + ".Tooltip." + hb_ntos(k) , aTemp[k] ,cIni , .T. )
                         else
                             aTemp[k] := aIni[nPos,2]
@@ -37,7 +37,7 @@ Function TranslateUniversal(cForm)
                     Next
                     (cForm).(cName).Tooltip :=  aTemp
                 else
-                    if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".Tooltip"})) = 0
+                    if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".Tooltip")})) = 0
                         Ini(cChave, cName + ".Tooltip" , aTemp ,cIni , .T. )
                     else
                         (cForm).(cName).Tooltip :=  aIni[nPos,2]
@@ -47,31 +47,35 @@ Function TranslateUniversal(cForm)
         Endif
 
         if cType $ "COMBOBOX,SPINNER,TEXTBOX,MASKEDTEXT,TEXT,MASKEDTEXTBOX,CHARMASKTEXTBOX,NUMTEXTBOX,COMBOBOXEX" .OR. Substr(cType,1,3) = "BTN"
-            if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".placeholder"})) = 0 
+            if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".placeholder")})) = 0 
                 Ini(cChave, cName + ".placeholder" , (cForm).(cName).cuebanner ,cIni , .T. )
             else
                 (cForm).(cName).cuebanner := aIni[nPos,2]
             endif
         Endif
 
-        if cType="LABEL"
-            if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".value"})) = 0
+        if "@"+cType+"@" $ "@LABEL@CHECKLABEL@"
+            if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".value")})) = 0
                 Ini(cChave,cName + ".value" , (cForm).(cName).value ,cIni , .T. )
             else
                 (cForm).(cName).value := aIni[nPos,2]
             endif
             
         Elseif cType $ "MENU,POPUP"
-            if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".caption"})) = 0 
+            if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".caption")})) = 0 
                 Ini( cChave, cName  + ".caption" ,  _GetMenuItemCaption(cName,cForm) ,cIni , .T. )
             else
-                _SetMenuItemCaption(cName,cForm,aIni[nPos,2])
+                *_SetMenuItemCaption(cName,cForm,aIni[nPos,2])
+                (cForm).(cName).Caption := aIni[nPos,2]
+                (cForm).(cName).Refresh()
+                (cForm).(cName).Redraw()
+                
             endif  
 
             if cType = "MENU"
                 nID:=GetControlIndex(cName,cForm)
                 if nID>0
-                    if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".Message"})) = 0  
+                    if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".Message")})) = 0  
                         Ini( cChave, cName  + ".Message" , _HMG_aControlValue[nID] ,cIni , .T. )
                     else
                         _HMG_aControlValue[nID] := aIni[nPos,2]
@@ -86,7 +90,7 @@ Function TranslateUniversal(cForm)
                 aTemp:=_HMG_aControlCaption[nId]
                 
                 for k=1 to len(aTemp)
-                    if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".Header."+ hb_ntos(k)})) = 0 
+                    if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".Header."+ hb_ntos(k))})) = 0 
                         Ini( cChave, cName  + ".Header." + hb_ntos(k) , aTemp[k] ,cIni , .T. )
                     else
                         (cForm).(cName).Header(k)  := aIni[nPos,2]
@@ -98,29 +102,30 @@ Function TranslateUniversal(cForm)
             If !Empty(aTemp)
                 if valtype(aTemp)="A"
                     for k=1 to len(aTemp)
-                        if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".caption."+ hb_ntos(k)})) = 0 
+                        if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".caption."+ hb_ntos(k))})) = 0 
                             Ini( cChave,cName + ".Caption." + hb_ntos(k) , aTemp[k] ,cIni , .T. )
                         else
                             (cForm).(cName).Caption(k) := aIni[nPos,2]
                         endif
                     Next
                 else
-                    if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".caption"})) = 0
+                    if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".caption")})) = 0
                          Ini( cChave, cName + ".Caption" , aTemp ,cIni , .T. )
                     else
                         (cForm).(cName).caption := aIni[nPos,2]
                     endif
                 endif
             endif
-        elseif cType="CHECKLABEL"
-            if (nPos:=Ascan(aIni,{|a|a[1]==cName + ".value"})) = 0  
-                Ini( cChave, cName  + ".value" , (cForm).(cName).value ,cIni , .T. )
+        Elseif cType = "HYPERLINK"
+            if (nPos:=Ascan(aIni,{|a|hb_wildMatchI(a[1],cName + ".caption")})) = 0
+                Ini(cChave,cName + ".caption" , (cForm).(cName).caption ,cIni , .T. )
             else
-                (cForm).(cName).value := aIni[nPos,2]
+                (cForm).(cName).caption := aIni[nPos,2]
             endif
-        endif
+        Endif
     Next
-    (cForm).Redraw()
+    *(cForm).Redraw()
+    *SetNonClient(Nil) 
     Return Nil
         
 

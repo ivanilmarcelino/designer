@@ -15,6 +15,19 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+30/05/2024
+    [*] Update Minigui Extend 24.05
+        Retirado a função SetNonClient(0), instabilidade na nova versao;
+       Nota relativa a Versão Minigui que pode causar pequenos incomodos;
+      A Minigui esta vindo com o depurador ativo na biblioteca padrao;  você pode inserir no seu Main, antes de abrir o formulario a seguinte definição:
+     SET(13, FALSE)  //13 é o valor da constante DEBUG
+
+
+17/05/2024
+    [+] Adicionado ao modelo samples\modelo\PrototipoMySQLSuporteTranslate tradução Italiano pelo amigo Pierpaolo Martinello (Italy)
+        Corrigido problemas de UCase nas chaves reportado por Pierpaolo Martinello (Italy)
+        Adicionado a função SetNonClient(0) que permite o refresh nos menus automaticamente;por Pierpaolo Martinello (Italy)
+    
 2024-04-24
     [+] Adicionado Ini.prg ao projeto samples\modelo\PrototipoMySQLSuporteTranslate
 
