@@ -15,12 +15,19 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+13/06/2024
+    [*] Update Minigui Extend 24.06
+    [!] Ajustado a fonte no combo de manutenção do menu interativo; reportado por Pierpaolo Martinello (Italy)
+    Nota:
+    O designer possui um include no main que direciona para a conexão do banco de dados; isso facilita a criação da string. 
+    No entanto, uma vez definido, você deveria criar seu próprio método ou pelo menos mover esse código para seu PRG, retirando 
+    os caminhos literais. Isso não afeta a funcionalidade do designer, pois ele não lê essa configuração do arquivo, mas sim dos 
+    parâmetros do projeto. Não altere o arquivo include diretamente, pois ele é sempre reescrito quando há alteração na string. 
+    O designer não altera seu PRG, dessa forma, sua conexão será sempre preservada.
+
 30/05/2024
     [*] Update Minigui Extend 24.05
         Retirado a função SetNonClient(0), instabilidade na nova versao;
-       Nota relativa a Versão Minigui que pode causar pequenos incomodos;
-      A Minigui esta vindo com o depurador ativo na biblioteca padrao;  você pode inserir no seu Main, antes de abrir o formulario a seguinte definição:
-     SET(13, FALSE)  //13 é o valor da constante DEBUG
 
 
 17/05/2024
