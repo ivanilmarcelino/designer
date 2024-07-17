@@ -15,6 +15,12 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+16/07/2024 (a pedido do amigo Pierpaolo Martinello (Italy))
+    [%]liberação do cache usado pelo Scite 
+    [%]retirado aviso de defeito ao desfazer os movimentos dos controls
+    [%]devolução do foco ao designer quando fechado o editor
+    [!]Corrigido função Dbopen, antes apenas modo exclusivo (no entanto, essa função deveria ser sobrescrita por sua própria função, com mais recursos)
+
 13/06/2024
     [*] Update Minigui Extend 24.06
     [!] Ajustado a fonte no combo de manutenção do menu interativo; reportado por Pierpaolo Martinello (Italy)
