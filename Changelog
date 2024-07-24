@@ -15,6 +15,9 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+24/07/2024
+    [*] Update Minigui Extend 24.07
+
 16/07/2024 (a pedido do amigo Pierpaolo Martinello (Italy))
     [%]liberação do cache usado pelo Scite 
     [%]retirado aviso de defeito ao desfazer os movimentos dos controls
