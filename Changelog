@@ -17,6 +17,8 @@ Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui ,
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
 03/09/2024
     [*] Update Minigui Extend 24.08
+    VERSION_PRODUCT "3.2408.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240903 2117"
+    Dbopen Normalizado com AddOns;
 
 24/07/2024
     [*] Update Minigui Extend 24.07
