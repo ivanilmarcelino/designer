@@ -15,6 +15,15 @@
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+31/10/2024
+    [*] Update Minigui Extend 24.11
+        Script: Alterado para richeditboxEX; incluídos funcionalidades como pesquisa/atribuição/posicionamento no erro, adicionado tabulação a 
+                (a pedido do amigo Pierpaolo Martinello (Italy))
+                sistema de backup de testes organizados por dia, adicionado funcionalidade de limpeza de duplicados
+	Prompt: a funcionalidade ira tentar resolver o símbolo, o comando alert "jose" sera convertido para Alert("Jose")
+                utilidade: testar parâmetros, ver variáveis e o que a imaginação determinar.
+        VERSION_PRODUCT "3.2411.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 241031 2003"
+
 12/10/2024
     [*] Update Minigui Extend 24.10
         VERSION_PRODUCT "3.2410.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 241012 2024"
