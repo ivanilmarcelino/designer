@@ -1,26 +1,57 @@
 
     -----------------------------------A T E N Ç Ã O-----------------------------------
-    Colabore com o Grigory, faça uma doação, ele solicitou apoio da comunidade lembre-se, ele é da Ucrânia, país em guerra;
+    Colabore com o Grigory, faça uma doação;
     Para colaborar:
-    1) No Designer menu sobre\sobre clique na imagem Donate, você será direcionado para a pagina de doação dele;
+    1) No Designer, acesse o menu Sobre e clique na imagem Donate. Você será direcionado para a página de doação.
 
-    2) ou cole o endereço abaixo no seu browser:
+    2) Ou copie e cole o endereço abaixo no seu navegador:
     https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=o.g.filatova@gmail.com&no_note=0&tax=0&item_name=MiniGUI%20Donation
 
-    3) ou ainda pela própria página oficial: https://www.hmgextended.com/
+    3) Também é possível doar diretamente pela página oficial:(https://www.hmgextended.com/)
     -----------------------------------------------------------------------------------
-    A DOAÇÃO IRÁ DIRETO PARA A CONTA DELE SEM QUALQUER INTERMEDIARIO; COLABORE
+    As doações são enviadas diretamente para a conta de Grigory Filatov, sem qualquer intermediário. Sua colaboração é fundamental!
+    -----------------------------------------------------------------------------------
+    Curiosidade: 
+    O Designer alcança seu sexto ano de existência, consolidando-se como uma ferramenta gratuita voltada para os entusiastas da linguagem Clipper. 
+    Ele oferece uma abordagem mais eficiente, rápida e objetiva para trabalhar com elementos gráficos.
+    Ao longo do tempo, o Designer evoluiu significativamente, tornando-se um gerenciador de projetos completo e versátil.
+    A manutenção e o desenvolvimento contínuo da ferramenta são realizados de forma voluntária por Ivanil Marcelino, sem fins lucrativos, 
+    como uma maneira de retribuir à comunidade e homenagear grandes amigos que já partiram.
     -----------------------------------------------------------------------------------
 
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+19/01/2025
+    Version: RELEASE SPECIAL OSMIUM (Os) Year VI
+    O que há de Novo
+    Update: Harbour MiniGUI Extended Edition 25.01 (Standard) (https://www.hmgextended.com/download.html)
+    Obs: Biblioteca recompilada sem o Depurador automatico para bcc58, você escolhe quando usar;
+    Acompanha SQLRdd compilado Versao Marcos Gambeta bcc58 (https://github.com/marcosgambeta/sqlrddpp)
+    
+    Designer:
+    a)Edição de FMG de forma independente
+    b)Associação de Arquivos HPJ e FMG
+    c)Arraste e solte os arquivos diretamente ao projeto
+    d)Editor Interno dando maior versatilidade no sistema
+        1)Abra vários arquivos simultaneamente
+        2)Lista de funções carregados para melhor navegação
+        3)Teste seu código sem mudar de tela
+        4)Personalize cores a seu gosto
+        5)Ambiente limpo só com o necessário
+
+    Nota:
+    Caso você encontre algum problema em abrir um FMG criado por outra ferramenta, envie uma copia do arquivo
+    para analise, o objetivo é tornar a ferramenta capaz de editar qualquer FMG.
+    enviar no privado para ivanil.marcelino@gmail.com; relatando a dificudade e o FMG;
+    
+
 31/10/2024
     [*] Update Minigui Extend 24.11
         Script: Alterado para richeditboxEX; incluídos funcionalidades como pesquisa/atribuição/posicionamento no erro, adicionado tabulação a 
                 (a pedido do amigo Pierpaolo Martinello (Italy))
                 sistema de backup de testes organizados por dia, adicionado funcionalidade de limpeza de duplicados
-	Prompt: a funcionalidade ira tentar resolver o símbolo, o comando alert "jose" sera convertido para Alert("Jose")
+    Prompt: a funcionalidade ira tentar resolver o símbolo, o comando alert "jose" sera convertido para Alert("Jose")
                 utilidade: testar parâmetros, ver variáveis e o que a imaginação determinar.
         VERSION_PRODUCT "3.2411.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 241031 2003"
 
