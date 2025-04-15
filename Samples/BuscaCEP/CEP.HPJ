@@ -2,7 +2,7 @@
 Main=CEP.PRG
 TipoProjeto=1
 nomeprojeto=CEP
-database=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Temp\NovoCEP\DbCEP.mdb;Persist Security Info=False
+database=Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Prgplus\Git\designer\Samples\BuscaCEP\DbCEP.mdb;Persist Security Info=False
 flag=-exitstr -info -jobs=10 -trace -q -map -w3 -es2 -p.\PPO\
 comments=
 companyname=Ima Solutions Apoio Tec/Adm em Informática
@@ -18,8 +18,8 @@ productversion=ALPHA
 specialbuild=
 
 seticonepadrao=None
-setlanguage=PORTUGUESE
-setcodepage=BRAZIL
+setlanguage=
+setcodepage=
 setdate=FRENCH
 setcentury=ON
 setepoch=1960
@@ -46,6 +46,11 @@ fontsizeMenu=9
 fontboldMenu=FALSE
 Run=
 NaoIncluiResourceHmg=FALSE
+setcontextmenu=ON
+setdialogboxcenter=OFF
+setwindowcenterrelative=OFF
+AddOns=0
+
 [FORMULARIOS]
 Frm0001=%PROJETO%\form\CEP.FMG
 Frm0002=%PROJETO%\Form\TabCEP.FMG
