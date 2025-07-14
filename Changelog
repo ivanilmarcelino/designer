@@ -1,10 +1,15 @@
 ===============================================================================================================
 Curiosidade
-O Designer celebra seu sexto ano de existência, consolidando-se como uma ferramenta gratuita voltada aos entusiastas da linguagem Clipper. Ele oferece uma abordagem mais eficiente, rápida e objetiva para o trabalho com elementos gráficos.
+O Designer celebra seu sexto ano de existência, consolidando-se como uma ferramenta gratuita voltada aos 
+entusiastas da linguagem Clipper. Ele oferece uma abordagem mais eficiente, rápida e objetiva para o trabalho 
+com elementos gráficos.
 
-Ao longo do tempo, o Designer evoluiu de forma significativa, transformando-se em um gerenciador de projetos completo e versátil. Seu desenvolvimento e manutenção são realizados de maneira voluntária por Ivanil Marcelino, sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem a grandes amigos que já partiram.
+Ao longo do tempo, o Designer evoluiu de forma significativa, transformando-se em um gerenciador de projetos 
+completo e versátil. Seu desenvolvimento e manutenção são realizados de maneira voluntária por Ivanil Marcelino, 
+sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem a grandes amigos que já partiram.
 
-A partir de 01/07/2025, o Designer passará a ser distribuído junto com a OpenMinigui, uma bifurcação da Minigui Extended 2506, uma vez que seu mantenedor original, Grigory, passou a tratar as versões posteriores como comerciais.
+A partir de 01/07/2025, o Designer passará a ser distribuído junto com a OpenMinigui, uma bifurcação da Minigui 
+Extended 2506, uma vez que seu mantenedor original, Grigory, passou a tratar as versões posteriores como comerciais.
 ===============================================================================================================
 
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
@@ -14,3 +19,8 @@ Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui ,
 13/07/2025
 ;Open Minigui - bifurcação Inicial;
 ;Harbour r2507101204
+
+14/07/2024
+[!]Ajuste i_status.h, tratamento CENTERALIGN/RIGTHALIGN
+[!]Ajuste Pre-processador interno xCommand DEFAULT => hb_default
+Solicitado por Pierpaolo Martinello (Itália)
