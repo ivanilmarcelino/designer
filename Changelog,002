@@ -1,0 +1,371 @@
+
+    -----------------------------------A T E N Ç Ã O-----------------------------------
+    Colabore com o Grigory, faça uma doação;
+    Para colaborar:
+    1) No Designer, acesse o menu Sobre e clique na imagem Donate. Você será direcionado para a página de doação.
+
+    2) Ou copie e cole o endereço abaixo no seu navegador:
+    https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=o.g.filatova@gmail.com&no_note=0&tax=0&item_name=MiniGUI%20Donation
+
+    3) Também é possível doar diretamente pela página oficial:(https://www.hmgextended.com/)
+    -----------------------------------------------------------------------------------
+    As doações são enviadas diretamente para a conta de Grigory Filatov, sem qualquer intermediário. Sua colaboração é fundamental!
+    -----------------------------------------------------------------------------------
+    Curiosidade: 
+    O Designer alcança seu sexto ano de existência, consolidando-se como uma ferramenta gratuita voltada para os entusiastas da linguagem Clipper. 
+    Ele oferece uma abordagem mais eficiente, rápida e objetiva para trabalhar com elementos gráficos.
+    Ao longo do tempo, o Designer evoluiu significativamente, tornando-se um gerenciador de projetos completo e versátil.
+    A manutenção e o desenvolvimento contínuo da ferramenta são realizados de forma voluntária por Ivanil Marcelino, sem fins lucrativos, 
+    como uma maneira de retribuir à comunidade e homenagear grandes amigos que já partiram.
+    -----------------------------------------------------------------------------------
+
+Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
+[Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+
+06/06/2025
+    Update: Harbour MiniGUI Extended Edition 25.06 (https://www.hmgextended.com/download.html)
+    Problemas Reportados Pierpaolo;
+    Crash ao usar o wizard com Mysql: Resolvido
+    
+
+15/04/2025
+    Update: Harbour MiniGUI Extended Edition 25.04 (https://www.hmgextended.com/download.html)
+
+09/03/2025
+    [!]: Correção SendMessage introduzida update 07/03;
+
+07/03/2025
+    Update: Harbour MiniGUI Extended Edition 25.03 (https://www.hmgextended.com/download.html)
+
+19/02/2025
+    Update: Harbour MiniGUI Extended Edition 25.02 (Standard) (https://www.hmgextended.com/download.html)
+    Obs: Biblioteca recompilada sem o Depurador automatico para bcc58, você escolhe quando usar;
+    Acompanha SQLRdd compilado Versao Marcos Gambeta bcc58 (https://github.com/marcosgambeta/sqlrddpp)
+
+[Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
+[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+19/01/2025
+    Version: RELEASE SPECIAL OSMIUM (Os) Year VI
+    O que há de Novo
+    Update: Harbour MiniGUI Extended Edition 25.01 (Standard) (https://www.hmgextended.com/download.html)
+    Obs: Biblioteca recompilada sem o Depurador automatico para bcc58, você escolhe quando usar;
+    Acompanha SQLRdd compilado Versao Marcos Gambeta bcc58 (https://github.com/marcosgambeta/sqlrddpp)
+    
+    Designer:
+    a)Edição de FMG de forma independente
+    b)Associação de Arquivos HPJ e FMG
+    c)Arraste e solte os arquivos diretamente ao projeto
+    d)Editor Interno dando maior versatilidade no sistema
+        1)Abra vários arquivos simultaneamente
+        2)Lista de funções carregados para melhor navegação
+        3)Teste seu código sem mudar de tela
+        4)Personalize cores a seu gosto
+        5)Ambiente limpo só com o necessário
+
+    Nota:
+    Caso você encontre algum problema em abrir um FMG criado por outra ferramenta, envie uma copia do arquivo
+    para analise, o objetivo é tornar a ferramenta capaz de editar qualquer FMG.
+    enviar no privado para ivanil.marcelino@gmail.com; relatando a dificudade e o FMG;
+    
+
+31/10/2024
+    [*] Update Minigui Extend 24.11
+        Script: Alterado para richeditboxEX; incluídos funcionalidades como pesquisa/atribuição/posicionamento no erro, adicionado tabulação a 
+                (a pedido do amigo Pierpaolo Martinello (Italy))
+                sistema de backup de testes organizados por dia, adicionado funcionalidade de limpeza de duplicados
+    Prompt: a funcionalidade ira tentar resolver o símbolo, o comando alert "jose" sera convertido para Alert("Jose")
+                utilidade: testar parâmetros, ver variáveis e o que a imaginação determinar.
+        VERSION_PRODUCT "3.2411.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 241031 2003"
+
+12/10/2024
+    [*] Update Minigui Extend 24.10
+        VERSION_PRODUCT "3.2410.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 241012 2024"
+
+03/09/2024
+    [*] Update Minigui Extend 24.08
+    VERSION_PRODUCT "3.2408.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240903 2117"
+    Dbopen Normalizado com AddOns;
+
+24/07/2024
+    [*] Update Minigui Extend 24.07
+
+16/07/2024 (a pedido do amigo Pierpaolo Martinello (Italy))
+    [%]liberação do cache usado pelo Scite 
+    [%]retirado aviso de defeito ao desfazer os movimentos dos controls
+    [%]devolução do foco ao designer quando fechado o editor
+    [!]Corrigido função Dbopen, antes apenas modo exclusivo (no entanto, essa função deveria ser sobrescrita por sua própria função, com mais recursos)
+
+13/06/2024
+    [*] Update Minigui Extend 24.06
+    [!] Ajustado a fonte no combo de manutenção do menu interativo; reportado por Pierpaolo Martinello (Italy)
+    Nota:
+    O designer possui um include no main que direciona para a conexão do banco de dados; isso facilita a criação da string. 
+    No entanto, uma vez definido, você deveria criar seu próprio método ou pelo menos mover esse código para seu PRG, retirando 
+    os caminhos literais. Isso não afeta a funcionalidade do designer, pois ele não lê essa configuração do arquivo, mas sim dos 
+    parâmetros do projeto. Não altere o arquivo include diretamente, pois ele é sempre reescrito quando há alteração na string. 
+    O designer não altera seu PRG, dessa forma, sua conexão será sempre preservada.
+
+30/05/2024
+    [*] Update Minigui Extend 24.05
+        Retirado a função SetNonClient(0), instabilidade na nova versao;
+
+
+17/05/2024
+    [+] Adicionado ao modelo samples\modelo\PrototipoMySQLSuporteTranslate tradução Italiano pelo amigo Pierpaolo Martinello (Italy)
+        Corrigido problemas de UCase nas chaves reportado por Pierpaolo Martinello (Italy)
+        Adicionado a função SetNonClient(0) que permite o refresh nos menus automaticamente;por Pierpaolo Martinello (Italy)
+    
+2024-04-24
+    [+] Adicionado Ini.prg ao projeto samples\modelo\PrototipoMySQLSuporteTranslate
+
+2024-04-21
+    [!] Ajuste cores Designer Menu
+    [!] Adicionado excpetion SHOWHEADER=.F. GRID
+    [!] Corrigido comentario em form //|&&
+    [!] Corrigido opcao de ajustar o menu diretamente sem abrir o Menu principal
+
+2024-04-20
+    [!] Ajuste classe tMysqlIma - row acesso a array error
+    [+] incluido samples\modelo\PrototipoMySQLSuporteTranslate
+        Deixe seu aplicativo mult-lingue de forma automatizada usando ini, você pode enriquecer a ferramente lendo um banco de dados,
+        use a imaginação.	
+
+2024-04-18
+    Update Harbour MiniGUI Extended Edition 24.04 
+
+2024-03-18
+    Update Harbour MiniGUI Extended Edition 24.03 
+    [!] propriedades tipo string com "// &&" estavam sendo tratadas como comentários.
+
+
+2024-03-01
+    [!] Tooltip gerado em outras IDE;
+        Quando um formulário criado por outra IDE é aberto, os controles com tooltip do tipo Array estavam sendo 
+        tratados como variáveis pelo Designer, o que causava erros na compilação. Nesta versão, verificamos se o tooltip é uma array, 
+        deixando tudo normalizado. Reportado por José Maurício BH - MG (bhz.mg@hotmail.com)
+
+Espero que isso atenda às suas expectativas! Se precisar de mais alguma correção ou
+
+2024-02-27
+    Update Harbour MiniGUI Extended Edition 24.02
+    VERSION_PRODUCT "3.2402.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240227 1630"
+    [%]As Propriedades incompativeis com o tipo de janela ficarão em vermelho, caso tenha sido informado algum valor
+       o usuário será notificado ao salvar, para evitar perda de dados;
+       Caso de  uso:
+       O usuário cria um formulário tipo chield, adiciona valores em eventos/propriedades, mais tarde, altera a janela para
+       modal, cuja propriedades e eventos não são 100% compativeis;
+    
+
+2024-02-15
+    [!]Agora é possível definir  font/size para o formulário, permitindo que seus controles herdem esses valores caso 
+    não sejam especificados. Anteriormente, a herança era baseada nas definições de fonte e tamanho definidas no projeto, 
+    ignorando as informações em tempo de projeto.
+
+2024-01-23
+    VERSION_PRODUCT "3.2401.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240122 2301"
+    Update Harbour MiniGUI Extended Edition 24.01
+    Correções em CodePage para atender Russia reportado por Grigory (gfilatov@gmail.com)
+
+
+2024-01-04
+    VERSION_PRODUCT "3.2312.0.0 RELEASE SPECIAL PALLADIUM (Pd) Year V 240104 1935"
+    Update Harbour MiniGUI Extended Edition 23.12 (Release)
+    Conversão de nomes longos para curtos evitando conflitos com hbmk2
+    Corrigido Temp para uso internacional reportado por Grigory (gfilatov@gmail.com)
+    Adicionado suporte SQLRDD ao projeto;
+    Incluido SQLRDD ao prototipo do Wizard;
+    Incluido Importador de DBF para SQL;
+
+    Nota:
+    a) Para sua comodidade de migração de DBF para SQL, foi incluido um importador à ferramenta, mas lembre-se que
+    você deve fazer backup antes de iniciar este processo, o padrao utilizado para abrir os DBF é o SQLCDX com autoOpen=OFF
+    caso utilize um RDD diferente pode haver incompatibilidade com os campos Memos;
+
+    b) Para que o SQLRDD rode na sintaxe padrao xbase, a tabela deve ser criada pelo importador da ferramenta ou 
+    atravès da funcao dbCreate(...), caso você crie usando o metodo convencional sqL, as tabelas auxiliares não serão
+    alimentadas e com isso os comandos use/index/seek/etc não funcionarão como esperado;
+
+2023-11-11
+    VERSION_PRODUCT "3.2310.0.0 SPECIAL RHENIUM (Re) Year IV 231111 2229"
+    Update Harbour MiniGUI Extended Edition 23.10 (Release)
+
+2023-09-29
+    VERSION_PRODUCT "3.2309.2.0 SPECIAL RHENIUM (Re) Year IV 230927 1850"
+    Update Harbour MiniGUI Extended Edition 23.09.2
+
+2023-09-12
+    VERSION_PRODUCT "3.2309.1.0 SPECIAL RHENIUM (Re) Year IV 230912 2219"
+    Update Harbour MiniGUI Extended Edition 23.09.1 
+
+2023-09-04
+    VERSION_PRODUCT "3.2309.0.0 SPECIAL RHENIUM (Re) Year IV 230904 0848"
+    Update Harbour MiniGUI Extended Edition 23.09 (Release)
+
+2023-07-31
+    VERSION_PRODUCT "3.2307.0.0 SPECIAL RHENIUM (Re) Year IV 230731 1902"
+    Update Harbour MiniGUI Extended Edition 23.07 (Release)
+
+2023-06-23
+    VERSION_PRODUCT "3.2304.3.0 SPECIAL RHENIUM (Re) Year IV 230623 2020"
+    Update Harbour MiniGUI Extended Edition 23.04 (Update 3) 
+    Compilação dowgrade harbour nov/22
+
+2023-05-30
+    VERSION_PRODUCT "3.2304.2.0 SPECIAL RHENIUM (Re) Year IV 230530 2001"
+    Update Harbour MiniGUI Extended Edition 23.04 (Update 2)     
+    
+2023-05-18
+    VERSION_PRODUCT "3.2304.1.0 SPECIAL RHENIUM (Re) Year IV 230518 1929"
+    Update Harbour MiniGUI Extended Edition 23.04 (Update 1)
+
+2023-05-05
+    VERSION_PRODUCT "3.2304.0.0 SPECIAL RHENIUM (Re) Year IV 230505 2012"
+    Update Harbour MiniGUI Extended Edition 23.04
+    Agora você pode:
+    a) Modificar/criar sua própria interface de compilação, use o modelo: ide\user\DesignerPersonalCompiler.prg
+    b) ter um modelo de cabeçalho por projeto, personalise a seu gosto por cliente
+    c) exportar seu projeto (resultado é um material limpo, somente os arquivos necessarios ao projeto)
+    d) Ocultar objetos para sobreposição e volta-los facilmente a reexibição
+    
+    Melhorias:
+    a) Refatoração do codigo
+    b) validação de imagens no projeto
+    c) reestruturação do projeto .\src .\include
+    d) Pesquisa avançada agora abre diretamente no projeto
+    e) Melhorias em expressão para execução de testes de mesa e validações de codigo
+    f) as Imagens agora estão visiveis no combo facilitando a escolha
+    g) correção de erros
+****************************************************************************************
+////////////////////////////////////////////////////////////////////////////////////////
+****************************************************************************************
+2023-03-14
+    Update Harbour MiniGUI Extended Edition 23.02 (Update 3)
+    VERSION_PRODUCT "2.2302.3.1 RELEASE SPECIAL SILVER (Ag) 230314 1648"
+    .\Tools\Scite\Scite 5,35
+    Incluido Set CenterWindow\DigalogBox em configuração
+
+2023-03-02
+    VERSION_PRODUCT "2.2302.2.1 RELEASE SPECIAL SILVER (Ag) 230302 2014"
+    Sincronização com Minigui Extend 23.02(2)
+
+2023-02-28
+    Designer_Comuns->Designer_Getpropriedade
+    Verificação de sintaxe nas fórmulas, tratando variáveis usadas em controles em tempo de projeto a pedido Alexandre Drescher
+
+2023-02-22
+    VERSION_PRODUCT "2.2302.1.0 RELEASE SPECIAL SILVER (Ag) 230222 2012"
+    Sincronização com Minigui Extend 23.02(1)
+
+2023-02-21
+    VERSION_PRODUCT "2.2302.0.0 RELEASE SPECIAL SILVER (Ag) 230221 2029"
+    Sincronização com Minigui Extend 23.02
+
+[*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+2023-01-27
+    VERSION_PRODUCT "2.2301.1.0 RELEASE SPECIAL SILVER (Ag) 230127 1902"
+    Sincronização com Minigui Extend 23.01
+
+2022-12-22
+    VERSION_PRODUCT "2.2212.2.0 RELEASE SPECIAL SILVER (Ag) 221222 2002"
+    Sincronização com Minigui Extend 22.12.2
+    [*] Agora os arquivos ini do Ide serão salvos em %appdata%, anteriormente estava sendo utilizado %temp% mas
+        alguns colegas costumam limpar a pasta perdendo a configuração.
+        Solicitado por Pierpaolo Martinello (Italy)
+
+2022-12-12
+    VERSION_PRODUCT "2.2212.1.0 RELEASE SPECIAL SILVER (Ag) 221212 1933"
+    Sincronização com Minigui Extend 22.12.1
+
+2022-11-29
+    VERSION_PRODUCT "2.2212.0.0 RELEASE SPECIAL SILVER (Ag) 221129 2242"
+    Sincronização com Minigui Extend 22.12
+
+2022-11-26
+    VERSION_PRODUCT "2.2211.0.1 RELEASE SPECIAL SILVER (Ag) 221127 0019"
+    Value/Caption agora aceitam variáveis ou funções em tempo de projeto; embora minha
+    orientação é que os valores sejam atribuitos no OnInit do form;
+    O Designer vai entender que os valores passados para Value/Caption entre parêntese
+    devem ser tratados como variáveis e não uma literal;
+    Pontos de atenção:
+    atribuindo value=(hb_username()) , será mostrado o usuário atual no form, mas guardará (hb_username()) no código;
+    atribuindo value=(funcaoNaoreconhecida()) , será mostrado o (funcaoNaoreconhecida()) no form, pois é uma função
+    não reconhecida pelo Designer e será mostrada apenas quando seu projeto for compilado e ligado a função, meio
+    obvio, mas necessario o comentário;
+
+    Ajustado as cores do projeto quando manipulado um form com tab;
+
+2022-11-17
+    VERSION_PRODUCT "2.2211.0.0 RELEASE SPECIAL SILVER (Ag) 221117 1901"
+    Sincronizado com Minigui 2211.0
+
+    [*] PesquisaCRUD - Agora a pesquisa pode ser realizada utilizando qualquer campo, bastando
+        clicar no titulo da coluna;
+        Contribuição de Pierpaolo Martinello (Italy)
+
+    [*] Versão do produto agora pode ser editado, combo alterado para Editable=TRUE
+
+2022-11-01
+    VERSION_PRODUCT "2.2209.3.0 RELEASE SPECIAL SILVER (Ag) 221101 2043"
+    Sincronizado com Minigui 2209.3
+
+2022-10-14
+    VERSION_PRODUCT "2.2209.2.4 RELEASE SPECIAL SILVER (Ag) 221014 2207"
+    Sincronizado com Minigui 2209.2
+
+2022-10-09
+    VERSION_PRODUCT "2.2209.1.4 RELEASE SPECIAL SILVER (Ag) 221009 1515"
+    [!] Corrigido problema ao movimentar o GRID pelo Mouse reportado por Alexandre Drescher
+
+2022-10-04
+    VERSION_PRODUCT "2.2209.1.3 RELEASE SPECIAL SILVER (Ag) 221004 1900"
+    [!] Incluido opção de excluir um separador de Menu pelo próprio Wizard
+        Relatado por Pierpaolo Martinello (Italia)
+
+2022-10-02
+    VERSION_PRODUCT "2.2209.1.2 RELEASE SPECIAL SILVER (Ag) 221002 1951"
+    Harbour MiniGUI Extended Edition 22.09 (Update 1)
+
+2022-09-19
+    VERSION_PRODUCT "2.2209.0.1 RELEASE SPECIAL SILVER (Ag) 220919 2022"
+    [+] Incluido tratamento do elemento separador nos menus dos buttons dropdown da toolbar
+        Sugerido por Pierpaolo Martinello
+
+2022-09-15
+    Harbour MiniGUI Extended Edition 22.09 (Release)
+
+2022-09-10
+    VERSION_PRODUCT "2.2207.3.3 RELEASE SPECIAL SILVER (Ag) 220910 1551"
+    [!] Correção ONHEADCLICK Grid
+        Ao editar o objeto, os valores widths {} do grid se perdiam ao recriar o objeto, Bug relatado por  Alexandre Drescher
+        Nota de otimização de uso:
+        Ajuste os colunas do grid arrastando naturalmente, quando estiver do seu gosto simplesmente clique em qualquer coluna
+        os valores serão capturados do objeto e guardados na propriedade;
+
+2022-09-06
+    VERSION_PRODUCT "2.2207.3.3 RELEASE SPECIAL SILVER (Ag) 220906 2145"
+    [!] Ajuste no Panel (várias melhorias)
+    [!] Objetos ficando sem borda na edição. Reportado por Alexandre Drescher
+
+
+2022-09-03
+    VERSION_PRODUCT "2.2207.3.2 RELEASE SPECIAL SILVER (Ag) 220903 2250"
+    [!] Correções diversas
+    [*] Melhorias no controle Panel
+
+2022-08-27
+    [!] Criado procedimento para detecção de topmost; evitando problemas de sobreposição;
+        Nota: excepcionalmente quando é chamado um dialogo do nucleo, este tende a ficar por traz da TopMost; então usar o
+        benefício de TopMost deve ser usado com cautela;
+    [!] Retirado o Gotfocus dos Buttons em tempo de projeto
+    [!] Corrigido acesso de array quando um objeto é copiado dentro de um TAB e tenta-se executar a reordenação;
+    Um agradecimento especial ao amigo Pierpaolo Martinello que colaborou nas descobertas dos bugs;
+
+
+2022-08-21
+    [!] Ajustados propriedades do form
+        Ao aplicar as propriedades os novos valores não afetavam o objeto em tempo real;
+
+2022-08-18
+    [%] Refatoração do núcleo;
+        Versão 2 - Especial Prata
