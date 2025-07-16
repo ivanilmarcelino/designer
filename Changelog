@@ -16,11 +16,20 @@ Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui ,
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
 
-13/07/2025
-;Open Minigui - bifurcação Inicial;
-;Harbour r2507101204
+16/07/2025
+[!] Corrigido o Path de configuração de chaves de cores utilizdos pelo scintilla;
+[!] Corrigido Função Alerta; alterado para editbox, isso permite copiar o texto sendo mais util que uma etiqueta;
+    Retirado ";|" como quebras de linhas, isso impede o uso normal dos caracteres, use CRLF para quebrar linha;
+[!] Corrigido include i_status.ch, eliminando a dependencia de fontcolor com CENTERALIGN/RIGHTALIGN na compilação;
 
 14/07/2024
 [!]Ajuste i_status.h, tratamento CENTERALIGN/RIGTHALIGN
 [!]Ajuste Pre-processador interno xCommand DEFAULT => hb_default
 Solicitado por Pierpaolo Martinello (Itália)
+
+13/07/2025
+;Open Minigui - bifurcação Inicial;
+;Harbour r2507101204
+
+
+
