@@ -16,6 +16,78 @@ Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui ,
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
 
+18/07/2025
+[+]hmg_alert
+   Author    : Francisco Garcia Fernandez
+   Objective : Simulate Clipper ALERT function
+             : HMG_Alert( cText, [<aOptions>], [<cTitle>], [<nType>], [<cIcoName>], [<nIcoSize>], [<aBtnColors>], ;
+                          [<bInit>], [<lClosable>], [<cFontName>] )
+   cText      -> As in Clipper, let's separate the lines with semicolon
+   aOptions   -> same as in Clipper
+              -> if you pass a numeric value
+                 wait so many seconds and cancel only
+                 if a button is pressed, it stops waiting and ends
+   cTitle     -> the title of the window, by default it leaves "Attention"
+   nType      -> 1, 2, 3, 4
+                if aOptions has only one and is not passed nType
+                this one is equal 1
+                if aOptions has two or more and is not passed nType
+                           this is equal 2
+   IcoName   -> optional an icon's name defined by user
+   nIcoSize   -> 32 [default], 48, 64 optional an icon's size
+   aBtnColors -> optional array of colors for the buttons
+   bInit      -> optional initial block of code for additional tuning
+   lClosable ->
+   cFontName ->
+
+   New:
+   aListImage -> List {img1,img2,imgn}
+   nSeconds->
+
+   Last  Modified by Grigory Filatov at 12-07-2021
+
+   Last  Modified by Ivanil Marcelino at 07-17-2025
+        Simulate Clipper ALERT function
+        Retirado a padronização de quebra com ";|"
+
+   aOptions   -> same as in Clipper
+              -> if you pass a numeric value
+                 wait so many seconds and cancel only
+                 if a button is pressed, it stops waiting and ends
+   Mantido apenas para não quebrar codigos antigos, mas foi incluido um parametro  especifico para tratar esse tema;
+   então agora é possível ter várias  Opções com timer;
+
+   bInit -> optional initial block of code for additional tuning
+            Este bloco por si só é capaz de interagir completamente sobre o formulario;
+            exemplo simples:
+
+       Static Function Main_oButtonEX1_Action( )
+       Local cRtv:="Teste"
+       Local b:={||this.Msgalert.fontBOLD:=TRUE, this.Msgalert.fontcolor := WHITE,this.Msgalert.backcolor := RED}
+      *             1       2          3     4       5         6           7       8         9        10          11        12
+      *HMG_Alert( cMsg, aOptions, cTitle, nType, cIcoFile, nIcoSize, aBtnColors, bInit, lClosable, cFontName, aListImage,nSeconds )
+       _HMG_ModalDialogReturn := 3
+       msginfo(hmg_alert(crtv,{"Test 01","Teste 02","Testando 03","Test04"},,,,,,b,,,;
+                         {"edit_next","hp_back","hp_back2","hp_close","hp_close2","hp_email"},15))
+
+      Este exemplo vai mostrar um box na tela com texto em branco e negrito, fundo em vermelho e vai esperar por 15 segundo
+      retornando 3, caso nenhum botão seja pressionado antes desse tempo;
+
+
+     aListImage -> Array de Imagens para serem adicionadas a Opções;
+     nSeconds ->  se > 0 ativa o timer para esse tempo em segundos;
+
+     Pontos de atenção:
+     Esta função possui muitos parametros; veja ela como uma função base (generica), com ela você pode criar
+     uma função simplificada como no exemplo abaixo:
+
+     function confirma(cMsg,nSeconds)
+     Local b:={||this.Msgalert.fontBOLD:=TRUE, this.Msgalert.fontcolor := WHITE,this.Msgalert.backcolor := RED}
+     _HMG_ModalDialogReturn:=2 /*Seta o foco para Não*/
+     Return hmg_alert(cMsg,{"Sim","Não"},"Confirmação",2,,64,,b,,"Arial",{"edit_ok","edit_cancel"},nSeconds)=1
+
+
+
 16/07/2025
 [!] Corrigido o Path de configuração de chaves de cores utilizdos pelo scintilla;
 [!] Corrigido Função Alerta; alterado para editbox, isso permite copiar o texto sendo mais util que uma etiqueta;
