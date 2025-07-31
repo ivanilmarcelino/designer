@@ -8,13 +8,20 @@ Ao longo do tempo, o Designer evoluiu de forma significativa, transformando-se e
 completo e versátil. Seu desenvolvimento e manutenção são realizados de maneira voluntária por Ivanil Marcelino, 
 sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem a grandes amigos que já partiram.
 
-A partir de 01/07/2025, o Designer passará a ser distribuído junto com a OpenMinigui, uma bifurcação da Minigui 
-Extended 2506, uma vez que seu mantenedor original, Grigory, passou a tratar as versões posteriores como comerciais.
 ===============================================================================================================
 
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+
+31/07/2025
+[;] Restaurado ligação com Minigui Extend;
+    Minigui Extend 25.08 Standart;
+    Pontos de atenção;
+    hmg_alert() distribuida no pacote designer foi mantida;
+    h_events.prg foi inibido as linhas que impede a toolbar e formulario com scroll;
+    Neste caso é necessario que os objetos fiquem dentro de um form split,
+
 
 18/07/2025
 [+]hmg_alert
