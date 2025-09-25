@@ -13,6 +13,10 @@ sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+25/09/2025
+[;] Minigui Extend 25.09 Standart;
+    Ajustes diversos no Wizard e outras correções;
+    Compatível com a Minigui Profissional bastando ajustar a parametrização;
 
 31/07/2025
 [;] Restaurado ligação com Minigui Extend;
