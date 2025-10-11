@@ -13,6 +13,9 @@ sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+10/10/2025
+[;] Minigui Extend 25.10 Standart;
+
 25/09/2025
 [;] Minigui Extend 25.09 Standart;
     Ajustes diversos no Wizard e outras correções;
@@ -22,9 +25,9 @@ Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui ,
 [;] Restaurado ligação com Minigui Extend;
     Minigui Extend 25.08 Standart;
     Pontos de atenção;
-    hmg_alert() distribuida no pacote designer foi mantida;
-    h_events.prg foi inibido as linhas que impede a toolbar e formulario com scroll;
-    Neste caso é necessario que os objetos fiquem dentro de um form split,
+    hmg_alert() distribuída no pacote designer foi mantida;
+    h_events.prg foi inibido as linhas que impede a toolbar e formulário com scroll;
+    Neste caso é necessário que os objetos fiquem dentro de um form split,
 
 
 18/07/2025
