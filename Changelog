@@ -13,6 +13,107 @@ sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+07/11/2025
+//Incorporando funcionalidades pessoais:
+//Tenha em mente que esta ferramenta é para usuários avançados, ao mesmo tempo que essas funcionalidades abrem 
+espaço para maior liberdade, um usuário leigo poderia criar uma instabilidade sistêmica por falta de cuidados;
+//eis alguns cuidados que me vem a mente no momento;
+//a)adote um padrão pessoal para suas funções ou nomes de variáveis de forma a não se chocar com as internas 
+(exemplo:person_aviso(),person_idade(),Person_doc())
+//b)designer.init vai sobregravar as funções caso já existam, isso é um beneficio mas pode ser um grande problema 
+//c)seuprojeto.init não vai sobregravar funções caso exista
+//Keep in mind that this tool is for advanced users. While these features allow for greater freedom, a novice 
+user could create systemic instability due to lack of care;
+//Here are some precautions that come to mind at the moment:
+//a) Adopt a personal standard for your functions or variable names so as not to conflict with internal ones 
+(example: person_warning(), person_age(), Person_doc())
+//b) designer.init will overwrite functions if they already exist; this is a benefit but can be a major problem.
+//c) yourproject.init will not overwrite functions if they already exist.
+
+//Esta função é executada antes criar form main,pode ser usada para redefinir variáveis globais ou criar as suas, 
+use o prompt para navegar nas variáveis
+//This function is executed before creating the main form; it can be used to reset global variables or create 
+your own. Use the prompt to navigate through the variables.
+Function DesignerInit()
+    *Public Person_var1, Person_var2, Person_var3
+    Return Nil
+
+//Esta função é chamada pelo OnInit do form main, recebe como parâmetro o objeto form, cada objeto filho ficam em 
+form:controls:(objfilho), você pode manipular qualquer objeto
+//This function is called by the OnInit event of the main form; it receives the form object as a parameter. Each 
+child object is located in form:controls:(child object), and you can manipulate any object.
+
+Function DesignerOnInit(oMain) 
+    oMain:controls:oExpression:action := {||Nil}
+    oMain:controls:oExpression:visible := .F.
+    oMain:controls:oExpression:Enabled := .F.
+    oMain:Maximize()
+    Return Nil
+
+//Esta função é chamada pelo OnRelease do form main, recebe como parâmetro o objeto form; 
+//This function is called by the OnRelease event of the main form, and receives the form object as a parameter;
+
+Function DesignerOnRelease(oMain) 
+    Local aList:=directory(Pathprojeto+"\backup\*.*"),a,dLimite:=Date()-7
+    for each a in aList
+        if a[3] < dLimite
+            Ferase(Pathprojeto+"\backup\"+a[1])
+        endif
+    next
+    Return Nil
+    
+//Esta função é chamada durante a criação do menu do form main, entao você pode injetar novas funcionalidades de forma ilimitada
+//This function is called during the creation of the main form's menu, so you can inject new functionalities without limitation.
+
+Function  Designer_MenuPersonal(oMenu)
+    oMenu:AddPopup("Personal","cNameteste1",,"Fnt_MNU_DESIGNER")
+        *1.Prompt
+            *2.Bloco
+                *3.Nome
+                    *4.Image
+                        *5.Checked
+                            *6.disabled
+                                *7.Message
+                                    *8.FontName
+        oMenu:AddItem("Test Peronal 1",{||msginfo()},"Mnuteste1","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        oMenu:AddItem("Test Perona2 1",{||msginfo()},"Mnuteste2","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        oMenu:AddItem("Test Perona3 1",{||msginfo()},"Mnuteste3","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        oMenu:AddItem("Test Perona4 1",{||msginfo()},"Mnuteste4","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        oMenu:AddItem("Test Perona5 1",{||msginfo()},"Mnuteste5","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        oMenu:AddPopup("Personal1","cdtatil",,"Fnt_MNU_DESIGNER")
+            oMenu:AddItem("Test Perona6 1",{||msginfo()},"Mnuteste6","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+            oMenu:AddItem("Test Perona7 1",{||msginfo()},"Mnuteste7","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+            oMenu:AddItem("Test Perona8 1",{||msginfo()},"Mnuteste8","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+            oMenu:AddItem("Test Perona9 1",{||msginfo()},"Mnuteste9","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+            oMenu:AddItem("Test Perona10 1",{||msginfo()},"Mnuteste10","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+
+            oMenu:EndPopup()
+        oMenu:AddItem("Test Perona11 1",{||msginfo()},"Mnuteste11","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        oMenu:AddItem("Test Perona12 1",{||msginfo()},"Mnuteste12","dbg_tracepoint",,,,"Fnt_MNU_DESIGNER")
+        
+    oMenu:EndPopup()
+    Return oMenu
+
+//Esta função é chamada antes de salvar o formulário no arquivo.fmg, recebe como parâmetro o código e devolve o próprio código,
+ você poderia injetar algum tipo de personalização aqui;
+//This function is called before saving the form to the .fmg file, it receives the code as a parameter and returns the code 
+itself; you could inject some kind of customization here;
+
+Function Designer_SaveFMG(cText)
+    Local nPos:=hb_ati("END WINDOW",cText)
+    if nPos>0
+        cText:=substr(cText,1,nPos-1)+" ...."
+    endif
+   Return cText
+
+//Substituindo a funcao de dados do usuario
+//Replacing the user data function
+
+Function TempUser()
+    Return "c:\temp\mytemp\"
+
+
+
 18/10/2025
 [*] Inclusão das libs Mysql faltantes
 [!] Correção do nome do licenciamento personalizado
