@@ -13,6 +13,13 @@ sem fins lucrativos — uma forma de retribuição à comunidade e uma homenagem
 Duvidas sugestões acesse o grupo: https://groups.google.com/g/designerminigui , participe;
 [Ivanil Marcelino](ivanil.marcelino@yahoo.com.br)
 [*]=Change, [!]=Fix, [%]=Optimization, [+]=Addition, [-]=Removal, [;]=
+15/07/2026
+    Sincronizada com Minigui Extend 26.07 Standart;
+    Scite 5.64
+    Harbour 3.2.1dev (r2607071005)
+    Update https://github.com/marcosgambeta/sqlrddpp (SQLRDD)
+
+
 29/04/2026
     Sincronizada com Minigui Extend 26.04 Standart;
 
